@@ -1,0 +1,41 @@
+sgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-08-01 02:43+0500\n"
+"PO-Revision-Date: 2013-08-01 02:43+0500\n"
+"Last-Translator: critzo <critzo@opentechinstitute.org>\n"
+"Language-Team: critzo <critzo@opentechinstitute.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.0.4\n"
+
+msgid "Choose a name that is 5-20 characters. You can use letters and numbers ONLY. The name will be made unique in the network through the addition of the bolded number next to the input box. You can change the node name later by logging into the node administration page."
+msgstr "Elija un nombre que es 5-20 caracteres. Se pueden utilizar letras y números. El nombre se hizo único en la red a través de la adición de la serie en negrita junto al cuadro de entrada. Puede cambiar el nombre de nodo más adelante, acceda a la página de administración de nodos."
+
+msgid "Node Name"
+msgstr "Nombre de nodo"
+
+msgid "This value is used by other users and devices to find your network wirelessly and over the mesh. This value can be composed of letter, number and hyphens. (Hyphens can not be used at the beggining or end of the name.)"
+msgstr "Este valor es utilizado por otros usuarios y dispositivos para encontrar la red inalámbrica y sobre la malla. Este valor puede estar compuesta de la letra, número y guiones. (Los guiones no se pueden utilizar en la beggining o al final del nombre.)"
+
+msgid "Your Node Name"
+msgstr "Su nombre de nodo"
+
+msgid "Require a password for others to connect to your node."
+msgstr "Solicitar una contraseña para que otros puedan conectarse a su nodo."
+
+msgid "Choose a password that is between 9 and 30 characters. This password can be numbers, letters, and special characters."
+msgstr "Elija una contraseña que es entre 9 y 30 caracteres. Esta contraseña puede contener números, letras y caracteres especiales."
+
+msgid "WiFi Password"
+msgstr "WiFi Contraseña"
+
+msgid "This password is required for others to use your wifi."
+msgstr "Esta contraseña es necesaria para que otros usen su wifi."
+
+msgid "Retype your password here"
+msgstr "Vuelva a escribir la contraseña aquí"
