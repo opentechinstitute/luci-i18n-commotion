@@ -1,0 +1,442 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-08-01 02:43+0500\n"
+"PO-Revision-Date: 2013-08-01 02:43+0500\n"
+"Last-Translator: critzo <critzo@opentechinstitute.org>\n"
+"Language-Team: critzo <critzo@opentechinstitute.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: commotion quickstart
+msgid "Access Point Name"
+msgstr ""
+
+msgid "What would you like to name your node's access point?"
+msgstr ""
+
+msgid "This is the name that users will see when they search for wireless access."
+msgstr ""
+
+msgid "Choose a name that is 5-12 characters. You can use numbers, letters &amp; special characters. The name must be unique in the network. You can change the node name later by logging into the node administration page."
+msgstr ""
+
+msgid "Choose a password that is between 9 and 30 characters. This password can be numbers, letters, and special characters."
+msgstr ""
+
+msgid "This password is used to access the administration menus on this device."
+msgstr ""
+
+msgid "Redirecting..."
+msgstr ""
+
+msgid "System"
+msgstr ""
+
+msgid "Changes applied."
+msgstr ""
+
+msgid "Waiting for changes to be applied..."
+msgstr ""
+
+msgid "The name of your mesh network is:"
+msgstr ""
+
+msgid "Your node name is:"
+msgstr ""
+
+msgid "When people connect to your node wirelessly, they will connect using this name:"
+msgstr ""
+
+msgid "After configuring your node, you can change the node name on the node administration page."
+msgstr ""
+
+msgid "Click here if your browser doesn't redirect you within one minute"
+msgstr ""
+
+msgid "Choose a name that is 5-20 characters. You can use letters and numbers ONLY. The name will be made unique in the network through the addition of the bolded number next to the input box. You can change the node name later by logging into the node administration page."
+msgstr ""
+
+msgid "Node Name"
+msgstr ""
+
+msgid "This value is used by other users and devices to find your network wirelessly and over the mesh. This value can be composed of letter, number and hyphens. (Hyphens can not be used at the beggining or end of the name.)"
+msgstr ""
+
+msgid "Your Node Name"
+msgstr ""
+
+msgid "Require a password for others to connect to your node."
+msgstr ""
+
+msgid "Choose a password that is between 9 and 30 characters. This password can be numbers, letters, and special characters."
+msgstr ""
+
+msgid "WiFi Password"
+msgstr ""
+
+msgid "This password is required for others to use your wifi."
+msgstr ""
+
+msgid "Retype your password here"
+msgstr ""
+
+msgid "If you would like to start the QuickStart configuration process over please click the above. WARNING: The quickstart process allows modification of this device by non-administrative users when it is active. Please make sure that you only restart the quickstart when you have time to finish the entire process."
+msgstr ""
+
+msgid "Click on the field below to upload a file."
+msgstr ""
+
+msgid "Upload"
+msgstr ""
+
+msgid "Congratulations! You have a Commotion node and are ready to join a network or start a new one. This wizard will guide you through the setup. The setup process should take about 10 minutes."
+msgstr ""
+
+msgid "You can still change settings after setup is complete."
+msgstr ""
+
+#: commotion-bug-info
+
+#: luasrc/controller/debugger.lua
+msgid "Commotion Debugging Helper"
+msgstr ""
+
+#: luasrc/view/debugger.htm
+msgid "The information you are about to download contains private information about this device and the network it is connected to. Only give this information to people you trust. Do you understand?"
+msgstr ""
+
+#: luasrc/view/debugger.htm
+msgid "Commotion Bug Info"
+msgstr ""
+
+#: luasrc/view/debugger.htm
+msgid "Name"
+msgstr ""
+
+#: luasrc/view/debugger.htm
+msgid "Contact Info"
+msgstr ""
+
+#: luasrc/view/debugger.htm
+msgid "What were you doing on the device when the error occurred?"
+msgstr ""
+
+#: luasrc/view/debugger.htm
+msgid "Please describe the behavior you expected"
+msgstr ""
+
+#: luasrc/view/debugger.htm
+msgid "Please describe the behavior you experienced that you believe is wrong"
+msgstr ""
+
+#: luasrc/view/debugger.htm
+msgid "Debugging Info"
+msgstr ""
+
+#: luasrc/view/debugger.htm
+msgid "Mesh Network Information"
+msgstr ""
+
+#: luasrc/view/debugger.htm
+msgid "Router Status"
+msgstr ""
+
+#: luasrc/view/debugger.htm
+msgid "Router Traffic Routing Rules"
+msgstr ""
+
+#: luasrc/view/debugger.htm
+msgid "All Info"
+msgstr ""
+
+#: luasrc/view/debugger.htm
+msgid "Create Bug Info File"
+msgstr ""
+
+#: commotion-splash
+
+#: cbi/commotion/splash/splashtext.lua
+msgid "Edit Splash text"
+msgstr ""
+
+msgid "You can enter your own text that is displayed to clients here. It is possible to use the following markers: The value of GatewayName as set in nodogsplash.conf. A URL which encodes a unique token and the URL of the user's original web request. The directory in nodogsplash's web hierarchy where images to be displayed in the splash page must be located."
+msgstr ""
+
+#: controller/commotion/splash/splash.lua
+msgid "splash: invalid parameters"
+msgstr ""
+
+msgid "Clearance time must be an integer greater than zero"
+msgstr ""
+
+msgid "Invalid redirect"
+msgstr ""
+
+msgid "Invalid autoauth"
+msgstr ""
+
+msgid "Invalid submission...zone"
+msgstr ""
+
+msgid "doesn't exit"
+msgstr ""
+
+msgid "Whitelist entries must be a valid MAC address"
+msgstr ""
+
+#: splash
+msgid "Local Applications"
+msgstr ""
+
+msgid "Internet"
+msgstr ""
+
+#: splash_settings
+msgid "Captive Portal"
+msgstr ""
+
+msgid "Nodogsplash offers a simple way to provide restricted access to an internet connection."
+msgstr ""
+
+msgid "General"
+msgstr ""
+
+msgid "Clearance time"
+msgstr ""
+
+msgid "Clients that have accepted the captive portal are allowed to use the network for that many minutes."
+msgstr ""
+
+msgid "Redirect to Homepage?"
+msgstr ""
+
+msgid "help"
+msgstr ""
+
+msgid "If this is checked, clients will be redirected to your homepage, instead of to their original request."
+msgstr ""
+
+msgid "Homepage"
+msgstr ""
+
+msgid "After authentication, clients will be redirected to this URL instead of to their original request."
+msgstr ""
+
+msgid "Immediately Authenticate?"
+msgstr ""
+
+msgid "If this is checked, clients will be immediately directed to their original request or your homepage (if set above), instead of being served a splash page."
+msgstr ""
+
+msgid "Interfaces"
+msgstr ""
+
+msgid "Interfaces that are used for Splash."
+msgstr ""
+
+msgid "Network"
+msgstr ""
+
+msgid "Intercept client traffic on this Interfaces"
+msgstr ""
+
+msgid "Whitelist"
+msgstr ""
+
+msgid "MAC addresses of whitelisted clients. These do not need to accept the splash and are not bandwidth limited."
+msgstr ""
+
+msgid "MAC Address"
+msgstr ""
+
+msgid "Blacklist"
+msgstr ""
+
+msgid "MAC addresses in this list are blocked."
+msgstr ""
+
+msgid "Allowed hosts/subnets"
+msgstr ""
+
+msgid "Hosts and Networks that are listed here are excluded from splashing, i.e. they are always allowed."
+msgstr ""
+
+msgid "IP Address"
+msgstr ""
+
+msgid "CIDR notation optional (e.g. 192.168.1.0/24)"
+msgstr ""
+
+msgid "Submit"
+msgstr ""
+
+msgid "Reset"
+msgstr ""
+
+#: splashtext
+msgid "Welcome!"
+msgstr ""
+
+msgid "You are now connected to a community wireless network."
+msgstr ""
+
+msgid "Access to the Internet may be provided by people donating connectivity to the network. Everyone on the network has to share, so please be aware and behave yourself accordingly:"
+msgstr ""
+
+msgid "Please"
+msgstr ""
+
+msgid "avoid large downloads and excessive filesharing."
+msgstr ""
+
+msgid "no illegal activities."
+msgstr ""
+
+msgid "If you like the network, please consider contributing!"
+msgstr ""
+
+#: luci-commotion
+
+#: files/usr/share/commtion/patches/wifi_lua.patch
+msgid "auto"
+msgstr ""
+
+msgid "Force CCMP (AES)"
+msgstr ""
+
+msgid "Force TKIP"
+msgstr ""
+
+msgid "Force TKIP and CCMP (AES)"
+msgstr ""
+
+msgid "No Encryption"
+msgstr ""
+
+msgid "WEP Open System"
+msgstr ""
+
+msgid "WEP Shared Key"
+msgstr ""
+
+#: htdocs/luci/static/commotion/index
+
+msgid "Welcome to Commotion!"
+msgstr ""
+
+msgid "You are connected to a mesh network powered by the Commotion Wireless Project. The Commotion project seeks to create an open-source, device-as-infrastructure communication platform that allows communities and activists to collaborate and communicate. If you're an admin of this node in the network, you can use this interface to modify its settings. For more information about the project, please visit the site below:"
+msgstr ""
+
+msgid "Commotion Wireless"
+msgstr ""
+
+msgid "Thanks for using our network!"
+msgstr ""
+
+#: htdocs/luci/static/resources/OSMLatLon
+
+msgid "OpenStreetMap"
+msgstr ""
+
+msgid "Map by"
+msgstr ""
+
+msgid "License CC-BY-SA"
+msgstr ""
+
+msgid "Latitude"
+msgstr ""
+
+msgid "Longitude"
+msgstr ""
+
+#: luasrc/controller/commotion/commotion.luasrc
+
+msgid "Overview"
+msgstr ""
+
+msgid "Front Page"
+msgstr ""
+
+msgid "Mesh Configuration Manual"
+msgstr ""
+
+#: luasrc/controller/commotion/meshprofile.lua
+
+msgid "Mesh Profile"
+msgstr ""
+
+#: luasrc/model/cbi/commotion/meshconfig
+
+msgid "Configuration"
+msgstr ""
+
+msgid "This configuration wizard will assist you in setting up your router for a Commotion network."
+msgstr ""
+
+msgid "Access Point"
+msgstr ""
+
+msgid "Name (SSID)"
+msgstr ""
+
+msgid "The public facing name of this interface"
+msgstr ""
+
+msgid "Secure Access Point"
+msgstr ""
+
+msgid "Mesh Backhaul"
+msgstr ""
+
+msgid "Device Designation (BSSID)"
+msgstr ""
+
+msgid "The device read name of this interface. (Letters A-F, and numbers 0-9 only)"
+msgstr ""
+
+msgid "Network-wide Settings"
+msgstr ""
+
+msgid "5GHz Channel"
+msgstr ""
+
+msgid "The 5GHz backhaul channel of the mesh network, if applicable."
+msgstr ""
+
+msgid "2GHz Channel"
+msgstr ""
+
+msgid "The 2.4GHz backhaul channel of the mesh network, if applicable"
+msgstr ""
+
+msgid "Settings specific to this node"
+msgstr ""
+
+msgid "DHCP Timeout"
+msgstr ""
+
+msgid "How many seconds to wait on boot for a DHCP lease from the gateway"
+msgstr ""
+
+#: luasrc/view/commotion/meshprofile
+
+msgid "Node Profiles"
+msgstr ""
+
+msgid "If your node includes configuration profiles for multiple Commotion networks, this form allows you to set your defaults. We recommend that you reboot your node after changing these settings."
+msgstr ""
+
+msgid "Select an interface"
+msgstr ""
+
+msgid "Select a profile to apply"
+msgstr ""
+
+msgid "Apply and Save"
+msgstr ""
