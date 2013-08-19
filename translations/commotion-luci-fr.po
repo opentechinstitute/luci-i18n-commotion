@@ -73,9 +73,6 @@ msgstr "Votre nom de noeud"
 msgid "Require a password for others to connect to your node."
 msgstr "Exiger un mot de passe pour les autres de se connecter à votre noeud."
 
-msgid "Choose a password that is between 9 and 30 characters. This password can be numbers, letters, and special characters."
-msgstr "Choisissez un mot de passe qui se situe entre 9 et 30 caractères. Ce mot de passe peut être des nombres, des lettres et des caractères spéciaux."
-
 msgid "WiFi Password"
 msgstr "WiFi Mot de passe"
 
