@@ -1,14 +1,16 @@
 # 
 # Translators:
 # dkaurin <kaurin@openitp.org>, 2013
+# st, 2013
 # gwae <contact.gwae@gmail.com>, 2013
+# sarhantn <sarhanaissi@gmail.com>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: Commotion User Interface\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-08-01 02:43+0500\n"
-"PO-Revision-Date: 2013-08-20 13:08+0000\n"
-"Last-Translator: gwae <contact.gwae@gmail.com>\n"
+"PO-Revision-Date: 2013-08-26 11:57+0000\n"
+"Last-Translator: st\n"
 "Language-Team: French <commotion-i18n@lists.opentechinstitute.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -110,7 +112,7 @@ msgid ""
 " device by non-administrative users when it is active. Please make sure that"
 " you only restart the quickstart when you have time to finish the entire "
 "process."
-msgstr ""
+msgstr "Veuillez cliquer sur le lien ci-dessus si vous souhaitez lancer la configuration de QuickStart. Avertissement: Le processus QuickStart permet la modification de cet appareil par les utilisateurs non-adminstratifs quand il est actif. Assurez-vous que vous avez assez de temps pour terminer l'ensemble du processus avant que vous lancer la configuration. "
 
 msgid "Click on the field below to upload a file."
 msgstr "Cliquez sur le champ ci-dessous pour uploader un fichier."
@@ -126,6 +128,8 @@ msgstr "Félicitations ! Vous disposez d'un nœud Commotion et vous êtes prêts
 
 msgid "You can still change settings after setup is complete."
 msgstr "Vous pouvez toujours modifier les paramètres après l'installation est terminée."
+
+#: commotion-bug-info
 
 #: commotion-bug-info luasrc/controller/debugger.lua
 msgid "Commotion Debugging Helper"
@@ -184,11 +188,13 @@ msgstr "Toutes les infos"
 
 #: luasrc/view/debugger.htm
 msgid "Create Bug Info File"
-msgstr ""
+msgstr "Créer un bug fichier d'info"
+
+#: commotion-splash
 
 #: commotion-splash cbi/commotion/splash/splashtext.lua
 msgid "Edit Splash text"
-msgstr ""
+msgstr "Modifier un texte Splash"
 
 msgid ""
 "You can enter your own text that is displayed to clients here. It is "
@@ -240,12 +246,12 @@ msgid "General"
 msgstr "Général"
 
 msgid "Clearance time"
-msgstr ""
+msgstr "Temps de validation"
 
 msgid ""
 "Clients that have accepted the captive portal are allowed to use the network"
 " for that many minutes."
-msgstr ""
+msgstr "Les clients qui ont accepté le portail captif sont autorisés à utiliser le réseau pour autant de minutes."
 
 msgid "Redirect to Homepage?"
 msgstr "Rediriger sur la page d'accueil ?"
@@ -305,12 +311,12 @@ msgid "MAC addresses in this list are blocked."
 msgstr "Les adresses MAC de cette liste seront bloquées."
 
 msgid "Allowed hosts/subnets"
-msgstr ""
+msgstr "Hôtes/sous-réseaux autorisés"
 
 msgid ""
 "Hosts and Networks that are listed here are excluded from splashing, i.e. "
 "they are always allowed."
-msgstr ""
+msgstr "Les hôtes et les réseaux listés ci-après sont exclus du splashing, c'est-à-dire qu'ils sont toujours autorisés.  "
 
 msgid "IP Address"
 msgstr "Adresse IP"
@@ -382,7 +388,7 @@ msgid ""
 "to collaborate and communicate. If you're an admin of this node in the "
 "network, you can use this interface to modify its settings. For more "
 "information about the project, please visit the site below:"
-msgstr ""
+msgstr "Vous êtes connecté à un réseau maillé propulsé par le Commotion Wireless Project. Le projet Commotion vise à créer une 'device-as-infrastructure' plate-forme de communications open source qui permet à des communautés et  à des \tactivistes de collaborer et de communiquer entre eux. Si vous êtes un admin de ce nœud dans le réseau, vous pouvez utiliser cette interface pour modifier les paramètres. Pour en savoir plus, veuillez consulter le site ci-dessous: "
 
 msgid "Commotion Wireless"
 msgstr "Commotion Wireless"
@@ -442,14 +448,14 @@ msgid "Secure Access Point"
 msgstr "Point d'accès sécurisé"
 
 msgid "Mesh Backhaul"
-msgstr ""
+msgstr "Liaison maillée"
 
 msgid "Device Designation (BSSID)"
 msgstr "désignation de l'appareil (BSSID)"
 
 msgid ""
 "The device read name of this interface. (Letters A-F, and numbers 0-9 only)"
-msgstr ""
+msgstr "Le nom de cette interface lisible par l'appareil (uniquement des lettres A-F et des chiffres 0-9)"
 
 msgid "Network-wide Settings"
 msgstr "paramètres network à l'échelle"
@@ -458,22 +464,22 @@ msgid "5GHz Channel"
 msgstr "5GHz canal"
 
 msgid "The 5GHz backhaul channel of the mesh network, if applicable."
-msgstr ""
+msgstr "Le canal d'amenée 5GHz du réseau maillé, si celà est applicable"
 
 msgid "2GHz Channel"
 msgstr "2GHz canal"
 
 msgid "The 2.4GHz backhaul channel of the mesh network, if applicable"
-msgstr ""
+msgstr "Le canal d'amenée 2,4GHz du réseau maillé, si celà est applicable"
 
 msgid "Settings specific to this node"
 msgstr "Les paramètres spécifiques à ce noeud."
 
 msgid "DHCP Timeout"
-msgstr ""
+msgstr "Timeout DHCP"
 
 msgid "How many seconds to wait on boot for a DHCP lease from the gateway"
-msgstr ""
+msgstr "Combien de secondes à attendre au démarrage pour un bail DHCP de la part de la passerelle "
 
 #: luasrc/view/commotion/meshprofile
 msgid "Node Profiles"
@@ -486,10 +492,90 @@ msgid ""
 msgstr "If your node includes configuration profiles for multiple network Commotion, this form allows you to set your default settings. We recommend that you restart your node after changing these settings."
 
 msgid "Select an interface"
-msgstr ""
+msgstr "Sélectionner une interface"
 
 msgid "Select a profile to apply"
 msgstr "Sélectionnez un profil à appliquer"
 
 msgid "Apply and Save"
 msgstr "Appliquer et Enregistrer"
+
+#: commotion-openwrt-theme
+
+#: commotion-openwrt-theme /files/templates/header.htm
+msgid "Unsaved Changes"
+msgstr "Les modifications non enregistrées"
+
+msgid "Auto Refresh"
+msgstr "Rafraîchissement automatique "
+
+msgid "No password set!"
+msgstr "Aucun mot de passe a été défini!"
+
+msgid ""
+"There is no password set on this router. Please configure a root password to"
+" protect the web interface and enable SSH."
+msgstr "Il n'ya pas de mot de passe sur ce routeur. Veuillez configurer un mot de passe root pour protéger l'interface web et activer le SSH."
+
+msgid "Go to password configuration..."
+msgstr "Aller à la configuration du mot de passe ..."
+
+#: /files/templates/footer.htm
+msgid "QuickStart"
+msgstr "QuickStart"
+
+msgid "Administration"
+msgstr "Administration"
+
+#: /files/luasrc/view/cbi/full_valueheader.htm
+msgid "Go to relevant configuration page"
+msgstr "Visiter la page de configuration pertinente "
+
+#: luci-commotion /luasrc/view/commotion/serval_keyring.htm
+msgid "Serval Keyring"
+msgstr "Porte-clés Serval"
+
+msgid ""
+"The Serval Keyring is used to sign all network traffic on a Commotion mesh "
+"network. Every node on your Commotion network should use the same Serval "
+"Keyring. On this page you can download the existing Serval keyring for this "
+"node, to back it up or to use when adding new nodes to your network. You can"
+" also generate a new Serval Keyring, or upload one from your computer."
+msgstr "Le porte-clés Serval est utilise pour signer tout le trafic réseau sur un réseau maille Commotion. Il faut que chaque nœud sur votre réseau Commotion utilise le même porte-clés Serval. Sur cette page, vous pouvez télécharger un porte-clés Serval existant pour ce nœud, afin de faire un back-up ou de l'utiliser au moment d'ajouter des nouveaux nœuds a votre réseau. Vous pouvez également générer un nouveau porte-clés Serval ou bien en uploader un à partir de votre ordinateur. "
+
+msgid "Download a Serval Keyring"
+msgstr "Télécharger un porte-clés Serval "
+
+msgid "Download your current Serval keyring"
+msgstr "Télécharger votre porte-clés Serval actuel"
+
+msgid "Upload a Serval Keyring"
+msgstr "Uploader un porte-clés Serval"
+
+msgid "Click on the field below to upload a keyring."
+msgstr "Cliquez sur le champ ci-dessous pour uploader un porte-clés."
+
+msgid "Upload a Keyring"
+msgstr "Uploader un porte-clés"
+
+msgid "Upload a Serval key file file from your own computer"
+msgstr "Uploader un fichier de clé Serval à partir de votre ordinateur"
+
+msgid "Create a new Serval Keyring"
+msgstr "Créer un nouveau porte-clés Serval"
+
+msgid ""
+"Click on the button below to create a new keyring. This will DELETE the "
+"existing keyring on the device. We highly suggest you download any existing "
+"network keyrings you have before creating a new keyring."
+msgstr "Cliquer sur le bouton ci-dessous pour créer un nouveau porte-clés. Ceci va supprimer le porte-clés existant sur l'appareil. Nous vous suggérons vivement de télécharger tout porte-clés existant avant de créer un nouveau porte-clés."
+
+msgid "New Keyring"
+msgstr "Un nouveau porte-clés"
+
+msgid "Create a new keyring on this device, replacing the existing keyring."
+msgstr "Créer un nouveau porte-clés sur cet appareil, en remplaçant le porte-clés existant."
+
+msgid "Create New Keyring"
+msgstr "Créer un nouveau trousseau de clés"
+
