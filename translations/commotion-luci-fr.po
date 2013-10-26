@@ -2,6 +2,7 @@
 # Translators:
 # dkaurin <kaurin@openitp.org>, 2013
 # st, 2013
+# st, 2013
 # gwae <contact.gwae@gmail.com>, 2013
 # sarhantn <sarhanaissi@gmail.com>, 2013
 msgid ""
@@ -9,9 +10,9 @@ msgstr ""
 "Project-Id-Version: Commotion User Interface\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-08-01 02:43+0500\n"
-"PO-Revision-Date: 2013-08-26 11:57+0000\n"
+"PO-Revision-Date: 2013-09-22 13:49+0000\n"
 "Last-Translator: st\n"
-"Language-Team: French <commotion-i18n@lists.opentechinstitute.org>\n"
+"Language-Team: French (http://www.transifex.com/projects/p/commotion-user-interface/language/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -33,12 +34,12 @@ msgid ""
 "Choose a name that is 5-12 characters. You can use numbers, letters and "
 "special characters. The name must be unique in the network. You can change "
 "the node name later by logging into the node administration page."
-msgstr "Choisissez un nom ayant 5-12 caractères. Vous pouvez utiliser des chiffres, lettres et caractères spéciaux. Le nom doit être unique dans le réseau. Vous pouvez changer le nom du nœud plus tard en vous connectant sur la page d'administration."
+msgstr "Choisissez un nom ayant 5-12 caractères. Vous pouvez utiliser des chiffres, des lettres et des caractères spéciaux. Le nom doit être unique dans le réseau. Vous pouvez changer le nom du nœud plus tard en vous connectant sur la page d'administration."
 
 msgid ""
 "Choose a password that is between 9 and 30 characters. This password can be "
 "numbers, letters, and special characters."
-msgstr "Choisissez un mot de passe qui se situe entre 9 et 30 caractères. Ce mot de passe peut être des nombres, des lettres et des caractères spéciaux."
+msgstr "Choisissez un mot de passe ayant 9-30 caractères. Le mot de passe peut comprendre des chiffres, des lettres et des caractères spéciaux. "
 
 msgid ""
 "This password is used to access the administration menus on this device."
@@ -51,60 +52,60 @@ msgid "System"
 msgstr "Système"
 
 msgid "Changes applied."
-msgstr "Les modifications appliquées."
+msgstr "Modifications appliquées."
 
 msgid "Waiting for changes to be applied..."
-msgstr "En attendant que des changements soient appliqués ..."
+msgstr "Attente de l'application des modifications ..."
 
 msgid "The name of your mesh network is:"
-msgstr "Le nom de votre mesh network est:"
+msgstr "Nom de votre réseau maillé :"
 
 msgid "Your node name is:"
-msgstr "Votre nom de nœud est:"
+msgstr "Nom de votre nœud :"
 
 msgid ""
 "When people connect to your node wirelessly, they will connect using this "
 "name:"
-msgstr "Quand les gens se connectent à votre nœud sans fil, ils vont se connecter en utilisant ce nom:"
+msgstr "Nom que les gens utiliseront pour se connecter à votre nœud sans fil :"
 
 msgid ""
 "After configuring your node, you can change the node name on the node "
 "administration page."
-msgstr "Après avoir configuré votre poste, vous pouvez changer le nom du nœud sur la page d'administration nœud."
+msgstr "Une fois le nœud configuré, le changement de nom du nœud peut être effectué sur la page d'administration du nœud."
 
 msgid "Click here if your browser doesn't redirect you within one minute"
-msgstr "Cliquez ici si votre navigateur ne vous redirige pas moins d'une minute"
+msgstr "Cliquez ici si votre navigateur ne vous redirige pas en l'espace d'une minute"
 
 msgid ""
 "Choose a name that is 5-20 characters. You can use letters and numbers ONLY."
 " The name will be made unique in the network through the addition of the "
 "bolded number next to the input box. You can change the node name later by "
 "logging into the node administration page."
-msgstr "Choisissez un nom qui est de 5-20 caractères. Utiliser uniquement des lettres et des chiffres. Le nom sera unique dans le network par l'addition du nombre gras regard de la zone d'entrée. Vous pouvez changer le nom du nœud plus tard en vous connectant sur la page d'administration nœud."
+msgstr "Choisissez un nom ayant 5-20 caractères. N'utilisez que des lettres et des chiffres. En ajoutant le chiffre en gras à côté de la case de saisie, le nom deviendra unique dans le réseau. Vous pouvez changer le nom du nœud plus tard depuis la page d'administration du nœud."
 
 msgid "Node Name"
-msgstr "Nom de noeud"
+msgstr "Nom du noeud"
 
 msgid ""
 "This value is used by other users and devices to find your network "
 "wirelessly and over the mesh. This value can be composed of letter, number "
 "and hyphens. (Hyphens can not be used at the beggining or end of the name.)"
-msgstr "Cette valeur est utilisée par d'autres utilisateurs et de périphériques pour trouver votre réseau sans fil et sur ​​le mesh network. Cette valeur peut être composé de la lettre, le nombre et les traits d'union. (Traits d'union ne peuvent pas être utilisés au commence ou à la fin du nom.)"
+msgstr "Cette valeur est utilisée par d'autres utilisateurs et périphériques pour découvrir votre réseau en mode sans fil et sur ​​le réseau maillé. La valeur peut être composée de lettres, de chiffres et de traits d'union. (Les traits d'union ne peuvent pas être utilisés au début ou à la fin du nom.)"
 
 msgid "Your Node Name"
-msgstr "Votre nom de noeud"
+msgstr "Nom de votre noeud"
 
 msgid "Require a password for others to connect to your node."
-msgstr "Exiger un mot de passe pour les autres de se connecter à votre noeud."
+msgstr "Exiger un mot de passe à la connexion à votre noeud."
 
 msgid "WiFi Password"
-msgstr "WiFi Mot de passe"
+msgstr "Mot de passe Wi-Fi "
 
 msgid "This password is required for others to use your wifi."
-msgstr "Ce mot de passe est requis pour d'autres d'utiliser votre wifi."
+msgstr "Ce mot de passe est requis pour que les autres puissent utiliser votre Wi-Fi."
 
 msgid "Retype your password here"
-msgstr "Retaper votre mot de passe ici"
+msgstr "Retapez votre mot de passe ici"
 
 msgid ""
 "If you would like to start the QuickStart configuration process over please "
@@ -112,7 +113,7 @@ msgid ""
 " device by non-administrative users when it is active. Please make sure that"
 " you only restart the quickstart when you have time to finish the entire "
 "process."
-msgstr "Veuillez cliquer sur le lien ci-dessus si vous souhaitez lancer la configuration de QuickStart. Avertissement: Le processus QuickStart permet la modification de cet appareil par les utilisateurs non-adminstratifs quand il est actif. Assurez-vous que vous avez assez de temps pour terminer l'ensemble du processus avant que vous lancer la configuration. "
+msgstr "Veuillez cliquer sur le lien ci-dessus si vous souhaitez relancer la configuration de QuickStart. Attention : Le processus QuickStart permet la modification de cet appareil par les utilisateurs non-adminstratifs lorsque l'appareil est actif. Assurez-vous que vous avez assez de temps pour terminer tout le processus avant que vous relanciez la configuration. "
 
 msgid "Click on the field below to upload a file."
 msgstr "Cliquez sur le champ ci-dessous pour uploader un fichier."
@@ -124,23 +125,21 @@ msgid ""
 "Congratulations! You have a Commotion node and are ready to join a network "
 "or start a new one. This wizard will guide you through the setup. The setup "
 "process should take about 10 minutes."
-msgstr "Félicitations ! Vous disposez d'un nœud Commotion et vous êtes prêts à rejoindre le réseau ou en démarrer un nouveau. Cet assistant va vous guider à travers l'installation. Ce processus devrait prendre environ 10 minutes."
+msgstr "Félicitations ! Vous disposez d'un nœud Commotion et vous êtes prêt à rejoindre le réseau ou en démarrer un nouveau. Cet assistant vous guidera à travers l'installation. Ce processus devrait prendre environ 10 minutes."
 
 msgid "You can still change settings after setup is complete."
 msgstr "Vous pouvez toujours modifier les paramètres après l'installation est terminée."
 
-#: commotion-bug-info
-
 #: commotion-bug-info luasrc/controller/debugger.lua
 msgid "Commotion Debugging Helper"
-msgstr "Aide au déboguage Commotion"
+msgstr "Aide au débogage Commotion"
 
 #: luasrc/view/debugger.htm
 msgid ""
 "The information you are about to download contains private information about"
 " this device and the network it is connected to. Only give this information "
 "to people you trust. Do you understand?"
-msgstr "L'information que vous êtes sur le point de télécharger contient des informations privées sur cet appareil et le réseau auquel il est connecté. Donner cette information seulement à des personnes de confiance. Comprenez-vous?"
+msgstr "L'information que vous êtes sur le point de télécharger contient des informations privées à propos de cet appareil et de réseau auquel il est connecté. Ne partagez cette information qu'avec les personnes en qui vous avez confiance. Comprenez-vous ?"
 
 #: luasrc/view/debugger.htm
 msgid "Commotion Bug Info"
@@ -152,11 +151,11 @@ msgstr "Nom"
 
 #: luasrc/view/debugger.htm
 msgid "Contact Info"
-msgstr "Informations de contact"
+msgstr "Coordonnées de contact"
 
 #: luasrc/view/debugger.htm
 msgid "What were you doing on the device when the error occurred?"
-msgstr "Que faisiez-vous sur l'appareil lorsque l'erreur s'est produite?"
+msgstr "Que faisiez-vous sur l'appareil lorsque l'erreur s'est produite ?"
 
 #: luasrc/view/debugger.htm
 msgid "Please describe the behavior you expected"
@@ -172,7 +171,7 @@ msgstr "Informations de débogage"
 
 #: luasrc/view/debugger.htm
 msgid "Mesh Network Information"
-msgstr "Informations du réseau mesh"
+msgstr "Informations du réseau maillé"
 
 #: luasrc/view/debugger.htm
 msgid "Router Status"
@@ -190,11 +189,9 @@ msgstr "Toutes les infos"
 msgid "Create Bug Info File"
 msgstr "Créer un bug fichier d'info"
 
-#: commotion-splash
-
 #: commotion-splash cbi/commotion/splash/splashtext.lua
 msgid "Edit Splash text"
-msgstr "Modifier un texte Splash"
+msgstr "Modifier du texte Splash"
 
 msgid ""
 "You can enter your own text that is displayed to clients here. It is "
@@ -202,26 +199,26 @@ msgid ""
 "nodogsplash.conf. A URL which encodes a unique token and the URL of the "
 "user's original web request. The directory in nodogsplash's web hierarchy "
 "where images to be displayed in the splash page must be located."
-msgstr "Vous pouvez entrer votre propre texte qui est affiché aux clients ici. Il est possible d'utiliser les marqueurs suivants: La valeur de GatewayName tel que défini dans nodogsplash.conf. Une URL qui code pour un jeton unique, et l'URL de demande de bande initiale de l'utilisateur. Le répertoire dans la hiérarchie Web de nodogsplash où les images à afficher dans la page d'accueil doit être situé."
+msgstr "Vous pouvez entrer votre propre texte qui est affiché aux clients ici. Il est possible d'utiliser les marqueurs suivants : La valeur de GatewayName tel que défini dans nodogsplash.conf. Une URL qui encode un jeton unique et l'URL de demande web originale de l'utilisateur. Le répertoire dans la hiérarchie web de nodogsplash où les images à afficher sur le splash screen doivent être situées."
 
 #: controller/commotion/splash/splash.lua
 msgid "splash: invalid parameters"
 msgstr "splash : paramètres invalides"
 
 msgid "Clearance time must be an integer greater than zero"
-msgstr "Le temps de décharge doit être un nombre entier plus grand que zéro"
+msgstr "Le temps de validation doit être un nombre entier supérieur à zéro"
 
 msgid "Invalid redirect"
-msgstr "Invalide rediriger"
+msgstr "Redirection invalide"
 
 msgid "Invalid autoauth"
 msgstr "Autoauth invalide"
 
 msgid "Invalid submission...zone"
-msgstr "Soumission invalide"
+msgstr "Soumission invalide...zone"
 
 msgid "doesn't exit"
-msgstr "N'existe pas"
+msgstr "n'existe pas"
 
 msgid "Whitelist entries must be a valid MAC address"
 msgstr "Les entrées de la liste blanche doivent être des adresses MAC valides"
@@ -257,12 +254,12 @@ msgid "Redirect to Homepage?"
 msgstr "Rediriger sur la page d'accueil ?"
 
 msgid "help"
-msgstr "Aide"
+msgstr "aide"
 
 msgid ""
 "If this is checked, clients will be redirected to your homepage, instead of "
 "to their original request."
-msgstr "Si cette case est cochée, les clients seront redirigés vers votre page d'accueil, au lieu de leur demande initiale."
+msgstr "Si cochée, les clients seront conduits vers votre page d'accueil au lieu de leur leur requête originale."
 
 msgid "Homepage"
 msgstr "Page d'accueil"
@@ -270,7 +267,7 @@ msgstr "Page d'accueil"
 msgid ""
 "After authentication, clients will be redirected to this URL instead of to "
 "their original request."
-msgstr "Après authentification, les clients seront redirigés vers cette URL à la place de leur demande initiale."
+msgstr "Après avoir procédé à l'authentification, les clients seront conduits vers cette URL au lieu de leur requête originale."
 
 msgid "Immediately Authenticate?"
 msgstr "Authentification immédiate ?"
@@ -279,7 +276,7 @@ msgid ""
 "If this is checked, clients will be immediately directed to their original "
 "request or your homepage (if set above), instead of being served a splash "
 "page."
-msgstr "Si cochée, les clients seront immédiatement conduits vers leur requête originale ou votre page d'accueil (si définie ci-dessus), au lieu de se voir servi une page de splash."
+msgstr "Si cochée, les clients seront immédiatement conduits vers leur requête originale ou votre page d'accueil (si définie ci-dessus), au lieu de se voir servi un splash screen."
 
 msgid "Interfaces"
 msgstr "Interfaces"
@@ -288,7 +285,7 @@ msgid "Interfaces that are used for Splash."
 msgstr "Interfaces utilisées par Splash."
 
 msgid "Network"
-msgstr "Network"
+msgstr "Réseau "
 
 msgid "Intercept client traffic on this Interfaces"
 msgstr "Intercepter le trafic sur ces interfaces"
@@ -328,32 +325,32 @@ msgid "Submit"
 msgstr "Soumettre"
 
 msgid "Reset"
-msgstr "Reset"
+msgstr "Réinitialiser"
 
 #: splashtext
 msgid "Welcome!"
 msgstr "Bienvenue !"
 
 msgid "You are now connected to a community wireless network."
-msgstr "Vous êtes actuellement connecté à un network sans fil communautaire."
+msgstr "Vous êtes maintenant connecté à un réseau sans fil communautaire."
 
 msgid ""
 "Access to the Internet may be provided by people donating connectivity to "
 "the network. Everyone on the network has to share, so please be aware and "
 "behave yourself accordingly:"
-msgstr "L'accès à Internet peut être fournie par des gens don de la connectivité au network. Tout le monde sur le network doit partager, donc s'il vous plaît soyez conscient et se comporter en conséquence vous-même:"
+msgstr "L'accès à Internet peut être fourni par les gens donnant la connectivité au réseau. Chaque personne sur le réseau doit partgaer ses ressources. Soyez conscient et agissez en conséquence :"
 
 msgid "Please"
-msgstr "Sil vous plait"
+msgstr "Merci"
 
 msgid "avoid large downloads and excessive filesharing."
-msgstr "éviter les gros téléchargements et le partage de fichiers excessif."
+msgstr "d'éviter les gros téléchargements et le partage excessif des fichiers."
 
 msgid "no illegal activities."
-msgstr "Aucune activité illégale."
+msgstr "pas d'activités illégales."
 
 msgid "If you like the network, please consider contributing!"
-msgstr "Si vous aimez le network, s'il vous plaît envisager de contribuer!"
+msgstr "Si vous aimez le réseau, vous êtes invité à y contribuer !"
 
 #: luci-commotion files/usr/share/commtion/patches/wifi_lua.patch
 msgid "auto"
@@ -369,7 +366,7 @@ msgid "Force TKIP and CCMP (AES)"
 msgstr "Forcer TKIP et CCMP (AES)"
 
 msgid "No Encryption"
-msgstr "Sans chiffrement"
+msgstr "Pas de chiffrement "
 
 msgid "WEP Open System"
 msgstr "WEP Open System"
@@ -379,7 +376,7 @@ msgstr "WEP Shared Key"
 
 #: htdocs/luci/static/commotion/index
 msgid "Welcome to Commotion!"
-msgstr "Bienvenue sur Commotion!"
+msgstr "Bienvenue à Commotion !"
 
 msgid ""
 "You are connected to a mesh network powered by the Commotion Wireless "
@@ -388,20 +385,20 @@ msgid ""
 "to collaborate and communicate. If you're an admin of this node in the "
 "network, you can use this interface to modify its settings. For more "
 "information about the project, please visit the site below:"
-msgstr "Vous êtes connecté à un réseau maillé propulsé par le Commotion Wireless Project. Le projet Commotion vise à créer une 'device-as-infrastructure' plate-forme de communications open source qui permet à des communautés et  à des \tactivistes de collaborer et de communiquer entre eux. Si vous êtes un admin de ce nœud dans le réseau, vous pouvez utiliser cette interface pour modifier les paramètres. Pour en savoir plus, veuillez consulter le site ci-dessous: "
+msgstr "Vous êtes connecté à un réseau maillé propulsé par le Commotion Wireless Project. Le projet Commotion vise à créer une 'device-as-infrastructure' plateforme de communications open source qui permet aux communautés et aux activistes de collaborer et de communiquer entre eux. Si vous êtes un admin de ce nœud dans le réseau, vous pouvez utiliser cette interface pour modifier les paramètres. Pour en savoir plus, veuillez consulter le site ci-dessous : "
 
 msgid "Commotion Wireless"
 msgstr "Commotion Wireless"
 
 msgid "Thanks for using our network!"
-msgstr "Merci pour avoir utilisé notre network!"
+msgstr "Nous vous remercions d'utiliser notre réseau !"
 
 #: htdocs/luci/static/resources/OSMLatLon
 msgid "OpenStreetMap"
 msgstr "OpenStreetMap"
 
 msgid "Map by"
-msgstr "Carte par"
+msgstr "Schématiser selon"
 
 msgid "License CC-BY-SA"
 msgstr "License CC-BY-SA"
@@ -417,14 +414,14 @@ msgid "Overview"
 msgstr "Aperçu"
 
 msgid "Front Page"
-msgstr "Première page"
+msgstr "Page d'accueil"
 
 msgid "Mesh Configuration Manual"
-msgstr "Mesh manuel de configuration"
+msgstr "Manuel de configuration du réseau maillé"
 
 #: luasrc/controller/commotion/meshprofile.lua
 msgid "Mesh Profile"
-msgstr "Profil de mesh"
+msgstr "Profil du réseau maillé"
 
 #: luasrc/model/cbi/commotion/meshconfig
 msgid "Configuration"
@@ -433,7 +430,7 @@ msgstr "Configuration"
 msgid ""
 "This configuration wizard will assist you in setting up your router for a "
 "Commotion network."
-msgstr "Cet assistant de configuration vous aidera à configurer votre routeur pour un network Commotion."
+msgstr "Cet assistant de configuration vous aidera à configurer votre routeur pour un réseau Commotion."
 
 msgid "Access Point"
 msgstr "Point d'accès"
@@ -448,38 +445,38 @@ msgid "Secure Access Point"
 msgstr "Point d'accès sécurisé"
 
 msgid "Mesh Backhaul"
-msgstr "Liaison maillée"
+msgstr "Réseau d'accès maillée (mesh backhaul)"
 
 msgid "Device Designation (BSSID)"
-msgstr "désignation de l'appareil (BSSID)"
+msgstr "Désignation de l'appareil (BSSID)"
 
 msgid ""
 "The device read name of this interface. (Letters A-F, and numbers 0-9 only)"
-msgstr "Le nom de cette interface lisible par l'appareil (uniquement des lettres A-F et des chiffres 0-9)"
+msgstr "Nom de cette interface lisible par l'appareil (uniquement des lettres A-F et des chiffres 0-9)"
 
 msgid "Network-wide Settings"
-msgstr "paramètres network à l'échelle"
+msgstr "Paramètres du réseau"
 
 msgid "5GHz Channel"
-msgstr "5GHz canal"
+msgstr "Canal 5 GHz "
 
 msgid "The 5GHz backhaul channel of the mesh network, if applicable."
-msgstr "Le canal d'amenée 5GHz du réseau maillé, si celà est applicable"
+msgstr "Le canal backhaul 5 GHz du réseau maillé, le cas échéant."
 
 msgid "2GHz Channel"
-msgstr "2GHz canal"
+msgstr "Canal 2 GHz "
 
 msgid "The 2.4GHz backhaul channel of the mesh network, if applicable"
-msgstr "Le canal d'amenée 2,4GHz du réseau maillé, si celà est applicable"
+msgstr "Le canal backhaul 2,4 GHz du réseau maillé, le cas échéant."
 
 msgid "Settings specific to this node"
-msgstr "Les paramètres spécifiques à ce noeud."
+msgstr "Paramètres spécifiques à ce noeud"
 
 msgid "DHCP Timeout"
 msgstr "Timeout DHCP"
 
 msgid "How many seconds to wait on boot for a DHCP lease from the gateway"
-msgstr "Combien de secondes à attendre au démarrage pour un bail DHCP de la part de la passerelle "
+msgstr "Combien de secondes à attendre au démarrage pour un bail DHCP depuis la passerelle "
 
 #: luasrc/view/commotion/meshprofile
 msgid "Node Profiles"
@@ -495,30 +492,28 @@ msgid "Select an interface"
 msgstr "Sélectionner une interface"
 
 msgid "Select a profile to apply"
-msgstr "Sélectionnez un profil à appliquer"
+msgstr "Sélectionner un profil à appliquer"
 
 msgid "Apply and Save"
 msgstr "Appliquer et Enregistrer"
 
-#: commotion-openwrt-theme
-
 #: commotion-openwrt-theme /files/templates/header.htm
 msgid "Unsaved Changes"
-msgstr "Les modifications non enregistrées"
+msgstr "Modifications non enregistrées"
 
 msgid "Auto Refresh"
 msgstr "Rafraîchissement automatique "
 
 msgid "No password set!"
-msgstr "Aucun mot de passe a été défini!"
+msgstr "Aucun mot de passe n'est défini !"
 
 msgid ""
 "There is no password set on this router. Please configure a root password to"
 " protect the web interface and enable SSH."
-msgstr "Il n'ya pas de mot de passe sur ce routeur. Veuillez configurer un mot de passe root pour protéger l'interface web et activer le SSH."
+msgstr "Aucun mot de passe n'est défini sur ce routeur. Veuillez configurer un mot de passe root pour protéger l'interface web et activer SSH."
 
 msgid "Go to password configuration..."
-msgstr "Aller à la configuration du mot de passe ..."
+msgstr "Rendez-vous sur la configuration du mot de passe ..."
 
 #: /files/templates/footer.htm
 msgid "QuickStart"
@@ -529,7 +524,7 @@ msgstr "Administration"
 
 #: /files/luasrc/view/cbi/full_valueheader.htm
 msgid "Go to relevant configuration page"
-msgstr "Visiter la page de configuration pertinente "
+msgstr "Rendez-vous sur la page de configuration appropriée "
 
 #: luci-commotion /luasrc/view/commotion/serval_keyring.htm
 msgid "Serval Keyring"
@@ -541,13 +536,13 @@ msgid ""
 "Keyring. On this page you can download the existing Serval keyring for this "
 "node, to back it up or to use when adding new nodes to your network. You can"
 " also generate a new Serval Keyring, or upload one from your computer."
-msgstr "Le porte-clés Serval est utilise pour signer tout le trafic réseau sur un réseau maille Commotion. Il faut que chaque nœud sur votre réseau Commotion utilise le même porte-clés Serval. Sur cette page, vous pouvez télécharger un porte-clés Serval existant pour ce nœud, afin de faire un back-up ou de l'utiliser au moment d'ajouter des nouveaux nœuds a votre réseau. Vous pouvez également générer un nouveau porte-clés Serval ou bien en uploader un à partir de votre ordinateur. "
+msgstr "Le porte-clés Serval est utilisé pour signer tout le trafic réseau sur un réseau maillé Commotion. Il faut que chaque nœud sur votre réseau Commotion utilise le même porte-clés Serval. Sur cette page, vous pouvez télécharger un porte-clés Serval existant pour ce nœud, afin de faire un back-up ou de l'utiliser au moment d'ajouter des nouveaux nœuds à votre réseau. Vous pouvez également générer un nouveau porte-clés Serval ou en uploader un à partir de votre ordinateur. "
 
 msgid "Download a Serval Keyring"
 msgstr "Télécharger un porte-clés Serval "
 
 msgid "Download your current Serval keyring"
-msgstr "Télécharger votre porte-clés Serval actuel"
+msgstr "Téléchargez votre porte-clés Serval actuel"
 
 msgid "Upload a Serval Keyring"
 msgstr "Uploader un porte-clés Serval"
@@ -559,7 +554,7 @@ msgid "Upload a Keyring"
 msgstr "Uploader un porte-clés"
 
 msgid "Upload a Serval key file file from your own computer"
-msgstr "Uploader un fichier de clé Serval à partir de votre ordinateur"
+msgstr "Uploadez un fichier de clés Serval à partir de votre ordinateur"
 
 msgid "Create a new Serval Keyring"
 msgstr "Créer un nouveau porte-clés Serval"
@@ -568,14 +563,13 @@ msgid ""
 "Click on the button below to create a new keyring. This will DELETE the "
 "existing keyring on the device. We highly suggest you download any existing "
 "network keyrings you have before creating a new keyring."
-msgstr "Cliquer sur le bouton ci-dessous pour créer un nouveau porte-clés. Ceci va supprimer le porte-clés existant sur l'appareil. Nous vous suggérons vivement de télécharger tout porte-clés existant avant de créer un nouveau porte-clés."
+msgstr "Cliquez sur le bouton ci-dessous pour créer un nouveau porte-clés. Ceci va supprimer le porte-clés existant sur l'appareil. Nous vous suggérons fortement de télécharger tout porte-clés existant avant de créer un nouveau porte-clés."
 
 msgid "New Keyring"
 msgstr "Un nouveau porte-clés"
 
 msgid "Create a new keyring on this device, replacing the existing keyring."
-msgstr "Créer un nouveau porte-clés sur cet appareil, en remplaçant le porte-clés existant."
+msgstr "Créer un nouveau porte-clés sur cet appareil en remplaçant le porte-clés existant."
 
 msgid "Create New Keyring"
 msgstr "Créer un nouveau trousseau de clés"
-

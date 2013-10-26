@@ -1,11 +1,16 @@
+# 
+# Translators:
+# belenbarrospena <belenbarrospena@gmail.com>, 2013
+# Excelente <dny1020@aol.com>, 2013
+# strel, 2013
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: Commotion User Interface\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-08-01 02:43+0500\n"
-"PO-Revision-Date: 2013-08-01 02:43+0500\n"
-"Last-Translator: critzo <critzo@opentechinstitute.org>\n"
-"Language-Team: critzo <critzo@opentechinstitute.org>\n"
+"PO-Revision-Date: 2013-10-12 17:47+0000\n"
+"Last-Translator: strel\n"
+"Language-Team: Spanish (http://www.transifex.com/projects/p/commotion-user-interface/language/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -17,426 +22,553 @@ msgid "Access Point Name"
 msgstr "Nombre de Punto de Acceso"
 
 msgid "What would you like to name your node's access point?"
-msgstr "¿Qué te gustaría para nombrar punto de acceso de su nodo de?"
+msgstr "¿Cómo le gustaría nombrar al punto de acceso de su nodo?"
 
-msgid "This is the name that users will see when they search for wireless access."
-msgstr "Este es el nombre que verán los usuarios cuando buscan acceso inalámbrico."
+msgid ""
+"This is the name that users will see when they search for wireless access."
+msgstr "Este es el nombre que verán los usuarios cuando busquen acceso inalámbrico."
 
-msgid "Choose a name that is 5-12 characters. You can use numbers, letters &amp; special characters. The name must be unique in the network. You can change the node name later by logging into the node administration page."
-msgstr "Elija un nombre que es 5-12 caracteres. Puede utilizar números, letras y caracteres especiales. El nombre debe ser único en la red. Puede cambiar el nombre de nodo más adelante, acceda a la página de administración de nodos."
+msgid ""
+"Choose a name that is 5-12 characters. You can use numbers, letters and "
+"special characters. The name must be unique in the network. You can change "
+"the node name later by logging into the node administration page."
+msgstr "Elija un nombre de entre 5-12 caracteres. Puede utilizar números, letras y caracteres especiales. El nombre debe ser único en la red. Puede cambiar el nombre del nodo más adelante accediendo a la página de administración de nodos."
 
-msgid "Choose a password that is between 9 and 30 characters. This password can be numbers, letters, and special characters."
-msgstr "Elija una contraseña que es entre 9 y 30 caracteres. Esta contraseña puede contener números, letras y caracteres especiales."
+msgid ""
+"Choose a password that is between 9 and 30 characters. This password can be "
+"numbers, letters, and special characters."
+msgstr "Elija una contraseña de entre 9 y 30 caracteres. Esta contraseña puede contener números, letras y caracteres especiales."
 
-msgid "This password is used to access the administration menus on this device."
+msgid ""
+"This password is used to access the administration menus on this device."
 msgstr "Esta contraseña se utiliza para acceder a los menús de administración de este dispositivo."
 
 msgid "Redirecting..."
-msgstr "Redireccionando ..."
+msgstr "Redirigiendo..."
 
 msgid "System"
 msgstr "Sistema"
 
 msgid "Changes applied."
-msgstr "Los cambios aplicados."
+msgstr "Cambios aplicados."
 
 msgid "Waiting for changes to be applied..."
-msgstr "Esperando a los cambios que se aplicarán ..."
+msgstr "Esperando a que se apliquen los cambios..."
 
 msgid "The name of your mesh network is:"
-msgstr "El nombre de su red de malla es:"
+msgstr "El nombre de su red de malla ('mesh') es:"
 
 msgid "Your node name is:"
-msgstr "El nombre de nodo es:"
+msgstr "El nombre de su nodo es:"
 
-msgid "When people connect to your node wirelessly, they will connect using this name:"
-msgstr "Cuando las personas se conectan a su nodo de forma inalámbrica, que se conectará con este nombre:"
+msgid ""
+"When people connect to your node wirelessly, they will connect using this "
+"name:"
+msgstr "El nombre que identifica su nodo para aquellos que quieran establecer una conexión inalámbrica:"
 
-msgid "After configuring your node, you can change the node name on the node administration page."
-msgstr "Una vez configurado el nodo, se puede cambiar el nombre de nodo en la página de administración de nodo."
+msgid ""
+"After configuring your node, you can change the node name on the node "
+"administration page."
+msgstr "Cuando su nodo esté configurado, puede cambiarle el nombre en la página de administración del nodo."
 
 msgid "Click here if your browser doesn't redirect you within one minute"
-msgstr "Haga clic aquí si su navegador no te redirecciona en un minuto"
+msgstr "Si el navegador no le redirige en un minuto, haga clic aquí."
 
-msgid "Choose a name that is 5-20 characters. You can use letters and numbers ONLY. The name will be made unique in the network through the addition of the bolded number next to the input box. You can change the node name later by logging into the node administration page."
-msgstr "Elija un nombre que es 5-20 caracteres. Se pueden utilizar letras y números. El nombre se hizo único en la red a través de la adición de la serie en negrita junto al cuadro de entrada. Puede cambiar el nombre de nodo más adelante, acceda a la página de administración de nodos."
+msgid ""
+"Choose a name that is 5-20 characters. You can use letters and numbers ONLY."
+" The name will be made unique in the network through the addition of the "
+"bolded number next to the input box. You can change the node name later by "
+"logging into the node administration page."
+msgstr "Escoja un nombre que tenga entre 5 y 20 caracteres. Incluya SÓLO letras y números. Para asegurarnos de que su nombre es único en la red, le añadimos el número en negrita que ve a continuación del campo de entrada de texto. Puede cambiar el nombre del nodo cuando quiera accediendo a la página de administración del nodo."
 
 msgid "Node Name"
-msgstr "Nombre de nodo"
+msgstr "Nombre del nodo"
 
-msgid "This value is used by other users and devices to find your network wirelessly and over the mesh. This value can be composed of letter, number and hyphens. (Hyphens can not be used at the beggining or end of the name.)"
-msgstr "Este valor es utilizado por otros usuarios y dispositivos para encontrar la red inalámbrica y sobre la malla. Este valor puede estar compuesta de la letra, número y guiones. (Los guiones no se pueden utilizar en la beggining o al final del nombre.)"
+msgid ""
+"This value is used by other users and devices to find your network "
+"wirelessly and over the mesh. This value can be composed of letter, number "
+"and hyphens. (Hyphens can not be used at the beggining or end of the name.)"
+msgstr "Otros usuarios y dispositivos utilizarán este nombre para encontrar su red de forma inalámbrica y en la red de malla ('mesh'). El nombre puede incluir letras, números y guiones (los guiones no pueden usarse al principio o al final del nombre)."
 
 msgid "Your Node Name"
-msgstr "Su nombre de nodo"
+msgstr "El nombre de su nodo"
 
 msgid "Require a password for others to connect to your node."
-msgstr "Solicitar una contraseña para que otros puedan conectarse a su nodo."
-
-msgid "Choose a password that is between 9 and 30 characters. This password can be numbers, letters, and special characters."
-msgstr "Elija una contraseña que es entre 9 y 30 caracteres. Esta contraseña puede contener números, letras y caracteres especiales."
+msgstr "Solicitar contraseña a quienes quieran conectarse a su nodo."
 
 msgid "WiFi Password"
-msgstr "WiFi Contraseña"
+msgstr "Contraseña WiFi"
 
 msgid "This password is required for others to use your wifi."
-msgstr "Esta contraseña es necesaria para que otros usen su wifi."
+msgstr "Quien quiera usar su WiFi deberá introducir esta contraseña."
 
 msgid "Retype your password here"
-msgstr "Vuelva a escribir la contraseña aquí"
+msgstr "Escriba otra vez su contraseña aquí"
 
-msgid "If you would like to start the QuickStart configuration process over please click the above. WARNING: The quickstart process allows modification of this device by non-administrative users when it is active. Please make sure that you only restart the quickstart when you have time to finish the entire process."
-msgstr "Si usted desea iniciar el proceso de configuración de inicio rápido por favor haga clic sobre las anteriores. ADVERTENCIA: El proceso de inicio rápido permite la modificación de este dispositivo los usuarios no administrativos cuando está activo. Por favor, asegúrese de que sólo se reinicie el inicio rápido cuando se tiene tiempo para terminar todo el proceso."
+msgid ""
+"If you would like to start the QuickStart configuration process over please "
+"click the above. WARNING: The quickstart process allows modification of this"
+" device by non-administrative users when it is active. Please make sure that"
+" you only restart the quickstart when you have time to finish the entire "
+"process."
+msgstr "Si quiere volver a empezar el proceso de configuración para inicio rápido haga clic en lo anterior. ADVERTENCIA: Mientras está activo, el proceso de configuración de inicio rápido permite que los usuarios no-administradores realicen modificaciones en este dispositivo. Asegúrese de que sólo reinicia este proceso cuando tenga tiempo de completarlo, y nunca lo deje a medias."
 
 msgid "Click on the field below to upload a file."
-msgstr "Haga clic en el campo de abajo para enviar un archivo."
+msgstr "Haga clic en el campo de debajo para subir un fichero."
 
 msgid "Upload"
 msgstr "Subir"
 
-msgid "Congratulations! You have a Commotion node and are ready to join a network or start a new one. This wizard will guide you through the setup. The setup process should take about 10 minutes."
-msgstr "¡Enhorabuena! Usted tiene un nodo Commotion y está listo para unirse a una red o empezar uno nuevo. Este asistente le guiará a través de la configuración. El proceso de instalación debe tomar alrededor de 10 minutos."
+msgid ""
+"Congratulations! You have a Commotion node and are ready to join a network "
+"or start a new one. This wizard will guide you through the setup. The setup "
+"process should take about 10 minutes."
+msgstr "¡Enhorabuena! Tiene un nodo Commotion y está listo para conectarse a una red existente o crear una nueva. Este asistente le guiará en el proceso, que requiere unos 10 minutos."
 
 msgid "You can still change settings after setup is complete."
-msgstr "Usted todavía puede cambiar la configuración después de la instalación se ha completado."
+msgstr "Puede cambiar sus preferencias en cualquier momento una vez haya completado la configuración."
 
-#: commotion-bug-info
-
-#: luasrc/controller/debugger.lua
+#: commotion-bug-info luasrc/controller/debugger.lua
 msgid "Commotion Debugging Helper"
-msgstr "translated-string"
+msgstr "Asistente de depuración ('debug') de Commotion"
 
 #: luasrc/view/debugger.htm
-msgid "The information you are about to download contains private information about this device and the network it is connected to. Only give this information to people you trust. Do you understand?"
-msgstr "translated-string"
+msgid ""
+"The information you are about to download contains private information about"
+" this device and the network it is connected to. Only give this information "
+"to people you trust. Do you understand?"
+msgstr "Los datos que está a punto de descargar incluyen información privada sobre este dispositivo y sobre la red a la que está conectado. Sólo debería compartir esta información con gente de su confianza. ¿Lo ha comprendido?"
 
 #: luasrc/view/debugger.htm
 msgid "Commotion Bug Info"
-msgstr "translated-string"
+msgstr "Información de error de Commotion"
 
 #: luasrc/view/debugger.htm
 msgid "Name"
-msgstr "translated-string"
+msgstr "Nombre"
 
 #: luasrc/view/debugger.htm
 msgid "Contact Info"
-msgstr "translated-string"
+msgstr "Datos de contacto"
 
 #: luasrc/view/debugger.htm
 msgid "What were you doing on the device when the error occurred?"
-msgstr "translated-string"
+msgstr "Describa lo que estaba haciendo cuando se produjo el error"
 
 #: luasrc/view/debugger.htm
 msgid "Please describe the behavior you expected"
-msgstr "translated-string"
+msgstr "Por favor, describa el comportamiento que esperaba"
 
 #: luasrc/view/debugger.htm
 msgid "Please describe the behavior you experienced that you believe is wrong"
-msgstr "translated-string"
+msgstr "Por favor, describa el comportamiento obtenido que piensa que es incorrecto"
 
 #: luasrc/view/debugger.htm
 msgid "Debugging Info"
-msgstr "translated-string"
+msgstr "Información de depuración"
 
 #: luasrc/view/debugger.htm
 msgid "Mesh Network Information"
-msgstr "translated-string"
+msgstr "Información sobre la red de malla ('mesh')"
 
 #: luasrc/view/debugger.htm
 msgid "Router Status"
-msgstr "translated-string"
+msgstr "Estado del router"
 
 #: luasrc/view/debugger.htm
 msgid "Router Traffic Routing Rules"
-msgstr "translated-string"
+msgstr "Reglas de enrutamiento de tráfico del router"
 
 #: luasrc/view/debugger.htm
 msgid "All Info"
-msgstr "translated-string"
+msgstr "Toda la información"
 
 #: luasrc/view/debugger.htm
 msgid "Create Bug Info File"
-msgstr "translated-string"
+msgstr "Crear fichero de información sobre el error"
 
-#: commotion-splash
-
-#: cbi/commotion/splash/splashtext.lua
+#: commotion-splash cbi/commotion/splash/splashtext.lua
 msgid "Edit Splash text"
-msgstr ""
+msgstr "Editar texto de página de presentación ('splash')"
 
-msgid "You can enter your own text that is displayed to clients here. It is possible to use the following markers: The value of GatewayName as set in nodogsplash.conf. A URL which encodes a unique token and the URL of the user's original web request. The directory in nodogsplash's web hierarchy where images to be displayed in the splash page must be located."
-msgstr ""
+msgid ""
+"You can enter your own text that is displayed to clients here. It is "
+"possible to use the following markers: The value of GatewayName as set in "
+"nodogsplash.conf. A URL which encodes a unique token and the URL of the "
+"user's original web request. The directory in nodogsplash's web hierarchy "
+"where images to be displayed in the splash page must be located."
+msgstr "Puede introducir su propio texto que será mostrado a los clientes aquí. Es posible usar los siguientes marcadores: El valor de GatewayName (nombre de la pasarela) tal como nodogsplash.conf establece. Una URL que codifica una única credencial ('token') y la URL de la petición web original del usuario. El directorio en la jerarquía web de nodogsplash donde las imágenes a mostrarse en la página de presentación ('splash') deben estar emplazadas."
 
 #: controller/commotion/splash/splash.lua
 msgid "splash: invalid parameters"
-msgstr ""
+msgstr "página de presentación ('splash'): parámetros no válidos"
 
 msgid "Clearance time must be an integer greater than zero"
-msgstr ""
+msgstr "El periodo de autorización debe ser un entero mayor que cero"
 
 msgid "Invalid redirect"
-msgstr ""
+msgstr "Redireccionamiento no válido"
 
 msgid "Invalid autoauth"
-msgstr ""
+msgstr "Autoautentificación no válida"
 
 msgid "Invalid submission...zone"
-msgstr ""
+msgstr "Zona de envío no válida"
 
 msgid "doesn't exit"
-msgstr ""
+msgstr "no pudo salir"
 
 msgid "Whitelist entries must be a valid MAC address"
-msgstr ""
+msgstr "Las entradas de la lista blanca deben ser direcciones MAC válidas"
 
 #: splash
 msgid "Local Applications"
-msgstr ""
+msgstr "Aplicaciones locales"
 
 msgid "Internet"
-msgstr ""
+msgstr "Internet"
 
 #: splash_settings
 msgid "Captive Portal"
-msgstr ""
+msgstr "Portal cautivo"
 
-msgid "Nodogsplash offers a simple way to provide restricted access to an internet connection."
-msgstr ""
+msgid ""
+"Nodogsplash offers a simple way to provide restricted access to an internet "
+"connection."
+msgstr "Nodogsplash es una forma sencilla de proporcionar acceso restringido a una conexión a Internet."
 
 msgid "General"
-msgstr ""
+msgstr "General"
 
 msgid "Clearance time"
-msgstr ""
+msgstr "Periodo de autorización"
 
-msgid "Clients that have accepted the captive portal are allowed to use the network for that many minutes."
-msgstr ""
+msgid ""
+"Clients that have accepted the captive portal are allowed to use the network"
+" for that many minutes."
+msgstr "Los clientes que aceptan el portal cautivo (autentificación transparente) pueden usar la red durante el tiempo establecido."
 
 msgid "Redirect to Homepage?"
-msgstr ""
+msgstr "¿Redirigir a la página de principal?"
 
 msgid "help"
-msgstr ""
+msgstr "Ayuda"
 
-msgid "If this is checked, clients will be redirected to your homepage, instead of to their original request."
-msgstr ""
+msgid ""
+"If this is checked, clients will be redirected to your homepage, instead of "
+"to their original request."
+msgstr "Si marca esta opción, los clientes serán redirigidos a su página principal, en lugar de a la página que soliciten."
 
 msgid "Homepage"
-msgstr ""
+msgstr "Página principal"
 
-msgid "After authentication, clients will be redirected to this URL instead of to their original request."
-msgstr ""
+msgid ""
+"After authentication, clients will be redirected to this URL instead of to "
+"their original request."
+msgstr "Una vez autentificados, los clientes serán redirigidos a este URL en vez de a la página que solicitaron. "
 
 msgid "Immediately Authenticate?"
-msgstr ""
+msgstr "¿Autentificar inmediatamente?"
 
-msgid "If this is checked, clients will be immediately directed to their original request or your homepage (if set above), instead of being served a splash page."
-msgstr ""
+msgid ""
+"If this is checked, clients will be immediately directed to their original "
+"request or your homepage (if set above), instead of being served a splash "
+"page."
+msgstr "Si esto está marcado, los clientes serán inmediatamente dirigidos hacia sus peticiones originales o a su página principal (si se estableció arriba), en lugar de que se les sirva una página de presentación ('splash')."
 
 msgid "Interfaces"
-msgstr ""
+msgstr "Interfaces"
 
 msgid "Interfaces that are used for Splash."
-msgstr ""
+msgstr "Interfaces de red que se usan para la página de presentación ('splash')."
 
 msgid "Network"
-msgstr ""
+msgstr "Red"
 
 msgid "Intercept client traffic on this Interfaces"
-msgstr ""
+msgstr "Interceptar tráfico de clientes sobre estas interfaces"
 
 msgid "Whitelist"
-msgstr ""
+msgstr "Lista blanca"
 
-msgid "MAC addresses of whitelisted clients. These do not need to accept the splash and are not bandwidth limited."
-msgstr ""
+msgid ""
+"MAC addresses of whitelisted clients. These do not need to accept the splash"
+" and are not bandwidth limited."
+msgstr "Direcciones MAC de clientes en la lista blanca. Estos no necesitan aceptar la página de presentación ('splash') y no se les limita el ancho de banda."
 
 msgid "MAC Address"
-msgstr ""
+msgstr "Direcciones MAC"
 
 msgid "Blacklist"
-msgstr ""
+msgstr "Lista negra"
 
 msgid "MAC addresses in this list are blocked."
-msgstr ""
+msgstr "Las direcciones MAC en esta lista están bloqueadas."
 
 msgid "Allowed hosts/subnets"
-msgstr ""
+msgstr "Equipos/subredes permitidos"
 
-msgid "Hosts and Networks that are listed here are excluded from splashing, i.e. they are always allowed."
-msgstr ""
+msgid ""
+"Hosts and Networks that are listed here are excluded from splashing, i.e. "
+"they are always allowed."
+msgstr "A los equipos y redes listados aquí se les excluye del envío de la página de presentación ('splash'), es decir, que siempre tienen permiso."
 
 msgid "IP Address"
-msgstr ""
+msgstr "Dirección IP"
 
 msgid "CIDR notation optional (e.g. 192.168.1.0/24)"
-msgstr ""
+msgstr "Notación CIDR opcional (ej. 192.168.1.0/24)"
 
 msgid "Submit"
-msgstr ""
+msgstr "Enviar"
 
 msgid "Reset"
-msgstr ""
+msgstr "Restablecer"
 
 #: splashtext
 msgid "Welcome!"
-msgstr ""
+msgstr "¡Bienvenido!"
 
 msgid "You are now connected to a community wireless network."
-msgstr ""
+msgstr "Se ha conectado a una red inalámbrica comunitaria."
 
-msgid "Access to the Internet may be provided by people donating connectivity to the network. Everyone on the network has to share, so please be aware and behave yourself accordingly:"
-msgstr ""
+msgid ""
+"Access to the Internet may be provided by people donating connectivity to "
+"the network. Everyone on the network has to share, so please be aware and "
+"behave yourself accordingly:"
+msgstr "El acceso puede ser provisto por gente que dona su conectividad a la red. Todos los participantes en la red tienen que compartir, así que por favor piense en los demás al utilizarla. "
 
 msgid "Please"
-msgstr ""
+msgstr "Por favor"
 
 msgid "avoid large downloads and excessive filesharing."
-msgstr ""
+msgstr "evite grandes descargas y compartir ficheros en exceso."
 
 msgid "no illegal activities."
-msgstr ""
+msgstr "no hay actividades ilegales."
 
 msgid "If you like the network, please consider contributing!"
-msgstr ""
+msgstr "Si le gusta la red, por favor ¡considere contribuir!"
 
-#: luci-commotion
-
-#: files/usr/share/commtion/patches/wifi_lua.patch
+#: luci-commotion files/usr/share/commtion/patches/wifi_lua.patch
 msgid "auto"
-msgstr ""
+msgstr "automático"
 
 msgid "Force CCMP (AES)"
-msgstr ""
+msgstr "Forzar CCMP (AES)"
 
 msgid "Force TKIP"
-msgstr ""
+msgstr "Forzar TKIP"
 
 msgid "Force TKIP and CCMP (AES)"
-msgstr ""
+msgstr "Forzar TKIP y CCMP (AES)"
 
 msgid "No Encryption"
-msgstr ""
+msgstr "Sin cifrado"
 
 msgid "WEP Open System"
-msgstr ""
+msgstr "WEP de sistema abierto"
 
 msgid "WEP Shared Key"
-msgstr ""
+msgstr "WEP de clave compartida"
 
 #: htdocs/luci/static/commotion/index
-
 msgid "Welcome to Commotion!"
-msgstr ""
+msgstr "¡Bienvenido a Commotion!"
 
-msgid "You are connected to a mesh network powered by the Commotion Wireless Project. The Commotion project seeks to create an open-source, device-as-infrastructure communication platform that allows communities and activists to collaborate and communicate. If you're an admin of this node in the network, you can use this interface to modify its settings. For more information about the project, please visit the site below:"
-msgstr ""
+msgid ""
+"You are connected to a mesh network powered by the Commotion Wireless "
+"Project. The Commotion project seeks to create an open-source, device-as-"
+"infrastructure communication platform that allows communities and activists "
+"to collaborate and communicate. If you're an admin of this node in the "
+"network, you can use this interface to modify its settings. For more "
+"information about the project, please visit the site below:"
+msgstr "Está conectado a una red de malla ('mesh') impulsada por el Commotion Wireless Project. El proyecto Commotion persigue crear una plataforma de comunicación inalámbrica de código-abierto, con los dispositivos-como-infraestructura, que permita colaborar y comunicarse a comunidades y activistas. Si es un administrador de este nodo de la red, puede usar esta interfaz para modificar sus ajustes. Para más información sobre el proyecto, visite el siguiente sitio web:"
 
 msgid "Commotion Wireless"
-msgstr ""
+msgstr "Commotion Wireless"
 
 msgid "Thanks for using our network!"
-msgstr ""
+msgstr "¡Gracias por usar nuestra red!"
 
 #: htdocs/luci/static/resources/OSMLatLon
-
 msgid "OpenStreetMap"
-msgstr ""
+msgstr "OpenStreetMap"
 
 msgid "Map by"
-msgstr ""
+msgstr "Mapa realizado por"
 
 msgid "License CC-BY-SA"
-msgstr ""
+msgstr "Licencia CC-BY-SA"
 
 msgid "Latitude"
-msgstr ""
+msgstr "Latitud"
 
 msgid "Longitude"
-msgstr ""
+msgstr "Longitud"
 
 #: luasrc/controller/commotion/commotion.luasrc
-
 msgid "Overview"
-msgstr ""
+msgstr "Vistazo"
 
 msgid "Front Page"
-msgstr ""
+msgstr "Página principal"
 
 msgid "Mesh Configuration Manual"
-msgstr ""
+msgstr "Manual de configuración de red de malla ('mesh')"
 
 #: luasrc/controller/commotion/meshprofile.lua
-
 msgid "Mesh Profile"
-msgstr ""
+msgstr "Perfil de red de malla ('mesh')"
 
 #: luasrc/model/cbi/commotion/meshconfig
-
 msgid "Configuration"
-msgstr ""
+msgstr "Configuración"
 
-msgid "This configuration wizard will assist you in setting up your router for a Commotion network."
-msgstr ""
+msgid ""
+"This configuration wizard will assist you in setting up your router for a "
+"Commotion network."
+msgstr "Este asistente de configuración le ayudará a configurar su router para una red Commotion."
 
 msgid "Access Point"
-msgstr ""
+msgstr "Punto de acceso"
 
 msgid "Name (SSID)"
-msgstr ""
+msgstr "Nombre (SSID)"
 
 msgid "The public facing name of this interface"
-msgstr ""
+msgstr "El nombre público de esta interfaz"
 
 msgid "Secure Access Point"
-msgstr ""
+msgstr "Punto de acceso seguro"
 
 msgid "Mesh Backhaul"
-msgstr ""
+msgstr "Retorno de la red de malla ('mesh')"
 
 msgid "Device Designation (BSSID)"
-msgstr ""
+msgstr "Designación de dispositivo (BSSID)"
 
-msgid "The device read name of this interface. (Letters A-F, and numbers 0-9 only)"
-msgstr ""
+msgid ""
+"The device read name of this interface. (Letters A-F, and numbers 0-9 only)"
+msgstr "El dispositivo lee el nombre de esta interfaz (sólo letras A-F, y números 0-9)."
 
 msgid "Network-wide Settings"
-msgstr ""
+msgstr "Configuraciones para toda la red"
 
 msgid "5GHz Channel"
-msgstr ""
+msgstr "Canal de 5GHz"
 
 msgid "The 5GHz backhaul channel of the mesh network, if applicable."
-msgstr ""
+msgstr "El canal de retorno de 5GHz de la red de malla ('mesh'), si fuera aplicable."
 
 msgid "2GHz Channel"
-msgstr ""
+msgstr "Canal de 2GHz"
 
 msgid "The 2.4GHz backhaul channel of the mesh network, if applicable"
-msgstr ""
+msgstr "El canal de retorno de 2,4GHz de la red de malla ('mesh'), si fuera aplicable."
 
 msgid "Settings specific to this node"
-msgstr ""
+msgstr "Ajustes particulares a este nodo"
 
 msgid "DHCP Timeout"
-msgstr ""
+msgstr "Periodo de espera para DHCP"
 
 msgid "How many seconds to wait on boot for a DHCP lease from the gateway"
-msgstr ""
+msgstr "Cuántos segundos esperar durante el arranque por una asignación DHCP desde la pasarela ('gateway')"
 
 #: luasrc/view/commotion/meshprofile
-
 msgid "Node Profiles"
-msgstr ""
+msgstr "Perfiles de nodo"
 
-msgid "If your node includes configuration profiles for multiple Commotion networks, this form allows you to set your defaults. We recommend that you reboot your node after changing these settings."
-msgstr ""
+msgid ""
+"If your node includes configuration profiles for multiple Commotion "
+"networks, this form allows you to set your defaults. We recommend that you "
+"reboot your node after changing these settings."
+msgstr "Si su nodo incluye perfiles de configuración para múltiples redes Commotion, este formulario le permite establecer sus configuraciones por defecto. Le recomendamos que reinicie su nodo tras cambiarlas."
 
 msgid "Select an interface"
-msgstr ""
+msgstr "Seleccione una interfaz"
 
 msgid "Select a profile to apply"
-msgstr ""
+msgstr "Seleccione un perfil a aplicar"
 
 msgid "Apply and Save"
-msgstr ""
+msgstr "Aplicar y guardar"
+
+#: commotion-openwrt-theme /files/templates/header.htm
+msgid "Unsaved Changes"
+msgstr "Cambios no guardados"
+
+msgid "Auto Refresh"
+msgstr "Auto refrescar"
+
+msgid "No password set!"
+msgstr "¡No hay contraseña establecida!"
+
+msgid ""
+"There is no password set on this router. Please configure a root password to"
+" protect the web interface and enable SSH."
+msgstr "No hay contraseña establecida en este router. Configure una contraseña de root (administrador) para proteger la interfaz web y habilitar SSH."
+
+msgid "Go to password configuration..."
+msgstr "Ir a la configuración de contraseña..."
+
+#: /files/templates/footer.htm
+msgid "QuickStart"
+msgstr "Inicio rápido"
+
+msgid "Administration"
+msgstr "Administración"
+
+#: /files/luasrc/view/cbi/full_valueheader.htm
+msgid "Go to relevant configuration page"
+msgstr "Ir a la página relevante de la configuración"
+
+#: luci-commotion /luasrc/view/commotion/serval_keyring.htm
+msgid "Serval Keyring"
+msgstr "Grupo de claves Serval"
+
+msgid ""
+"The Serval Keyring is used to sign all network traffic on a Commotion mesh "
+"network. Every node on your Commotion network should use the same Serval "
+"Keyring. On this page you can download the existing Serval keyring for this "
+"node, to back it up or to use when adding new nodes to your network. You can"
+" also generate a new Serval Keyring, or upload one from your computer."
+msgstr "El grupo de claves ('keyring') Serval se usa para firmar todo el tráfico de red en una red de malla ('mesh') Commotion. Cada nodo en su red Commotion debe usar el mismo grupo de claves Serval. En esta página puede descargar el grupo de claves Serval existente para este nodo, para guardarlo como respaldo o para usarlo cuando se añadan nodos nuevos a su red. También puede generar un grupo de claves Serval nuevo, o subir uno desde su equipo."
+
+msgid "Download a Serval Keyring"
+msgstr "Descargar un grupo de claves Serval"
+
+msgid "Download your current Serval keyring"
+msgstr "Descarga su grupo de claves Serval actual"
+
+msgid "Upload a Serval Keyring"
+msgstr "Subir un grupo de claves Serval"
+
+msgid "Click on the field below to upload a keyring."
+msgstr "Haga clic en el siguiente campo para subir un grupo de claves."
+
+msgid "Upload a Keyring"
+msgstr "Subir un grupo de claves"
+
+msgid "Upload a Serval key file file from your own computer"
+msgstr "Sube un fichero de grupo de claves Serval desde su propio equipo"
+
+msgid "Create a new Serval Keyring"
+msgstr "Crear un grupo de claves Serval nuevo"
+
+msgid ""
+"Click on the button below to create a new keyring. This will DELETE the "
+"existing keyring on the device. We highly suggest you download any existing "
+"network keyrings you have before creating a new keyring."
+msgstr "Haga clic en el siguiente botón para crear un grupo de claves nuevo. Esto BORRARÁ el grupo de claves existente en el dispositivo. Le recomendamos que descarge los grupos de claves de cualquier red existente que tenga antes de crear un grupo de claves nuevo"
+
+msgid "New Keyring"
+msgstr "Nuevo grupo de claves"
+
+msgid "Create a new keyring on this device, replacing the existing keyring."
+msgstr "Crea un grupo de claves nuevo en este dispositivo, reemplazando al grupo de claves existente."
+
+msgid "Create New Keyring"
+msgstr "Crear un nuevo grupo de claves"
+
