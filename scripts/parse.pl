@@ -4,21 +4,52 @@ use strict;
 use Data::Dumper;
 use App::Ack;
 use Git::Repository; 
-use File::Find::Rule;
+use File::Path qw(make_path remove_tree);
+#use Text::Balanced
+#use File::Find::Rule;
 
-my $source_root = '/home/areynold/Documents/Scripts/OTI/source/';
-my $po_dir;
+##
+## Git Info
+##
+my $git_account = 'https://github.com/opentechinstitute/';
+my @repos = qw(commotion-openwrt commotion-feed avahi-client avahi-client 
+	luci-commotion-apps commotion-dashboard-helper commotion-debug-helper 
+	commotiond luci-commotion-apps luci-commotion-quickstart 
+	luci-commotion-splash luci-commotion luci-theme-commotion
+);
+my $git_working_dir = 'git_working_dir/';
 
+
+##
+## Translation files
+## 
+my $po_dir; # Location of translation files
 my %translate_flags = (
 	'translate(' => ')',
 	'<%:' => '%>'
 );
 
+
+# Prepare working directory
+if (not -e $git_working_dir) {
+	print("Creating working directory " . $git_working_dir . "\n");
+	make_path($git_working_dir)
+		|| die "ERROR: Couldn't create " . $git_working_dir . "\n";	
+}
+
 # Update code repos
-my @source_dirs = File::Find::Rule->maxdepth(1)->directory->in($source_root);
-foreach my $d (@source_dirs) {
-	my $dir = &Fetch($d);
-	print("$dir\n");
+foreach my $r (@repos) {
+	if (not -e $git_working_dir . $r) {
+		print($git_working_dir . $r . " Does not exist\n");
+		my $origin = $git_account . $r;
+		print("Cloning " . $origin . " into " . $git_working_dir ."\n");
+		Git::Repository->run( clone => $origin => $git_working_dir . $r)
+			|| warn "Couldn't clone " . $origin . "\n";
+	} else {
+		# pull origin master
+		#	my $dir = &Fetch($d);
+		#	print("$dir\n");
+	}
 }
 # Fetch most recent PO files
 
@@ -36,6 +67,18 @@ foreach my $d (@source_dirs) {
 
 sub Fetch {
 	my $dir = pop(@_);
+	
+	# https://github.com/opentechinstitute/olsrd.git
+	my $git_account = 'https://github.com/opentechinstitute/';
+	my @repos = qw(commotion-openwrt commotion-feed avahi-client avahi-client 
+		luci-commotion-apps commotion-dashboard-helper commotion-debug-helper 
+		commotion commotiond ldns lua-uri luci-commotion-apps luci-commotion-quickstart 
+		luci-commotion-splash luci-commotion luci-i18n-commotion luci-theme-commotion
+		olsrd serval-crypto serval-dna xssfilter
+	);
+	foreach my $r (@repos) {
+		my $clone_url = $git_account . $r . '.git'
+	}
 	# start from an existing working copy
 	#$r = Git::Repository->new( work_tree => $dir );
 	return($dir);
