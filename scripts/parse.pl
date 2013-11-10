@@ -33,8 +33,8 @@ my %translate_flags = (
 
 # Prepare working directory
 if (not -e $working_dir) {
-	print("Creating working directories " . $working_dir . "\n");
-	make_path($working_dir, $working_source_dir, $working_translations_dir)
+	print("Creating working directories\n");
+	make_path($working_dir, $working_source_dir, $working_translations_dir, {verbose=>1})
 		|| die "ERROR: Couldn't create " . $working_dir . "\n";	
 }
 
