@@ -46,7 +46,7 @@ foreach my $repo (@repos) {
 			|| warn "Couldn't clone " . $origin . "\n";
 	} else {
 		print("Updating " . $repo . "\n");
-		my $r = Git::Repository->new( work_tree => $git_working_dir . $repo );
+		my $r = Git::Repository->new( work_tree => $git_working_dir . $repo, { quiet => 1 });
 		$r->run(pull => 'origin', 'master') || die "Couldn't pull remotes\n";
 	}
 }
