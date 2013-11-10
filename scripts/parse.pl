@@ -38,19 +38,19 @@ if (not -e $git_working_dir) {
 }
 
 # Update code repos
-foreach my $r (@repos) {
-	if (not -e $git_working_dir . $r) {
-		print($git_working_dir . $r . " Does not exist\n");
-		my $origin = $git_account . $r;
+foreach my $repo (@repos) {
+	if (not -e $git_working_dir . $repo) {
+		my $origin = $git_account . $repo;
 		print("Cloning " . $origin . " into " . $git_working_dir ."\n");
-		Git::Repository->run( clone => $origin => $git_working_dir . $r)
+		Git::Repository->run( clone => $origin => $git_working_dir . $repo)
 			|| warn "Couldn't clone " . $origin . "\n";
 	} else {
-		# pull origin master
-		#	my $dir = &Fetch($d);
-		#	print("$dir\n");
+		print("Updating " . $repo . "\n");
+		my $r = Git::Repository->new( work_tree => $git_working_dir . $repo );
+		$r->run(pull => 'origin', 'master') || die "Couldn't pull remotes\n";
 	}
 }
+
 # Fetch most recent PO files
 
 # Traverse source directories, identifying translatable text
@@ -64,22 +64,3 @@ foreach my $r (@repos) {
 # Commit working PO file
 
 # Upload to Transifex/GitHub
-
-sub Fetch {
-	my $dir = pop(@_);
-	
-	# https://github.com/opentechinstitute/olsrd.git
-	my $git_account = 'https://github.com/opentechinstitute/';
-	my @repos = qw(commotion-openwrt commotion-feed avahi-client avahi-client 
-		luci-commotion-apps commotion-dashboard-helper commotion-debug-helper 
-		commotion commotiond ldns lua-uri luci-commotion-apps luci-commotion-quickstart 
-		luci-commotion-splash luci-commotion luci-i18n-commotion luci-theme-commotion
-		olsrd serval-crypto serval-dna xssfilter
-	);
-	foreach my $r (@repos) {
-		my $clone_url = $git_account . $r . '.git'
-	}
-	# start from an existing working copy
-	#$r = Git::Repository->new( work_tree => $dir );
-	return($dir);
-}
