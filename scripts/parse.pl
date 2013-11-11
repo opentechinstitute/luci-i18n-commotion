@@ -1,11 +1,13 @@
 #!/usr/bin/perl -w
 use strict;
 
+# To do: Fix use vs. require
 use Data::Dumper;
-use Git::Repository; 
+use Git::Repository;
 use File::Path qw(make_path remove_tree);
 use File::Next;
-#use Text::Balanced
+use Text::Balanced qw(extract_bracketed extract_delimited extract_tagged);
+use File::Copy;
 #use File::Find::Rule;
 # App::Ack not designed to be used programmatically
 # The file finding part is pretty simple to do. It's just calls to an iterator from File::Next.
@@ -63,8 +65,12 @@ $r->command(pull =>'--rebase', 'origin', 'master') || warn "Couldn't pull stable
 # Create working PO file from stable PO file
 ### To do: Find a better way to do this
 ### To do: Create .po headers
+my $working_translations_file = $working_translations_dir . 'working.commotion-luci-en.po';
+
 if (-e '../translations/commotion-luci-en.po') {
-	system("cp ../commotion-luci-en.po $working_translations_dir/working.commotion-luci-en.po")
+	rename '../commotion-luci-en.po' $working_translations_file;
+} else {
+	system("touch $working_translations_file");
 }
 
 # Traverse source directories, identifying translatable text
@@ -73,7 +79,7 @@ my @working_files;
 ## File Scan Options
 ##
 my $descend_filter = sub { $_ ne '.git' };
-my $file_filter = sub { $_ !~ /.git/ && $_ !~ /.jpg/ && $_ !~ /.png/ && $_ !~ /.gif/};
+my $file_filter = sub { $_ =~ '.htm' or $_ =~ '.lua' };
 my $scan = File::Next::files( {
 	descend_filter => $descend_filter,
 	file_filter => $file_filter,
@@ -84,14 +90,130 @@ while (defined(my $file = $scan->())) {
 	push(@working_files, $file);
 }
 
-# Separate text strings from translation tags
-## use Text::Balanced::extract_tagged
-# Create new PO file
+##
+## Separate text strings from translation tags
+##
+## string parsing functions from luci.subsignal.org
+## http://luci.subsignal.org/trac/browser/luci/trunk/build/i18n-scan.pl
+## copyright 2013 by jow 
 
-# Compare strings to stable PO file
-## Discard matching strings
-## Add new/modified strings to working PO file
+# looks like stringtable is a hash so it can handle multi-line strings
+my %stringtable;
+
+foreach my $file (@working_files) {
+	chomp $file;
+	if( open S, "< $file" ) {
+		local $/ = undef;
+		my $raw = <S>;
+		close S;
+
+		my $text = $raw;
+
+		while( $text =~ s/ ^ .*? (?:translate|translatef|i18n|_) [\n\s]* \( /(/sgx ) {
+			( my $code, $text ) = extract_bracketed($text, q{('")});
+			$code =~ s/\\\n/ /g;
+			$code =~ s/^\([\n\s]*//;
+			$code =~ s/[\n\s]*\)$//;
+
+			my $res = "";
+			my $sub = "";
+
+			if( $code =~ /^['"]/ ) {
+				while( defined $sub ) {
+					( $sub, $code ) = extract_delimited($code, q{'"}, q{\s*(?:\.\.\s*)?});
+
+					if( defined $sub && length($sub) > 2 ) {
+						$res .= substr $sub, 1, length($sub) - 2;
+					} else {
+						undef $sub;
+					}
+				}
+			} elsif( $code =~ /^(\[=*\[)/ ) {
+				my $stag = quotemeta $1;
+				my $etag = $stag;
+				$etag =~ s/\[/]/g;
+
+				( $res ) = extract_tagged($code, $stag, $etag);
+
+				$res =~ s/^$stag//;
+				$res =~ s/$etag$//;
+			}
+
+			$res = dec_lua_str($res);
+			$stringtable{$res}++ if $res;
+		}
+
+		$text = $raw;
+
+		while( $text =~ s/ ^ .*? <% -? [:_] /<%/sgx ) {
+			( my $code, $text ) = extract_tagged($text, '<%', '%>');
+
+			if( defined $code ) {
+				$code = dec_tpl_str(substr $code, 2, length($code) - 4);
+				$stringtable{$code}++;
+			}
+		}
+	}
+}
+
+
+# Create new PO file
+my $new_strings_file = $working_translations_dir . 'new_strings.txt';
+unless (-e $working_translations_file) {
+	$working_translations_file = $new_strings_file;
+}
+my $working_strings; {
+	# To do: this section needs work
+	local $/ = undef;
+	open (WS, "<", $working_translations_file);
+	$working_strings = <WS>;
+	close(WS);
+
+	# Strings contained in %stringtable
+	# Compare strings to stable PO file
+	open (WF, ">>", $working_translations_file);
+	foreach my $key ( sort keys %stringtable ) {
+		# Discard matching strings
+		# Add new/modified strings to working PO file
+		$key =~ s/"/\\"/g;
+		if ($working_strings !~ m/$key/ ) {
+			if( length $key ) {
+				printf WF "msgid \"%s\"\nmsgstr \"\"\n\n", $key;
+			}
+		}
+	}
+}
+
+
 
 # Commit working PO file
 
 # Upload to Transifex/GitHub
+
+
+##
+## Translation tags
+##
+sub dec_lua_str
+{
+        my $s = shift;
+        $s =~ s/[\s\n]+/ /g;
+        $s =~ s/\\n/\n/g;
+        $s =~ s/\\t/\t/g;
+        $s =~ s/\\(.)/$1/g;
+        $s =~ s/^ //;
+        $s =~ s/ $//;
+        return $s;
+}
+
+sub dec_tpl_str
+{
+        my $s = shift;
+        $s =~ s/-$//;
+        $s =~ s/[\s\n]+/ /g;
+        $s =~ s/^ //;
+        $s =~ s/ $//;
+        $s =~ s/\\/\\\\/g;
+        return $s;
+}
+
