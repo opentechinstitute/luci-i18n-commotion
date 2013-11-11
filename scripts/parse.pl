@@ -2,11 +2,13 @@
 use strict;
 
 use Data::Dumper;
-use App::Ack;
 use Git::Repository; 
 use File::Path qw(make_path remove_tree);
+use File::Next;
 #use Text::Balanced
 #use File::Find::Rule;
+# App::Ack not designed to be used programmatically
+# The file finding part is pretty simple to do. It's just calls to an iterator from File::Next.
 
 ##
 ## Git Info
@@ -48,7 +50,7 @@ foreach my $repo (@repos) {
 	} else {
 		print("Updating " . $repo . "\n");
 		my $r = Git::Repository->new( work_tree => $working_source_dir . $repo, { quiet => 1 });
-		$r->command(pull => 'origin', 'master') || die "Couldn't pull remotes\n";
+		$r->command(pull => 'origin', 'master') || warn "Couldn't pull remotes\n";
 	}
 }
 
@@ -56,14 +58,34 @@ foreach my $repo (@repos) {
 ## To Do: Add Transifex details
 print("Updating translation files\n");
 my $r = Git::Repository->new ( work_tree => $po_dir, { quiet => 1 });
-$r->command(pull =>'--rebase', 'origin', 'master') || die "Couldn't pull stable branch\n";
+$r->command(pull =>'--rebase', 'origin', 'master') || warn "Couldn't pull stable branch\n";
 
 # Create working PO file from stable PO file
+### To do: Find a better way to do this
+### To do: Create .po headers
+if (-e '../translations/commotion-luci-en.po') {
+	system("cp ../commotion-luci-en.po $working_translations_dir/working.commotion-luci-en.po")
+}
 
 # Traverse source directories, identifying translatable text
+my @working_files;
+##
+## File Scan Options
+##
+my $descend_filter = sub { $_ ne '.git' };
+my $file_filter = sub { $_ !~ /.git/ && $_ !~ /.jpg/ && $_ !~ /.png/ && $_ !~ /.gif/};
+my $scan = File::Next::files( {
+	descend_filter => $descend_filter,
+	file_filter => $file_filter,
+	error_handler => sub { my $msg = shift; warn($msg) },
+	},
+	$working_source_dir);
+while (defined(my $file = $scan->())) {
+	push(@working_files, $file);
+}
 
 # Separate text strings from translation tags
-
+## use Text::Balanced::extract_tagged
 # Create new PO file
 
 # Compare strings to stable PO file
