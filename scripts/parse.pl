@@ -4,12 +4,13 @@ my @todo = ("\n\nTo Do:");
 
 push(@todo, "Fix use vs. require");
 use Data::Dumper;
-use Git::Repository;
 use File::Path qw(make_path remove_tree);
+use Git::Repository;
+use File::Copy;
 use File::Next;
 use Text::Balanced qw(extract_bracketed extract_delimited extract_tagged);
-use File::Copy;
-#use File::Find::Rule;
+use List::MoreUtils qw(uniq);
+use Text::Diff;
 
 ##
 ## Git Info
@@ -22,6 +23,9 @@ my @repos = qw(commotion-openwrt commotion-feed avahi-client luci-commotion-apps
 my $working_dir = 'working/';
 my $working_source_dir = $working_dir . 'source/';
 my $working_translations_dir = $working_dir . 'translations/';
+
+my $stable_dir = '../';
+my $stable_translations_dir = $stable_dir . 'translations/';
 
 
 ##
@@ -57,7 +61,6 @@ my $r = Git::Repository->new ( work_tree => $po_dir, { quiet => 1 });
 $r->command(pull =>'--rebase', 'origin', 'master') || warn "Couldn't pull stable branch\n";
 
 # Create working PO file from stable PO file
-push(@todo, "revise working PO file creation");
 push(@todo, "Create .po headers");
 my $working_translations_file = $working_translations_dir . 'working.commotion-luci-en.po';
 
@@ -92,7 +95,6 @@ while (defined(my $file = $scan->())) {
 ## copyright 2013 by jow 
 
 # looks like stringtable is a hash so it can handle multi-line strings
-push(@todo, "\%stringtable should maintain filenames");
 my %stringtable;
 foreach my $file (@working_files) {
 	chomp $file;
@@ -163,36 +165,37 @@ foreach my $file (@working_files) {
 }
 
 # Create new PO file
-## English PO file can be overwritten each time
-#my $new_strings_file = $working_translations_dir . 'new_strings.txt';
-#unless (-e $working_translations_file) {
-#	$working_translations_file = $new_strings_file;
-#}
-#unlink $working_translations_file;
-#my $working_strings; {
-#	push(@todo, "working_strings parse needs work");
-#	local $/ = undef;
-#	open (WS, "<", $working_translations_file);
-#	$working_strings = <WS>;
-#	close(WS);
-#
-#	# Strings contained in %stringtable
-#	# Compare strings to stable PO file
-#	open (WF, ">>", $working_translations_file);
-#	foreach my $key ( sort keys %stringtable ) {
-#		# Discard matching strings
-#		# Add new/modified strings to working PO file
-#		$key =~ s/"/\\"/g;
-#		if ($working_strings !~ m/$key/ ) {
-#			if( length $key ) {
-#				printf WF "msgid \"%s\"\nmsgstr \"\"\n\n", $key;
-#			}
-#		}
-#	}
-#}
+# English PO file can be overwritten each time
+my $new_strings_file = $working_translations_dir . 'new_strings.txt';
+my $po_header = &Generate_PO_Header();
 
+open (NS, "> $new_strings_file");
+if ($po_header) {
+	print NS $po_header;
+}
 
+foreach my $file (sort keys %stringtable) {
+	(my $filename = $file) =~ s|$working_source_dir||;
+	print NS "\n#: $filename\n";
+	foreach my $string ( uniq @{ $stringtable{$file} } ) {	
+		print NS "msgid \"$string\"\n";
+		print NS "msgstr \"$string\"\n\n";
+	}
+} 
+close(NS);
 
+# Compare new strings to stable strings
+open(STABLE, "< $working_translations_file");
+#my @diff = split("\n", diff($working_translations_file, $new_strings_file));
+my @diff = diff($working_translations_file, $new_strings_file);
+close(STABLE);
+
+foreach (@diff) {
+	if ($_ =~ m|^[+-]msgid|) {
+#		print "Change: $_\n";
+	}
+}
+print Dumper(@diff);
 # Commit working PO file
 
 # Upload to Transifex/GitHub
@@ -227,3 +230,7 @@ sub dec_tpl_str
         return $s;
 }
 
+sub Generate_PO_Header {
+	my $po_header = "See existing PO files for header requirements\n\n";
+	return($po_header);
+}
