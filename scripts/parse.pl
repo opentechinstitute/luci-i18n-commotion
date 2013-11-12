@@ -144,17 +144,19 @@ foreach my $file (@working_files) {
 # Strip superfluous strings out of $res
 			$res = dec_lua_str($res);
 # add $res to %stringtable
-			$stringtable{$res}++ if $res;
+			if ($res) {
+				push(@{ $stringtable{$file} }, $res);
+			}
 		}
 
 		$text = $raw;
-
+# Same steps for lua code
 		while( $text =~ s/ ^ .*? <% -? [:_] /<%/sgx ) {
 			( my $code, $text ) = extract_tagged($text, '<%', '%>');
 
 			if( defined $code ) {
 				$code = dec_tpl_str(substr $code, 2, length($code) - 4);
-				$stringtable{$code}++;
+				push(@{ $stringtable{$file} }, $code);
 			}
 		}
 	}
