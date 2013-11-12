@@ -1,0 +1,572 @@
+# 
+# Translators:
+msgid ""
+msgstr ""
+"Project-Id-Version: Commotion User Interface\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-08-01 02:43+0500\n"
+"PO-Revision-Date: 2013-08-16 20:50+0000\n"
+"Last-Translator: critzo <critzo@opentechinstitute.org>\n"
+"Language-Team: critzo <critzo@opentechinstitute.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: commotion quickstart
+msgid "Access Point Name"
+msgstr "Access Point Name"
+
+msgid "What would you like to name your node's access point?"
+msgstr "What would you like to name your node's access point?"
+
+msgid ""
+"This is the name that users will see when they search for wireless access."
+msgstr "This is the name that users will see when they search for wireless access."
+
+msgid ""
+"Choose a name that is 5-12 characters. You can use numbers, letters and "
+"special characters. The name must be unique in the network. You can change "
+"the node name later by logging into the node administration page."
+msgstr "Choose a name that is 5-12 characters. You can use numbers, letters and special characters. The name must be unique in the network. You can change the node name later by logging into the node administration page."
+
+msgid ""
+"Choose a password that is between 9 and 30 characters. This password can be "
+"numbers, letters, and special characters."
+msgstr "Choose a password that is between 9 and 30 characters. This password can be numbers, letters, and special characters."
+
+msgid ""
+"This password is used to access the administration menus on this device."
+msgstr "This password is used to access the administration menus on this device."
+
+msgid "Redirecting..."
+msgstr "Redirecting..."
+
+msgid "System"
+msgstr "System"
+
+msgid "Changes applied."
+msgstr "Changes applied."
+
+msgid "Waiting for changes to be applied..."
+msgstr "Waiting for changes to be applied..."
+
+msgid "The name of your mesh network is:"
+msgstr "The name of your mesh network is:"
+
+msgid "Your node name is:"
+msgstr "Your node name is:"
+
+msgid ""
+"When people connect to your node wirelessly, they will connect using this "
+"name:"
+msgstr "When people connect to your node wirelessly, they will connect using this name:"
+
+msgid ""
+"After configuring your node, you can change the node name on the node "
+"administration page."
+msgstr "After configuring your node, you can change the node name on the node administration page."
+
+msgid "Click here if your browser doesn't redirect you within one minute"
+msgstr "Click here if your browser doesn't redirect you within one minute"
+
+msgid ""
+"Choose a name that is 5-20 characters. You can use letters and numbers ONLY."
+" The name will be made unique in the network through the addition of the "
+"bolded number next to the input box. You can change the node name later by "
+"logging into the node administration page."
+msgstr "Choose a name that is 5-20 characters. You can use letters and numbers ONLY. The name will be made unique in the network through the addition of the bolded number next to the input box. You can change the node name later by logging into the node administration page."
+
+msgid "Node Name"
+msgstr "Node Name"
+
+msgid ""
+"This value is used by other users and devices to find your network "
+"wirelessly and over the mesh. This value can be composed of letter, number "
+"and hyphens. (Hyphens can not be used at the beggining or end of the name.)"
+msgstr "This value is used by other users and devices to find your network wirelessly and over the mesh. This value can be composed of letter, number and hyphens. (Hyphens can not be used at the beggining or end of the name.)"
+
+msgid "Your Node Name"
+msgstr "Your Node Name"
+
+msgid "Require a password for others to connect to your node."
+msgstr "Require a password for others to connect to your node."
+
+msgid "WiFi Password"
+msgstr "WiFi Password"
+
+msgid "This password is required for others to use your wifi."
+msgstr "This password is required for others to use your wifi."
+
+msgid "Retype your password here"
+msgstr "Retype your password here"
+
+msgid ""
+"If you would like to start the QuickStart configuration process over please "
+"click the above. WARNING: The quickstart process allows modification of this"
+" device by non-administrative users when it is active. Please make sure that"
+" you only restart the quickstart when you have time to finish the entire "
+"process."
+msgstr "If you would like to start the QuickStart configuration process over please click the above. WARNING: The quickstart process allows modification of this device by non-administrative users when it is active. Please make sure that you only restart the quickstart when you have time to finish the entire process."
+
+msgid "Click on the field below to upload a file."
+msgstr "Click on the field below to upload a file."
+
+msgid "Upload"
+msgstr "Upload"
+
+msgid ""
+"Congratulations! You have a Commotion node and are ready to join a network "
+"or start a new one. This wizard will guide you through the setup. The setup "
+"process should take about 10 minutes."
+msgstr "Congratulations! You have a Commotion node and are ready to join a network or start a new one. This wizard will guide you through the setup. The setup process should take about 10 minutes."
+
+msgid "You can still change settings after setup is complete."
+msgstr "You can still change settings after setup is complete."
+
+#: commotion-bug-info luasrc/controller/debugger.lua
+msgid "Commotion Debugging Helper"
+msgstr "Commotion Debugging Helper"
+
+#: luasrc/view/debugger.htm
+msgid ""
+"The information you are about to download contains private information about"
+" this device and the network it is connected to. Only give this information "
+"to people you trust. Do you understand?"
+msgstr "The information you are about to download contains private information about this device and the network it is connected to. Only give this information to people you trust. Do you understand?"
+
+#: luasrc/view/debugger.htm
+msgid "Commotion Bug Info"
+msgstr "Commotion Bug Info"
+
+#: luasrc/view/debugger.htm
+msgid "Name"
+msgstr "Name"
+
+#: luasrc/view/debugger.htm
+msgid "Contact Info"
+msgstr "Contact Info"
+
+#: luasrc/view/debugger.htm
+msgid "What were you doing on the device when the error occurred?"
+msgstr "What were you doing on the device when the error occurred?"
+
+#: luasrc/view/debugger.htm
+msgid "Please describe the behavior you expected"
+msgstr "Please describe the behavior you expected"
+
+#: luasrc/view/debugger.htm
+msgid "Please describe the behavior you experienced that you believe is wrong"
+msgstr "Please describe the behavior you experienced that you believe is wrong"
+
+#: luasrc/view/debugger.htm
+msgid "Debugging Info"
+msgstr "Debugging Info"
+
+#: luasrc/view/debugger.htm
+msgid "Mesh Network Information"
+msgstr "Mesh Network Information"
+
+#: luasrc/view/debugger.htm
+msgid "Router Status"
+msgstr "Router Status"
+
+#: luasrc/view/debugger.htm
+msgid "Router Traffic Routing Rules"
+msgstr "Router Traffic Routing Rules"
+
+#: luasrc/view/debugger.htm
+msgid "All Info"
+msgstr "All Info"
+
+#: luasrc/view/debugger.htm
+msgid "Create Bug Info File"
+msgstr "Create Bug Info File"
+
+#: commotion-splash cbi/commotion/splash/splashtext.lua
+msgid "Edit Splash text"
+msgstr "Edit Splash text"
+
+msgid ""
+"You can enter your own text that is displayed to clients here. It is "
+"possible to use the following markers: The value of GatewayName as set in "
+"nodogsplash.conf. A URL which encodes a unique token and the URL of the "
+"user's original web request. The directory in nodogsplash's web hierarchy "
+"where images to be displayed in the splash page must be located."
+msgstr "You can enter your own text that is displayed to clients here. It is possible to use the following markers: The value of GatewayName as set in nodogsplash.conf. A URL which encodes a unique token and the URL of the user's original web request. The directory in nodogsplash's web hierarchy where images to be displayed in the splash page must be located."
+
+#: controller/commotion/splash/splash.lua
+msgid "splash: invalid parameters"
+msgstr "splash: invalid parameters"
+
+msgid "Clearance time must be an integer greater than zero"
+msgstr "Clearance time must be an integer greater than zero"
+
+msgid "Invalid redirect"
+msgstr "Invalid redirect"
+
+msgid "Invalid autoauth"
+msgstr "Invalid autoauth"
+
+msgid "Invalid submission...zone"
+msgstr "Invalid submission...zone"
+
+msgid "doesn't exit"
+msgstr "doesn't exit"
+
+msgid "Whitelist entries must be a valid MAC address"
+msgstr "Whitelist entries must be a valid MAC address"
+
+#: splash
+msgid "Local Applications"
+msgstr "Local Applications"
+
+msgid "Internet"
+msgstr "Internet"
+
+#: splash_settings
+msgid "Captive Portal"
+msgstr "Captive Portal"
+
+msgid ""
+"Nodogsplash offers a simple way to provide restricted access to an internet "
+"connection."
+msgstr "Nodogsplash offers a simple way to provide restricted access to an internet connection."
+
+msgid "General"
+msgstr "General"
+
+msgid "Clearance time"
+msgstr "Clearance time"
+
+msgid ""
+"Clients that have accepted the captive portal are allowed to use the network"
+" for that many minutes."
+msgstr "Clients that have accepted the captive portal are allowed to use the network for that many minutes."
+
+msgid "Redirect to Homepage?"
+msgstr "Redirect to Homepage?"
+
+msgid "help"
+msgstr "help"
+
+msgid ""
+"If this is checked, clients will be redirected to your homepage, instead of "
+"to their original request."
+msgstr "If this is checked, clients will be redirected to your homepage, instead of to their original request."
+
+msgid "Homepage"
+msgstr "Homepage"
+
+msgid ""
+"After authentication, clients will be redirected to this URL instead of to "
+"their original request."
+msgstr "After authentication, clients will be redirected to this URL instead of to their original request."
+
+msgid "Immediately Authenticate?"
+msgstr "Immediately Authenticate?"
+
+msgid ""
+"If this is checked, clients will be immediately directed to their original "
+"request or your homepage (if set above), instead of being served a splash "
+"page."
+msgstr "If this is checked, clients will be immediately directed to their original request or your homepage (if set above), instead of being served a splash page."
+
+msgid "Interfaces"
+msgstr "Interfaces"
+
+msgid "Interfaces that are used for Splash."
+msgstr "Interfaces that are used for Splash."
+
+msgid "Network"
+msgstr "Network"
+
+msgid "Intercept client traffic on this Interfaces"
+msgstr "Intercept client traffic on this Interfaces"
+
+msgid "Whitelist"
+msgstr "Whitelist"
+
+msgid ""
+"MAC addresses of whitelisted clients. These do not need to accept the splash"
+" and are not bandwidth limited."
+msgstr "MAC addresses of whitelisted clients. These do not need to accept the splash and are not bandwidth limited."
+
+msgid "MAC Address"
+msgstr "MAC Address"
+
+msgid "Blacklist"
+msgstr "Blacklist"
+
+msgid "MAC addresses in this list are blocked."
+msgstr "MAC addresses in this list are blocked."
+
+msgid "Allowed hosts/subnets"
+msgstr "Allowed hosts/subnets"
+
+msgid ""
+"Hosts and Networks that are listed here are excluded from splashing, i.e. "
+"they are always allowed."
+msgstr "Hosts and Networks that are listed here are excluded from splashing, i.e. they are always allowed."
+
+msgid "IP Address"
+msgstr "IP Address"
+
+msgid "CIDR notation optional (e.g. 192.168.1.0/24)"
+msgstr "CIDR notation optional (e.g. 192.168.1.0/24)"
+
+msgid "Submit"
+msgstr "Submit"
+
+msgid "Reset"
+msgstr "Reset"
+
+#: splashtext
+msgid "Welcome!"
+msgstr "Welcome!"
+
+msgid "You are now connected to a community wireless network."
+msgstr "You are now connected to a community wireless network."
+
+msgid ""
+"Access to the Internet may be provided by people donating connectivity to "
+"the network. Everyone on the network has to share, so please be aware and "
+"behave yourself accordingly:"
+msgstr "Access to the Internet may be provided by people donating connectivity to the network. Everyone on the network has to share, so please be aware and behave yourself accordingly:"
+
+msgid "Please"
+msgstr "Please"
+
+msgid "avoid large downloads and excessive filesharing."
+msgstr "avoid large downloads and excessive filesharing."
+
+msgid "no illegal activities."
+msgstr "no illegal activities."
+
+msgid "If you like the network, please consider contributing!"
+msgstr "If you like the network, please consider contributing!"
+
+#: luci-commotion files/usr/share/commtion/patches/wifi_lua.patch
+msgid "auto"
+msgstr "auto"
+
+msgid "Force CCMP (AES)"
+msgstr "Force CCMP (AES)"
+
+msgid "Force TKIP"
+msgstr "Force TKIP"
+
+msgid "Force TKIP and CCMP (AES)"
+msgstr "Force TKIP and CCMP (AES)"
+
+msgid "No Encryption"
+msgstr "No Encryption"
+
+msgid "WEP Open System"
+msgstr "WEP Open System"
+
+msgid "WEP Shared Key"
+msgstr "WEP Shared Key"
+
+#: htdocs/luci/static/commotion/index
+msgid "Welcome to Commotion!"
+msgstr "Welcome to Commotion!"
+
+msgid ""
+"You are connected to a mesh network powered by the Commotion Wireless "
+"Project. The Commotion project seeks to create an open-source, device-as-"
+"infrastructure communication platform that allows communities and activists "
+"to collaborate and communicate. If you're an admin of this node in the "
+"network, you can use this interface to modify its settings. For more "
+"information about the project, please visit the site below:"
+msgstr "You are connected to a mesh network powered by the Commotion Wireless Project. The Commotion project seeks to create an open-source, device-as-infrastructure communication platform that allows communities and activists to collaborate and communicate. If you're an admin of this node in the network, you can use this interface to modify its settings. For more information about the project, please visit the site below:"
+
+msgid "Commotion Wireless"
+msgstr "Commotion Wireless"
+
+msgid "Thanks for using our network!"
+msgstr "Thanks for using our network!"
+
+#: htdocs/luci/static/resources/OSMLatLon
+msgid "OpenStreetMap"
+msgstr "OpenStreetMap"
+
+msgid "Map by"
+msgstr "Map by"
+
+msgid "License CC-BY-SA"
+msgstr "License CC-BY-SA"
+
+msgid "Latitude"
+msgstr "Latitude"
+
+msgid "Longitude"
+msgstr "Longitude"
+
+#: luasrc/controller/commotion/commotion.luasrc
+msgid "Overview"
+msgstr "Overview"
+
+msgid "Front Page"
+msgstr "Front Page"
+
+msgid "Mesh Configuration Manual"
+msgstr "Mesh Configuration Manual"
+
+#: luasrc/controller/commotion/meshprofile.lua
+msgid "Mesh Profile"
+msgstr "Mesh Profile"
+
+#: luasrc/model/cbi/commotion/meshconfig
+msgid "Configuration"
+msgstr "Configuration"
+
+msgid ""
+"This configuration wizard will assist you in setting up your router for a "
+"Commotion network."
+msgstr "This configuration wizard will assist you in setting up your router for a Commotion network."
+
+msgid "Access Point"
+msgstr "Access Point"
+
+msgid "Name (SSID)"
+msgstr "Name (SSID)"
+
+msgid "The public facing name of this interface"
+msgstr "The public facing name of this interface"
+
+msgid "Secure Access Point"
+msgstr "Secure Access Point"
+
+msgid "Mesh Backhaul"
+msgstr "Mesh Backhaul"
+
+msgid "Device Designation (BSSID)"
+msgstr "Device Designation (BSSID)"
+
+msgid ""
+"The device read name of this interface. (Letters A-F, and numbers 0-9 only)"
+msgstr "The device read name of this interface. (Letters A-F, and numbers 0-9 only)"
+
+msgid "Network-wide Settings"
+msgstr "Network-wide Settings"
+
+msgid "5GHz Channel"
+msgstr "5GHz Channel"
+
+msgid "The 5GHz backhaul channel of the mesh network, if applicable."
+msgstr "The 5GHz backhaul channel of the mesh network, if applicable."
+
+msgid "2GHz Channel"
+msgstr "2GHz Channel"
+
+msgid "The 2.4GHz backhaul channel of the mesh network, if applicable"
+msgstr "The 2.4GHz backhaul channel of the mesh network, if applicable"
+
+msgid "Settings specific to this node"
+msgstr "Settings specific to this node"
+
+msgid "DHCP Timeout"
+msgstr "DHCP Timeout"
+
+msgid "How many seconds to wait on boot for a DHCP lease from the gateway"
+msgstr "How many seconds to wait on boot for a DHCP lease from the gateway"
+
+#: luasrc/view/commotion/meshprofile
+msgid "Node Profiles"
+msgstr "Node Profiles"
+
+msgid ""
+"If your node includes configuration profiles for multiple Commotion "
+"networks, this form allows you to set your defaults. We recommend that you "
+"reboot your node after changing these settings."
+msgstr "If your node includes configuration profiles for multiple Commotion networks, this form allows you to set your defaults. We recommend that you reboot your node after changing these settings."
+
+msgid "Select an interface"
+msgstr "Select an interface"
+
+msgid "Select a profile to apply"
+msgstr "Select a profile to apply"
+
+msgid "Apply and Save"
+msgstr "Apply and Save"
+
+#: from additional strings file
+#: commotion-openwrt-theme /files/templates/header.htm
+msgid "Unsaved Changes"
+msgstr "Unsaved Changes"
+
+msgid "Auto Refresh"
+msgstr "Auto Refresh"
+
+msgid "No password set!"
+msgstr "No password set!"
+
+msgid ""
+"There is no password set on this router. Please configure a root password to"
+" protect the web interface and enable SSH."
+msgstr "There is no password set on this router. Please configure a root password to protect the web interface and enable SSH."
+
+msgid "Go to password configuration..."
+msgstr "Go to password configuration..."
+
+#: /files/templates/footer.htm
+msgid "QuickStart"
+msgstr "QuickStart"
+
+msgid "Administration"
+msgstr "Administration"
+
+#: /files/luasrc/view/cbi/full_valueheader.htm
+msgid "Go to relevant configuration page"
+msgstr "Go to relevant configuration page"
+
+#: luci-commotion /luasrc/view/commotion/serval_keyring.htm
+msgid "Serval Keyring"
+msgstr "Serval Keyring"
+
+msgid ""
+"The Serval Keyring is used to sign all network traffic on a Commotion mesh "
+"network. Every node on your Commotion network should use the same Serval "
+"Keyring. On this page you can download the existing Serval keyring for this "
+"node, to back it up or to use when adding new nodes to your network. You can"
+" also generate a new Serval Keyring, or upload one from your computer."
+msgstr "The Serval Keyring is used to sign all network traffic on a Commotion mesh network. Every node on your Commotion network should use the same Serval Keyring. On this page you can download the existing Serval keyring for this node, to back it up or to use when adding new nodes to your network. You can also generate a new Serval Keyring, or upload one from your computer."
+
+msgid "Download a Serval Keyring"
+msgstr "Download a Serval Keyring"
+
+msgid "Download your current Serval keyring"
+msgstr "Download your current Serval keyring"
+
+msgid "Upload a Serval Keyring"
+msgstr "Upload a Serval Keyring"
+
+msgid "Click on the field below to upload a keyring."
+msgstr "Click on the field below to upload a keyring."
+
+msgid "Upload a Keyring"
+msgstr "Upload a Keyring"
+
+msgid "Upload a Serval key file file from your own computer"
+msgstr "Upload a Serval key file file from your own computer"
+
+msgid "Create a new Serval Keyring"
+msgstr "Create a new Serval Keyring"
+
+msgid ""
+"Click on the button below to create a new keyring. This will DELETE the "
+"existing keyring on the device. We highly suggest you download any existing "
+"network keyrings you have before creating a new keyring."
+msgstr "Click on the button below to create a new keyring. This will DELETE the existing keyring on the device. We highly suggest you download any existing network keyrings you have before creating a new keyring."
+
+msgid "New Keyring"
+msgstr "New Keyring"
+
+msgid "Create a new keyring on this device, replacing the existing keyring."
+msgstr "Create a new keyring on this device, replacing the existing keyring."
+
+msgid "Create New Keyring"
+msgstr "Create New Keyring"
+

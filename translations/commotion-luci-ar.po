@@ -1,0 +1,572 @@
+# 
+# Translators:
+# ArchLord, 2013
+msgid ""
+msgstr ""
+"Project-Id-Version: Commotion User Interface\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-08-01 02:43+0500\n"
+"PO-Revision-Date: 2013-09-16 09:10+0000\n"
+"Last-Translator: ArchLord\n"
+"Language-Team: Arabic (http://www.transifex.com/projects/p/commotion-user-interface/language/ar/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ar\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+#: commotion quickstart
+msgid "Access Point Name"
+msgstr "إسم نقطة النّفاذ"
+
+msgid "What would you like to name your node's access point?"
+msgstr "ما الإسم الذي تختاره لنقطة النّفاذ المتصلة بالعقدة خاصتك؟    "
+
+msgid ""
+"This is the name that users will see when they search for wireless access."
+msgstr "هذا الإسم هو ما سيراه المستخدمون حين يقومون بالبحث عن اتّصال لاسلكيّ."
+
+msgid ""
+"Choose a name that is 5-12 characters. You can use numbers, letters and "
+"special characters. The name must be unique in the network. You can change "
+"the node name later by logging into the node administration page."
+msgstr "اختر إسم متكونا من 5 إلى 12 حرفا. بإمكانك استعمال الأرقام و الحروف و lلرّموز الخاصة.  يمكنك تغيير إسم العقدة لاحقا عبر الولوج إلى صفحة إدارة العقدة. "
+
+msgid ""
+"Choose a password that is between 9 and 30 characters. This password can be "
+"numbers, letters, and special characters."
+msgstr "اختر كلمة سرّ متكونة من 9 إلى 30 حرفا. كلمة السرّ يمكن أن تحتوي على الأرقام و الحروف و lلرّموز الخاصة."
+
+msgid ""
+"This password is used to access the administration menus on this device."
+msgstr "كلمة السرّ هذه تستعمل للعبور إلى قوائم الإدارة على هذا الجهاز."
+
+msgid "Redirecting..."
+msgstr "جاري إعادة التوجيه..."
+
+msgid "System"
+msgstr "النّظام"
+
+msgid "Changes applied."
+msgstr "تمّ تطبيق التغييرات."
+
+msgid "Waiting for changes to be applied..."
+msgstr "جاري الإنتظار الى حين تطبيق التغييرات..."
+
+msgid "The name of your mesh network is:"
+msgstr "إسم الشبكة المحبوكة خاصتك هو:"
+
+msgid "Your node name is:"
+msgstr "إسم العقدة خاصتك هو:"
+
+msgid ""
+"When people connect to your node wirelessly, they will connect using this "
+"name:"
+msgstr "عندما يتّصل أشخاص بالعقدة خاصتك لاسلكيّا، سوف يتّصلون مختارين هذا الإسم:"
+
+msgid ""
+"After configuring your node, you can change the node name on the node "
+"administration page."
+msgstr "بعد تعديل العقدة خاصتك، يمكنك تغيير إسم العقدة من خلال صفحة الإدرة."
+
+msgid "Click here if your browser doesn't redirect you within one minute"
+msgstr "إضغط هنا إذا لم يقم المتصفح بإعادة توجيهك خلال دقيقة"
+
+msgid ""
+"Choose a name that is 5-20 characters. You can use letters and numbers ONLY."
+" The name will be made unique in the network through the addition of the "
+"bolded number next to the input box. You can change the node name later by "
+"logging into the node administration page."
+msgstr "اختر إسم متكونا من 5 إلى 20 حرفا. يمكنك استعمال الأرقام و الحروف فقط. سوف نجعل الإسم فريدا على كامل الشبكة عبر إضافة أرقام إلى جانب الإسم الذي قمت بإدخاله. بإمكانك تغيير إسم العقدة لاحقا عبر الولوج إلى صفحة إدارة العقدة. "
+
+msgid "Node Name"
+msgstr "إسم العقدة"
+
+msgid ""
+"This value is used by other users and devices to find your network "
+"wirelessly and over the mesh. This value can be composed of letter, number "
+"and hyphens. (Hyphens can not be used at the beggining or end of the name.)"
+msgstr "هذا الإسم يستخدم من طرف مستعملين آخرين و أجهزة أخرى لإيجاد شبكتك اللاسلكية عبر المحبوكة.\nيمكن للإسم أن يتكون من أحرف و أرقام أو واصلة. (يمكن أن تستعمل الواصلة في أول أو في آخر  الإسم)"
+
+msgid "Your Node Name"
+msgstr "إسم العقدة خاصتك"
+
+msgid "Require a password for others to connect to your node."
+msgstr "طلب كلمة سرّ ممن يريد الإتصال بالعقدة خاصتك."
+
+msgid "WiFi Password"
+msgstr "كلمة السرّ لل WIFI"
+
+msgid "This password is required for others to use your wifi."
+msgstr "كلمة السرّ هاته تطلب من أي شخص يريد أستعمال ال wifi خاصتك.  "
+
+msgid "Retype your password here"
+msgstr "أعد إدخال كلمة السرّ هنا"
+
+msgid ""
+"If you would like to start the QuickStart configuration process over please "
+"click the above. WARNING: The quickstart process allows modification of this"
+" device by non-administrative users when it is active. Please make sure that"
+" you only restart the quickstart when you have time to finish the entire "
+"process."
+msgstr ""
+
+msgid "Click on the field below to upload a file."
+msgstr "قم بالنقر على المجال في الأسفل لتتمكن من رفع ملف."
+
+msgid "Upload"
+msgstr "ارفع"
+
+msgid ""
+"Congratulations! You have a Commotion node and are ready to join a network "
+"or start a new one. This wizard will guide you through the setup. The setup "
+"process should take about 10 minutes."
+msgstr "تهانينا!  لقد تحصلت على عقدة كوموشن وأنت الآن جاهز للانضمام إلى شبكة محبوكة أو إطلاق واحدة جديدة. سيقوم  المرشد بمساعتدك في الإعدادات. عمليّة الإعدادات تتطلب تقريبا 10 دقائق."
+
+msgid "You can still change settings after setup is complete."
+msgstr "بالإمكان تغيير الإعدادات حتى بعد إنهاء الظبط."
+
+#: commotion-bug-info luasrc/controller/debugger.lua
+msgid "Commotion Debugging Helper"
+msgstr "مساعد التنقيح لكموشن"
+
+#: luasrc/view/debugger.htm
+msgid ""
+"The information you are about to download contains private information about"
+" this device and the network it is connected to. Only give this information "
+"to people you trust. Do you understand?"
+msgstr "المعلومات التي أنت بصدد تنزيلها تحتوي على خاصة بهذا الجهاز والشبكة المربوط بها. الرجاء عدم مد هذه المعلومات إلا للاشخاص الذين تثق بهم. مفهوم ؟"
+
+#: luasrc/view/debugger.htm
+msgid "Commotion Bug Info"
+msgstr ""
+
+#: luasrc/view/debugger.htm
+msgid "Name"
+msgstr "الإسم"
+
+#: luasrc/view/debugger.htm
+msgid "Contact Info"
+msgstr "معلومات للإتّصال"
+
+#: luasrc/view/debugger.htm
+msgid "What were you doing on the device when the error occurred?"
+msgstr "ماذا كنت تعمل على الجهاز عندما حصل العطب ؟"
+
+#: luasrc/view/debugger.htm
+msgid "Please describe the behavior you expected"
+msgstr "الرّجاء وصف التصرّف  الذي تتوقعه ؟"
+
+#: luasrc/view/debugger.htm
+msgid "Please describe the behavior you experienced that you believe is wrong"
+msgstr "الرّجاء وصف التصرّف  الذي حصل معك و الذي تعتبره خاطئا ؟"
+
+#: luasrc/view/debugger.htm
+msgid "Debugging Info"
+msgstr "معلومات عن التنقيح"
+
+#: luasrc/view/debugger.htm
+msgid "Mesh Network Information"
+msgstr "معلومات عن الشبكة المحبوكة"
+
+#: luasrc/view/debugger.htm
+msgid "Router Status"
+msgstr "حالة الموجـِّه"
+
+#: luasrc/view/debugger.htm
+msgid "Router Traffic Routing Rules"
+msgstr ""
+
+#: luasrc/view/debugger.htm
+msgid "All Info"
+msgstr "كلّ المعلومات"
+
+#: luasrc/view/debugger.htm
+msgid "Create Bug Info File"
+msgstr ""
+
+#: commotion-splash cbi/commotion/splash/splashtext.lua
+msgid "Edit Splash text"
+msgstr "تغيير مضمون شاشة البداية"
+
+msgid ""
+"You can enter your own text that is displayed to clients here. It is "
+"possible to use the following markers: The value of GatewayName as set in "
+"nodogsplash.conf. A URL which encodes a unique token and the URL of the "
+"user's original web request. The directory in nodogsplash's web hierarchy "
+"where images to be displayed in the splash page must be located."
+msgstr ""
+
+#: controller/commotion/splash/splash.lua
+msgid "splash: invalid parameters"
+msgstr ""
+
+msgid "Clearance time must be an integer greater than zero"
+msgstr ""
+
+msgid "Invalid redirect"
+msgstr "إعادة توجيه غير سليم"
+
+msgid "Invalid autoauth"
+msgstr ""
+
+msgid "Invalid submission...zone"
+msgstr ""
+
+msgid "doesn't exit"
+msgstr "لم يقم بالخروج"
+
+msgid "Whitelist entries must be a valid MAC address"
+msgstr ""
+
+#: splash
+msgid "Local Applications"
+msgstr "تطبيقات محلية"
+
+msgid "Internet"
+msgstr "انترنت"
+
+#: splash_settings
+msgid "Captive Portal"
+msgstr ""
+
+msgid ""
+"Nodogsplash offers a simple way to provide restricted access to an internet "
+"connection."
+msgstr ""
+
+msgid "General"
+msgstr "عامّ"
+
+msgid "Clearance time"
+msgstr "وقت التصفية"
+
+msgid ""
+"Clients that have accepted the captive portal are allowed to use the network"
+" for that many minutes."
+msgstr ""
+
+msgid "Redirect to Homepage?"
+msgstr "هل تريد إعادة توجيهك إلى الصفحة الرئيسية ؟"
+
+msgid "help"
+msgstr "مساعدة"
+
+msgid ""
+"If this is checked, clients will be redirected to your homepage, instead of "
+"to their original request."
+msgstr ""
+
+msgid "Homepage"
+msgstr "الصفحة الرئيسية"
+
+msgid ""
+"After authentication, clients will be redirected to this URL instead of to "
+"their original request."
+msgstr ""
+
+msgid "Immediately Authenticate?"
+msgstr "هل تريد الإستيثاق حالا ؟"
+
+msgid ""
+"If this is checked, clients will be immediately directed to their original "
+"request or your homepage (if set above), instead of being served a splash "
+"page."
+msgstr ""
+
+msgid "Interfaces"
+msgstr "الواجهات"
+
+msgid "Interfaces that are used for Splash."
+msgstr ""
+
+msgid "Network"
+msgstr "الشبكة"
+
+msgid "Intercept client traffic on this Interfaces"
+msgstr "إعتراض حركة بث العميل على هذه الواجهات"
+
+msgid "Whitelist"
+msgstr "القائمة البيضاء"
+
+msgid ""
+"MAC addresses of whitelisted clients. These do not need to accept the splash"
+" and are not bandwidth limited."
+msgstr ""
+
+msgid "MAC Address"
+msgstr "عنوان ال MAC"
+
+msgid "Blacklist"
+msgstr "القائمة السوداء"
+
+msgid "MAC addresses in this list are blocked."
+msgstr "عناوين ال MAC في هذه القائمة محضورة "
+
+msgid "Allowed hosts/subnets"
+msgstr ""
+
+msgid ""
+"Hosts and Networks that are listed here are excluded from splashing, i.e. "
+"they are always allowed."
+msgstr ""
+
+msgid "IP Address"
+msgstr "عنوان ال IP"
+
+msgid "CIDR notation optional (e.g. 192.168.1.0/24)"
+msgstr ""
+
+msgid "Submit"
+msgstr "أرسل"
+
+msgid "Reset"
+msgstr "إعادة الظبط"
+
+#: splashtext
+msgid "Welcome!"
+msgstr "مرحبا!"
+
+msgid "You are now connected to a community wireless network."
+msgstr "لقد تم ربطك بشبكة لاسلكيّة مجتمعيّة."
+
+msgid ""
+"Access to the Internet may be provided by people donating connectivity to "
+"the network. Everyone on the network has to share, so please be aware and "
+"behave yourself accordingly:"
+msgstr "الوصل بالإنترنت قد يكون تم توفيره عن طريق أشخاص تبرعوا بوصلتهم إلى الشبكة. كل من على الشبكة عليه المساهمة، لذا الرجاء كن واعيا و تحلى بالأخلاق. "
+
+msgid "Please"
+msgstr "من فضلك"
+
+msgid "avoid large downloads and excessive filesharing."
+msgstr "الرجاء تلافي التحميل الثقيل و الإفراط في تبادل الملفات."
+
+msgid "no illegal activities."
+msgstr "بدون أنشطة غير قانونية."
+
+msgid "If you like the network, please consider contributing!"
+msgstr "إذا أعجبتك الشبكة، الرجاء المساهمة!"
+
+#: luci-commotion files/usr/share/commtion/patches/wifi_lua.patch
+msgid "auto"
+msgstr "تلقائيا"
+
+msgid "Force CCMP (AES)"
+msgstr ""
+
+msgid "Force TKIP"
+msgstr ""
+
+msgid "Force TKIP and CCMP (AES)"
+msgstr ""
+
+msgid "No Encryption"
+msgstr "بدون تشفير"
+
+msgid "WEP Open System"
+msgstr ""
+
+msgid "WEP Shared Key"
+msgstr ""
+
+#: htdocs/luci/static/commotion/index
+msgid "Welcome to Commotion!"
+msgstr "مرحبا بك في كموشن!"
+
+msgid ""
+"You are connected to a mesh network powered by the Commotion Wireless "
+"Project. The Commotion project seeks to create an open-source, device-as-"
+"infrastructure communication platform that allows communities and activists "
+"to collaborate and communicate. If you're an admin of this node in the "
+"network, you can use this interface to modify its settings. For more "
+"information about the project, please visit the site below:"
+msgstr "أنت متّصل بالشبكة المحبوكة المدعومة من طرف المشروع اللاّسلكي كموشن. مشروع كوموشن يهدف إلى إنشاء منصّة تواصل مفتوحة المصدر تمكن المجموعات و الناشطين من التّعاون و التواصل. إذا كنت المشرف على هذه العقدة في الشبكة، يمكنك استعمال هذه الواجهة لتغيير الإعدادات. لمزيد من المعلومات عن المشروع، الرجاء زيارة الموقع  أسفله:"
+
+msgid "Commotion Wireless"
+msgstr "لاسلكي كموشن"
+
+msgid "Thanks for using our network!"
+msgstr ""
+
+#: htdocs/luci/static/resources/OSMLatLon
+msgid "OpenStreetMap"
+msgstr "OpenStreetMap"
+
+msgid "Map by"
+msgstr ""
+
+msgid "License CC-BY-SA"
+msgstr "تحت رخصة المشاع الإبداعي CC-BY-SA"
+
+msgid "Latitude"
+msgstr "\t\nخط العرض"
+
+msgid "Longitude"
+msgstr "خط الطول"
+
+#: luasrc/controller/commotion/commotion.luasrc
+msgid "Overview"
+msgstr "نظرة شاملة"
+
+msgid "Front Page"
+msgstr "الواجهة الأمامية"
+
+msgid "Mesh Configuration Manual"
+msgstr "دليل إعدادات الشبكة المحبوكة"
+
+#: luasrc/controller/commotion/meshprofile.lua
+msgid "Mesh Profile"
+msgstr ""
+
+#: luasrc/model/cbi/commotion/meshconfig
+msgid "Configuration"
+msgstr "إعدادات"
+
+msgid ""
+"This configuration wizard will assist you in setting up your router for a "
+"Commotion network."
+msgstr ""
+
+msgid "Access Point"
+msgstr "نقطة النّفاذ"
+
+msgid "Name (SSID)"
+msgstr "الإسم (SSID)"
+
+msgid "The public facing name of this interface"
+msgstr ""
+
+msgid "Secure Access Point"
+msgstr "نقطة نفاذ مؤمنة"
+
+msgid "Mesh Backhaul"
+msgstr ""
+
+msgid "Device Designation (BSSID)"
+msgstr ""
+
+msgid ""
+"The device read name of this interface. (Letters A-F, and numbers 0-9 only)"
+msgstr "الجهاز يقوم بقراءة إسم هذه الواجهة. (أحرف من A إلى F و أرقام من 0 إلى 9)"
+
+msgid "Network-wide Settings"
+msgstr ""
+
+msgid "5GHz Channel"
+msgstr "قناة 5 جيجاهرتز"
+
+msgid "The 5GHz backhaul channel of the mesh network, if applicable."
+msgstr ""
+
+msgid "2GHz Channel"
+msgstr ""
+
+msgid "The 2.4GHz backhaul channel of the mesh network, if applicable"
+msgstr ""
+
+msgid "Settings specific to this node"
+msgstr ""
+
+msgid "DHCP Timeout"
+msgstr ""
+
+msgid "How many seconds to wait on boot for a DHCP lease from the gateway"
+msgstr ""
+
+#: luasrc/view/commotion/meshprofile
+msgid "Node Profiles"
+msgstr ""
+
+msgid ""
+"If your node includes configuration profiles for multiple Commotion "
+"networks, this form allows you to set your defaults. We recommend that you "
+"reboot your node after changing these settings."
+msgstr ""
+
+msgid "Select an interface"
+msgstr "اختر واجهة"
+
+msgid "Select a profile to apply"
+msgstr ""
+
+msgid "Apply and Save"
+msgstr "طبّق ثمّ سجّل"
+
+#: commotion-openwrt-theme /files/templates/header.htm
+msgid "Unsaved Changes"
+msgstr "تغييرات غير مسجلة"
+
+msgid "Auto Refresh"
+msgstr "إنعاش تلقائي"
+
+msgid "No password set!"
+msgstr "ما من كلمة سرّ مسجلة!"
+
+msgid ""
+"There is no password set on this router. Please configure a root password to"
+" protect the web interface and enable SSH."
+msgstr "لا توجد كلمة سرّ مسجلة على هذا الموجه. الرّجاء اختيار كلمة سرّ رئيسية لحماية واجهة الواب و تشغيل خدمة SSH."
+
+msgid "Go to password configuration..."
+msgstr "الذهاب إلى إعدادات كلمة السرّ..."
+
+#: /files/templates/footer.htm
+msgid "QuickStart"
+msgstr "البدء السريع"
+
+msgid "Administration"
+msgstr "إدارة"
+
+#: /files/luasrc/view/cbi/full_valueheader.htm
+msgid "Go to relevant configuration page"
+msgstr "الذهاب إلى الصفحة الإعدادات المقترنة"
+
+#: luci-commotion /luasrc/view/commotion/serval_keyring.htm
+msgid "Serval Keyring"
+msgstr "حلقة مفاتيح الخادم"
+
+msgid ""
+"The Serval Keyring is used to sign all network traffic on a Commotion mesh "
+"network. Every node on your Commotion network should use the same Serval "
+"Keyring. On this page you can download the existing Serval keyring for this "
+"node, to back it up or to use when adding new nodes to your network. You can"
+" also generate a new Serval Keyring, or upload one from your computer."
+msgstr "حلقة مفاتيح الخادم تستخدم في توقيع كل حركة ّّّّّّالبثّ على شبكة كموشن المحبوكة. يجب أن تستعمل كل عقدة في شبكة كموشن نفس حلقة مفاتيح الخادم. على هذه الصفحة، بإمكانك تنزيل حلقة مفاتيح الخادم الحالية لهذه العقدة، بهدف حفظها واستعمالها عند إضافة عقد جديدة للشبكة خاصتك. بإمكانك أيضا إنشاء واحدة جديدة أو رفع أخرى من حاسوبك."
+
+msgid "Download a Serval Keyring"
+msgstr "تنزيل حلقة مفاتيح الخادم"
+
+msgid "Download your current Serval keyring"
+msgstr "تنزيل حلقة مفاتيح الخادم الحاليّة"
+
+msgid "Upload a Serval Keyring"
+msgstr "رفع حلقة مفاتيح الخادم"
+
+msgid "Click on the field below to upload a keyring."
+msgstr "اضغط على الحقل أسفله لرفع حلقة المفاتيح."
+
+msgid "Upload a Keyring"
+msgstr "رفع حلقة مفاتيح"
+
+msgid "Upload a Serval key file file from your own computer"
+msgstr "رفع حلقة مفاتيح الخادم من ملف موجود على الحاسوب خاصتك."
+
+msgid "Create a new Serval Keyring"
+msgstr "انشاء حلقة مفاتيح الخادم جديدة"
+
+msgid ""
+"Click on the button below to create a new keyring. This will DELETE the "
+"existing keyring on the device. We highly suggest you download any existing "
+"network keyrings you have before creating a new keyring."
+msgstr "اضغط على الزرّ أسفله لانشاء حلقة مفاتيح جديدة.  هذا سيتسبب في حذف حلقة المفاتيح الموجودة سلفا على هذا الجهاز. ننصحك بالقيام بتنزيل كل حلقات المفاتيح القائمة قبل إنشاء أي واحدة جديدة. "
+
+msgid "New Keyring"
+msgstr "حلقة مفاتيح جديدة"
+
+msgid "Create a new keyring on this device, replacing the existing keyring."
+msgstr "انشاء حلقة مفاتيح جديدة تقوم بتعويض حلقة المفاتيح القائمة. "
+
+msgid "Create New Keyring"
+msgstr "إنشاء حلقة مفاتيح"
+
