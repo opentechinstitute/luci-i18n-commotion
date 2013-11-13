@@ -194,19 +194,21 @@ foreach my $working_po_file (@working_po_files) {
 		next;
 	}
 	
-	my %translations = &Get_Translations($working_po_file);
-# NOTE: we don't care about anything but msgid changes
-# and existence of previous translations
+	# NOTE: we don't care about anything but msgid changes
+	# and existence of previous translations
 
-# Generate headers, id:str pairs for PO files
-# Write header
-# Write k:v else write k:msgstr
+	# Generate id:str pairs for PO files
+	# NOTE: translations is a hash ref
+	my $translations = &Get_Translations($working_po_file);
 
-
-#	&Write_PO_File($working_po_file, \%operations);
+	# Write File
+	&Write_PO_File($working_po_file, \%stringtable, $translations);
 }
 
+exit 0;
+
 sub Get_Translations {
+print "getting translations\n";
 	my $working_po_file = pop(@_);
 	my %translations;
 	open(WPO, "< $working_po_file") || die "Couldn't open translation file: $!\n";
@@ -221,70 +223,59 @@ sub Get_Translations {
 				$mid = $mid . $wpo[$i+1];
 			} else {
 				my $mstr = $wpo[$i+1];
+				$mid =~ s|^msgid ||;
+				$mstr =~ s|^msgstr ||;
 				$translations{$mid} = $mstr;
 			}
 		}
 		
 	}
-print "May need to strip msgid and msgstr from strings in Get_Translations\n";
-	return %translations;
+	print "May need to strip msgid and msgstr from strings in Get_Translations\n";
+	return \%translations;
 }
+
 sub Write_PO_File {
-=meat
-	my $po_header = &Generate_PO_Header();
-
-	open (NS, "> $new_strings_file");
-	if ($po_header) {
-		print NS $po_header;
+	# NOTE: stringtable and translations are hash references
+	my ($working_po_file, $stringtable, $translations) = @_;
+	if ($testing == 1) {
+		$working_po_file = $working_translations_dir . 'test_output.po';
 	}
 
-	foreach my $file (sort keys %stringtable) {
-		(my $filename = $file) =~ s|$working_source_dir||;
-		print NS "\n#: $filename\n";
-		foreach my $string ( sort uniq( @{ $stringtable{$file} } ) ) {	
-			print NS "msgid \"$string\"\n";
-			print NS "msgstr \"$string\"\n\n";
-		}
+	if ($working_po_file =~ m|-en.po$|) {
+		print "skipping english file\n";
+		return;
 	} 
-	close(NS);
-## Rewrite so it's doing less work
-	my $working_po_file = $_[0];
-	my %operations = %{$_[1]};
-	if ($working_po_file =~ m|-en\.po$|) {
-		print "manage english translation:\n";
-		print "\tAdd header to new_strings\n";
-		print "\tcopy to PO file\n";
-		return $working_po_file;
-	} 
-print Dumper(%operations);
-### repeat
-	open(WPO, "+< $working_po_file");
-	my @raw = <WPO>;
-	my %translations;
-	foreach (@raw) {
-		my $s = $_;
-		$s =~ s|^msgid||;	
-		print "Checking $s\n";
-		if ( exists ($operations{'"'.$_.'"'}) ) {
-			print "Found a match\n";
-		}
-	}
-	close(WPO);
-		while(<WPO>) {
-			foreach my $op (keys (%operations)) {
-				foreach my $msgid ($operations{$op}) {
-					if ($op == '+') {
-						print WPO $msgid,"\n";
-						print WPO "msgstr\n\n";
-					elsif ($op == '-') {
-						# Not going to work well this way
-					else die "I don't know how to use operation $op\n";
-					}
-				}
+	# Generate headers, 
+	push(@todo, "generate headers for PO files");
+	my $po_header = &_Generate_PO_Header();
+
+#
+# Extra table created to keep hashes in scope
+# FIX THIS
+#
+	my @wps;
+	# Write header
+	push(@todo, "write header to po file");
+
+	# Write k:v else write k:msgstr
+	foreach my $f (%$stringtable) {
+		push(@wps, "#: $f\n");
+		foreach my $id ( @{$stringtable->{$f}} ) {
+print $id,"\n";
+=pot
+			my $str;
+			if ($translations->{$id}) {
+				$str = 'msgid ' . $translations->{$id};
+			} else {
+				$str = 'msgid ';
 			}
-		}
-	return $working_po_file;
 =cut
+		}
+	}
+	open(WPO, "> $working_po_file") || die "Couldn't open $working_po_file: $!\n";
+	# Write stuff
+	close(WPO);
+	return;
 }
 # Commit working PO file
 
@@ -320,7 +311,7 @@ sub dec_tpl_str
         return $s;
 }
 
-sub Generate_PO_Header {
+sub _Generate_PO_Header {
 	my $po_header = "## See existing PO files for header requirements\n\n\
 			## NOTE: PO files generated programmatically.\
 			## Do not edit by hand!\n\n";
