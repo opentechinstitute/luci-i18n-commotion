@@ -1,5 +1,6 @@
 #!/usr/bin/perl -w
 use strict;
+my $testing = 1;
 my @todo = ("\n\nTo Do:");
 
 push(@todo, "Fix use vs. require");
@@ -10,6 +11,10 @@ use File::Copy;
 use File::Next;
 use Text::Balanced qw(extract_bracketed extract_delimited extract_tagged);
 use Text::Diff;
+
+## TODO: for next major revision:
+## Look for ways to minimize string overlap
+## http://www.perlmonks.org/?node_id=816086
 
 ##
 ## Git Info
@@ -30,12 +35,6 @@ my $working_translations_dir = $working_dir . 'translations/';
 
 my $stable_dir = '../';
 my $stable_translations_dir = $stable_dir . 'translations/';
-
-
-##
-## Translation files
-## 
-my $po_dir = '../'; # Location of translation files
 
 # Prepare working directory
 if (not -e $working_dir) {
@@ -61,21 +60,41 @@ foreach my $repo (@repos) {
 # Fetch most recent PO files
 push(@todo, "add transifex github integration");
 print("Updating translation files\n");
-my $r = Git::Repository->new ( work_tree => $po_dir, { quiet => 1 });
+my $r = Git::Repository->new ( work_tree => $stable_dir, { quiet => 1 });
 $r->command(pull =>'--rebase', 'origin', 'master') || warn "Couldn't pull stable branch\n";
+
+##
+## Translation files
+## 
+push(@todo, "read in existing translations");
+my @stable_po_files;
+my @working_po_files;
+if ($testing == 1) {
+	print "Limiting scope of operations!\n";
+	@stable_po_files = ($stable_translations_dir.'commotion-luci-en.po', $stable_translations_dir.'commotion-luci-ar.po');
+} else {
+	opendir(DIR, $stable_translations_dir) or warn "Couldn't open stable po dir: $!";
+	@stable_po_files = readdir(DIR); 
+	closedir(DIR);
+}
 
 # Create working PO file from stable PO file
 push(@todo, "Create .po headers");
-my $working_translations_file = $working_translations_dir . 'working.commotion-luci-en.po';
-
-if (-e '../translations/commotion-luci-en.po') {
-	copy('../translations/commotion-luci-en.po', $working_translations_file) || die "Couldn't copy English PO file: $!\n";
+if (@stable_po_files) {
+	foreach (@stable_po_files) {
+		my $stable_po_file = $_;
+		my $working_po_file = $_;
+		$working_po_file =~ s|$stable_translations_dir||;
+		$working_po_file = $working_translations_dir . 'working.' . $working_po_file;
+		push(@working_po_files, $working_po_file);
+		copy($stable_po_file, $working_po_file) || die "Couldn't copy PO file: $!\n";
+	}
 } else {
-	warn "Couldn't find stable English PO file\n";
+	warn "Couldn't find any stable PO files!\n";
 }
 
 # Traverse source directories, identifying translatable text
-my @working_files;
+my @working_source_files;
 ##
 ## File Scan Options
 ##
@@ -88,7 +107,7 @@ my $scan = File::Next::files( {
 	},
 	$working_source_dir);
 while (defined(my $file = $scan->())) {
-	push(@working_files, $file);
+	push(@working_source_files, $file);
 }
 
 ##
@@ -100,7 +119,7 @@ while (defined(my $file = $scan->())) {
 
 # looks like stringtable is a hash so it can handle multi-line strings
 my %stringtable;
-foreach my $file (@working_files) {
+foreach my $file (@working_source_files) {
 	chomp $file;
 # read file into $raw
 	if( open S, "< $file" ) {
@@ -189,8 +208,10 @@ foreach my $file (sort keys %stringtable) {
 close(NS);
 
 # Compare new strings to stable strings
-open(STABLE, "< $working_translations_file");
-my @diff = split("\n", diff($working_translations_file, $new_strings_file));
+# English is special case
+my $english_translations_file = $working_translations_dir . 'working.commotion-luci-en.po';
+open(STABLE, "< $english_translations_file");
+my @diff = split("\n", diff($english_translations_file, $new_strings_file));
 close(STABLE);
 
 # NOTE: we don't care about anything but msgid changes
@@ -199,16 +220,68 @@ my %operations;
 foreach (@diff) {
 	if ($_ =~ m|^[+-]msgid|) {
 		$_ =~ m|^[+-]|;
-		my $operator = $&;
+                my $operator = $&;
 		$_ =~ s|^[+-]msgid ||; # becomes $msgid
-
-		push(@{ $operations{$operator} }, $_);
+		$operations{$_} = $operator;
+		#push(@{ $operations{$operator} }, $_); 
 	}
 }
+
+# Run %operations on %stringtable
+
+# Generate headers, id:str pairs for PO files
+# Write header
+# Write k:v else write k:msgstr
+
+foreach my $working_po_file (@working_po_files) { 
+	&Write_PO_File($working_po_file, \%operations);
+}
+
+sub Write_PO_File {
+## Rewrite so it's doing less work
+=meat
+	my $working_po_file = $_[0];
+	my %operations = %{$_[1]};
+	if ($working_po_file =~ m|-en\.po$|) {
+		print "manage english translation:\n";
+		print "\tAdd header to new_strings\n";
+		print "\tcopy to PO file\n";
+		return $working_po_file;
+	} 
 print Dumper(%operations);
+### repeat
+	open(WPO, "+< $working_po_file");
+	my @raw = <WPO>;
+	my %translations;
+	foreach (@raw) {
+		my $s = $_;
+		$s =~ s|^msgid||;	
+		print "Checking $s\n";
+		if ( exists ($operations{'"'.$_.'"'}) ) {
+			print "Found a match\n";
+		}
+	}
+	close(WPO);
+		while(<WPO>) {
+			foreach my $op (keys (%operations)) {
+				foreach my $msgid ($operations{$op}) {
+					if ($op == '+') {
+						print WPO $msgid,"\n";
+						print WPO "msgstr\n\n";
+					elsif ($op == '-') {
+						# Not going to work well this way
+					else die "I don't know how to use operation $op\n";
+					}
+				}
+			}
+		}
+=cut
+	return $working_po_file;
+}
 # Commit working PO file
 
 # Upload to Transifex/GitHub
+#http://support.transifex.com/customer/portal/topics/440186-api/articles
 
 push(@todo, "Move common functions to subroutines");
 # print to do list
