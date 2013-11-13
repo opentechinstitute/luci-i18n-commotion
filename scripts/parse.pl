@@ -19,6 +19,11 @@ my @repos = qw(commotion-openwrt commotion-feed avahi-client luci-commotion-apps
 	commotion-dashboard-helper commotion-debug-helper commotiond 
 	luci-commotion-quickstart luci-commotion-splash luci-commotion luci-theme-commotion
 );
+
+
+##
+## Directory Structure
+##
 my $working_dir = 'working/';
 my $working_source_dir = $working_dir . 'source/';
 my $working_translations_dir = $working_dir . 'translations/';
@@ -185,16 +190,22 @@ close(NS);
 
 # Compare new strings to stable strings
 open(STABLE, "< $working_translations_file");
-#my @diff = split("\n", diff($working_translations_file, $new_strings_file));
-my @diff = diff($working_translations_file, $new_strings_file);
+my @diff = split("\n", diff($working_translations_file, $new_strings_file));
 close(STABLE);
 
+# NOTE: we don't care about anything but msgid changes
+# check for msgid +|- and compare to %stringtable
+my %operations;
 foreach (@diff) {
 	if ($_ =~ m|^[+-]msgid|) {
-#		print "Change: $_\n";
+		$_ =~ m|^[+-]|;
+		my $operator = $&;
+		$_ =~ s|^[+-]msgid ||; # becomes $msgid
+
+		push(@{ $operations{$operator} }, $_);
 	}
 }
-print Dumper(@diff);
+print Dumper(%operations);
 # Commit working PO file
 
 # Upload to Transifex/GitHub
@@ -202,7 +213,6 @@ print Dumper(@diff);
 push(@todo, "Move common functions to subroutines");
 # print to do list
 foreach (@todo) { print "$_\n"; }
-
 ##
 ## Translation tags
 ##
@@ -230,7 +240,9 @@ sub dec_tpl_str
 }
 
 sub Generate_PO_Header {
-	my $po_header = "See existing PO files for header requirements\n\n";
+	my $po_header = "## See existing PO files for header requirements\n\n\
+			## NOTE: PO files generated programmatically.\
+			## Do not edit by hand!\n\n";
 	return($po_header);
 }
 
