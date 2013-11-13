@@ -187,59 +187,67 @@ foreach my $file (@working_source_files) {
 	}
 }
 
-# Create new PO file
-# English PO file can be overwritten each time
-my $new_strings_file = $working_translations_dir . 'new_strings.txt';
-my $po_header = &Generate_PO_Header();
-
-open (NS, "> $new_strings_file");
-if ($po_header) {
-	print NS $po_header;
-}
-
-foreach my $file (sort keys %stringtable) {
-	(my $filename = $file) =~ s|$working_source_dir||;
-	print NS "\n#: $filename\n";
-	foreach my $string ( sort uniq( @{ $stringtable{$file} } ) ) {	
-		print NS "msgid \"$string\"\n";
-		print NS "msgstr \"$string\"\n\n";
+foreach my $working_po_file (@working_po_files) { 
+	# English file can be overwritten each time
+	if ($working_po_file =~ m|-en.po$|) {
+		&Write_PO_File($working_po_file);
+		next;
 	}
-} 
-close(NS);
-
-# Compare new strings to stable strings
-# English is special case
-my $english_translations_file = $working_translations_dir . 'working.commotion-luci-en.po';
-open(STABLE, "< $english_translations_file");
-my @diff = split("\n", diff($english_translations_file, $new_strings_file));
-close(STABLE);
-
+	
+	my %translations = &Get_Translations($working_po_file);
 # NOTE: we don't care about anything but msgid changes
-# check for msgid +|- and compare to %stringtable
-my %operations;
-foreach (@diff) {
-	if ($_ =~ m|^[+-]msgid|) {
-		$_ =~ m|^[+-]|;
-                my $operator = $&;
-		$_ =~ s|^[+-]msgid ||; # becomes $msgid
-		$operations{$_} = $operator;
-		#push(@{ $operations{$operator} }, $_); 
-	}
-}
-
-# Run %operations on %stringtable
+# and existence of previous translations
 
 # Generate headers, id:str pairs for PO files
 # Write header
 # Write k:v else write k:msgstr
 
-foreach my $working_po_file (@working_po_files) { 
-	&Write_PO_File($working_po_file, \%operations);
+
+#	&Write_PO_File($working_po_file, \%operations);
 }
 
+sub Get_Translations {
+	my $working_po_file = pop(@_);
+	my %translations;
+	open(WPO, "< $working_po_file") || die "Couldn't open translation file: $!\n";
+	my @wpo = <WPO>;
+	close(WPO);
+	for (my $i = 0; $i < $#wpo; $i++) {
+		$/ = "";
+		chomp($wpo[$i]);
+		if ($wpo[$i] =~ m|^msgid|) {
+			my $mid = $wpo[$i];
+			unless ($wpo[$i+1] =~ m|^msgstr|) {
+				$mid = $mid . $wpo[$i+1];
+			} else {
+				my $mstr = $wpo[$i+1];
+				$translations{$mid} = $mstr;
+			}
+		}
+		
+	}
+print "May need to strip msgid and msgstr from strings in Get_Translations\n";
+	return %translations;
+}
 sub Write_PO_File {
-## Rewrite so it's doing less work
 =meat
+	my $po_header = &Generate_PO_Header();
+
+	open (NS, "> $new_strings_file");
+	if ($po_header) {
+		print NS $po_header;
+	}
+
+	foreach my $file (sort keys %stringtable) {
+		(my $filename = $file) =~ s|$working_source_dir||;
+		print NS "\n#: $filename\n";
+		foreach my $string ( sort uniq( @{ $stringtable{$file} } ) ) {	
+			print NS "msgid \"$string\"\n";
+			print NS "msgstr \"$string\"\n\n";
+		}
+	} 
+	close(NS);
+## Rewrite so it's doing less work
 	my $working_po_file = $_[0];
 	my %operations = %{$_[1]};
 	if ($working_po_file =~ m|-en\.po$|) {
@@ -275,8 +283,8 @@ print Dumper(%operations);
 				}
 			}
 		}
-=cut
 	return $working_po_file;
+=cut
 }
 # Commit working PO file
 
