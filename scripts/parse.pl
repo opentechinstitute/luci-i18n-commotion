@@ -9,7 +9,6 @@ use Git::Repository;
 use File::Copy;
 use File::Next;
 use Text::Balanced qw(extract_bracketed extract_delimited extract_tagged);
-use List::MoreUtils qw(uniq);
 use Text::Diff;
 
 ##
@@ -177,7 +176,7 @@ if ($po_header) {
 foreach my $file (sort keys %stringtable) {
 	(my $filename = $file) =~ s|$working_source_dir||;
 	print NS "\n#: $filename\n";
-	foreach my $string ( uniq @{ $stringtable{$file} } ) {	
+	foreach my $string ( sort uniq( @{ $stringtable{$file} } ) ) {	
 		print NS "msgid \"$string\"\n";
 		print NS "msgstr \"$string\"\n\n";
 	}
@@ -233,4 +232,16 @@ sub dec_tpl_str
 sub Generate_PO_Header {
 	my $po_header = "See existing PO files for header requirements\n\n";
 	return($po_header);
+}
+
+sub uniq {
+    my %seen = ();
+    my @r = ();
+    foreach my $a (@_) {
+        unless ($seen{$a}) {
+            push @r, $a;
+            $seen{$a} = 1;
+        }
+    }
+    return @r;
 }
