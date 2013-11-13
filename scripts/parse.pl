@@ -225,6 +225,7 @@ print "getting translations\n";
 				my $mstr = $wpo[$i+1];
 				$mid =~ s|^msgid ||;
 				$mstr =~ s|^msgstr ||;
+				chomp($mstr);
 				$translations{$mid} = $mstr;
 			}
 		}
@@ -258,20 +259,26 @@ sub Write_PO_File {
 	push(@todo, "write header to po file");
 
 	# Write k:v else write k:msgstr
-	foreach my $f (%$stringtable) {
+	foreach my $f (keys %{$stringtable}) {
+		chomp($f);
 		push(@wps, "#: $f\n");
 		foreach my $id ( @{$stringtable->{$f}} ) {
-print $id,"\n";
-=pot
 			my $str;
-			if ($translations->{$id}) {
-				$str = 'msgid ' . $translations->{$id};
+			# need to do better string extraction
+			$id = '"'.$id.'"';
+			if ( exists $translations->{$id} ) {
+				print %{$translations->{$id}},"\n";
+				$str = 'msgstr "' . $translations->{$id} . '"';
 			} else {
-				$str = 'msgid ';
+				$str = 'msgstr ""';
 			}
-=cut
+			$id = 'msgid "' . $id . '"';
+			push(@wps, $id);
+			push(@wps, $str);
 		}
+		push(@wps, "\n");
 	}
+print Dumper(@wps);
 	open(WPO, "> $working_po_file") || die "Couldn't open $working_po_file: $!\n";
 	# Write stuff
 	close(WPO);
