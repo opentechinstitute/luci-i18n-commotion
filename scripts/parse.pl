@@ -2,7 +2,7 @@
 use strict;
 my $testing = 1;
 my @todo = ("\n\nTo Do:");
-
+push(@todo, "add copyright notice");
 push(@todo, "Fix use vs. require");
 use Data::Dumper;
 use File::Path qw(make_path remove_tree);
@@ -215,7 +215,7 @@ print "getting translations\n";
 	my @wpo = <WPO>;
 	close(WPO);
 	for (my $i = 0; $i < $#wpo; $i++) {
-		$/ = "";
+		local $/ = "";
 		chomp($wpo[$i]);
 		if ($wpo[$i] =~ m|^msgid|) {
 			my $mid = $wpo[$i];
@@ -231,7 +231,6 @@ print "getting translations\n";
 		}
 		
 	}
-	print "May need to strip msgid and msgstr from strings in Get_Translations\n";
 	return \%translations;
 }
 
@@ -267,7 +266,6 @@ sub Write_PO_File {
 			# need to do better string extraction
 			$id = '"'.$id.'"';
 			if ( exists $translations->{$id} ) {
-				print %{$translations->{$id}},"\n";
 				$str = 'msgstr "' . $translations->{$id} . '"';
 			} else {
 				$str = 'msgstr ""';
