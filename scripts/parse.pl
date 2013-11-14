@@ -202,13 +202,14 @@ foreach my $working_po_file (@working_po_files) {
 	my $translations = &Get_Translations($working_po_file);
 
 	# Write File
+	print "Writing to $working_po_file\n";
 	&Write_PO_File($working_po_file, \%stringtable, $translations);
 }
 
 exit 0;
 
 sub Get_Translations {
-print "getting translations\n";
+print "Getting translations for...\n";
 	my $working_po_file = pop(@_);
 	my %translations;
 	open(WPO, "< $working_po_file") || die "Couldn't open translation file: $!\n";
@@ -223,8 +224,11 @@ print "getting translations\n";
 				$mid = $mid . $wpo[$i+1];
 			} else {
 				my $mstr = $wpo[$i+1];
-				$mid =~ s|^msgid ||;
-				$mstr =~ s|^msgstr ||;
+				# quote removal might be better with extract
+				$mid =~ s|^msgid "?||;
+				$mid =~ s|"?$||;
+				$mstr =~ s|^msgstr "?||;
+				$mstr =~ s|"?$||;
 				chomp($mstr);
 				$translations{$mid} = $mstr;
 			}
@@ -237,9 +241,6 @@ print "getting translations\n";
 sub Write_PO_File {
 	# NOTE: stringtable and translations are hash references
 	my ($working_po_file, $stringtable, $translations) = @_;
-	if ($testing == 1) {
-		$working_po_file = $working_translations_dir . 'test_output.po';
-	}
 
 	if ($working_po_file =~ m|-en.po$|) {
 		print "skipping english file\n";
@@ -260,11 +261,10 @@ sub Write_PO_File {
 	# Write k:v else write k:msgstr
 	foreach my $f (keys %{$stringtable}) {
 		chomp($f);
-		push(@wps, "#: $f\n");
+		push(@wps, "#: $f");
 		foreach my $id ( @{$stringtable->{$f}} ) {
 			my $str;
 			# need to do better string extraction
-			$id = '"'.$id.'"';
 			if ( exists $translations->{$id} ) {
 				$str = 'msgstr "' . $translations->{$id} . '"';
 			} else {
@@ -276,9 +276,11 @@ sub Write_PO_File {
 		}
 		push(@wps, "\n");
 	}
-print Dumper(@wps);
+
 	open(WPO, "> $working_po_file") || die "Couldn't open $working_po_file: $!\n";
-	# Write stuff
+	foreach (@wps) {
+		print WPO $_,"\n";
+	}
 	close(WPO);
 	return;
 }
