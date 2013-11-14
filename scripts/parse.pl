@@ -206,7 +206,12 @@ foreach my $working_po_file (@working_po_files) {
 	&Write_PO_File($working_po_file, \%stringtable, $translations);
 }
 
-exit 0;
+
+push(@todo, "Move common functions to subroutines");
+# print to do list
+foreach (@todo) { print "$_\n"; }
+
+exit 0; 
 
 sub Get_Translations {
 print "Getting translations for...\n";
@@ -247,18 +252,14 @@ sub Write_PO_File {
 		return;
 	} 
 	# Generate headers, 
-	push(@todo, "generate headers for PO files");
-	my $po_header = &_Generate_PO_Header();
+	my @po_header = &_Generate_PO_Header($working_po_file);
 
 #
 # Extra table created to keep hashes in scope
 # FIX THIS
 #
 	my @wps;
-	# Write header
-	push(@todo, "write header to po file");
-
-	# Write k:v else write k:msgstr
+	# Get k:v else write k:msgstr
 	foreach my $f (keys %{$stringtable}) {
 		chomp($f);
 		push(@wps, "#: $f");
@@ -278,6 +279,9 @@ sub Write_PO_File {
 	}
 
 	open(WPO, "> $working_po_file") || die "Couldn't open $working_po_file: $!\n";
+	foreach (@po_header) {
+		print WPO $_,"\n";
+	}
 	foreach (@wps) {
 		print WPO $_,"\n";
 	}
@@ -289,9 +293,6 @@ sub Write_PO_File {
 # Upload to Transifex/GitHub
 #http://support.transifex.com/customer/portal/topics/440186-api/articles
 
-push(@todo, "Move common functions to subroutines");
-# print to do list
-foreach (@todo) { print "$_\n"; }
 ##
 ## Translation tags
 ##
@@ -319,10 +320,17 @@ sub dec_tpl_str
 }
 
 sub _Generate_PO_Header {
-	my $po_header = "## See existing PO files for header requirements\n\n\
-			## NOTE: PO files generated programmatically.\
-			## Do not edit by hand!\n\n";
-	return($po_header);
+	my $working_po_file = pop;	
+	my @po_header;
+	open(WPF, "< $working_po_file");
+	while(<WPF>) {
+		chomp;
+		push(@po_header, $_);
+		last if ($_ =~ m|^"Plural|);
+	}
+	push(@todo, "Update modified date in PO header");
+	close(WPF);
+	return(@po_header);
 }
 
 sub uniq {
