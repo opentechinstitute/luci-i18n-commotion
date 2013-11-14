@@ -11,6 +11,7 @@ use File::Copy;
 use File::Next;
 use Text::Balanced qw(extract_bracketed extract_delimited extract_tagged);
 use Text::Diff;
+use DateTime;
 
 ## TODO: for next major revision:
 ## Look for ways to minimize string overlap
@@ -66,7 +67,6 @@ $r->command(pull =>'--rebase', 'origin', 'master') || warn "Couldn't pull stable
 ##
 ## Translation files
 ## 
-push(@todo, "read in existing translations");
 my @stable_po_files;
 my @working_po_files;
 if ($testing == 1) {
@@ -79,7 +79,6 @@ if ($testing == 1) {
 }
 
 # Create working PO file from stable PO file
-push(@todo, "Create .po headers");
 if (@stable_po_files) {
 	foreach (@stable_po_files) {
 		my $stable_po_file = $_;
@@ -188,34 +187,41 @@ foreach my $file (@working_source_files) {
 }
 
 foreach my $working_po_file (@working_po_files) { 
+	my $translations = ();
 	# English file can be overwritten each time
-	if ($working_po_file =~ m|-en.po$|) {
-		&Write_PO_File($working_po_file);
-		next;
-	}
-	
+
 	# NOTE: we don't care about anything but msgid changes
 	# and existence of previous translations
 
 	# Generate id:str pairs for PO files
 	# NOTE: translations is a hash ref
-	my $translations = &Get_Translations($working_po_file);
+	unless ($working_po_file =~ m|-en.po$|) {
+		$translations = &Get_Translations($working_po_file);
+	}
 
 	# Write File
 	print "Writing to $working_po_file\n";
 	&Write_PO_File($working_po_file, \%stringtable, $translations);
 }
 
+# Commit working PO file
+# rewrite file array as hash
+# associate stable => working
+# reverse hash to copy working to stable
+#my %rhash = reverse %hash; my $key = $rhash{$value}; 
+
+# Upload to Transifex/GitHub
+#http://support.transifex.com/customer/portal/topics/440186-api/articles
 
 push(@todo, "Move common functions to subroutines");
 # print to do list
-foreach (@todo) { print "$_\n"; }
+if ($testing == 1) { foreach (@todo) { print "$_\n"; } }
 
 exit 0; 
 
 sub Get_Translations {
-print "Getting translations for...\n";
 	my $working_po_file = pop(@_);
+	print "Getting translations for $working_po_file\n";
 	my %translations;
 	open(WPO, "< $working_po_file") || die "Couldn't open translation file: $!\n";
 	my @wpo = <WPO>;
@@ -246,33 +252,38 @@ print "Getting translations for...\n";
 sub Write_PO_File {
 	# NOTE: stringtable and translations are hash references
 	my ($working_po_file, $stringtable, $translations) = @_;
-
+=pot
 	if ($working_po_file =~ m|-en.po$|) {
 		print "skipping english file\n";
 		return;
 	} 
+=cut
 	# Generate headers, 
 	my @po_header = &_Generate_PO_Header($working_po_file);
 
 #
 # Extra table created to keep hashes in scope
-# FIX THIS
+# This can probably be moved to a subroutine
 #
-	my @wps;
+	my @wps = ();
 	# Get k:v else write k:msgstr
 	foreach my $f (keys %{$stringtable}) {
 		chomp($f);
 		push(@wps, "#: $f");
 		foreach my $id ( @{$stringtable->{$f}} ) {
 			my $str;
-			# need to do better string extraction
-			if ( exists $translations->{$id} ) {
-				$str = 'msgstr "' . $translations->{$id} . '"';
+			if ($working_po_file =~ m|-en.po$|) {
+				$str = 'msgstr "' . $id . '"';
 			} else {
-				$str = 'msgstr ""';
+				# need to do better string extraction
+				if ( exists $translations->{$id} ) {
+					$str = 'msgstr "' . $translations->{$id} . '"';
+				} else {
+					$str = 'msgstr ""';
+				}
 			}
-			$id = 'msgid "' . $id . '"';
-			push(@wps, $id);
+			my $mid = 'msgid "' . $id . '"';
+			push(@wps, $mid);
 			push(@wps, $str);
 		}
 		push(@wps, "\n");
@@ -288,11 +299,6 @@ sub Write_PO_File {
 	close(WPO);
 	return;
 }
-# Commit working PO file
-
-# Upload to Transifex/GitHub
-#http://support.transifex.com/customer/portal/topics/440186-api/articles
-
 ##
 ## Translation tags
 ##
@@ -322,13 +328,19 @@ sub dec_tpl_str
 sub _Generate_PO_Header {
 	my $working_po_file = pop;	
 	my @po_header;
+	my $dt = DateTime->now();
+	my $date = $dt.'\n"';
+	#my $date = strftime "%Y-%m-%d %R\n";
+	#"PO-Revision-Date: 2013-08-16 20:50+0000\n"
 	open(WPF, "< $working_po_file");
 	while(<WPF>) {
 		chomp;
+		if ($_ =~ m|^\"PO-Revision-Date\:\ |) {
+			$_ = $& . $date;
+		}
 		push(@po_header, $_);
 		last if ($_ =~ m|^"Plural|);
 	}
-	push(@todo, "Update modified date in PO header");
 	close(WPF);
 	return(@po_header);
 }
