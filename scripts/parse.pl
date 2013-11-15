@@ -25,6 +25,8 @@ my @repos = qw(commotion-openwrt commotion-feed avahi-client luci-commotion-apps
 	commotion-dashboard-helper commotion-debug-helper commotiond 
 	luci-commotion-quickstart luci-commotion-splash luci-commotion luci-theme-commotion
 );
+my $i18n_remote = 'origin';
+my $i18n_branch = 'PO-script-local';
 
 
 ##
@@ -53,16 +55,24 @@ foreach my $repo (@repos) {
 			|| warn "Couldn't clone " . $origin . "\n";
 	} else {
 		print("Updating " . $repo . "\n");
-		my $r = Git::Repository->new( work_tree => $working_source_dir . $repo, { quiet => 1 });
-		$r->command(pull => 'origin', 'master') || warn "Couldn't pull remotes\n";
+		my $r = Git::Repository->new( work_tree => $working_source_dir . $repo);
+		$r->command(pull => 'origin', 'master', { quiet => 1 }) || warn "Couldn't pull remotes\n";
 	}
 }
 
 # Fetch most recent PO files
 push(@todo, "add transifex github integration");
 print("Updating translation files\n");
-my $r = Git::Repository->new ( work_tree => $stable_dir, { quiet => 1 });
-$r->command(pull =>'--rebase', 'origin', 'master') || warn "Couldn't pull stable branch\n";
+my $i18n_r = Git::Repository->new ( work_tree => $stable_dir, { quiet => 1 });
+my @command = (
+	"pull, '$i18n_remote', '$i18n_branch'",
+);
+foreach my $cmd (@command) {
+	if ($testing == 1) {
+		$cmd = $cmd . ", '--dry-run'";
+	}
+	$i18n_r->command($cmd) || warn "Couldn't pull stable branch\n";
+}
 
 ##
 ## Translation files
@@ -214,11 +224,22 @@ for my $working (keys %po_files) {
 	copy($working, $po_files{$working}) || die "Couldn't copy po file to stable directory: $!\n";
 }
 
-# Commit working PO file
-# rewrite file array as hash
-# associate stable => working
-# reverse hash to copy working to stable
-#my %rhash = reverse %hash; my $key = $rhash{$value}; 
+# Commit new PO files and upload to github
+#my $i18n_r = Git::Repository->new ( work_tree => $stable_dir, { quiet => 1 });
+#$i18n_r->command(pull =>'--rebase', 'origin', 'master') || warn "Couldn't pull stable branch\n";
+@command = (
+	"add => '$working_translations_dir'",
+	"commit => '-m', 'Quarterly Commotion UI strings update'",
+	"push, '$i18n_remote', '$i18n_branch'",
+);
+
+foreach my $cmd (@command) {
+	if ($testing == 1) {
+		$cmd = $cmd . ', --dry-run';
+	}
+	$i18n_r->command($cmd) || die "Couldn't run git command: $!";
+}
+
 
 # Upload to Transifex/GitHub
 #http://support.transifex.com/customer/portal/topics/440186-api/articles
