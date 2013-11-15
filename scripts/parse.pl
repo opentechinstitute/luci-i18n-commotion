@@ -67,6 +67,8 @@ $r->command(pull =>'--rebase', 'origin', 'master') || warn "Couldn't pull stable
 ##
 ## Translation files
 ## 
+push(@todo, 'Merge %po_files, @stable_po_files, @working_po_files');
+my %po_files;
 my @stable_po_files;
 my @working_po_files;
 if ($testing == 1) {
@@ -85,7 +87,8 @@ if (@stable_po_files) {
 		my $working_po_file = $_;
 		$working_po_file =~ s|$stable_translations_dir||;
 		$working_po_file = $working_translations_dir . 'working.' . $working_po_file;
-		push(@working_po_files, $working_po_file);
+		$po_files{$stable_po_file} = $working_po_file;
+		#push(@working_po_files, $working_po_file);
 		copy($stable_po_file, $working_po_file) || die "Couldn't copy PO file: $!\n";
 	}
 } else {
@@ -204,6 +207,13 @@ foreach my $working_po_file (@working_po_files) {
 	&Write_PO_File($working_po_file, \%stringtable, $translations);
 }
 
+# Copy working po files back to stable
+%po_files = reverse %po_files;
+for my $working (keys %po_files) {
+	print "Copying working po file to $po_files{$working}\n";
+	copy($working, $po_files{$working}) || die "Couldn't copy po file to stable directory: $!\n";
+}
+
 # Commit working PO file
 # rewrite file array as hash
 # associate stable => working
@@ -252,12 +262,7 @@ sub Get_Translations {
 sub Write_PO_File {
 	# NOTE: stringtable and translations are hash references
 	my ($working_po_file, $stringtable, $translations) = @_;
-=pot
-	if ($working_po_file =~ m|-en.po$|) {
-		print "skipping english file\n";
-		return;
-	} 
-=cut
+
 	# Generate headers, 
 	my @po_header = &_Generate_PO_Header($working_po_file);
 
