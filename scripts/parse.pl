@@ -233,12 +233,16 @@ for my $working (keys %po_files) {
 	"push, '$i18n_remote', '$i18n_branch'",
 );
 
-foreach my $cmd (@command) {
-	if ($testing == 1) {
-		$cmd = $cmd . ', --dry-run';
-	}
-	$i18n_r->command($cmd) || die "Couldn't run git command: $!";
-}
+## For some reason git doesn't recognize add when run as a loop
+#foreach my $cmd (@command) {
+#	if ($testing == 1) {
+#		$cmd = $cmd . ', --dry-run';
+#	}
+#	$i18n_r->command($cmd) || die "Couldn't run git command: $!";
+#}
+$i18n_r->run(add => "$working_translations_dir");
+$i18n_r->run(commit => 'm', 'Quarterly Commotion UI strings update');
+$i18n_r->run(push => "$i18n_remote", "$i18n_branch");
 
 
 # Upload to Transifex/GitHub
