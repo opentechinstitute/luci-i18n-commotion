@@ -128,9 +128,9 @@ if (@stable_po_files) {
 		my $working_po_file = $_;
 		$working_po_file =~ s|$stable_translations_dir||;
 		$working_po_file = $working_translations_dir . 'working.' . $working_po_file;
-print("$stable_po_file, $working_po_file\n");
 		$po_files{$stable_po_file} = $working_po_file;
-		#push(@working_po_files, $working_po_file);
+		push(@working_po_files, $working_po_file);
+		if ($testing == 1) { print("Copying $stable_po_file to $working_po_file\n"); }
 		copy($stable_translations_dir . $stable_po_file, $working_po_file) || die "Couldn't copy PO file $stable_po_file: $!\n";
 	}
 } else {
@@ -165,6 +165,7 @@ while (defined(my $file = $scan->())) {
 my %stringtable;
 foreach my $file (@working_source_files) {
 	chomp $file;
+	if ($testing == 1) { print "Populating string table from $file\n"; }
 # read file into $raw
 	if( open S, "< $file" ) {
 		local $/ = undef;
@@ -232,6 +233,7 @@ foreach my $file (@working_source_files) {
 }
 
 foreach my $working_po_file (@working_po_files) { 
+	print "Salvaging translations from $working_po_file\n";
 	my $translations = ();
 	# English file can be overwritten each time
 
