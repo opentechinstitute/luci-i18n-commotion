@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: Commotion User Interface\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-08-01 02:43+0500\n"
-"PO-Revision-Date: 2013-12-25 09:12+0000\n"
+"PO-Revision-Date: 2013-12-29T01:52:13\n"
 "Last-Translator: ArchLord\n"
 "Language-Team: Arabic (http://www.transifex.com/projects/p/commotion-user-interface/language/ar/)\n"
 "MIME-Version: 1.0\n"
@@ -14,558 +14,1039 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ar\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
-
-#: commotion quickstart
-msgid "Access Point Name"
-msgstr "إسم نقطة النّفاذ"
-
-msgid "What would you like to name your node's access point?"
-msgstr "ما الإسم الذي تختاره لنقطة النّفاذ المتصلة بالعقدة خاصتك؟    "
-
-msgid ""
-"This is the name that users will see when they search for wireless access."
-msgstr "هذا الإسم هو ما سيراه المستخدمون حين يقومون بالبحث عن اتّصال لاسلكيّ."
-
-msgid ""
-"Choose a name that is 5-12 characters. You can use numbers, letters and "
-"special characters. The name must be unique in the network. You can change "
-"the node name later by logging into the node administration page."
-msgstr "اختر إسم متكونا من 5 إلى 12 حرفا. بإمكانك استعمال الأرقام و الحروف و lلرّموز الخاصة.  يمكنك تغيير إسم العقدة لاحقا عبر الولوج إلى صفحة إدارة العقدة. "
-
-msgid ""
-"Choose a password that is between 9 and 30 characters. This password can be "
-"numbers, letters, and special characters."
-msgstr "اختر كلمة سرّ متكونة من 9 إلى 30 حرفا. كلمة السرّ يمكن أن تحتوي على الأرقام و الحروف و lلرّموز الخاصة."
-
-msgid ""
-"This password is used to access the administration menus on this device."
-msgstr "كلمة السرّ هذه تستعمل للعبور إلى قوائم الإدارة على هذا الجهاز."
-
-msgid "Redirecting..."
-msgstr "جاري إعادة التوجيه..."
-
-msgid "System"
-msgstr "النّظام"
-
-msgid "Changes applied."
-msgstr "تمّ تطبيق التغييرات."
-
-msgid "Waiting for changes to be applied..."
-msgstr "جاري الإنتظار الى حين تطبيق التغييرات..."
-
-msgid "The name of your mesh network is:"
-msgstr "إسم الشبكة المحبوكة خاصتك هو:"
-
-msgid "Your node name is:"
-msgstr "إسم العقدة خاصتك هو:"
-
-msgid ""
-"When people connect to your node wirelessly, they will connect using this "
-"name:"
-msgstr "عندما يتّصل أشخاص بالعقدة خاصتك لاسلكيّا، سوف يتّصلون مختارين هذا الإسم:"
-
-msgid ""
-"After configuring your node, you can change the node name on the node "
-"administration page."
-msgstr "بعد تعديل العقدة خاصتك، يمكنك تغيير إسم العقدة من خلال صفحة الإدرة."
-
-msgid "Click here if your browser doesn't redirect you within one minute"
-msgstr "إضغط هنا إذا لم يقم المتصفح بإعادة توجيهك خلال دقيقة"
-
-msgid ""
-"Choose a name that is 5-20 characters. You can use letters and numbers ONLY."
-" The name will be made unique in the network through the addition of the "
-"bolded number next to the input box. You can change the node name later by "
-"logging into the node administration page."
-msgstr "اختر إسم متكونا من 5 إلى 20 حرفا. يمكنك استعمال الأرقام و الحروف فقط. سوف نجعل الإسم فريدا على كامل الشبكة عبر إضافة أرقام إلى جانب الإسم الذي قمت بإدخاله. بإمكانك تغيير إسم العقدة لاحقا عبر الولوج إلى صفحة إدارة العقدة. "
-
-msgid "Node Name"
-msgstr "إسم العقدة"
-
-msgid ""
-"This value is used by other users and devices to find your network "
-"wirelessly and over the mesh. This value can be composed of letter, number "
-"and hyphens. (Hyphens can not be used at the beggining or end of the name.)"
-msgstr "هذا الإسم يستخدم من طرف مستعملين آخرين و أجهزة أخرى لإيجاد شبكتك اللاسلكية عبر المحبوكة.\nيمكن للإسم أن يتكون من أحرف و أرقام أو واصلة. (يمكن أن تستعمل الواصلة في أول أو في آخر  الإسم)"
-
-msgid "Your Node Name"
-msgstr "إسم العقدة خاصتك"
-
-msgid "Require a password for others to connect to your node."
-msgstr "طلب كلمة سرّ ممن يريد الإتصال بالعقدة خاصتك."
-
-msgid "WiFi Password"
-msgstr "كلمة السرّ لل WIFI"
-
-msgid "This password is required for others to use your wifi."
-msgstr "كلمة السرّ هاته تطلب من أي شخص يريد أستعمال ال wifi خاصتك.  "
-
-msgid "Retype your password here"
-msgstr "أعد إدخال كلمة السرّ هنا"
-
-msgid ""
-"If you would like to start the QuickStart configuration process over please "
-"click the above. WARNING: The quickstart process allows modification of this"
-" device by non-administrative users when it is active. Please make sure that"
-" you only restart the quickstart when you have time to finish the entire "
-"process."
-msgstr ""
-
-msgid "Click on the field below to upload a file."
-msgstr "قم بالنقر على المجال في الأسفل لتتمكن من رفع ملف."
-
-msgid "Upload"
-msgstr "ارفع"
-
-msgid ""
-"Congratulations! You have a Commotion node and are ready to join a network "
-"or start a new one. This wizard will guide you through the setup. The setup "
-"process should take about 10 minutes."
-msgstr "تهانينا!  لقد تحصلت على عقدة كوموشن وأنت الآن جاهز للانضمام إلى شبكة محبوكة أو إطلاق واحدة جديدة. سيقوم  المرشد بمساعتدك في الإعدادات. عمليّة الإعدادات تتطلب تقريبا 10 دقائق."
-
-msgid "You can still change settings after setup is complete."
-msgstr "بالإمكان تغيير الإعدادات حتى بعد إنهاء الظبط."
-
-#: commotion-bug-info luasrc/controller/debugger.lua
-msgid "Commotion Debugging Helper"
-msgstr "مساعد التنقيح لكموشن"
-
-#: luasrc/view/debugger.htm
-msgid ""
-"The information you are about to download contains private information about"
-" this device and the network it is connected to. Only give this information "
-"to people you trust. Do you understand?"
-msgstr "المعلومات التي أنت بصدد تنزيلها تحتوي على خاصة بهذا الجهاز والشبكة المربوط بها. الرجاء عدم مد هذه المعلومات إلا للاشخاص الذين تثق بهم. مفهوم ؟"
-
-#: luasrc/view/debugger.htm
-msgid "Commotion Bug Info"
-msgstr "معلومات عن علل كموشن"
-
-#: luasrc/view/debugger.htm
-msgid "Name"
-msgstr "الإسم"
-
-#: luasrc/view/debugger.htm
-msgid "Contact Info"
-msgstr "معلومات للإتّصال"
-
-#: luasrc/view/debugger.htm
-msgid "What were you doing on the device when the error occurred?"
-msgstr "ماذا كنت تعمل على الجهاز عندما حصل العطب ؟"
-
-#: luasrc/view/debugger.htm
-msgid "Please describe the behavior you expected"
-msgstr "الرّجاء وصف التصرّف  الذي تتوقعه ؟"
-
-#: luasrc/view/debugger.htm
-msgid "Please describe the behavior you experienced that you believe is wrong"
-msgstr "الرّجاء وصف التصرّف  الذي حصل معك و الذي تعتبره خاطئا ؟"
-
-#: luasrc/view/debugger.htm
-msgid "Debugging Info"
-msgstr "معلومات عن التنقيح"
-
-#: luasrc/view/debugger.htm
-msgid "Mesh Network Information"
-msgstr "معلومات عن الشبكة المحبوكة"
-
-#: luasrc/view/debugger.htm
-msgid "Router Status"
-msgstr "حالة الموجـِّه"
-
-#: luasrc/view/debugger.htm
-msgid "Router Traffic Routing Rules"
-msgstr "قوانين توجيه حركة البث بالموجـِّه"
-
-#: luasrc/view/debugger.htm
-msgid "All Info"
-msgstr "كلّ المعلومات"
-
-#: luasrc/view/debugger.htm
-msgid "Create Bug Info File"
-msgstr "إنشاء ملف معلومات حول علَّة"
-
-#: commotion-splash cbi/commotion/splash/splashtext.lua
-msgid "Edit Splash text"
-msgstr "تغيير مضمون شاشة البداية"
-
-msgid ""
-"You can enter your own text that is displayed to clients here. It is "
-"possible to use the following markers: The value of GatewayName as set in "
-"nodogsplash.conf. A URL which encodes a unique token and the URL of the "
-"user's original web request. The directory in nodogsplash's web hierarchy "
-"where images to be displayed in the splash page must be located."
-msgstr ""
-
-#: controller/commotion/splash/splash.lua
-msgid "splash: invalid parameters"
-msgstr "نشرة: معاملات خاطئة"
-
-msgid "Clearance time must be an integer greater than zero"
-msgstr "وقت التصفية يجب أن يكون عددا أكبر من الصفر"
-
-msgid "Invalid redirect"
-msgstr "إعادة توجيه غير سليم"
-
-msgid "Invalid autoauth"
-msgstr "إستيثاقة تلقائية خاطئة"
-
-msgid "Invalid submission...zone"
-msgstr "إرسال خاطىء...منطقة"
-
-msgid "doesn't exit"
-msgstr "لم يقم بالخروج"
-
-msgid "Whitelist entries must be a valid MAC address"
-msgstr ""
-
-#: splash
-msgid "Local Applications"
-msgstr "تطبيقات محلية"
-
-msgid "Internet"
-msgstr "انترنت"
-
-#: splash_settings
-msgid "Captive Portal"
-msgstr "البوابة الأسيرة"
-
-msgid ""
-"Nodogsplash offers a simple way to provide restricted access to an internet "
-"connection."
-msgstr ""
-
-msgid "General"
-msgstr "عامّ"
-
-msgid "Clearance time"
-msgstr "وقت التصفية"
-
-msgid ""
-"Clients that have accepted the captive portal are allowed to use the network"
-" for that many minutes."
-msgstr ""
-
-msgid "Redirect to Homepage?"
-msgstr "هل تريد إعادة توجيهك إلى الصفحة الرئيسية ؟"
-
-msgid "help"
-msgstr "مساعدة"
-
-msgid ""
-"If this is checked, clients will be redirected to your homepage, instead of "
-"to their original request."
-msgstr ""
-
-msgid "Homepage"
-msgstr "الصفحة الرئيسية"
-
-msgid ""
-"After authentication, clients will be redirected to this URL instead of to "
-"their original request."
-msgstr "بعد الاستيثاقة ستم تحويل وجهة العميل إلى هذا الرابط عوضا عن الطلب الأصلي."
-
-msgid "Immediately Authenticate?"
-msgstr "هل تريد الإستيثاق حالا ؟"
-
-msgid ""
-"If this is checked, clients will be immediately directed to their original "
-"request or your homepage (if set above), instead of being served a splash "
-"page."
-msgstr ""
-
-msgid "Interfaces"
-msgstr "الواجهات"
-
-msgid "Interfaces that are used for Splash."
-msgstr ""
-
-msgid "Network"
-msgstr "الشبكة"
-
-msgid "Intercept client traffic on this Interfaces"
-msgstr "إعتراض حركة بث العميل على هذه الواجهات"
-
-msgid "Whitelist"
-msgstr "القائمة البيضاء"
-
-msgid ""
-"MAC addresses of whitelisted clients. These do not need to accept the splash"
-" and are not bandwidth limited."
-msgstr ""
-
-msgid "MAC Address"
-msgstr "عنوان ال MAC"
-
-msgid "Blacklist"
-msgstr "القائمة السوداء"
-
-msgid "MAC addresses in this list are blocked."
-msgstr "عناوين ال MAC في هذه القائمة محضورة "
-
-msgid "Allowed hosts/subnets"
-msgstr " المضيفين و الشبكات الفرعية المسموح لهم"
-
-msgid ""
-"Hosts and Networks that are listed here are excluded from splashing, i.e. "
-"they are always allowed."
-msgstr ""
-
-msgid "IP Address"
-msgstr "عنوان ال IP"
-
-msgid "CIDR notation optional (e.g. 192.168.1.0/24)"
-msgstr ""
-
-msgid "Submit"
-msgstr "أرسل"
-
-msgid "Reset"
-msgstr "إعادة الظبط"
-
-#: splashtext
+#: working/source/luci-commotion-splash/luasrc/view/commotion-splash/splashtext.htm
 msgid "Welcome!"
 msgstr "مرحبا!"
-
-msgid "You are now connected to a community wireless network."
-msgstr "لقد تم ربطك بشبكة لاسلكيّة مجتمعيّة."
-
-msgid ""
-"Access to the Internet may be provided by people donating connectivity to "
-"the network. Everyone on the network has to share, so please be aware and "
-"behave yourself accordingly:"
-msgstr "الوصل بالإنترنت قد يكون تم توفيره عن طريق أشخاص تبرعوا بوصلتهم إلى الشبكة. كل من على الشبكة عليه المساهمة، لذا الرجاء كن واعيا و تحلى بالأخلاق. "
-
+msgid "You are now connected to a"
+msgstr ""
+msgid "community wireless network."
+msgstr ""
+msgid "Access to the Internet"
+msgstr ""
+msgid "may be provided by people donating connectivity to the network. Everyone on the network has to share, so please be aware and behave yourself accordingly:"
+msgstr ""
 msgid "Please"
 msgstr "من فضلك"
-
 msgid "avoid large downloads and excessive filesharing."
 msgstr "الرجاء تلافي التحميل الثقيل و الإفراط في تبادل الملفات."
-
+msgid "Please"
+msgstr "من فضلك"
 msgid "no illegal activities."
 msgstr "بدون أنشطة غير قانونية."
-
 msgid "If you like the network, please consider contributing!"
 msgstr "إذا أعجبتك الشبكة، الرجاء المساهمة!"
 
-#: luci-commotion files/usr/share/commtion/patches/wifi_lua.patch
-msgid "auto"
-msgstr "تلقائيا"
 
-msgid "Force CCMP (AES)"
-msgstr "إجبار على استعمال (Force CCMP (AES"
-
-msgid "Force TKIP"
-msgstr "إجبار على استعمال  TKIP"
-
-msgid "Force TKIP and CCMP (AES)"
-msgstr "إجبار على استعمال TKIP و  (CCMP (AES"
-
-msgid "No Encryption"
-msgstr "بدون تشفير"
-
-msgid "WEP Open System"
-msgstr "نظام WEP المفتوح"
-
-msgid "WEP Shared Key"
-msgstr "مفتاح WEP المشترك"
-
-#: htdocs/luci/static/commotion/index
-msgid "Welcome to Commotion!"
-msgstr "مرحبا بك في كموشن!"
-
-msgid ""
-"You are connected to a mesh network powered by the Commotion Wireless "
-"Project. The Commotion project seeks to create an open-source, device-as-"
-"infrastructure communication platform that allows communities and activists "
-"to collaborate and communicate. If you're an admin of this node in the "
-"network, you can use this interface to modify its settings. For more "
-"information about the project, please visit the site below:"
-msgstr "أنت متّصل بالشبكة المحبوكة المدعومة من طرف المشروع اللاّسلكي كموشن. مشروع كوموشن يهدف إلى إنشاء منصّة تواصل مفتوحة المصدر تمكن المجموعات و الناشطين من التّعاون و التواصل. إذا كنت المشرف على هذه العقدة في الشبكة، يمكنك استعمال هذه الواجهة لتغيير الإعدادات. لمزيد من المعلومات عن المشروع، الرجاء زيارة الموقع  أسفله:"
-
-msgid "Commotion Wireless"
-msgstr "لاسلكي كموشن"
-
-msgid "Thanks for using our network!"
-msgstr "شكرا لاستخدام شبكتنا"
-
-#: htdocs/luci/static/resources/OSMLatLon
-msgid "OpenStreetMap"
-msgstr "OpenStreetMap"
-
-msgid "Map by"
-msgstr "خريطة من طرف"
-
-msgid "License CC-BY-SA"
-msgstr "تحت رخصة المشاع الإبداعي CC-BY-SA"
-
-msgid "Latitude"
-msgstr "\t\nخط العرض"
-
-msgid "Longitude"
-msgstr "خط الطول"
-
-#: luasrc/controller/commotion/commotion.luasrc
-msgid "Overview"
-msgstr "نظرة شاملة"
-
-msgid "Front Page"
-msgstr "الواجهة الأمامية"
-
-msgid "Mesh Configuration Manual"
-msgstr "دليل إعدادات الشبكة المحبوكة"
-
-#: luasrc/controller/commotion/meshprofile.lua
-msgid "Mesh Profile"
+#: working/source/luci-commotion-splash/luasrc/model/cbi/commotion-splash/splashtext.lua
+msgid "Edit Splash text"
+msgstr "تغيير مضمون شاشة البداية"
+msgid "You can enter your own text that is displayed to clients here.<br /><br />It is possible to use the following markers:<br />$gatewayname: The value of GatewayName as set in nodogsplash.conf.<br />$authtarget: A URL which encodes a unique token and the URL of the user's original web request.<br />$imagesdir: The directory in nodogsplash's web hierarchy where images to be displayed in the splash page must be located.<br />"
 msgstr ""
 
-#: luasrc/model/cbi/commotion/meshconfig
-msgid "Configuration"
-msgstr "إعدادات"
 
-msgid ""
-"This configuration wizard will assist you in setting up your router for a "
-"Commotion network."
-msgstr ""
-
-msgid "Access Point"
-msgstr "نقطة النّفاذ"
-
-msgid "Name (SSID)"
-msgstr "الإسم (SSID)"
-
-msgid "The public facing name of this interface"
-msgstr ""
-
-msgid "Secure Access Point"
-msgstr "نقطة نفاذ مؤمنة"
-
-msgid "Mesh Backhaul"
-msgstr ""
-
-msgid "Device Designation (BSSID)"
-msgstr ""
-
-msgid ""
-"The device read name of this interface. (Letters A-F, and numbers 0-9 only)"
-msgstr "الجهاز يقوم بقراءة إسم هذه الواجهة. (أحرف من A إلى F و أرقام من 0 إلى 9)"
-
-msgid "Network-wide Settings"
-msgstr "إعدادات على مدى كامل الشبكة"
-
-msgid "5GHz Channel"
-msgstr "قناة 5 جيجاهرتز"
-
-msgid "The 5GHz backhaul channel of the mesh network, if applicable."
-msgstr ""
-
-msgid "2GHz Channel"
-msgstr "قناة 2 جيغاهرتز"
-
-msgid "The 2.4GHz backhaul channel of the mesh network, if applicable"
-msgstr ""
-
-msgid "Settings specific to this node"
-msgstr "إعدادات خاصة بهذه العقدة"
-
-msgid "DHCP Timeout"
-msgstr "مهلة DHCP"
-
-msgid "How many seconds to wait on boot for a DHCP lease from the gateway"
-msgstr "كم عدد الثواني المنتظرة عند التشغيل للتمكن من الحصول على حجز DHCP من البوّابة."
-
-#: luasrc/view/commotion/meshprofile
-msgid "Node Profiles"
-msgstr ""
-
-msgid ""
-"If your node includes configuration profiles for multiple Commotion "
-"networks, this form allows you to set your defaults. We recommend that you "
-"reboot your node after changing these settings."
-msgstr ""
-
-msgid "Select an interface"
-msgstr "اختر واجهة"
-
-msgid "Select a profile to apply"
-msgstr ""
-
-msgid "Apply and Save"
-msgstr "طبّق ثمّ سجّل"
-
-#: commotion-openwrt-theme /files/templates/header.htm
-msgid "Unsaved Changes"
-msgstr "تغييرات غير مسجلة"
-
-msgid "Auto Refresh"
-msgstr "إنعاش تلقائي"
-
-msgid "No password set!"
-msgstr "ما من كلمة سرّ مسجلة!"
-
-msgid ""
-"There is no password set on this router. Please configure a root password to"
-" protect the web interface and enable SSH."
-msgstr "لا توجد كلمة سرّ مسجلة على هذا الموجه. الرّجاء اختيار كلمة سرّ رئيسية لحماية واجهة الواب و تشغيل خدمة SSH."
-
-msgid "Go to password configuration..."
-msgstr "الذهاب إلى إعدادات كلمة السرّ..."
-
-#: /files/templates/footer.htm
-msgid "QuickStart"
-msgstr "البدء السريع"
-
-msgid "Administration"
-msgstr "إدارة"
-
-#: /files/luasrc/view/cbi/full_valueheader.htm
+#: working/source/luci-theme-commotion/files/luasrc/view/cbi/full_valueheader.htm
 msgid "Go to relevant configuration page"
 msgstr "الذهاب إلى الصفحة الإعدادات المقترنة"
 
-#: luci-commotion /luasrc/view/commotion/serval_keyring.htm
+
+#: working/source/commotion-debug-helper/luasrc/controller/debugger.lua
+msgid "Commotion Debugging Helper"
+msgstr "مساعد التنقيح لكموشن"
+
+
+#: working/source/luci-commotion/luasrc/model/cbi/commotion/client_wp.lua
+msgid "Welcome Page"
+msgstr ""
+msgid "On/Off"
+msgstr ""
+msgid "Users can be redirected to a “welcome page” when they first connect to this node."
+msgstr ""
+msgid "For which network connection should this welcome page be active?"
+msgstr ""
+msgid "Select list of Aps and /or defined networks on this node's interfaces Auto select the first AP interface if configured."
+msgstr ""
+msgid "Time until welcome page is shown again"
+msgstr ""
+msgid "Edit Welcome Page Text"
+msgstr ""
+msgid "The welcome page can include terms of service, advertisements, or other information. Edit the welcome page text here or upload an HTML file."
+msgstr ""
+msgid "Edit Welcome Page Text"
+msgstr ""
+msgid "Upload Welcome Page Text"
+msgstr ""
+msgid "You can enter text and HTML that will be displayed on the welcome page."
+msgstr ""
+msgid "These variables can be used to provide custom values from this node on the welcome page :"
+msgstr ""
+msgid "$gatewayname: The value of GatewayName as set in the Welcome Page configuration file (/path/nodogsplash.conf)."
+msgstr ""
+msgid "$authtarget: The URL of the user's original web request."
+msgstr ""
+msgid "$imagesdir: The directory in on this node where images to be displayed in the splash page must be located."
+msgstr ""
+msgid "The welcome page might include terms of service, advertisements, or other information. Edit the welcome page text here or upload an HTML file."
+msgstr ""
+
+
+#: working/source/luci-theme-commotion/files/templates/footer.htm
+msgid "Administration"
+msgstr "إدارة"
+msgid "About"
+msgstr ""
+msgid "Help"
+msgstr ""
+msgid "License"
+msgstr ""
+
+
+#: working/source/luci-commotion-apps/lua/luci/model/cbi/commotion/app_settings.lua
+msgid "Application Settings"
+msgstr ""
+msgid "Change settings for applications publicly announced by this node."
+msgstr ""
+msgid "Categories"
+msgstr ""
+msgid "Force local applications to expire?"
+msgstr ""
+msgid "When checked, all applications expire after a time period you specify. Un-check this box if applications should not expire."
+msgstr ""
+msgid "Time before applications expire"
+msgstr ""
+msgid "Automatically approve all publicly announced applications on this network"
+msgstr ""
+msgid "Periodically check connection to announced applications on this network"
+msgstr ""
+msgid "If “Yes” is selected here, applications are checked to see if they are still online. If they are not responsive, they will be removed from the application list. Select “No” to disable this option If you have poor or intermittent connectivity."
+msgstr ""
+msgid "Allow users to add application advertisements from your access point."
+msgstr ""
+msgid "If “Yes” is selected here, any user on your device can add an application from the view apps mainpage. Select “No” to disable this option If you would like to require administrator access to add advertisements."
+msgstr ""
+
+
+#: working/source/luci-commotion/luasrc/model/cbi/commotion/basic_ns.lua
+msgid "Node Settings"
+msgstr ""
+msgid "In this section you'll set the basic required settings for this device, and the basic network settings required to connect this device to a Commotion Mesh network. You will be prompted to save your settings along the way and apply them at the end."
+msgstr ""
+msgid "Node Name"
+msgstr "إسم العقدة"
+msgid "The node name (hostname) is a unique name for this device, visible to other devices and users on the network. Name this device in the field provided."
+msgstr ""
+msgid "HI ANDREW!"
+msgstr ""
+msgid "Hail to the King!"
+msgstr ""
+msgid "Current Node Administration Password"
+msgstr ""
+msgid "Current node administration password required to make changes on this page"
+msgstr ""
+msgid "Administration Password"
+msgstr ""
+msgid "Password"
+msgstr ""
+msgid "Confirmation"
+msgstr ""
+msgid "Password successfully changed!"
+msgstr ""
+msgid "Error, no changes saved. See below."
+msgstr ""
+msgid "Given confirmation password did not match, password not changed!"
+msgstr ""
+msgid "Error, no changes saved. See below."
+msgstr ""
+msgid "Unknown Error, password not changed!"
+msgstr ""
+msgid "Incorrect node administration password. Changes rejected!"
+msgstr ""
+msgid "Please enter your old node administration password. Changes rejected!"
+msgstr ""
+
+
+#: working/source/commotion-debug-helper/luasrc/view/debugger.htm
+msgid "The information you are about to download contains private information about this device and the network it is connected to. Only give this information to people you trust. Do you understand?"
+msgstr ""
+msgid "Commotion Bug Info"
+msgstr "معلومات عن علل كموشن"
+msgid "Name"
+msgstr "الإسم"
+msgid "Contact Info"
+msgstr "معلومات للإتّصال"
+msgid "What were you doing on the device when the error occurred?"
+msgstr "ماذا كنت تعمل على الجهاز عندما حصل العطب ؟"
+msgid "Please describe the behavior you expected"
+msgstr "الرّجاء وصف التصرّف  الذي تتوقعه ؟"
+msgid "Please describe the behavior you experienced that you believe is wrong"
+msgstr "الرّجاء وصف التصرّف  الذي حصل معك و الذي تعتبره خاطئا ؟"
+msgid "Debugging Info"
+msgstr "معلومات عن التنقيح"
+msgid "Mesh Network Information"
+msgstr "معلومات عن الشبكة المحبوكة"
+msgid "Router Status"
+msgstr "حالة الموجـِّه"
+msgid "Router Traffic Routing Rules"
+msgstr "قوانين توجيه حركة البث بالموجـِّه"
+msgid "All Info"
+msgstr "كلّ المعلومات"
+msgid "Create Bug Info File"
+msgstr "إنشاء ملف معلومات حول علَّة"
+
+
+#: working/source/luci-commotion/luasrc/view/commotion/apply_xhr.htm
+msgid "Applying changes"
+msgstr ""
+msgid "Configuration applied."
+msgstr ""
+msgid "Loading"
+msgstr ""
+msgid "Applying changes... Please be patient, this may take a few moments. Once the settings are complete you will be returned to the Administrative login."
+msgstr ""
+
+
+#: working/source/luci-commotion/luasrc/view/cbi/commotion/delegator.htm
+msgid "Save"
+msgstr ""
+msgid "« Back"
+msgstr ""
+msgid "Reset"
+msgstr "إعادة الظبط"
+msgid "Finish"
+msgstr ""
+msgid "Finish"
+msgstr ""
+msgid "Next »"
+msgstr ""
+
+
+#: working/source/luci-commotion-apps/lua/luci/view/commotion/apps_form.htm
+msgid "Application Name"
+msgstr ""
+msgid "This is how your application will be known and displayed"
+msgstr ""
+msgid "Description"
+msgstr ""
+msgid "The description should include a one paragraph summary of the application and any other relevant information"
+msgstr ""
+msgid "For non web-apps, this should point to an information page telling the user how to connect to the application"
+msgstr ""
+msgid "IP Address or URL of Service"
+msgstr ""
+msgid "An IP address or URL where the application can be reached"
+msgstr ""
+msgid "Type of Application"
+msgstr ""
+msgid "Choose any relevant categories that describe your application"
+msgstr ""
+msgid "Application Icon"
+msgstr ""
+msgid "This should be a URL of an image file that will be displayed next to the listing of your application"
+msgstr ""
+msgid "Please enable javascript to select one of these icons"
+msgstr ""
+msgid "Approved"
+msgstr ""
+msgid "Approved applications are shown to users, while blacklisted applications are not. All applications are approved automatically"
+msgstr ""
+msgid "Advanced Options"
+msgstr ""
+msgid "Displays a custom icon based on the application's Serval fingerprint"
+msgstr ""
+msgid "Use custom"
+msgstr ""
+msgid "The port of the application or a web page describing how to connect to the application"
+msgstr ""
+msgid "Port of Service (Optional)"
+msgstr ""
+msgid "If no port is given, it will default to port 80"
+msgstr ""
+msgid "If the number of hops is greater than zero, the application will be visible from other Commotion nodes in the network. Otherwise, it will only be seen on this node"
+msgstr ""
+msgid "Number of hops away this service should be seen (Optional)"
+msgstr ""
+msgid "How many nodes away your application will be seen. Defaults to 5 hops away"
+msgstr ""
+msgid "If this is checked, the application will not be removed from the applications list after the default expiration period"
+msgstr ""
+msgid "Is this application permanent?"
+msgstr ""
+msgid "If checked, application will not expire"
+msgstr ""
+
+
+#: working/source/luci-commotion/luasrc/view/commotion/meshprofile.htm
+msgid "Welcome to Commotion"
+msgstr ""
+msgid "This router has not yet been set up. Use the Setup Wizard for step-by-step configuration, upload a configuration file if you have one from a previously configured router, or choose Advanced for manual GUI or CLI configuration."
+msgstr ""
+msgid "Administration"
+msgstr "إدارة"
+msgid "About"
+msgstr ""
+msgid "Help"
+msgstr ""
+
+
+#: working/source/luci-commotion/luasrc/model/network/proto_commotion.lua
+msgid "Commotion Interface"
+msgstr ""
+
+
+#: working/source/luci-commotion/luasrc/controller/commotion/status_config.lua
+msgid "Status"
+msgstr ""
+msgid "minutes"
+msgstr ""
+
+
+#: working/source/luci-commotion/luasrc/controller/commotion/basic_config.lua
+msgid "Commotion"
+msgstr ""
+msgid "Confirm"
+msgstr ""
+msgid "Welcome to Commotion"
+msgstr ""
+msgid "Setup Wizard"
+msgstr ""
+msgid "Confirm"
+msgstr ""
+msgid "Basic Configuration"
+msgstr ""
+msgid "Node Settings"
+msgstr ""
+msgid "Network Settings"
+msgstr ""
+msgid "Mesh Network"
+msgstr ""
+msgid "Wireless Network"
+msgstr ""
+msgid "Additional Network Interfaces"
+msgstr ""
+
+
+#: working/source/luci-theme-commotion/files/templates/adv_menu.htm
+msgid "Basic Menu"
+msgstr ""
+
+
+#: working/source/luci-commotion/luasrc/view/cbi/commotion/addMesh.htm
+msgid "Mesh Network"
+msgstr ""
+msgid "Click here to add a new mesh network interface. Once created you will be able to come back to this page to configure it"
+msgstr ""
+msgid "Add"
+msgstr ""
+msgid "Add"
+msgstr ""
+msgid "Invalid"
+msgstr ""
+
+
+#: working/source/commotion-dashboard-helper/luasrc/controller/commotion-dash/bigboard-conf.lua
+msgid "BigBoard Configuration"
+msgstr ""
+
+
+#: working/source/luci-theme-commotion/files/templates/basic_menu.htm
+msgid "Advanced"
+msgstr ""
+
+
+#: working/source/luci-commotion/luasrc/view/commotion/viz.htm
+msgid "You need to allow javascript in your browser to show this page."
+msgstr ""
+
+
+#: working/source/luci-commotion/luasrc/view/commotion/conn_clients.htm
+msgid "Connected Clients!"
+msgstr ""
+msgid "You are not using a welcome page (splash page/captive portal.) Without a splash page we can only show a clients ip-address and the status of their connection."
+msgstr ""
+msgid "Connected Clients!"
+msgstr ""
+msgid "No connected clients were found at this time. If a Welcome Page has been enabled, clients must click through it before being displayed here."
+msgstr ""
+
+
+#: working/source/luci-commotion-splash/luasrc/view/commotion-splash/splash.htm
+msgid "Local Applications"
+msgstr "تطبيقات محلية"
+msgid "Local Applications"
+msgstr "تطبيقات محلية"
+msgid "Local Applications"
+msgstr "تطبيقات محلية"
+msgid "Internet"
+msgstr "انترنت"
+msgid "Internet"
+msgstr "انترنت"
+msgid "Internet"
+msgstr "انترنت"
+
+
+#: working/source/luci-commotion/htdocs/luci-static/resources/OSMLatLon.htm
+msgid "OpenStreetMap"
+msgstr "OpenStreetMap"
+msgid "Map by"
+msgstr "خريطة من طرف"
+msgid "License CC-BY-SA"
+msgstr "تحت رخصة المشاع الإبداعي CC-BY-SA"
+msgid "Latitude:"
+msgstr ""
+msgid "Longitude:"
+msgstr ""
+
+
+#: working/source/luci-commotion/luasrc/model/cbi/commotion/basic_ani.lua
+msgid "Internet Gateway"
+msgstr ""
+msgid "If desired, you can configure your gateway interface here."
+msgstr ""
+msgid "Gateway Configuration"
+msgstr ""
+msgid "Automatically configure gateway on boot."
+msgstr ""
+msgid "This device should ALWAYS try and acquire a DHCP lease."
+msgstr ""
+msgid "This device should ALWAYS provide DHCP leases to clients."
+msgstr ""
+msgid "This device should not do anything with DHCP."
+msgstr ""
+msgid "Will you be meshing with other Commotion devices over the ethernet interface?"
+msgstr ""
+msgid "Advertise your gateway to the mesh."
+msgstr ""
+
+
+#: working/source/luci-commotion/luasrc/view/commotion/apply.htm
+msgid "Applying Changes"
+msgstr ""
+msgid "The following changes have been committed"
+msgstr ""
+msgid "There are no pending changes to apply!"
+msgstr ""
+msgid "Finish"
+msgstr ""
+
+
+#: working/source/luci-commotion/luasrc/view/commotion/status.htm
+msgid "Providing Gateway"
+msgstr ""
+msgid "Client Connections"
+msgstr ""
+msgid "Nearby Mesh Devices"
+msgstr ""
+msgid "Mesh Visualizer"
+msgstr ""
+msgid "Connected Clients"
+msgstr ""
+msgid "Debug Report"
+msgstr ""
+
+
+#: working/source/luci-theme-commotion/files/templates/unsaved_changes.htm
+msgid "Unsaved Changes"
+msgstr "تغييرات غير مسجلة"
+msgid "Auto Refresh"
+msgstr "إنعاش تلقائي"
+msgid "on"
+msgstr ""
+msgid "Auto Refresh"
+msgstr "إنعاش تلقائي"
+msgid "off"
+msgstr ""
+
+
+#: working/source/luci-commotion-apps/lua/luci/view/commotion/apps_settings.htm
+msgid "Application Settings"
+msgstr ""
+msgid "Here you can change settings used on this node when creating or updating applications"
+msgstr ""
+msgid "Applications that are created on this node can be categorized and listed according to the categories here"
+msgstr ""
+msgid "Application categories"
+msgstr ""
+msgid "Applications that are not marked as 'permanent' will be automatically be removed from the application list after this amount of time"
+msgstr ""
+msgid "Expiration period (seconds)"
+msgstr ""
+msgid "For example, 24 hours = 86400 seconds"
+msgstr ""
+msgid "By default, all applications expire after a time period specified by you. If this option is checked, applications will have the option to not expire"
+msgstr ""
+msgid "Allow local applications to not expire"
+msgstr ""
+msgid "If this is disabled, users will only be able to see local applications on the network that you manually approve"
+msgstr ""
+msgid "Automatically approve all applications seen by this node"
+msgstr ""
+msgid "By default, applications that don't appear responsive will be removed from the application list. If you have poor or intermittent connectivity, you should disable this option to skip checking application responsiveness"
+msgstr ""
+msgid "Periodically check connectivity of applications"
+msgstr ""
+
+
+#: working/source/luci-commotion/luasrc/view/commotion/about.htm
+msgid "About Commotion"
+msgstr ""
+msgid "Commotion is an open-source communication tool that uses mobile phones, computers, and other wireless devices to create decentralized mesh networks."
+msgstr ""
+msgid "Wireless mesh networks allow devices to connect directly to each other without going through a centralized point."
+msgstr ""
+msgid "Commotion is intended to be a:"
+msgstr ""
+msgid "simple, easy-to-use communications tool that anyone can set up and use without technical expertise"
+msgstr ""
+msgid "platform for building community wireless networks and hosting local applications"
+msgstr ""
+msgid "tool for creating infrastructure that is resilient against surveillance and disruption"
+msgstr ""
+msgid "flexible, open-source software platform that programmers around the globe can continually adapt and build upon"
+msgstr ""
+
+
+#: working/source/luci-commotion/luasrc/model/cbi/commotion/security_smk.lua
+msgid "Shared Mesh Keychain"
+msgstr ""
+msgid "To ensure that only authorized devices can route traffic on your Commotion mesh network, one Shared Mesh Keychain file can be generated and shared by all devices."
+msgstr ""
+msgid "Use a Shared Mesh Keychain to sign mesh routes. Yes/No"
+msgstr ""
+msgid "Add or remove a Shared Mesh Keychain on this device. You can also upload or generate a new Shared Mesh Keychain once you add a Shared Mesh Keychain to this device."
+msgstr ""
+msgid "The file supplied is not a proper keyring, or is password protected. Please upload another key."
+msgstr ""
+msgid "Upload Shared Mesh Keychain File"
+msgstr ""
+msgid "If a Shared Mesh Keychain file was provided to you by a network administrator or another community member, select and upload it here to join this device to an existing mesh network."
+msgstr ""
+msgid "Download Shared Mesh Keychain"
+msgstr ""
+msgid "Download a copy of this device's existing Shared Mesh Keychain. Use this feature to make a backup of this file, or to share it with people putting up new devices on your Commotion mesh network."
+msgstr ""
+msgid "No Current Serval Key To Download."
+msgstr ""
+msgid "Create a new Shared Mesh Keychain file"
+msgstr ""
+msgid "Click on the button below to create a new Shared Mesh Keychain file. This will DELETE the existing Shared Mesh Keychain on this device. Use this option if you are creating a brand new Commotion mesh network, or if you are changing the Shared Mesh Keyhchain on an existing network. In either case, create a backup of the existing Shared Mesh Keychain first."
+msgstr ""
+
+
+#: working/source/luci-commotion/luasrc/view/commotion/serval_keyring.htm
 msgid "Serval Keyring"
 msgstr "حلقة مفاتيح الخادم"
-
-msgid ""
-"The Serval Keyring is used to sign all network traffic on a Commotion mesh "
-"network. Every node on your Commotion network should use the same Serval "
-"Keyring. On this page you can download the existing Serval keyring for this "
-"node, to back it up or to use when adding new nodes to your network. You can"
-" also generate a new Serval Keyring, or upload one from your computer."
-msgstr "حلقة مفاتيح الخادم تستخدم في توقيع كل حركة ّّّّّّالبثّ على شبكة كموشن المحبوكة. يجب أن تستعمل كل عقدة في شبكة كموشن نفس حلقة مفاتيح الخادم. على هذه الصفحة، بإمكانك تنزيل حلقة مفاتيح الخادم الحالية لهذه العقدة، بهدف حفظها واستعمالها عند إضافة عقد جديدة للشبكة خاصتك. بإمكانك أيضا إنشاء واحدة جديدة أو رفع أخرى من حاسوبك."
-
+msgid "The Serval Keyring is used to sign all network traffic on a Commotion mesh network. Every node on your Commotion network should use the same Serval Keyring. On this page you can download the existing Serval keyring for this node, to back it up or to use when adding new nodes to your network. You can also generate a new Serval Keyring, or upload one from your computer."
+msgstr ""
 msgid "Download a Serval Keyring"
 msgstr "تنزيل حلقة مفاتيح الخادم"
-
 msgid "Download your current Serval keyring"
 msgstr "تنزيل حلقة مفاتيح الخادم الحاليّة"
-
+msgid "Download your current Serval keyring"
+msgstr "تنزيل حلقة مفاتيح الخادم الحاليّة"
+msgid "Download your current Serval keyring"
+msgstr "تنزيل حلقة مفاتيح الخادم الحاليّة"
+msgid "Download"
+msgstr ""
 msgid "Upload a Serval Keyring"
 msgstr "رفع حلقة مفاتيح الخادم"
-
 msgid "Click on the field below to upload a keyring."
 msgstr "اضغط على الحقل أسفله لرفع حلقة المفاتيح."
-
 msgid "Upload a Keyring"
 msgstr "رفع حلقة مفاتيح"
-
-msgid "Upload a Serval key file file from your own computer"
-msgstr "رفع حلقة مفاتيح الخادم من ملف موجود على الحاسوب خاصتك."
-
+msgid "Upload a Serval key file file from your own computer."
+msgstr ""
+msgid "Upload"
+msgstr "ارفع"
 msgid "Create a new Serval Keyring"
 msgstr "انشاء حلقة مفاتيح الخادم جديدة"
-
-msgid ""
-"Click on the button below to create a new keyring. This will DELETE the "
-"existing keyring on the device. We highly suggest you download any existing "
-"network keyrings you have before creating a new keyring."
-msgstr "اضغط على الزرّ أسفله لانشاء حلقة مفاتيح جديدة.  هذا سيتسبب في حذف حلقة المفاتيح الموجودة سلفا على هذا الجهاز. ننصحك بالقيام بتنزيل كل حلقات المفاتيح القائمة قبل إنشاء أي واحدة جديدة. "
-
+msgid "Click on the button below to create a new keyring. This will DELETE the existing keyring on the device. We highly suggest you download any existing network keyrings you have before creating a new keyring."
+msgstr ""
 msgid "New Keyring"
 msgstr "حلقة مفاتيح جديدة"
-
 msgid "Create a new keyring on this device, replacing the existing keyring."
 msgstr "انشاء حلقة مفاتيح جديدة تقوم بتعويض حلقة المفاتيح القائمة. "
-
 msgid "Create New Keyring"
 msgstr "إنشاء حلقة مفاتيح"
+
+
+#: working/source/luci-commotion-splash/luasrc/view/commotion-splash/splash_settings.htm
+msgid "Captive Portal"
+msgstr "البوابة الأسيرة"
+msgid "Nodogsplash offers a simple way to provide restricted access to an internet connection."
+msgstr ""
+msgid "General"
+msgstr "عامّ"
+msgid "Clearance time"
+msgstr "وقت التصفية"
+msgid "Clients that have accepted the captive portal are allowed to use the network for that many minutes."
+msgstr ""
+msgid "Redirect to Homepage?"
+msgstr "هل تريد إعادة توجيهك إلى الصفحة الرئيسية ؟"
+msgid "help"
+msgstr "مساعدة"
+msgid "If this is checked, clients will be redirected to your homepage, instead of to their original request."
+msgstr ""
+msgid "Homepage"
+msgstr "الصفحة الرئيسية"
+msgid "help"
+msgstr "مساعدة"
+msgid "After authentication, clients will be redirected to this URL instead of to their original request."
+msgstr ""
+msgid "Immediately Authenticate?"
+msgstr "هل تريد الإستيثاق حالا ؟"
+msgid "help"
+msgstr "مساعدة"
+msgid "If this is checked, clients will be immediately directed to their original request or your homepage (if set above), instead of being served a splash page."
+msgstr ""
+msgid "Interfaces"
+msgstr "الواجهات"
+msgid "Interfaces that are used for Splash."
+msgstr ""
+msgid "Network"
+msgstr "الشبكة"
+msgid "Intercept client traffic on this Interface"
+msgstr ""
+msgid "Whitelist"
+msgstr "القائمة البيضاء"
+msgid "MAC addresses of whitelisted clients. These do not need to accept the splash and are not bandwidth limited."
+msgstr ""
+msgid "MAC Address"
+msgstr "عنوان ال MAC"
+msgid "Blacklist"
+msgstr "القائمة السوداء"
+msgid "MAC addresses in this list are blocked."
+msgstr "عناوين ال MAC في هذه القائمة محضورة "
+msgid "MAC Address"
+msgstr "عنوان ال MAC"
+msgid "Allowed hosts/subnets"
+msgstr " المضيفين و الشبكات الفرعية المسموح لهم"
+msgid "Hosts and Networks that are listed here are excluded from splashing, i.e. they are always allowed."
+msgstr ""
+msgid "IP Address"
+msgstr "عنوان ال IP"
+msgid "CIDR notation optional (e.g. 192.168.1.0/24)"
+msgstr ""
+msgid "Submit"
+msgstr "أرسل"
+msgid "Reset"
+msgstr "إعادة الظبط"
+
+
+#: working/source/luci-commotion/luasrc/view/commotion/confirm.htm
+msgid "Confirm Configuration"
+msgstr ""
+msgid "There are no pending changes!"
+msgstr ""
+msgid "Make Changes"
+msgstr ""
+msgid "Back"
+msgstr ""
+msgid "Save And Apply"
+msgstr ""
+msgid "Start Over"
+msgstr ""
+msgid "Revert"
+msgstr ""
+
+
+#: working/source/luci-commotion/luasrc/view/commotion/nearby_md.htm
+msgid "OLSR Links"
+msgstr ""
+msgid "Overview of currently established OLSR connections (device-to-device)"
+msgstr ""
+msgid "Hostname"
+msgstr ""
+msgid "IP Address"
+msgstr "عنوان ال IP"
+msgid "ETX Value"
+msgstr ""
+msgid "Legend"
+msgstr ""
+msgid "Expected retransmission count - the expected number of retransmission attempts that are required for a packet to travel to and from a destination."
+msgstr ""
+msgid "Green"
+msgstr ""
+msgid "Very good (ETX < 2)"
+msgstr ""
+msgid "Yellow"
+msgstr ""
+msgid "Good (2 < ETX < 4)"
+msgstr ""
+msgid "Orange"
+msgstr ""
+msgid "Still usable (4 < ETX < 10)"
+msgstr ""
+msgid "Red"
+msgstr ""
+msgid "Bad (ETX > 10)"
+msgstr ""
+
+
+#: working/source/luci-commotion/luasrc/controller/commotion/security_config.lua
+msgid "Security"
+msgstr ""
+msgid "Passwords"
+msgstr ""
+msgid "Shared Mesh Keychain"
+msgstr ""
+
+
+#: working/source/luci-commotion-apps/lua/luci/controller/commotion/apps_controller.lua
+msgid "Applications"
+msgstr ""
+msgid "Settings"
+msgstr ""
+msgid "Local Applications"
+msgstr "تطبيقات محلية"
+msgid "Local Applications"
+msgstr "تطبيقات محلية"
+msgid "List"
+msgstr ""
+msgid "Add"
+msgstr ""
+
+
+#: working/source/luci-commotion/luasrc/model/cbi/commotion/basic_done.lua
+msgid "Basic Configuration Complete!"
+msgstr ""
+msgid "You have completed all of the required steps to configure this mesh node."
+msgstr ""
+msgid "If you would like to configure additional network interfaces on this node, click the next button to continue to Additional Network Settings below. Otherwise click the Finish button."
+msgstr ""
+
+
+#: working/source/luci-commotion/luasrc/model/cbi/commotion/basic_mn.lua
+msgid "Network Settings"
+msgstr ""
+msgid "Every Commotion node must have one mesh network connection or interface. Commotion can mesh over wireless or wired interfaces."
+msgstr ""
+msgid "Mesh Network Name"
+msgstr ""
+msgid "Commotion networks share a network-wide name. This must be the same across all devices on the same mesh. This name cannot be greater than 15 characters."
+msgstr ""
+msgid "wifi-device"
+msgstr ""
+msgid "The Setup Wizard has detected all of the network interfaces on this device. Select the network interface that will connect to the mesh."
+msgstr ""
+msgid "Channel"
+msgstr ""
+msgid "The channel of this wireless interface."
+msgstr ""
+msgid "Channel"
+msgstr ""
+msgid "The channel of your wireless interface."
+msgstr ""
+msgid "Mesh Encryption"
+msgstr ""
+msgid "Choose whether or not to encrypt data sent between mesh devices for added security."
+msgstr ""
+msgid "Mesh Encryption Password"
+msgstr ""
+msgid "To encrypt data between devices, each device must share a common mesh encryption password."
+msgstr ""
+msgid "Confirmation"
+msgstr ""
+msgid "Password successfully changed!"
+msgstr ""
+msgid "Error, no changes saved. See below."
+msgstr ""
+msgid "Given password confirmation did not match, password not changed!"
+msgstr ""
+msgid "Error, no changes saved. See below."
+msgstr ""
+msgid "Unknown Error, password not changed!"
+msgstr ""
+
+
+#: working/source/luci-commotion/luasrc/view/cbi/commotion/addAP.htm
+msgid "Access Point"
+msgstr "نقطة النّفاذ"
+msgid "Click here to create a new access point. Once created you will be able to come back to this page to configure it."
+msgstr ""
+msgid "Add"
+msgstr ""
+msgid "Add"
+msgstr ""
+msgid "Invalid"
+msgstr ""
+
+
+#: working/source/luci-commotion/luasrc/view/commotion/license.htm
+msgid "Commotion License"
+msgstr ""
+msgid "This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version."
+msgstr ""
+msgid "This program is distributed in the hope that it will be useful,  but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details."
+msgstr ""
+msgid "You should have received a copy of the GNU General Public License along with this program. If not, see http://www.gnu.org/licenses/."
+msgstr ""
+msgid "The OpenWrt distribution upon which Commotion is built bundles a lot of third party applications and modules which are available under various other Open Source licenses or Public Domain. The sources for those packages can be found on the OpenWrt mirrot at: http://downloads.openwrt.org/sources/ . Please refer to these source packages to find out which license applies to them."
+msgstr ""
+
+
+#: working/source/luci-commotion/luasrc/model/cbi/commotion/basic_wn.lua
+msgid "Wireless Network"
+msgstr ""
+msgid "Turning on an Access Point provides a wireless network for people to connect to using a laptop or other wireless devices."
+msgstr ""
+msgid "Access Point"
+msgstr "نقطة النّفاذ"
+msgid "Turning on an Access Point provides a wireless network for people to connect to using a laptop or other wireless devices."
+msgstr ""
+msgid "Name"
+msgstr "الإسم"
+msgid "The access point name (SSID) is the name that people will look for when connecting to this device."
+msgstr ""
+msgid "wifi-device"
+msgstr ""
+msgid "Select the wireless network interface to use for your access point."
+msgstr ""
+msgid "Channel"
+msgstr ""
+msgid "The channel of this wireless interface."
+msgstr ""
+msgid "Channel"
+msgstr ""
+msgid "The channel of your wireless interface."
+msgstr ""
+msgid "Require a Password?"
+msgstr ""
+msgid "When people connect to this access point, should a password be required?"
+msgstr ""
+msgid "Password"
+msgstr ""
+msgid "Enter the password people should use to connect to this access point. Commotion uses WPA2 security for Access Point passwords."
+msgstr ""
+msgid "Confirmation"
+msgstr ""
+msgid "Password successfully changed!"
+msgstr ""
+msgid "Error, no changes saved. See below."
+msgstr ""
+msgid "Given password confirmation did not match, password not changed!"
+msgstr ""
+msgid "Error, no changes saved. See below."
+msgstr ""
+msgid "Unknown Error, password not changed!"
+msgstr ""
+
+
+#: working/source/luci-commotion/luasrc/view/commotion/debug.htm
+msgid "The information you are about to download contains private information about this device and the network it is connected to. Only give this information to people you trust. Do you understand?"
+msgstr ""
+msgid "Commotion Bug Info"
+msgstr "معلومات عن علل كموشن"
+msgid "Name"
+msgstr "الإسم"
+msgid "Contact Info"
+msgstr "معلومات للإتّصال"
+msgid "What were you doing on the device when the error occurred?"
+msgstr "ماذا كنت تعمل على الجهاز عندما حصل العطب ؟"
+msgid "Please describe the behavior you expected"
+msgstr "الرّجاء وصف التصرّف  الذي تتوقعه ؟"
+msgid "Please describe the behavior you experienced that you believe is wrong"
+msgstr "الرّجاء وصف التصرّف  الذي حصل معك و الذي تعتبره خاطئا ؟"
+msgid "Debugging Info"
+msgstr "معلومات عن التنقيح"
+msgid "Mesh Network Information"
+msgstr "معلومات عن الشبكة المحبوكة"
+msgid "Router Status"
+msgstr "حالة الموجـِّه"
+msgid "Router Traffic Routing Rules"
+msgstr "قوانين توجيه حركة البث بالموجـِّه"
+msgid "All Info"
+msgstr "كلّ المعلومات"
+msgid "Create Bug Info File"
+msgstr "إنشاء ملف معلومات حول علَّة"
+
+
+#: working/source/luci-commotion/luasrc/controller/commotion/info.lua
+msgid "Client Controls"
+msgstr ""
+msgid "About"
+msgstr ""
+msgid "Help"
+msgstr ""
+msgid "License"
+msgstr ""
+
+
+#: working/source/luci-commotion/luasrc/model/cbi/commotion/security_pass.lua
+msgid "Passwords"
+msgstr ""
+msgid "Commotion basic security settings places all the passwords and other security features in one place for quick configuration."
+msgstr ""
+msgid "Current Node Administration Password"
+msgstr ""
+msgid "Current node administration password required to make changes on this page"
+msgstr ""
+msgid "Require a Password?"
+msgstr ""
+msgid "When people connect to this access point, should a password be required?"
+msgstr ""
+msgid "Confirm Password"
+msgstr ""
+msgid "Password successfully changed!"
+msgstr ""
+msgid "Error, no changes saved. See below."
+msgstr ""
+msgid "Given password confirmation did not match, password not changed!"
+msgstr ""
+msgid "Error, no changes saved. See below."
+msgstr ""
+msgid "Unknown Error, password not changed!"
+msgstr ""
+msgid "Administration Password"
+msgstr ""
+msgid "Confirmation"
+msgstr ""
+msgid "Enter the password people should use to connect to this interface."
+msgstr ""
+msgid "Incorrect password. Changes rejected!"
+msgstr ""
+msgid "Please enter your old password. Changes rejected!"
+msgstr ""
+msgid "Admin Password successfully changed!"
+msgstr ""
+msgid "Unknown Error, password not changed!"
+msgstr ""
+msgid "Given password confirmation did not match, password not changed!"
+msgstr ""
+
+
+#: working/source/luci-commotion/luasrc/view/commotion/help.htm
+msgid "Help with Commotion"
+msgstr ""
+msgid "Commotion is an evolving project that includes many parts. The documentation on our website has been created by the Commotion community to aid users and developers. It is often updated and we encourage you to get involved by contributing documentation. Listed below are links to the most relevant documentation to get started:"
+msgstr ""
+msgid "Frequently Asked Questions"
+msgstr ""
+msgid "Documentation"
+msgstr ""
+msgid "Commotion Construction Kit"
+msgstr ""
+msgid "a set of modular guides with tips on community organizing, site preparation, software installation and more."
+msgstr ""
+msgid "Contact the Commotion Wireless team"
+msgstr ""
+msgid "Report a Bug"
+msgstr ""
+msgid "You can also connect with the Commotion community by subscribing to one or more of our listservs:"
+msgstr ""
+msgid "only official announcements with minimal discussion."
+msgstr ""
+msgid "for those who want to use Commotion without getting too technical."
+msgstr ""
+msgid "for those who want to discuss improvements the Commotion software."
+msgstr ""
+msgid "You can also join us using your chat program on IRC in the #commotion channel on the irc.freenode.net server."
+msgstr ""
+msgid "Learn more about using IRC"
+msgstr ""
+
+
+#: working/source/luci-commotion/luasrc/view/commotion/welcome.htm
+msgid "Welcome to Commotion"
+msgstr ""
+msgid "This router has not yet been set up. Use the Setup Wizard for step-by-step configuration, upload a configuration file if you have one from a previously configured router, or choose Advanced for manual GUI or CLI configuration."
+msgstr ""
+msgid "Setup Wizard"
+msgstr ""
+msgid "Advanced"
+msgstr ""
+
+
+#: working/source/luci-commotion/files/usr/share/commotion/patches/wifi.lua.patch
+msgid "auto"
+msgstr "تلقائيا"
+msgid "Force CCMP (AES)"
+msgstr "إجبار على استعمال (Force CCMP (AES"
+msgid "Force TKIP"
+msgstr "إجبار على استعمال  TKIP"
+msgid "Force TKIP and CCMP (AES)"
+msgstr "إجبار على استعمال TKIP و  (CCMP (AES"
+msgid "Force TKIP"
+msgstr "إجبار على استعمال  TKIP"
+msgid "Force TKIP and CCMP (AES)"
+msgstr "إجبار على استعمال TKIP و  (CCMP (AES"
+msgid "No Encryption"
+msgstr "بدون تشفير"
+msgid "WEP Open System"
+msgstr "نظام WEP المفتوح"
+msgid "WEP Shared Key"
+msgstr "مفتاح WEP المشترك"
+
+
+#: working/source/luci-commotion/luasrc/controller/commotion/client_config.lua
+msgid "Client Controls"
+msgstr ""
+msgid "Welcome Page"
+msgstr ""
+
+
+#: working/source/luci-commotion/luasrc/view/commotion/revert.htm
+msgid "Revert"
+msgstr ""
+msgid "Reverting changes... Please be patient, this may take a few moments. Once the settings are reset click "Start Over" to return to the beginning of the Setup Wizard."
+msgstr ""
+msgid "There are no pending changes to revert!"
+msgstr ""
+msgid "Start Over"
+msgstr ""
+msgid "Finish"
+msgstr ""
+
+
+#: working/source/luci-commotion/luasrc/model/cbi/commotion/confirm_config.lua
+msgid "Basic Configuration"
+msgstr ""
+msgid "In this section you'll set the basic required settings for this device, and the basic network settings required to connect this device to a Commotion Mesh network. You will be prompted to save your settings along the way and apply them at the end."
+msgstr ""
+
+
+#: working/source/luci-commotion-apps/lua/luci/view/commotion/apps_view.htm
+msgid "Applications"
+msgstr ""
+msgid "Publicly announced applications running on this network are listed below."
+msgstr ""
+msgid "Here you can view applications accessible from this node"
+msgstr ""
+msgid "Add Application"
+msgstr ""
+
+
+#: working/source/luci-commotion-splash/luasrc/controller/commotion-splash/splash.lua
+msgid "Captive Portal"
+msgstr "البوابة الأسيرة"
+msgid "Splashtext"
+msgstr ""
+msgid "splash: invalid parameters"
+msgstr "نشرة: معاملات خاطئة"
+msgid "Clearance time must be an integer greater than zero"
+msgstr "وقت التصفية يجب أن يكون عددا أكبر من الصفر"
+msgid "Invalid redirect"
+msgstr "إعادة توجيه غير سليم"
+msgid "Invalid autoauth"
+msgstr "إستيثاقة تلقائية خاطئة"
+msgid "Invalid submission...zone"
+msgstr "إرسال خاطىء...منطقة"
+msgid "doesn't exist"
+msgstr ""
+msgid "Whitelist entries must be a valid MAC address"
+msgstr ""
+msgid "Blacklist entries must be a valid MAC address"
+msgstr ""
+msgid "Entry must be a valid IPv4 address or address range in CIDR notation"
+msgstr ""
+msgid "Invalid entries. Please review the fields below."
+msgstr ""
+
+
+#: working/source/luci-commotion/luasrc/view/commotion/error_olsr.htm
+msgid "OLSR Daemon"
+msgstr ""
+msgid "Unable to connect to the OLSR daemon!"
+msgstr ""
+msgid "Make sure that OLSRd is running, the "txtinfo" plugin is loaded, configured on port 2006 and accepts connections from "127.0.0.1"."
+msgstr ""
+
+
