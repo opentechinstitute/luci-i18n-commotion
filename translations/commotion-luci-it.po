@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: Commotion User Interface\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-08-01 02:43+0500\n"
-"PO-Revision-Date: 2013-10-09 13:43+0000\n"
+"PO-Revision-Date: 2013-11-20 10:05+0000\n"
 "Last-Translator: il_doc <filippo.giomi@gmail.com>\n"
 "Language-Team: Italian (http://www.transifex.com/projects/p/commotion-user-interface/language/it/)\n"
 "MIME-Version: 1.0\n"
@@ -492,6 +492,7 @@ msgstr ""
 
 msgid "Apply and Save"
 msgstr ""
+
 
 #: commotion-openwrt-theme /files/templates/header.htm
 msgid "Unsaved Changes"
