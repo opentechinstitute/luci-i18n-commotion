@@ -83,10 +83,14 @@ foreach my $repo (@repos) {
 		print("Cloning " . $origin . " into " . $working_source_dir ."\n");
 		Git::Repository->run( clone => $origin => $working_source_dir . $repo)
 			|| warn "Couldn't clone " . $origin . "\n";
+		my $r = Git::Repository->new( work_tree => $working_source_dir . $repo);
+		print("Checking out $branches{$repo} branch\n");
+		$r->command(checkout => $branches{$repo}) || die "Couldn't check out proper branch\n";
 	} else {
 		print("Updating " . $repo . "\n");
 		my $r = Git::Repository->new( work_tree => $working_source_dir . $repo);
-		$r->command(pull => 'origin', 'master', { quiet => 1 }) || warn "Couldn't pull remotes\n";
+		$r->command(checkout => $branches{$repo}) || die "Couldn't check out proper branch\n";
+		$r->command(pull => 'origin', $branches{$repo}, { quiet => 1 }) || warn "Couldn't pull remotes\n";
 	}
 }
 
