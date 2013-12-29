@@ -1,6 +1,14 @@
 #!/usr/bin/perl -w
+
+###
+### First pass at an automated PO file generator
+### This script is in need of major refactoring
+### Contains lots of duplicate code and fast workarounds
+### Also needs a solution to git integration of generated files
+###
+
 use strict;
-my $testing = 1;
+my $testing = 0;
 my @todo = ("\n\nTo Do:");
 push(@todo, "add copyright notice");
 push(@todo, "Fix use vs. require");
@@ -21,12 +29,34 @@ use DateTime;
 ## Git Info
 ##
 my $git_account = 'https://github.com/opentechinstitute/';
-my @repos = qw(commotion-openwrt commotion-feed avahi-client luci-commotion-apps 
-	commotion-dashboard-helper commotion-debug-helper commotiond 
-	luci-commotion-quickstart luci-commotion-splash luci-commotion luci-theme-commotion
+my @repos = qw(
+	luci-commotion-apps luci-theme-commotion luci-commotion 
+	commotion-dashboard-helper commotiond commotion-service-manager
+	commotion-router commotion-feed commotion-lua-helpers serval-dna
+	luci-commotion-splash commotion-debug-helper luci-i18n-commotion olsrd
 );
+
+# Quick and dirty addition since not all of our repos point to master branch
+# @repos should really be a hash
+my %branches = (
+	'luci-commotion-apps' => 'master',
+	'luci-theme-commotion' => 'master',
+	'luci-commotion' => 'master',
+	'commotion-dashboard-helper' => 'master',
+	'commotiond' => 'master',
+	'commotion-service-manager' => 'master',
+	'commotion-router' => 'master',
+	'commotion-feed' => 'master',
+	'commotion-lua-helpers' => 'master',
+	'serval-dna' => 'commotion-wireless',
+	'luci-commotion-splash' => 'master',
+	'commotion-debug-helper' => 'master',
+	'luci-i18n-commotion' => 'master',
+	'olsrd' => 'commotion'
+);
+
 my $i18n_remote = 'origin';
-my $i18n_branch = 'PO-script-local';
+my $i18n_branch = 'master';
 
 
 ##
@@ -93,13 +123,15 @@ if ($testing == 1) {
 # Create working PO file from stable PO file
 if (@stable_po_files) {
 	foreach (@stable_po_files) {
+		next if ($_ !~ m|.po$|);
 		my $stable_po_file = $_;
 		my $working_po_file = $_;
 		$working_po_file =~ s|$stable_translations_dir||;
 		$working_po_file = $working_translations_dir . 'working.' . $working_po_file;
+print("$stable_po_file, $working_po_file\n");
 		$po_files{$stable_po_file} = $working_po_file;
 		#push(@working_po_files, $working_po_file);
-		copy($stable_po_file, $working_po_file) || die "Couldn't copy PO file: $!\n";
+		copy($stable_translations_dir . $stable_po_file, $working_po_file) || die "Couldn't copy PO file $stable_po_file: $!\n";
 	}
 } else {
 	warn "Couldn't find any stable PO files!\n";
@@ -217,12 +249,13 @@ foreach my $working_po_file (@working_po_files) {
 	&Write_PO_File($working_po_file, \%stringtable, $translations);
 }
 
-# Copy working po files back to stable
-%po_files = reverse %po_files;
-for my $working (keys %po_files) {
-	print "Copying working po file to $po_files{$working}\n";
-	copy($working, $po_files{$working}) || die "Couldn't copy po file to stable directory: $!\n";
-}
+# Do this manually until trial period is complete
+## Copy working po files back to stable
+#%po_files = reverse %po_files;
+#for my $working (keys %po_files) {
+#	print "Copying working po file to $po_files{$working}\n";
+#	copy($working, $po_files{$working}) || die "Couldn't copy po file to stable directory: $!\n";
+#}
 
 # Commit new PO files and upload to github
 #my $i18n_r = Git::Repository->new ( work_tree => $stable_dir, { quiet => 1 });
@@ -240,9 +273,9 @@ for my $working (keys %po_files) {
 #	}
 #	$i18n_r->command($cmd) || die "Couldn't run git command: $!";
 #}
-$i18n_r->run(add => "$working_translations_dir");
-$i18n_r->run(commit => 'm', 'Quarterly Commotion UI strings update');
-$i18n_r->run(push => "$i18n_remote", "$i18n_branch");
+#$i18n_r->run(add => "$working_translations_dir");
+#$i18n_r->run(commit => 'm', 'Quarterly Commotion UI strings update');
+#$i18n_r->run(push => "$i18n_remote", "$i18n_branch");
 
 
 # Upload to Transifex/GitHub
