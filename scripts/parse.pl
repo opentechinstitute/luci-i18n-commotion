@@ -8,7 +8,7 @@
 ###
 
 use strict;
-my $testing = 0;
+my $verbosity = 1;
 my @todo = ("\n\nTo Do:");
 push(@todo, "add copyright notice");
 push(@todo, "Fix use vs. require");
@@ -110,7 +110,7 @@ foreach my $repo (keys %repos) {
 		Git::Repository->run( clone => $repos{$repo}{'source'} => $working_source_dir . $repo)
 			|| warn "Couldn't clone " . $repos{$repo}{'source'} . "\n";
 		my $r = Git::Repository->new( work_tree => $working_source_dir . $repo);
-		print("Checking out $repos{$repo}{'branch'} branch\n");
+		print("\tChecking out $repos{$repo}{'branch'} branch\n");
 		$r->command(checkout => $repos{$repo}{'branch'}) || die "Couldn't check out proper branch\n";
 	} else {
 		print("Updating " . $repo . "\n");
@@ -130,13 +130,15 @@ push(@todo, 'Merge %po_files, @stable_po_files, @working_po_files');
 opendir(DIR, $stable_translations_dir) or warn "Couldn't open stable po dir: $!";
 my @po_files = glob "$stable_translations_dir*.po"; 
 closedir(DIR);
+
 for (0..$#po_files){
 	$po_files[$_] =~ s/^$stable_translations_dir//;
 }
+
 # Create working PO file from stable PO file
 if (@po_files) {
 	foreach (@po_files) {
-		print("Copying $_ to $working_translations_dir\n");
+		if ($verbosity == 1) { print("Copying $_ to $working_translations_dir\n"); }
 		copy($stable_translations_dir . $_, $working_translations_dir . $_) || die "Couldn't copy PO file $_: $!\n";
 	}
 } else {
@@ -170,7 +172,7 @@ while (defined(my $file = $scan->())) {
 my %stringtable;
 foreach my $file (@working_source_files) {
 	chomp $file;
-	if ($testing == 1) { print "Populating string table from $file\n"; }
+	if ($verbosity == 1) { print "Populating string table from $file\n"; }
 	# read file into $raw
 	if( open S, "< $file" ) {
 		local $/ = undef;
@@ -187,10 +189,9 @@ foreach my $file (@working_source_files) {
 		}
 	}
 }
-=cut
 
 foreach my $po_file (@po_files) { 
-	print "Salvaging translations from $po_file\n";
+	if ($verbosity == 1) { print "Salvaging translations from $po_file\n"; }
 	my $translations = ();
 	# English file can be overwritten each time
 
@@ -207,6 +208,7 @@ foreach my $po_file (@po_files) {
 	print "Writing to $working_translations_dir$po_file\n";
 	Write_PO_File($working_translations_dir . $po_file, \%stringtable, $translations);
 }
+=cut
 
 # Do this manually until trial period is complete
 ## Copy working po files back to stable
@@ -227,7 +229,7 @@ foreach my $po_file (@po_files) {
 
 ## For some reason git doesn't recognize add when run as a loop
 #foreach my $cmd (@command) {
-#	if ($testing == 1) {
+#	if ($verbosity == 1) {
 #		$cmd = $cmd . ', --dry-run';
 #	}
 #	$i18n_r->command($cmd) || die "Couldn't run git command: $!";
@@ -242,7 +244,7 @@ foreach my $po_file (@po_files) {
 
 push(@todo, "Move common functions to subroutines");
 # print to do list
-if ($testing == 1) { foreach (@todo) { print "$_\n"; } }
+if ($verbosity == 1) { foreach (@todo) { print "$_\n"; } }
 =cut
 
 exit 0;
@@ -294,6 +296,7 @@ sub Extract_Translations {
 		}
 		# add $res to %stringtable
 	}
+	@res = uniq(@res);
 	return(@res);
 }
 
@@ -308,12 +311,13 @@ sub Extract_Lua_Translations {
 		}
 		push(@code, $code);
 	}
+	@code = uniq(@code);
 	return(@code);
 }
 
 sub Get_Translations {
 	my $working_po_file = pop(@_);
-	print "Getting translations for $working_po_file\n";
+	if ($verbosity == 1) { print "Getting translations for $working_po_file\n"; }
 	my %translations;
 	open(WPO, "< $working_po_file") || die "Couldn't open translation file: $!\n";
 	my @wpo = <WPO>;
