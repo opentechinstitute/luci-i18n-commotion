@@ -24,40 +24,67 @@ use DateTime;
 ## TODO: for next major revision:
 ## Look for ways to minimize string overlap
 ## http://www.perlmonks.org/?node_id=816086
-
+push(@todo, "minimize duplicate strings in po files");
+push(@todo, "use repo objects");
 ##
-## Git Info
+## Repos to be scanned for translatable strings
 ##
-my $git_account = 'https://github.com/opentechinstitute/';
-my @repos = qw(
-	luci-commotion-apps luci-theme-commotion luci-commotion 
-	commotion-dashboard-helper commotiond commotion-service-manager
-	commotion-router commotion-feed commotion-lua-helpers serval-dna
-	luci-commotion-splash commotion-debug-helper luci-i18n-commotion olsrd
+my %repos = (
+	'luci-commotion-apps' => {
+		'source' => 'https://github.com/opentechinstitute/luci-commotion-apps.git',
+		'branch' => 'master',
+	},
+	
+	'luci-theme-commotion' => {
+		'source' => 'https://github.com/opentechinstitute/luci-theme-commotion.git',
+		'branch' => 'master',
+		},
+	'luci-commotion' => {
+		'source' => 'https://github.com/opentechinstitute/luci-commotion.git',
+		'branch' => 'master',
+	},
+	'commotion-dashboard-helper' => {
+		'source' => 'https://github.com/opentechinstitute/commotion-dashboard-helper.git',
+		'branch' => 'master',
+	}, 
+	'commotiond commotion-service-manager' => {
+		'source' => 'https://github.com/opentechinstitute/commotion-service-manager.git',
+		'branch' => 'master',
+	},
+	'commotion-router' => {
+		'source' => 'https://github.com/opentechinstitute/commotion-router.git',
+		'branch' => 'master',
+	},
+	'commotion-feed' => {
+		'source' => 'https://github.com/opentechinstitute/commotion-feed.git',
+		'branch' => 'master',
+	}, 
+	'commotion-lua-helpers' => {
+		'source' => 'https://github.com/opentechinstitute/commotion-lua-helpers.git',
+		'branch' => 'master',
+	},
+	'serval-dna' => {
+		'source' => 'https://github.com/opentechinstitute/commotion-dashboard-helper.git',
+		'branch' => 'commotion-wireless',
+	},
+	'luci-commotion-splash' => {
+		'source' => 'https://github.com/opentechinstitute/luci-commotion-splash.git',
+		'branch' => 'master',
+	},
+	'commotion-debug-helper' => {
+		'source' => 'https://github.com/opentechinstitute/commotion-debug-helper.git',
+		'branch' => 'master',
+	},
+	'luci-i18n-commotion' => {
+		'source' => 'https://github.com/opentechinstitute/luci-i18n-commotion.git',
+		'branch' => 'master',
+	}, 
+	'olsrd' => {
+		'source' => 'https://github.com/opentechinstitute/olsrd.git',
+		'branch' => 'master',
+	},
+
 );
-
-# Quick and dirty addition since not all of our repos point to master branch
-# @repos should really be a hash
-my %branches = (
-	'luci-commotion-apps' => 'master',
-	'luci-theme-commotion' => 'master',
-	'luci-commotion' => 'master',
-	'commotion-dashboard-helper' => 'master',
-	'commotiond' => 'master',
-	'commotion-service-manager' => 'master',
-	'commotion-router' => 'master',
-	'commotion-feed' => 'master',
-	'commotion-lua-helpers' => 'master',
-	'serval-dna' => 'commotion-wireless',
-	'luci-commotion-splash' => 'master',
-	'commotion-debug-helper' => 'master',
-	'luci-i18n-commotion' => 'master',
-	'olsrd' => 'commotion'
-);
-
-my $i18n_remote = 'origin';
-my $i18n_branch = 'master';
-
 
 ##
 ## Directory Structure
@@ -65,9 +92,7 @@ my $i18n_branch = 'master';
 my $working_dir = 'working/';
 my $working_source_dir = $working_dir . 'source/';
 my $working_translations_dir = $working_dir . 'translations/';
-
-my $stable_dir = '../';
-my $stable_translations_dir = $stable_dir . 'translations/';
+my $stable_translations_dir = $working_source_dir . 'luci-i18n-commotion/translations/';
 
 # Prepare working directory
 if (not -e $working_dir) {
@@ -76,66 +101,43 @@ if (not -e $working_dir) {
 		|| die "ERROR: Couldn't create " . $working_dir . "\n";	
 }
 
-# Update code repos
-foreach my $repo (@repos) {
+# Iterate over commotion-router packages defined in %repos
+# If working copy does not exist, clone it and check out proper branch
+# If working copy does exist, check out proper branch and pull updates
+foreach my $repo (keys %repos) {
 	if (not -e $working_source_dir . $repo) {
-		my $origin = $git_account . $repo;
-		print("Cloning " . $origin . " into " . $working_source_dir ."\n");
-		Git::Repository->run( clone => $origin => $working_source_dir . $repo)
-			|| warn "Couldn't clone " . $origin . "\n";
+		print("Cloning " . $repo . " into " . $working_source_dir ."\n");
+		Git::Repository->run( clone => $repos{$repo}{'source'} => $working_source_dir . $repo)
+			|| warn "Couldn't clone " . $repos{$repo}{'source'} . "\n";
 		my $r = Git::Repository->new( work_tree => $working_source_dir . $repo);
-		print("Checking out $branches{$repo} branch\n");
-		$r->command(checkout => $branches{$repo}) || die "Couldn't check out proper branch\n";
+		print("Checking out $repos{$repo}{'branch'} branch\n");
+		$r->command(checkout => $repos{$repo}{'branch'}) || die "Couldn't check out proper branch\n";
 	} else {
 		print("Updating " . $repo . "\n");
 		my $r = Git::Repository->new( work_tree => $working_source_dir . $repo);
-		$r->command(checkout => $branches{$repo}) || die "Couldn't check out proper branch\n";
-		$r->command(pull => 'origin', $branches{$repo}, { quiet => 1 }) || warn "Couldn't pull remotes\n";
+		$r->command(checkout => $repos{$repo}{'branch'}) || die "Couldn't check out proper branch\n";
+		$r->command(pull => 'origin', $repos{$repo}{'branch'}, { quiet => 1 }) || warn "Couldn't pull remotes\n";
 	}
 }
 
-# Fetch most recent PO files
 push(@todo, "add transifex github integration");
-print("Updating translation files\n");
-my $i18n_r = Git::Repository->new ( work_tree => $stable_dir, { quiet => 1 });
-my @command = (
-	"pull, '$i18n_remote', '$i18n_branch'",
-);
-foreach my $cmd (@command) {
-	if ($testing == 1) {
-		$cmd = $cmd . ", '--dry-run'";
-	}
-	$i18n_r->command($cmd) || warn "Couldn't pull stable branch\n";
-}
 
 ##
 ## Translation files
 ## 
 push(@todo, 'Merge %po_files, @stable_po_files, @working_po_files');
-my %po_files;
-my @stable_po_files;
-my @working_po_files;
-if ($testing == 1) {
-	print "Limiting scope of operations!\n";
-	@stable_po_files = ($stable_translations_dir.'commotion-luci-en.po', $stable_translations_dir.'commotion-luci-ar.po');
-} else {
-	opendir(DIR, $stable_translations_dir) or warn "Couldn't open stable po dir: $!";
-	@stable_po_files = readdir(DIR); 
-	closedir(DIR);
-}
 
+opendir(DIR, $stable_translations_dir) or warn "Couldn't open stable po dir: $!";
+my @po_files = glob "$stable_translations_dir*.po"; 
+closedir(DIR);
+for (0..$#po_files){
+	$po_files[$_] =~ s/^$stable_translations_dir//;
+}
 # Create working PO file from stable PO file
-if (@stable_po_files) {
-	foreach (@stable_po_files) {
-		next if ($_ !~ m|.po$|);
-		my $stable_po_file = $_;
-		my $working_po_file = $_;
-		$working_po_file =~ s|$stable_translations_dir||;
-		$working_po_file = $working_translations_dir . 'working.' . $working_po_file;
-		$po_files{$stable_po_file} = $working_po_file;
-		push(@working_po_files, $working_po_file);
-		if ($testing == 1) { print("Copying $stable_po_file to $working_po_file\n"); }
-		copy($stable_translations_dir . $stable_po_file, $working_po_file) || die "Couldn't copy PO file $stable_po_file: $!\n";
+if (@po_files) {
+	foreach (@po_files) {
+		print("Copying $_ to $working_translations_dir\n");
+		copy($stable_translations_dir . $_, $working_translations_dir . $_) || die "Couldn't copy PO file $_: $!\n";
 	}
 } else {
 	warn "Couldn't find any stable PO files!\n";
@@ -165,79 +167,30 @@ while (defined(my $file = $scan->())) {
 ## http://luci.subsignal.org/trac/browser/luci/trunk/build/i18n-scan.pl
 ## copyright 2013 by jow 
 
-# looks like stringtable is a hash so it can handle multi-line strings
 my %stringtable;
 foreach my $file (@working_source_files) {
 	chomp $file;
 	if ($testing == 1) { print "Populating string table from $file\n"; }
-# read file into $raw
+	# read file into $raw
 	if( open S, "< $file" ) {
 		local $/ = undef;
 		my $raw = <S>;
 		close S;
 
-# copy $raw to $text for manipulation
-		my $text = $raw;
-
-# search $text for translate flags
-		while( $text =~ s/ ^ .*? (?:translate|translatef|i18n|_) [\n\s]* \( /(/sgx ) {
-# separate usable $code from $text. $code and $text reverse of expected
-			( my $code, $text ) = extract_bracketed($text, q{('")});
-# strip newlines and extra whitespace out of $code
-			$code =~ s/\\\n/ /g;
-			$code =~ s/^\([\n\s]*//;
-			$code =~ s/[\n\s]*\)$//;
-
-			my $res = "";
-			my $sub = "";
-
-# Check code for quoted text. Store in $sub
-			if( $code =~ /^['"]/ ) {
-				while( defined $sub ) {
-					( $sub, $code ) = extract_delimited($code, q{'"}, q{\s*(?:\.\.\s*)?});
-
-					if( defined $sub && length($sub) > 2 ) {
-# use sub to build $res
-						$res .= substr $sub, 1, length($sub) - 2;
-					} else {
-						undef $sub;
-					}
-				}
-# Check code for tagged text. store in $res
-			} elsif( $code =~ /^(\[=*\[)/ ) {
-				my $stag = quotemeta $1;
-				my $etag = $stag;
-				$etag =~ s/\[/]/g;
-
-				( $res ) = extract_tagged($code, $stag, $etag);
-
-				$res =~ s/^$stag//;
-				$res =~ s/$etag$//;
-			}
-
-# Strip superfluous strings out of $res
-			$res = dec_lua_str($res);
-# add $res to %stringtable
-			if ($res) {
-				push(@{ $stringtable{$file} }, $res);
-			}
+		my @res = Extract_Translations($raw);
+		if (@res) {
+			push(@{ $stringtable{$file} }, @res);
 		}
-
-		$text = $raw;
-# Same steps for lua code
-		while( $text =~ s/ ^ .*? <% -? [:_] /<%/sgx ) {
-			( my $code, $text ) = extract_tagged($text, '<%', '%>');
-
-			if( defined $code ) {
-				$code = dec_tpl_str(substr $code, 2, length($code) - 4);
-				push(@{ $stringtable{$file} }, $code);
-			}
+		my @code = Extract_Lua_Translations($raw);
+		if (@code) {
+			push(@{ $stringtable{$file} }, @code);
 		}
 	}
 }
+=cut
 
-foreach my $working_po_file (@working_po_files) { 
-	print "Salvaging translations from $working_po_file\n";
+foreach my $po_file (@po_files) { 
+	print "Salvaging translations from $po_file\n";
 	my $translations = ();
 	# English file can be overwritten each time
 
@@ -246,13 +199,13 @@ foreach my $working_po_file (@working_po_files) {
 
 	# Generate id:str pairs for PO files
 	# NOTE: translations is a hash ref
-	unless ($working_po_file =~ m|-en.po$|) {
-		$translations = &Get_Translations($working_po_file);
+	unless ($po_file =~ m|-en.po$|) {
+		$translations = Get_Translations($working_translations_dir . $po_file);
 	}
 
 	# Write File
-	print "Writing to $working_po_file\n";
-	&Write_PO_File($working_po_file, \%stringtable, $translations);
+	print "Writing to $working_translations_dir$po_file\n";
+	Write_PO_File($working_translations_dir . $po_file, \%stringtable, $translations);
 }
 
 # Do this manually until trial period is complete
@@ -290,8 +243,73 @@ foreach my $working_po_file (@working_po_files) {
 push(@todo, "Move common functions to subroutines");
 # print to do list
 if ($testing == 1) { foreach (@todo) { print "$_\n"; } }
+=cut
 
-exit 0; 
+exit 0;
+
+sub Extract_Translations {
+	my $text = pop(@_);
+	my @res = ();
+	my $res = "";
+	my $sub = "";
+	# search $text for translate flags
+	while( $text =~ s/ ^ .*? (?:translate|translatef|i18n|_) [\n\s]* \( /(/sgx ) {
+		# separate usable $code from $text. $code and $text reverse of expected
+		( my $code, $text ) = extract_bracketed($text, q{('")});
+		# strip newlines and extra whitespace out of $code
+		$code =~ s/\\\n/ /g;
+		$code =~ s/^\([\n\s]*//;
+		$code =~ s/[\n\s]*\)$//;
+
+
+
+		# Check code for quoted text. Store in $sub
+		if( $code =~ /^['"]/ ) {
+			while( defined $sub ) {
+				( $sub, $code ) = extract_delimited($code, q{'"}, q{\s*(?:\.\.\s*)?});
+
+				if( defined $sub && length($sub) > 2 ) {
+					# use sub to build $res
+					$res .= substr $sub, 1, length($sub) - 2;
+				} else {
+					undef $sub;
+				}
+			}
+		# Check code for tagged text. store in $res
+		} elsif( $code =~ /^(\[=*\[)/ ) {
+			my $stag = quotemeta $1;
+			my $etag = $stag;
+			$etag =~ s/\[/]/g;
+
+			( $res ) = extract_tagged($code, $stag, $etag);
+
+			$res =~ s/^$stag//;
+			$res =~ s/$etag$//;
+		}
+
+		# Strip superfluous strings out of $res
+		$res = dec_lua_str($res);
+		if ($res) {
+			push(@res, $res);
+		}
+		# add $res to %stringtable
+	}
+	return(@res);
+}
+
+sub Extract_Lua_Translations {
+	my $text = pop(@_);
+	my @code;
+	while( $text =~ s/ ^ .*? <% -? [:_] /<%/sgx ) {
+		( my $code, $text ) = extract_tagged($text, '<%', '%>');
+
+		if( defined $code ) {
+			$code = dec_tpl_str(substr $code, 2, length($code) - 4);
+		}
+		push(@code, $code);
+	}
+	return(@code);
+}
 
 sub Get_Translations {
 	my $working_po_file = pop(@_);
@@ -328,7 +346,7 @@ sub Write_PO_File {
 	my ($working_po_file, $stringtable, $translations) = @_;
 
 	# Generate headers, 
-	my @po_header = &_Generate_PO_Header($working_po_file);
+	my @po_header = _Generate_PO_Header($working_po_file);
 
 #
 # Extra table created to keep hashes in scope
