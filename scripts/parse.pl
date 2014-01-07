@@ -518,18 +518,12 @@ sub Write_PO_File {
 
 #**
 # @function uniq
-# @brief Return only unique elements from a list. Not List::MoreUtils function by same name.
+# @brief Return only unique elements from a list. Case sensitive. From List::MoreUtils function by same name.
 # @param a List of elements to be checked
 # @retval r List of unique elements
 #*
 sub uniq {
     my %seen = ();
-    my @r = ();
-    foreach my $a (@_) {
-        unless ($seen{$a}) {
-            push @r, $a;
-            $seen{$a} = 1;
-        }
-    }
+    my @r = grep { not $seen{$_}++ } @_;
     return @r;
 }
