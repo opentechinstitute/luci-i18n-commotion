@@ -203,14 +203,13 @@ foreach my $po_file (@po_files) {
 	}
 	
 	if ($verbosity == 1) { print "Generating file header for $po_file\n"; }
-	my @po_header = _Generate_PO_Header($working_translations_dir . $po_file)
+	my @po_header = _Generate_PO_Header($working_translations_dir . $po_file);
 	
 	if ($verbosity == 1) { print "Generating file body for $po_file\n"; }
-	my @po_body = _Generate_PO_Body(\%stringtable, $translations)
+	my @po_body = _Generate_PO_Body($working_translations_dir . $po_file, \%stringtable, $translations);
 	
 	# Write File
 	print "Writing to $working_translations_dir$po_file\n";
-	#Write_PO_File($working_translations_dir . $po_file, \%stringtable, $translations);
 	Write_PO_File($working_translations_dir . $po_file, \@po_header, \@po_body);
 }
 
@@ -225,11 +224,11 @@ foreach my $po_file (@po_files) {
 # Commit new PO files and upload to github
 #my $i18n_r = Git::Repository->new ( work_tree => $stable_dir, { quiet => 1 });
 #$i18n_r->command(pull =>'--rebase', 'origin', 'master') || warn "Couldn't pull stable branch\n";
-my @command = (
-	"add => '$working_translations_dir'",
-	"commit => '-m', 'Quarterly Commotion UI strings update'",
-	"push, '$i18n_remote', '$i18n_branch'",
-);
+#my @command = (
+#	"add => '$working_translations_dir'",
+#	"commit => '-m', 'Quarterly Commotion UI strings update'",
+#	"push, '$i18n_remote', '$i18n_branch'",
+#);
 
 ## For some reason git doesn't recognize add when run as a loop
 #foreach my $cmd (@command) {
@@ -348,14 +347,28 @@ sub Fetch_Translations {
 	return \%translations;
 }
 
-sub Write_PO_File {
-	# NOTE: stringtable and translations are hash references
-	my ($working_po_file, $stringtable, $translations) = @_;
+sub _Generate_PO_Header {
+	my $working_po_file = pop;	
+	my @po_header;
+	my $dt = DateTime->now();
+	$dt = $dt.'\n"';
+	#my $date = strftime "%Y-%m-%d %R\n";
+	#"PO-Revision-Date: 2013-08-16 20:50+0000\n"
+	open(WPF, "< $working_po_file");
+	while(<WPF>) {
+		chomp;
+		if ($_ =~ m|^\"PO-Revision-Date\:\ |) {
+			$_ = $& . $dt;
+		}
+		push(@po_header, $_);
+		last if ($_ =~ m|^"Plural|);
+	}
+	close(WPF);
+	return(@po_header);
+}
 
-#
-# Extra table created to keep hashes in scope
-# This can probably be moved to a subroutine
-#
+sub _Generate_PO_Body {
+	my ($working_po_file, $stringtable, $translations) = @_;
 	my @wps = ();
 	# Get k:v else write k:msgstr
 	foreach my $f (keys %{$stringtable}) {
@@ -380,11 +393,18 @@ sub Write_PO_File {
 		push(@wps, "\n");
 	}
 
+	return(@wps);
+}
+
+sub Write_PO_File {
+	# NOTE: po_header and po_body are array references
+	my ($working_po_file, $po_header, $po_body) = @_;
+
 	open(WPO, "> $working_po_file") || die "Couldn't open $working_po_file: $!\n";
-	foreach (@po_header) {
+	foreach (@{$po_header}) {
 		print WPO $_,"\n";
 	}
-	foreach (@wps) {
+	foreach (@{$po_body}) {
 		print WPO $_,"\n";
 	}
 	close(WPO);
@@ -416,30 +436,6 @@ sub dec_tpl_str
         return $s;
 }
 
-sub _Generate_PO_Header {
-	my $working_po_file = pop;	
-	my @po_header;
-	my $dt = DateTime->now();
-	$dt = $dt.'\n"';
-	#my $date = strftime "%Y-%m-%d %R\n";
-	#"PO-Revision-Date: 2013-08-16 20:50+0000\n"
-	open(WPF, "< $working_po_file");
-	while(<WPF>) {
-		chomp;
-		if ($_ =~ m|^\"PO-Revision-Date\:\ |) {
-			$_ = $& . $dt;
-		}
-		push(@po_header, $_);
-		last if ($_ =~ m|^"Plural|);
-	}
-	close(WPF);
-	return(@po_header);
-}
-
-_Generate_PO_Body {
-	my @wps = pop(@_);
-	return(@wps);
-}
 
 sub uniq {
     my %seen = ();
