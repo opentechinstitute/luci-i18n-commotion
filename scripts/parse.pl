@@ -24,7 +24,7 @@ use DateTime;
 ## TODO: for next major revision:
 ## Look for ways to minimize string overlap
 ## http://www.perlmonks.org/?node_id=816086
-push(@todo, "minimize duplicate strings in po files");
+push(@todo, "minimize duplicate strings in po files - http://www.perlmonks.org/?node_id=816086");
 push(@todo, "use repo objects");
 ##
 ## Repos to be scanned for translatable strings
@@ -38,7 +38,7 @@ my %repos = (
 	'luci-theme-commotion' => {
 		'source' => 'https://github.com/opentechinstitute/luci-theme-commotion.git',
 		'branch' => 'master',
-		},
+	},
 	'luci-commotion' => {
 		'source' => 'https://github.com/opentechinstitute/luci-commotion.git',
 		'branch' => 'master',
@@ -83,7 +83,6 @@ my %repos = (
 		'source' => 'https://github.com/opentechinstitute/olsrd.git',
 		'branch' => 'master',
 	},
-
 );
 
 ##
@@ -125,7 +124,6 @@ push(@todo, "add transifex github integration");
 ##
 ## Translation files
 ## 
-push(@todo, 'Merge %po_files, @stable_po_files, @working_po_files');
 
 opendir(DIR, $stable_translations_dir) or warn "Couldn't open stable po dir: $!";
 my @po_files = glob "$stable_translations_dir*.po"; 
@@ -201,14 +199,20 @@ foreach my $po_file (@po_files) {
 	# Generate id:str pairs for PO files
 	# NOTE: translations is a hash ref
 	unless ($po_file =~ m|-en.po$|) {
-		$translations = Get_Translations($working_translations_dir . $po_file);
+		$translations = Fetch_Translations($working_translations_dir . $po_file);
 	}
-
+	
+	if ($verbosity == 1) { print "Generating file header for $po_file\n"; }
+	my @po_header = _Generate_PO_Header($working_translations_dir . $po_file)
+	
+	if ($verbosity == 1) { print "Generating file body for $po_file\n"; }
+	my @po_body = _Generate_PO_Body(\%stringtable, $translations)
+	
 	# Write File
 	print "Writing to $working_translations_dir$po_file\n";
-	Write_PO_File($working_translations_dir . $po_file, \%stringtable, $translations);
+	#Write_PO_File($working_translations_dir . $po_file, \%stringtable, $translations);
+	Write_PO_File($working_translations_dir . $po_file, \@po_header, \@po_body);
 }
-=cut
 
 # Do this manually until trial period is complete
 ## Copy working po files back to stable
@@ -221,7 +225,7 @@ foreach my $po_file (@po_files) {
 # Commit new PO files and upload to github
 #my $i18n_r = Git::Repository->new ( work_tree => $stable_dir, { quiet => 1 });
 #$i18n_r->command(pull =>'--rebase', 'origin', 'master') || warn "Couldn't pull stable branch\n";
-@command = (
+my @command = (
 	"add => '$working_translations_dir'",
 	"commit => '-m', 'Quarterly Commotion UI strings update'",
 	"push, '$i18n_remote', '$i18n_branch'",
@@ -245,7 +249,6 @@ foreach my $po_file (@po_files) {
 push(@todo, "Move common functions to subroutines");
 # print to do list
 if ($verbosity == 1) { foreach (@todo) { print "$_\n"; } }
-=cut
 
 exit 0;
 
@@ -315,7 +318,7 @@ sub Extract_Lua_Translations {
 	return(@code);
 }
 
-sub Get_Translations {
+sub Fetch_Translations {
 	my $working_po_file = pop(@_);
 	if ($verbosity == 1) { print "Getting translations for $working_po_file\n"; }
 	my %translations;
@@ -348,9 +351,6 @@ sub Get_Translations {
 sub Write_PO_File {
 	# NOTE: stringtable and translations are hash references
 	my ($working_po_file, $stringtable, $translations) = @_;
-
-	# Generate headers, 
-	my @po_header = _Generate_PO_Header($working_po_file);
 
 #
 # Extra table created to keep hashes in scope
@@ -420,20 +420,25 @@ sub _Generate_PO_Header {
 	my $working_po_file = pop;	
 	my @po_header;
 	my $dt = DateTime->now();
-	my $date = $dt.'\n"';
+	$dt = $dt.'\n"';
 	#my $date = strftime "%Y-%m-%d %R\n";
 	#"PO-Revision-Date: 2013-08-16 20:50+0000\n"
 	open(WPF, "< $working_po_file");
 	while(<WPF>) {
 		chomp;
 		if ($_ =~ m|^\"PO-Revision-Date\:\ |) {
-			$_ = $& . $date;
+			$_ = $& . $dt;
 		}
 		push(@po_header, $_);
 		last if ($_ =~ m|^"Plural|);
 	}
 	close(WPF);
 	return(@po_header);
+}
+
+_Generate_PO_Body {
+	my @wps = pop(@_);
+	return(@wps);
 }
 
 sub uniq {
