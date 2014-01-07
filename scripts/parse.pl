@@ -1,18 +1,5 @@
 #!/usr/bin/perl -w
-
-###
-### First pass at an automated PO file generator
-### This script is in need of major refactoring
-### Contains lots of duplicate code and fast workarounds
-### Also needs a solution to git integration of generated files
-###
-
 use strict;
-my $verbosity = 1;
-my @todo = ("\n\nTo Do:");
-push(@todo, "add copyright notice");
-push(@todo, "Fix use vs. require");
-use Data::Dumper;
 use File::Path qw(make_path remove_tree);
 use Git::Repository;
 use File::Copy;
@@ -21,11 +8,16 @@ use Text::Balanced qw(extract_bracketed extract_delimited extract_tagged);
 use Text::Diff;
 use DateTime;
 
+my $verbosity = 1;
+my @todo = ("\n\nTo Do:");
+push(@todo, "add copyright notice");
+push(@todo, "Fix use vs. require");
+
 ## TODO: for next major revision:
 ## Look for ways to minimize string overlap
 ## http://www.perlmonks.org/?node_id=816086
 push(@todo, "minimize duplicate strings in po files - http://www.perlmonks.org/?node_id=816086");
-push(@todo, "use repo objects");
+
 ##
 ## Repos to be scanned for translatable strings
 ##
@@ -181,7 +173,7 @@ foreach my $file (@working_source_files) {
 		if (@res) {
 			push(@{ $stringtable{$file} }, @res);
 		}
-		my @code = Extract_Lua_Translations($raw);
+		my @code = Extract_Luci_Translations($raw);
 		if (@code) {
 			push(@{ $stringtable{$file} }, @code);
 		}
@@ -213,39 +205,11 @@ foreach my $po_file (@po_files) {
 	Write_PO_File($working_translations_dir . $po_file, \@po_header, \@po_body);
 }
 
-# Do this manually until trial period is complete
-## Copy working po files back to stable
-#%po_files = reverse %po_files;
-#for my $working (keys %po_files) {
-#	print "Copying working po file to $po_files{$working}\n";
-#	copy($working, $po_files{$working}) || die "Couldn't copy po file to stable directory: $!\n";
-#}
-
-# Commit new PO files and upload to github
-#my $i18n_r = Git::Repository->new ( work_tree => $stable_dir, { quiet => 1 });
-#$i18n_r->command(pull =>'--rebase', 'origin', 'master') || warn "Couldn't pull stable branch\n";
-#my @command = (
-#	"add => '$working_translations_dir'",
-#	"commit => '-m', 'Quarterly Commotion UI strings update'",
-#	"push, '$i18n_remote', '$i18n_branch'",
-#);
-
-## For some reason git doesn't recognize add when run as a loop
-#foreach my $cmd (@command) {
-#	if ($verbosity == 1) {
-#		$cmd = $cmd . ', --dry-run';
-#	}
-#	$i18n_r->command($cmd) || die "Couldn't run git command: $!";
-#}
-#$i18n_r->run(add => "$working_translations_dir");
-#$i18n_r->run(commit => 'm', 'Quarterly Commotion UI strings update');
-#$i18n_r->run(push => "$i18n_remote", "$i18n_branch");
-
+print "\n\n\nFile generation complete.\nNew PO files can be found in $working_translations_dir\n";
 
 # Upload to Transifex/GitHub
 #http://support.transifex.com/customer/portal/topics/440186-api/articles
 
-push(@todo, "Move common functions to subroutines");
 # print to do list
 if ($verbosity == 1) { foreach (@todo) { print "$_\n"; } }
 
@@ -302,7 +266,7 @@ sub Extract_Translations {
 	return(@res);
 }
 
-sub Extract_Lua_Translations {
+sub Extract_Luci_Translations {
 	my $text = pop(@_);
 	my @code;
 	while( $text =~ s/ ^ .*? <% -? [:_] /<%/sgx ) {
@@ -317,6 +281,29 @@ sub Extract_Lua_Translations {
 	return(@code);
 }
 
+## Translation tags
+sub dec_lua_str
+{
+        my $s = shift;
+        $s =~ s/[\s\n]+/ /g;
+        $s =~ s/\\n/\n/g;
+        $s =~ s/\\t/\t/g;
+        $s =~ s/\\(.)/$1/g;
+        $s =~ s/^ //;
+        $s =~ s/ $//;
+        return $s;
+}
+
+sub dec_tpl_str
+{
+        my $s = shift;
+        $s =~ s/-$//;
+        $s =~ s/[\s\n]+/ /g;
+        $s =~ s/^ //;
+        $s =~ s/ $//;
+        $s =~ s/\\/\\\\/g;
+        return $s;
+}
 sub Fetch_Translations {
 	my $working_po_file = pop(@_);
 	if ($verbosity == 1) { print "Getting translations for $working_po_file\n"; }
@@ -410,31 +397,7 @@ sub Write_PO_File {
 	close(WPO);
 	return;
 }
-##
-## Translation tags
-##
-sub dec_lua_str
-{
-        my $s = shift;
-        $s =~ s/[\s\n]+/ /g;
-        $s =~ s/\\n/\n/g;
-        $s =~ s/\\t/\t/g;
-        $s =~ s/\\(.)/$1/g;
-        $s =~ s/^ //;
-        $s =~ s/ $//;
-        return $s;
-}
 
-sub dec_tpl_str
-{
-        my $s = shift;
-        $s =~ s/-$//;
-        $s =~ s/[\s\n]+/ /g;
-        $s =~ s/^ //;
-        $s =~ s/ $//;
-        $s =~ s/\\/\\\\/g;
-        return $s;
-}
 
 
 sub uniq {
