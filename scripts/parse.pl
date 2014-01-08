@@ -36,7 +36,6 @@ use Git::Repository;
 use File::Copy;
 use File::Next;
 use Text::Balanced qw(extract_bracketed extract_delimited extract_tagged);
-use Text::Diff;
 use DateTime;
 
 #**
