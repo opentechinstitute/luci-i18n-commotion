@@ -467,6 +467,7 @@ sub _Generate_PO_Header {
 sub _Generate_PO_Body {
 	my ($working_po_file, $stringtable, $translations) = @_;
 	my @wps = ();
+
 	# Get k:v else write k:msgstr
 	foreach my $f (keys %{$stringtable}) {
 		chomp($f);
@@ -489,7 +490,7 @@ sub _Generate_PO_Body {
 		}
 		push(@wps, "\n");
 	}
-
+	@wps = uniq(@wps);
 	return(@wps);
 }
 
@@ -517,12 +518,25 @@ sub Write_PO_File {
 
 #**
 # @function uniq
-# @brief Return only unique elements from a list. Case sensitive. From List::MoreUtils function by same name.
+# @brief Return only unique elements from a list. Case sensitive. Not the List::MoreUtils function by same name.
 # @param a List of elements to be checked
 # @retval r List of unique elements
 #*
 sub uniq {
-    my %seen = ();
-    my @r = grep { not $seen{$_}++ } @_;
-    return @r;
+	my %seen = ();
+	my @r = ();
+	#**
+	# Does not handle multidimensional arrays well
+	#*
+	foreach my $item (@_) {
+		if ($item eq 'msgstr ""' || $item eq '\n') {
+			push(@r, $item);
+			next;
+		}
+		unless ($seen{$item}) {
+			push @r, $item;
+			$seen{$item} = 1;
+		}
+	}
+	return @r;
 }
