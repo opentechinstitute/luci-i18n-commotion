@@ -1,14 +1,17 @@
-# 
+# Translators:
 # Translators:
 # belenbarrospena <belenbarrospena@gmail.com>, 2013
+# belenbarrospena <belenbarrospena@gmail.com>, 2013
+# Excelente <dny1020@aol.com>, 2013
 # Excelente <dny1020@aol.com>, 2013
 # strel, 2013
+# strel, 2013-2014
 msgid ""
 msgstr ""
 "Project-Id-Version: Commotion User Interface\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-08-01 02:43+0500\n"
-"PO-Revision-Date: 2013-11-20 10:05+0000\n"
+"PO-Revision-Date: 2014-01-13 16:47+0000\n"
 "Last-Translator: strel\n"
 "Language-Team: Spanish (http://www.transifex.com/projects/p/commotion-user-interface/language/es/)\n"
 "MIME-Version: 1.0\n"
@@ -17,236 +20,551 @@ msgstr ""
 "Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: commotion quickstart
-msgid "Access Point Name"
-msgstr "Nombre de Punto de Acceso"
+#: working/source/luci-commotion-splash/luasrc/view/commotion-splash/splashtext.htm
+msgid "Welcome!"
+msgstr "¡Bienvenido!"
 
-msgid "What would you like to name your node's access point?"
-msgstr "¿Cómo le gustaría nombrar al punto de acceso de su nodo?"
+msgid "You are now connected to a"
+msgstr "Ahora está conectado a una"
 
-msgid ""
-"This is the name that users will see when they search for wireless access."
-msgstr "Este es el nombre que verán los usuarios cuando busquen acceso inalámbrico."
+msgid "community wireless network."
+msgstr "red inalámbrica comunitaria."
 
-msgid ""
-"Choose a name that is 5-12 characters. You can use numbers, letters and "
-"special characters. The name must be unique in the network. You can change "
-"the node name later by logging into the node administration page."
-msgstr "Elija un nombre de entre 5-12 caracteres. Puede utilizar números, letras y caracteres especiales. El nombre debe ser único en la red. Puede cambiar el nombre del nodo más adelante accediendo a la página de administración de nodos."
+msgid "Access to the Internet"
+msgstr "El acceso a Internet"
 
 msgid ""
-"Choose a password that is between 9 and 30 characters. This password can be "
-"numbers, letters, and special characters."
-msgstr "Elija una contraseña de entre 9 y 30 caracteres. Esta contraseña puede contener números, letras y caracteres especiales."
+"may be provided by people donating connectivity to the network. Everyone on "
+"the network has to share, so please be aware and behave yourself "
+"accordingly:"
+msgstr "puede ser proporcionado por personas que donan conectividad a la red. Cualquiera en la red tiene que compartir, así que sea consciente de ello y compórtese adecuadamente."
 
-msgid ""
-"This password is used to access the administration menus on this device."
-msgstr "Esta contraseña se utiliza para acceder a los menús de administración de este dispositivo."
+msgid "Please"
+msgstr "Por favor"
 
-msgid "Redirecting..."
-msgstr "Redirigiendo..."
+msgid "avoid large downloads and excessive filesharing."
+msgstr "evite grandes descargas y compartir ficheros en exceso."
 
-msgid "System"
-msgstr "Sistema"
+msgid "no illegal activities."
+msgstr "no hay actividades ilegales."
 
-msgid "Changes applied."
-msgstr "Cambios aplicados."
+msgid "If you like the network, please consider contributing!"
+msgstr "Si le gusta la red, por favor ¡considere contribuir!"
 
-msgid "Waiting for changes to be applied..."
-msgstr "Esperando a que se apliquen los cambios..."
+#: working/source/luci-commotion-splash/luasrc/model/cbi/commotion-splash/splashtext.lua
+msgid "Edit Splash text"
+msgstr "Editar texto de página de presentación ('splash')"
 
-msgid "The name of your mesh network is:"
-msgstr "El nombre de su red de malla ('mesh') es:"
-
-msgid "Your node name is:"
-msgstr "El nombre de su nodo es:"
-
-msgid ""
-"When people connect to your node wirelessly, they will connect using this "
-"name:"
-msgstr "El nombre que identifica su nodo para aquellos que quieran establecer una conexión inalámbrica:"
-
-msgid ""
-"After configuring your node, you can change the node name on the node "
-"administration page."
-msgstr "Cuando su nodo esté configurado, puede cambiarle el nombre en la página de administración del nodo."
-
-msgid "Click here if your browser doesn't redirect you within one minute"
-msgstr "Si el navegador no le redirige en un minuto, haga clic aquí."
-
-msgid ""
-"Choose a name that is 5-20 characters. You can use letters and numbers ONLY."
-" The name will be made unique in the network through the addition of the "
-"bolded number next to the input box. You can change the node name later by "
-"logging into the node administration page."
-msgstr "Escoja un nombre que tenga entre 5 y 20 caracteres. Incluya SÓLO letras y números. Para asegurarnos de que su nombre es único en la red, le añadimos el número en negrita que ve a continuación del campo de entrada de texto. Puede cambiar el nombre del nodo cuando quiera accediendo a la página de administración del nodo."
-
-msgid "Node Name"
-msgstr "Nombre del nodo"
-
-msgid ""
-"This value is used by other users and devices to find your network "
-"wirelessly and over the mesh. This value can be composed of letter, number "
-"and hyphens. (Hyphens can not be used at the beggining or end of the name.)"
-msgstr "Otros usuarios y dispositivos utilizarán este nombre para encontrar su red de forma inalámbrica y en la red de malla ('mesh'). El nombre puede incluir letras, números y guiones (los guiones no pueden usarse al principio o al final del nombre)."
-
-msgid "Your Node Name"
-msgstr "El nombre de su nodo"
-
-msgid "Require a password for others to connect to your node."
-msgstr "Solicitar contraseña a quienes quieran conectarse a su nodo."
-
-msgid "WiFi Password"
-msgstr "Contraseña WiFi"
-
-msgid "This password is required for others to use your wifi."
-msgstr "Quien quiera usar su WiFi deberá introducir esta contraseña."
-
-msgid "Retype your password here"
-msgstr "Escriba otra vez su contraseña aquí"
-
-msgid ""
-"If you would like to start the QuickStart configuration process over please "
-"click the above. WARNING: The quickstart process allows modification of this"
-" device by non-administrative users when it is active. Please make sure that"
-" you only restart the quickstart when you have time to finish the entire "
-"process."
-msgstr "Si quiere volver a empezar el proceso de configuración para inicio rápido haga clic en lo anterior. ADVERTENCIA: Mientras está activo, el proceso de configuración de inicio rápido permite que los usuarios no-administradores realicen modificaciones en este dispositivo. Asegúrese de que sólo reinicia este proceso cuando tenga tiempo de completarlo, y nunca lo deje a medias."
-
-msgid "Click on the field below to upload a file."
-msgstr "Haga clic en el campo de debajo para subir un fichero."
-
-msgid "Upload"
-msgstr "Subir"
-
-msgid ""
-"Congratulations! You have a Commotion node and are ready to join a network "
-"or start a new one. This wizard will guide you through the setup. The setup "
-"process should take about 10 minutes."
-msgstr "¡Enhorabuena! Tiene un nodo Commotion y está listo para conectarse a una red existente o crear una nueva. Este asistente le guiará en el proceso, que requiere unos 10 minutos."
-
-msgid "You can still change settings after setup is complete."
-msgstr "Puede cambiar sus preferencias en cualquier momento una vez haya completado la configuración."
-
-#: commotion-bug-info luasrc/controller/debugger.lua
+#: working/source/commotion-debug-helper/luasrc/controller/debugger.lua
 msgid "Commotion Debugging Helper"
 msgstr "Asistente de depuración ('debug') de Commotion"
 
-#: luasrc/view/debugger.htm
+#: working/source/luci-theme-commotion/files/luasrc/view/cbi/full_valueheader.htm
+msgid "Go to relevant configuration page"
+msgstr "Ir a la página relevante de la configuración"
+
+#: working/source/luci-commotion/luasrc/model/cbi/commotion/client_wp.lua
+msgid "Welcome Page"
+msgstr "Página de bienvenida"
+
+#: working/source/luci-commotion-apps/lua/luci/model/cbi/commotion/app_settings.lua
+msgid "Application Settings"
+msgstr "Configuraciones de la aplicación"
+
+#: working/source/serval-dna/luasrc/controller/commotion-dash/bigboard-conf.lua
+msgid "BigBoard Configuration"
+msgstr "Configuración de BigBoard"
+
+#: working/source/luci-theme-commotion/files/templates/footer.htm
+msgid "Administration"
+msgstr "Administración"
+
+msgid "About"
+msgstr "Acerca de"
+
+msgid "Help"
+msgstr "Ayuda"
+
+msgid "License"
+msgstr "Licencia"
+
+#: working/source/luci-commotion/luasrc/model/cbi/commotion/basic_ns.lua
+msgid "Node Settings"
+msgstr "Configuraciones de nodo"
+
+#: working/source/commotion-debug-helper/luasrc/view/debugger.htm
 msgid ""
 "The information you are about to download contains private information about"
 " this device and the network it is connected to. Only give this information "
 "to people you trust. Do you understand?"
 msgstr "Los datos que está a punto de descargar incluyen información privada sobre este dispositivo y sobre la red a la que está conectado. Sólo debería compartir esta información con gente de su confianza. ¿Lo ha comprendido?"
 
-#: luasrc/view/debugger.htm
 msgid "Commotion Bug Info"
 msgstr "Información de error de Commotion"
 
-#: luasrc/view/debugger.htm
 msgid "Name"
 msgstr "Nombre"
 
-#: luasrc/view/debugger.htm
 msgid "Contact Info"
 msgstr "Datos de contacto"
 
-#: luasrc/view/debugger.htm
 msgid "What were you doing on the device when the error occurred?"
 msgstr "Describa lo que estaba haciendo cuando se produjo el error"
 
-#: luasrc/view/debugger.htm
 msgid "Please describe the behavior you expected"
 msgstr "Por favor, describa el comportamiento que esperaba"
 
-#: luasrc/view/debugger.htm
 msgid "Please describe the behavior you experienced that you believe is wrong"
 msgstr "Por favor, describa el comportamiento obtenido que piensa que es incorrecto"
 
-#: luasrc/view/debugger.htm
 msgid "Debugging Info"
 msgstr "Información de depuración"
 
-#: luasrc/view/debugger.htm
 msgid "Mesh Network Information"
 msgstr "Información sobre la red de malla ('mesh')"
 
-#: luasrc/view/debugger.htm
 msgid "Router Status"
 msgstr "Estado del router"
 
-#: luasrc/view/debugger.htm
 msgid "Router Traffic Routing Rules"
 msgstr "Reglas de enrutamiento de tráfico del router"
 
-#: luasrc/view/debugger.htm
 msgid "All Info"
 msgstr "Toda la información"
 
-#: luasrc/view/debugger.htm
 msgid "Create Bug Info File"
 msgstr "Crear fichero de información sobre el error"
 
-#: commotion-splash cbi/commotion/splash/splashtext.lua
-msgid "Edit Splash text"
-msgstr "Editar texto de página de presentación ('splash')"
+#: working/source/luci-commotion/luasrc/view/cbi/commotion/delegator.htm
+msgid "Save"
+msgstr "Guardar"
+
+msgid "« Back"
+msgstr "« Atrás"
+
+msgid "Reset"
+msgstr "Restablecer"
+
+msgid "Finish"
+msgstr "Finalizar"
+
+msgid "Next »"
+msgstr "Siguiente »"
+
+#: working/source/luci-commotion/luasrc/view/commotion/apply_xhr.htm
+msgid "Applying changes"
+msgstr "Aplicando cambios"
+
+msgid "Configuration applied."
+msgstr "Configuración aplicada."
+
+msgid "Loading"
+msgstr "Cargando"
 
 msgid ""
-"You can enter your own text that is displayed to clients here. It is "
-"possible to use the following markers: The value of GatewayName as set in "
-"nodogsplash.conf. A URL which encodes a unique token and the URL of the "
-"user's original web request. The directory in nodogsplash's web hierarchy "
-"where images to be displayed in the splash page must be located."
-msgstr "Puede introducir su propio texto que será mostrado a los clientes aquí. Es posible usar los siguientes marcadores: El valor de GatewayName (nombre de la pasarela) tal como nodogsplash.conf establece. Una URL que codifica una única credencial ('token') y la URL de la petición web original del usuario. El directorio en la jerarquía web de nodogsplash donde las imágenes a mostrarse en la página de presentación ('splash') deben estar emplazadas."
+"Applying changes... Please be patient, this may take a few moments. Once the"
+" settings are complete you will be returned to the Administrative login."
+msgstr "Aplicando cambios... Por favor tenga paciencia, esto puede llevar unos momentos. Una vez que las configuraciones estén completadas se le devolverá a la sesión Administrative (de administración)."
 
-#: controller/commotion/splash/splash.lua
-msgid "splash: invalid parameters"
-msgstr "página de presentación ('splash'): parámetros no válidos"
+#: working/source/luci-commotion-apps/lua/luci/view/commotion/apps_form.htm
+msgid "Add an Application"
+msgstr "Añadir una aplicación"
 
-msgid "Clearance time must be an integer greater than zero"
-msgstr "El periodo de autorización debe ser un entero mayor que cero"
+msgid "Edit"
+msgstr "Editar"
 
-msgid "Invalid redirect"
-msgstr "Redireccionamiento no válido"
+msgid "Application Name"
+msgstr "Nombre de la aplicación"
 
-msgid "Invalid autoauth"
-msgstr "Autoautentificación no válida"
+msgid "This is how your application will be displayed"
+msgstr "Así es como se mostrará su aplicación"
 
-msgid "Invalid submission...zone"
-msgstr "Zona de envío no válida"
+msgid "Description"
+msgstr "Descripción"
 
-msgid "doesn't exit"
-msgstr "no pudo salir"
+msgid ""
+"The description should include a one paragraph summary of the application "
+"and any other relevant information"
+msgstr "La descripción debe incluir un párrafo resumen de la aplicación y cualquier otra información relevante."
 
-msgid "Whitelist entries must be a valid MAC address"
-msgstr "Las entradas de la lista blanca deben ser direcciones MAC válidas"
+msgid ""
+"For non web-apps, this should point to an information page telling the user "
+"how to connect to the application"
+msgstr "Para aplicaciones no-web, esto debe apuntar hacia una página de información que le diga al usuario cómo conectar a la aplicación"
 
-#: splash
+msgid "IP Address or URL of Service"
+msgstr "Dirección IP o URL del servicio"
+
+msgid "An IP address or URL where the application can be reached"
+msgstr "Una dirección IP o URL donde se puede acceder a la aplicación."
+
+msgid "Type of Application"
+msgstr "Tipo de aplicación"
+
+msgid "Choose any relevant categories that describe your application"
+msgstr "Elija cualquiera de las categorías relevantes que describan su aplicación"
+
+msgid "Application Icon"
+msgstr "Icono de la aplicación"
+
+msgid ""
+"This should be a URL of an image file that will be displayed next to the "
+"listing of your application"
+msgstr "Esto debería ser una URL de un fichero de imagen que se mostrará junto al listado de su aplicación"
+
+msgid "Please enable javascript to select one of these icons"
+msgstr "Por favor habilite JavaScript para seleccionar uno de estos iconos"
+
+msgid "Approved"
+msgstr "Aprobado"
+
+msgid "approved"
+msgstr "aprobado"
+
+msgid "blacklisted"
+msgstr "en la lista negra"
+
+msgid ""
+"Approved applications are shown to users, while blacklisted applications are"
+" not. All applications are approved automatically"
+msgstr "Las aplicaciones aprobadas son mostradas a los usuarios, mientras que las aplicaciones en la lista negra no. Todas las aplicaciones se aprueban automáticamente."
+
+msgid "Advanced Options"
+msgstr "Opciones avanzadas"
+
+msgid "Displays a custom icon based on the application's Serval fingerprint"
+msgstr "Muestra un icono personalizado basado en la huella de validación ('fingerprint') de Serval de la aplicación."
+
+msgid "Use custom"
+msgstr "Usar personalizado"
+
+msgid ""
+"The port of the application or a web page describing how to connect to the "
+"application"
+msgstr "El puerto de la aplicación o una página web que describe cómo conectar a la aplicación"
+
+msgid "Port of Service (Optional)"
+msgstr "Puerto del servicio (opcional)"
+
+msgid "If no port is given, it will default to port 80"
+msgstr "Si no se proporciona puerto, se usará el puerto 80 por defecto"
+
+msgid ""
+"If the number of hops is greater than zero, the application will be visible "
+"from other Commotion nodes in the network. Otherwise, it will only be seen "
+"on this node"
+msgstr "Si el número de saltos es mayor que cero, la aplicación será visible desde otros nodos Commotion en la red. De otro modo, sólo será visible en este nodo"
+
+msgid "Number of hops away this service should be seen (Optional)"
+msgstr "El número de saltos de distancia desde este servicio debe ser visible (opcional)"
+
+msgid ""
+"How many nodes away your application will be seen. Defaults to 5 hops away"
+msgstr "Cuántos nodos desde su aplicación serán visibles. 5 saltos de distancia por defecto"
+
+msgid ""
+"If this is checked, the application will not be removed from the "
+"applications list after the default expiration period"
+msgstr "Si esto está marcado, la aplicación no será eliminada de la lista de aplicaciones después del periodo de expiración predeterminado"
+
+msgid "Is this application permanent?"
+msgstr "¿Es permanente esta aplicación?"
+
+msgid "If checked, application will not expire"
+msgstr "Si está marcado, la aplicación no expirará"
+
+#: working/source/luci-commotion/luasrc/view/commotion/meshprofile.htm
+msgid "Welcome to Commotion"
+msgstr "Bienvenido a Commotion"
+
+msgid ""
+"This router has not yet been set up. Use the Setup Wizard for step-by-step "
+"configuration, upload a configuration file if you have one from a previously"
+" configured router, or choose Advanced for manual GUI or CLI configuration."
+msgstr "Este router no ha sido acondicionado aún. Use el Asistente de Instalación para una configuración paso-a-paso, suba un fichero de configuración si tiene un router previamente configurado, o elija Avanzada para la configuración manual de la GUI (interfaz gráfica de usuario) o la CLI (interfaz de línea de comandos)."
+
+#: working/source/luci-commotion/luasrc/model/network/proto_commotion.lua
+msgid "Commotion Interface"
+msgstr "Interfaz de Commotion"
+
+#: working/source/luci-commotion/luasrc/controller/commotion/basic_config.lua
+msgid "Commotion"
+msgstr "Commotion"
+
+#: working/source/luci-commotion/luasrc/controller/commotion/status_config.lua
+msgid "Status"
+msgstr "Estado"
+
+#: working/source/luci-theme-commotion/files/templates/adv_menu.htm
+msgid "Basic Menu"
+msgstr "Menú básico"
+
+#: working/source/luci-commotion/luasrc/view/cbi/commotion/addMesh.htm
+msgid "Mesh Network"
+msgstr "Red de malla"
+
+msgid ""
+"Click here to add a new mesh network interface. Once created you will be "
+"able to come back to this page to configure it"
+msgstr "Haga clic aquí para añadir una nueva interfaz de red de malla ('mesh'). Una vez creada podrá volver a esta página para configurarla."
+
+msgid "Add"
+msgstr "Añadir"
+
+msgid "Invalid"
+msgstr "No válido"
+
+#: working/source/commotion-dashboard-helper/luasrc/controller/commotion-dash/bigboard-conf.lua
+#: working/source/luci-theme-commotion/files/templates/basic_menu.htm
+msgid "Advanced"
+msgstr "Avanzada"
+
+#: working/source/luci-commotion/luasrc/view/commotion/viz.htm
+msgid "You need to allow javascript in your browser to show this page."
+msgstr "Tiene que permitir JavaScript en su navegador para mostrar esta página."
+
+#: working/source/luci-commotion/luasrc/view/commotion/conn_clients.htm
+msgid "Connected Clients!"
+msgstr "¡Clientes conectados!"
+
+msgid ""
+"You are not using a welcome page (splash page/captive portal.) Without a "
+"splash page we can only show a clients ip-address and the status of their "
+"connection."
+msgstr "No está usando una página de bienvenida (página de inicio/portal cautivo). Sin una página de inicio sólo podemos mostrar las direcciones-IP de los clientes y el estado de sus conexiones."
+
+msgid ""
+"No connected clients were found at this time. If a Welcome Page has been "
+"enabled, clients must click through it before being displayed here."
+msgstr "No se encontraron clientes conectados en este momento. Si la página de bienvenida ha sido habilitada, los clientes deben hacer clic para superarla antes de que sean mostrados aquí."
+
+#: working/source/luci-commotion-splash/luasrc/view/commotion-splash/splash.htm
 msgid "Local Applications"
 msgstr "Aplicaciones locales"
 
 msgid "Internet"
 msgstr "Internet"
 
-#: splash_settings
-msgid "Captive Portal"
-msgstr "Portal cautivo"
+#: working/source/luci-commotion/htdocs/luci-static/resources/OSMLatLon.htm
+msgid "OpenStreetMap"
+msgstr "OpenStreetMap"
+
+msgid "Map by"
+msgstr "Mapa realizado por"
+
+msgid "License CC-BY-SA"
+msgstr "Licencia CC-BY-SA"
+
+msgid "Latitude:"
+msgstr "Latitud:"
+
+msgid "Longitude:"
+msgstr "Longitud:"
+
+#: working/source/luci-commotion/luasrc/model/cbi/commotion/basic_ani.lua
+msgid "Internet Gateway"
+msgstr "Pasarela a Internet"
+
+#: working/source/luci-commotion/luasrc/view/commotion/apply.htm
+msgid "Applying Changes"
+msgstr "Aplicando cambios"
+
+msgid "The following changes have been committed"
+msgstr "Los siguientes cambios han sido consignados"
+
+msgid "There are no pending changes to apply!"
+msgstr "¡No hay cambios pendientes de aplicar!"
+
+#: working/source/luci-commotion/luasrc/view/commotion/status.htm
+msgid "Providing Gateway"
+msgstr "Proporcionando pasarela (gateway)"
+
+msgid "Client Connections"
+msgstr "Conexiones de cliente"
+
+msgid "Nearby Mesh Devices"
+msgstr "Dispositivos de malla cercanos"
+
+msgid "Mesh Visualizer"
+msgstr "Visualizador de malla"
+
+msgid "Connected Clients"
+msgstr "Clientes conectados"
+
+msgid "Debug Report"
+msgstr "Informe de depuración"
+
+#: working/source/luci-commotion-apps/lua/luci/view/commotion/apps_settings.htm
+msgid ""
+"Here you can change settings used on this node when creating or updating "
+"applications"
+msgstr "Aquí puede cambiar las configuraciones usadas en este nodo al crear o actualizar aplicaciones"
 
 msgid ""
-"Nodogsplash offers a simple way to provide restricted access to an internet "
-"connection."
-msgstr "Nodogsplash es una forma sencilla de proporcionar acceso restringido a una conexión a Internet."
+"Applications that are created on this node can be categorized and listed "
+"according to the categories here"
+msgstr "Las aplicaciones que se creen en este nodo pueden ser categorizadas y listadas de acuerdo a las categorías presentes aquí"
+
+msgid "Application categories"
+msgstr "Categorías de la aplicación"
+
+msgid ""
+"Applications that are not marked as 'permanent' will be automatically be "
+"removed from the application list after this amount of time"
+msgstr "Las aplicaciones que no estén marcadas como 'permanente' se eliminarán automáticamente de la lista de la aplicación después de este periodo de tiempo."
+
+msgid "Expiration period (seconds)"
+msgstr "Periodo de expiración (segundos)"
+
+msgid "For example, 24 hours = 86400 seconds"
+msgstr "Por ejemplo, 24 horas = 86400 segundos"
+
+msgid ""
+"By default, all applications expire after a time period specified by you. If"
+" this option is checked, applications will have the option to not expire"
+msgstr "Todas las aplicaciones expiran después de un periodo de tiempo especificado por usted. Si esta opción está marcada, las aplicaciones tendrá la opción de no expirar"
+
+msgid "Allow local applications to not expire"
+msgstr "Permitir a las aplicaciones locales no expirar"
+
+msgid ""
+"If this is disabled, users will only be able to see local applications on "
+"the network that you manually approve"
+msgstr "Si esto está deshabilitado, los usuarios sólo pondrán ver en la red las aplicaciones locales que usted apruebe manualmente."
+
+msgid "Automatically approve all applications seen by this node"
+msgstr "Aprobar automáticamente todas las aplicaciones vistas por este nodo"
+
+msgid ""
+"By default, applications that don't appear responsive will be removed from "
+"the application list. If you have poor or intermittent connectivity, you "
+"should disable this option to skip checking application responsiveness"
+msgstr "De manera predeterminada, las aplicaciones que parecen no responder serán sacadas de la lista de aplicaciones. Si tiene una conectividad escasa o intermitente, debería deshabilitar esta opción para saltarse la comprobación de capacidad de respuesta de la aplicación."
+
+msgid "Periodically check connectivity of applications"
+msgstr "Comprobar periódicamente la conectividad de las aplicaciones"
+
+#: working/source/luci-theme-commotion/files/templates/unsaved_changes.htm
+msgid "Unsaved Changes"
+msgstr "Cambios no guardados"
+
+msgid "Auto Refresh"
+msgstr "Auto refrescar"
+
+msgid "on"
+msgstr "activo"
+
+msgid "off"
+msgstr "inactivo"
+
+#: working/source/luci-commotion/luasrc/view/commotion/about.htm
+msgid "About Commotion"
+msgstr "Acerca de Commotion"
+
+msgid ""
+"Commotion is an open-source communication tool that uses mobile phones, "
+"computers, and other wireless devices to create decentralized mesh networks."
+msgstr "Commotion es una herramienta de comunicación de código-abierto que usa teléfonos celulares/móviles, computadoras, y otros dispositivos inalámbricos para crear redes de malla ('mesh') descentralizadas."
+
+msgid ""
+"Wireless mesh networks allow devices to connect directly to each other "
+"without going through a centralized point."
+msgstr "Las redes de malla inalámbricas permiten que los dispositivos conecten directamente unos con otros sin atravesar un punto centralizado."
+
+msgid "Commotion is intended to be a:"
+msgstr "Commotion está pensado para que sea:"
+
+msgid ""
+"simple, easy-to-use communications tool that anyone can set up and use "
+"without technical expertise"
+msgstr "una herramienta de comunicaciones simple y fácil-de-usar, que cualquiera pueda acondicionar y usar sin experiencia técnica."
+
+msgid ""
+"platform for building community wireless networks and hosting local "
+"applications"
+msgstr "una plataforma para la construcción de redes inalámbricas comunitarias y un alojamiento local de aplicaciones"
+
+msgid ""
+"tool for creating infrastructure that is resilient against surveillance and "
+"disruption"
+msgstr "una herramienta para la creación de infraestructuras que es resistente a la vigilancia y los cortes de conexión"
+
+msgid ""
+"flexible, open-source software platform that programmers around the globe "
+"can continually adapt and build upon"
+msgstr "una plataforma flexible de código-abierto, que los programadores de todo el globo pueden adaptar continuamente, y sobre la que pueden programar"
+
+#: working/source/luci-commotion/luasrc/model/cbi/commotion/security_smk.lua
+msgid "Shared Mesh Keychain"
+msgstr "Llavero de malla compartido"
+
+#: working/source/luci-commotion/luasrc/view/commotion/serval_keyring.htm
+msgid ""
+"To ensure that only authorized devices can route traffic on your Commotion "
+"mesh network, one Shared Mesh Keychain file can be generated and shared by "
+"all devices.."
+msgstr "Para asegurarse de que sólo los dispositivos autorizados pueden enrutar tráfico en su red de malla ('mesh') Commotion, se puede generar un fichero llavero de claves de malla compartido, y compartirse con todos los dispositivos."
+
+msgid "Download Shared Mesh Keychain"
+msgstr "Descargar llavero de malla compartido"
+
+msgid "Download your current Shared Mesh Keychain"
+msgstr "Descarga su actual llavero de malla ('mesh keychain') compartido"
+
+msgid "Download your current Serval keyring"
+msgstr "Descargar su grupo de claves Serval actual"
+
+msgid "Download"
+msgstr "Descargar"
+
+msgid "Upload Shared Mesh Keychain"
+msgstr "Subir llavero de malla compartido"
+
+msgid "Upload Shared Mesh Keychain."
+msgstr "Sube el llavero de malla ('mesh keychain') compartido."
+
+msgid ""
+"If a Shared Mesh Keychain file was provided to you by a network "
+"administrator or another community member, select and upload it here to join"
+" this device to an existing mesh network."
+msgstr "Si se le proporcionó un fichero de llavero de malla ('mesh keychain') compartido por un administrador de red u otro miembro de la comunidad, selecciónelo y súbalo aquí para unir este dispositivo a una red de malla existente."
+
+msgid "Upload"
+msgstr "Subir"
+
+msgid "Create a new Shared Mesh Keychain"
+msgstr "Crear un nuevo llavero de malla compartido"
+
+msgid ""
+"Create a new Shared Mesh Keychain file. This will DELETE the existing Shared"
+" Mesh Keychain on this device. Use this option if you are creating a brand "
+"new Commotion mesh network, or if you are changing the Shared Mesh Keyhchain"
+" on an existing network. In either case, create a backup of the existing "
+"Shared Mesh Keychain first."
+msgstr "Crea un nuevo fichero de llavero de malla ('mesh keychain') compartido. Esto BORRARÁ el llavero de malla compartido existente en este dispositivo. Use esta opción si está credando una red de malla Commotion completamente nueva. o si está cambiando el llavero de malla compartido en una red existente. En todo caso, primero cree un copia de seguridad del llavero de malla compartido existente."
+
+msgid "New Shared Mesh Keychain"
+msgstr "Nuevo llavero de malla compartido"
+
+msgid "Create New Shared Mesh Keychain"
+msgstr "Crear nuevo llavero de malla compartido"
+
+#: working/source/luci-commotion-splash/luasrc/view/commotion-splash/splash_settings.htm
+msgid ""
+"Users can be redirected to a 'welcome page' when they first connect to this "
+"node."
+msgstr "Los usuarios pueden ser redirigidos a una 'página de bienvenida' cuando conectan por primera vez a este nodo."
 
 msgid "General"
 msgstr "General"
 
-msgid "Clearance time"
-msgstr "Periodo de autorización"
+msgid "Time until welcome page is shown again"
+msgstr "Tiempo hasta que la página de bienvenida sea mostrada de nuevo"
 
 msgid ""
-"Clients that have accepted the captive portal are allowed to use the network"
-" for that many minutes."
-msgstr "Los clientes que aceptan el portal cautivo (autentificación transparente) pueden usar la red durante el tiempo establecido."
+"Users that have seen the Welcome Page are allowed to use the network for "
+"this amount of time."
+msgstr "Los usuarios que hayan visto la página de bienvenida tienen permitido el uso de la red durante este periodo de tiempo."
 
 msgid "Redirect to Homepage?"
 msgstr "¿Redirigir a la página de principal?"
@@ -272,35 +590,35 @@ msgstr "¿Autentificar inmediatamente?"
 
 msgid ""
 "If this is checked, clients will be immediately directed to their original "
-"request or your homepage (if set above), instead of being served a splash "
-"page."
-msgstr "Si esto está marcado, los clientes serán inmediatamente dirigidos hacia sus peticiones originales o a su página principal (si se estableció arriba), en lugar de que se les sirva una página de presentación ('splash')."
+"request or your homepage (if set above), instead of being shown the Welcome "
+"Page."
+msgstr "Si esto está marcado, los clientes serán dirigidos inmediatamente hacia sus peticiones originales o a su página principal (si se estableció arriba), en lugar de que se les muestre la página de bienvenida."
 
 msgid "Interfaces"
 msgstr "Interfaces"
 
-msgid "Interfaces that are used for Splash."
-msgstr "Interfaces de red que se usan para la página de presentación ('splash')."
+msgid "Interfaces that are used for the Welcome Page."
+msgstr "Interfaces que se usan para la página de bienvenida."
 
 msgid "Network"
 msgstr "Red"
 
-msgid "Intercept client traffic on this Interfaces"
-msgstr "Interceptar tráfico de clientes sobre estas interfaces"
+msgid "For which network connection should this welcome page be active?"
+msgstr "¿Para qué conexión de red debe estar activa esta página de bienvenida?"
 
 msgid "Whitelist"
 msgstr "Lista blanca"
 
 msgid ""
-"MAC addresses of whitelisted clients. These do not need to accept the splash"
-" and are not bandwidth limited."
-msgstr "Direcciones MAC de clientes en la lista blanca. Estos no necesitan aceptar la página de presentación ('splash') y no se les limita el ancho de banda."
+"MAC addresses of whitelisted clients. These do not need to be shown the "
+"Welcome Page and are not bandwidth limited."
+msgstr "Direcciones MAC de clientes de la lista blanca. Estos no necesitan que se les muestre la página de bienvenida y no se les aplican limitaciones de ancho de banda."
 
 msgid "MAC Address"
 msgstr "Direcciones MAC"
 
-msgid "Blacklist"
-msgstr "Lista negra"
+msgid "Banned"
+msgstr "Expulsado"
 
 msgid "MAC addresses in this list are blocked."
 msgstr "Las direcciones MAC en esta lista están bloqueadas."
@@ -322,253 +640,235 @@ msgstr "Notación CIDR opcional (ej. 192.168.1.0/24)"
 msgid "Submit"
 msgstr "Enviar"
 
-msgid "Reset"
-msgstr "Restablecer"
+#: working/source/luci-commotion/luasrc/view/commotion/nearby_md.htm
+msgid "OLSR Links"
+msgstr "Enlaces OLSR"
 
-#: splashtext
-msgid "Welcome!"
-msgstr "¡Bienvenido!"
+msgid "Overview of currently established OLSR connections (device-to-device)"
+msgstr "Resumen de conexiones OLSR establecidas (dispositivo-a-dispositivo)"
 
-msgid "You are now connected to a community wireless network."
-msgstr "Se ha conectado a una red inalámbrica comunitaria."
+msgid "Hostname"
+msgstr "Nombre del equipo"
 
-msgid ""
-"Access to the Internet may be provided by people donating connectivity to "
-"the network. Everyone on the network has to share, so please be aware and "
-"behave yourself accordingly:"
-msgstr "El acceso puede ser provisto por gente que dona su conectividad a la red. Todos los participantes en la red tienen que compartir, así que por favor piense en los demás al utilizarla. "
+msgid "ETX Value"
+msgstr "Valor ETX"
 
-msgid "Please"
-msgstr "Por favor"
-
-msgid "avoid large downloads and excessive filesharing."
-msgstr "evite grandes descargas y compartir ficheros en exceso."
-
-msgid "no illegal activities."
-msgstr "no hay actividades ilegales."
-
-msgid "If you like the network, please consider contributing!"
-msgstr "Si le gusta la red, por favor ¡considere contribuir!"
-
-#: luci-commotion files/usr/share/commtion/patches/wifi_lua.patch
-msgid "auto"
-msgstr "automático"
-
-msgid "Force CCMP (AES)"
-msgstr "Forzar CCMP (AES)"
-
-msgid "Force TKIP"
-msgstr "Forzar TKIP"
-
-msgid "Force TKIP and CCMP (AES)"
-msgstr "Forzar TKIP y CCMP (AES)"
-
-msgid "No Encryption"
-msgstr "Sin cifrado"
-
-msgid "WEP Open System"
-msgstr "WEP de sistema abierto"
-
-msgid "WEP Shared Key"
-msgstr "WEP de clave compartida"
-
-#: htdocs/luci/static/commotion/index
-msgid "Welcome to Commotion!"
-msgstr "¡Bienvenido a Commotion!"
+msgid "Legend"
+msgstr "Leyenda"
 
 msgid ""
-"You are connected to a mesh network powered by the Commotion Wireless "
-"Project. The Commotion project seeks to create an open-source, device-as-"
-"infrastructure communication platform that allows communities and activists "
-"to collaborate and communicate. If you're an admin of this node in the "
-"network, you can use this interface to modify its settings. For more "
-"information about the project, please visit the site below:"
-msgstr "Está conectado a una red de malla ('mesh') impulsada por el Commotion Wireless Project. El proyecto Commotion persigue crear una plataforma de comunicación inalámbrica de código-abierto, con los dispositivos-como-infraestructura, que permita colaborar y comunicarse a comunidades y activistas. Si es un administrador de este nodo de la red, puede usar esta interfaz para modificar sus ajustes. Para más información sobre el proyecto, visite el siguiente sitio web:"
+"Expected retransmission count - the expected number of retransmission "
+"attempts that are required for a packet to travel to and from a destination."
+msgstr "Recuento de retransmisión esperado - el número esperado de intentos de retransmisión que se requieren para que un paquete viaje hacia y desde un destino."
 
-msgid "Commotion Wireless"
-msgstr "Commotion Wireless"
+msgid "Green"
+msgstr "Verde"
 
-msgid "Thanks for using our network!"
-msgstr "¡Gracias por usar nuestra red!"
+msgid "Very good (ETX < 2)"
+msgstr "Muy bueno (ETX < 2)"
 
-#: htdocs/luci/static/resources/OSMLatLon
-msgid "OpenStreetMap"
-msgstr "OpenStreetMap"
+msgid "Yellow"
+msgstr "Amarillo"
 
-msgid "Map by"
-msgstr "Mapa realizado por"
+msgid "Good (2 < ETX < 4)"
+msgstr "Bueno (2 < ETX < 4)"
 
-msgid "License CC-BY-SA"
-msgstr "Licencia CC-BY-SA"
+msgid "Orange"
+msgstr "Naranja"
 
-msgid "Latitude"
-msgstr "Latitud"
+msgid "Still usable (4 < ETX < 10)"
+msgstr "Todavía usable (4 < ETX < 10)"
 
-msgid "Longitude"
-msgstr "Longitud"
+msgid "Red"
+msgstr "Rojo"
 
-#: luasrc/controller/commotion/commotion.luasrc
-msgid "Overview"
-msgstr "Vistazo"
+msgid "Bad (ETX > 10)"
+msgstr "Malo (ETX > 10)"
 
-msgid "Front Page"
-msgstr "Página principal"
+#: working/source/luci-commotion/luasrc/view/commotion/confirm.htm
+msgid "Confirm Configuration"
+msgstr "Confirmar configuración"
 
-msgid "Mesh Configuration Manual"
-msgstr "Manual de configuración de red de malla ('mesh')"
+msgid "There are no pending changes!"
+msgstr "¡No hay cambios pendientes!"
 
-#: luasrc/controller/commotion/meshprofile.lua
-msgid "Mesh Profile"
-msgstr "Perfil de red de malla ('mesh')"
+msgid "Make Changes"
+msgstr "Realizar cambios"
 
-#: luasrc/model/cbi/commotion/meshconfig
-msgid "Configuration"
-msgstr "Configuración"
+msgid "Back"
+msgstr "Volver"
 
-msgid ""
-"This configuration wizard will assist you in setting up your router for a "
-"Commotion network."
-msgstr "Este asistente de configuración le ayudará a configurar su router para una red Commotion."
+msgid "Save And Apply"
+msgstr "Guardar y aplicar"
 
+msgid "Start Over"
+msgstr "Volver a empezar"
+
+msgid "Revert"
+msgstr "Revertir"
+
+#: working/source/luci-commotion/luasrc/controller/commotion/security_config.lua
+msgid "Security"
+msgstr "Seguridad"
+
+#: working/source/luci-commotion-apps/lua/luci/controller/commotion/apps_controller.lua
+msgid "Applications"
+msgstr "Aplicaciones"
+
+#: working/source/luci-commotion/luasrc/model/cbi/commotion/basic_done.lua
+msgid "Basic Configuration Complete!"
+msgstr "¡Configuración básica completada!"
+
+#: working/source/luci-commotion/luasrc/view/cbi/commotion/addAP.htm
 msgid "Access Point"
 msgstr "Punto de acceso"
 
-msgid "Name (SSID)"
-msgstr "Nombre (SSID)"
+msgid ""
+"Click here to create a new access point. Once created you will be able to "
+"come back to this page to configure it."
+msgstr "Haga clic aquí para crear un nuevo punto de acceso. Una vez creado podrá volver atrás a esta página para configurarlo."
 
-msgid "The public facing name of this interface"
-msgstr "El nombre público de esta interfaz"
+#: working/source/luci-commotion/luasrc/model/cbi/commotion/basic_mn.lua
+msgid "Network Settings"
+msgstr "Configuraciones de red"
 
-msgid "Secure Access Point"
-msgstr "Punto de acceso seguro"
+#: working/source/luci-commotion/luasrc/view/commotion/license.htm
+msgid "Commotion License"
+msgstr "Licencia de Commotion"
 
-msgid "Mesh Backhaul"
-msgstr "Retorno de la red de malla ('mesh')"
+msgid "This program is free software: you can redistribute it and/or modif"
+msgstr "Este programa es software libre: puede redistribuirlo y/o modificarlo"
 
-msgid "Device Designation (BSSID)"
-msgstr "Designación de dispositivo (BSSID)"
+msgid "This program is distributed in the hope that it will be useful"
+msgstr "Este programa se distribuye con la esperanza de que sea útil"
 
 msgid ""
-"The device read name of this interface. (Letters A-F, and numbers 0-9 only)"
-msgstr "El dispositivo lee el nombre de esta interfaz (sólo letras A-F, y números 0-9)."
-
-msgid "Network-wide Settings"
-msgstr "Configuraciones para toda la red"
-
-msgid "5GHz Channel"
-msgstr "Canal de 5GHz"
-
-msgid "The 5GHz backhaul channel of the mesh network, if applicable."
-msgstr "El canal de retorno de 5GHz de la red de malla ('mesh'), si fuera aplicable."
-
-msgid "2GHz Channel"
-msgstr "Canal de 2GHz"
-
-msgid "The 2.4GHz backhaul channel of the mesh network, if applicable"
-msgstr "El canal de retorno de 2,4GHz de la red de malla ('mesh'), si fuera aplicable."
-
-msgid "Settings specific to this node"
-msgstr "Ajustes particulares a este nodo"
-
-msgid "DHCP Timeout"
-msgstr "Periodo de espera para DHCP"
-
-msgid "How many seconds to wait on boot for a DHCP lease from the gateway"
-msgstr "Cuántos segundos esperar durante el arranque por una asignación DHCP desde la pasarela ('gateway')"
-
-#: luasrc/view/commotion/meshprofile
-msgid "Node Profiles"
-msgstr "Perfiles de nodo"
+"You should have received a copy of the GNU General Public License along with"
+" this program. If not, see http://www.gnu.org/licenses/."
+msgstr "Debe haber recibido una copia de la Licencia Pública General GNU junto con este programa. Si no, vea https://www.gnu.org/licenses/licenses.es.html ."
 
 msgid ""
-"If your node includes configuration profiles for multiple Commotion "
-"networks, this form allows you to set your defaults. We recommend that you "
-"reboot your node after changing these settings."
-msgstr "Si su nodo incluye perfiles de configuración para múltiples redes Commotion, este formulario le permite establecer sus configuraciones por defecto. Le recomendamos que reinicie su nodo tras cambiarlas."
+"The OpenWrt distribution upon which Commotion is built bundles a lot of "
+"third party applications and modules which are available under various other"
+" Open Source licenses or Public Domain. The sources for those packages can "
+"be found on the OpenWrt mirrot at: http://downloads.openwrt.org/sources/ . "
+"Please refer to these source packages to find out which license applies to "
+"them."
+msgstr "La distribución OpenWrt sobre la que Commotion está construida incluye muchas aplicaciones y módulos de terceras partes que están disponibles bajo otras licencias diferentes de Código Abierto o Dominio Público. El código fuente para esos paquetes puede encontrarlo en el servidor espejo (mirror) de OpenWrt en: http://downloads.openwrt.org/sources/ . Por favor remítase a estos paquetes de código fuente para descubrir qué licencia les es aplicable."
 
-msgid "Select an interface"
-msgstr "Seleccione una interfaz"
+#: working/source/luci-commotion/luasrc/model/cbi/commotion/basic_wn.lua
+msgid "Wireless Network"
+msgstr "Red inalámbrica"
 
-msgid "Select a profile to apply"
-msgstr "Seleccione un perfil a aplicar"
+#: working/source/luci-commotion/luasrc/view/commotion/debug.htm
+#: working/source/luci-commotion/luasrc/controller/commotion/info.lua
+msgid "Client Controls"
+msgstr "Controles del cliente"
 
-msgid "Apply and Save"
-msgstr "Aplicar y guardar"
+#: working/source/luci-commotion/luasrc/model/cbi/commotion/security_pass.lua
+msgid "Passwords"
+msgstr "Contraseñas"
 
-#: commotion-openwrt-theme /files/templates/header.htm
-msgid "Unsaved Changes"
-msgstr "Cambios no guardados"
-
-msgid "Auto Refresh"
-msgstr "Auto refrescar"
-
-msgid "No password set!"
-msgstr "¡No hay contraseña establecida!"
-
-msgid ""
-"There is no password set on this router. Please configure a root password to"
-" protect the web interface and enable SSH."
-msgstr "No hay contraseña establecida en este router. Configure una contraseña de root (administrador) para proteger la interfaz web y habilitar SSH."
-
-msgid "Go to password configuration..."
-msgstr "Ir a la configuración de contraseña..."
-
-#: /files/templates/footer.htm
-msgid "QuickStart"
-msgstr "Inicio rápido"
-
-msgid "Administration"
-msgstr "Administración"
-
-#: /files/luasrc/view/cbi/full_valueheader.htm
-msgid "Go to relevant configuration page"
-msgstr "Ir a la página relevante de la configuración"
-
-#: luci-commotion /luasrc/view/commotion/serval_keyring.htm
-msgid "Serval Keyring"
-msgstr "Grupo de claves Serval"
+#: working/source/luci-commotion/luasrc/view/commotion/help.htm
+msgid "Help with Commotion"
+msgstr "Ayuda con Commotion"
 
 msgid ""
-"The Serval Keyring is used to sign all network traffic on a Commotion mesh "
-"network. Every node on your Commotion network should use the same Serval "
-"Keyring. On this page you can download the existing Serval keyring for this "
-"node, to back it up or to use when adding new nodes to your network. You can"
-" also generate a new Serval Keyring, or upload one from your computer."
-msgstr "El grupo de claves ('keyring') Serval se usa para firmar todo el tráfico de red en una red de malla ('mesh') Commotion. Cada nodo en su red Commotion debe usar el mismo grupo de claves Serval. En esta página puede descargar el grupo de claves Serval existente para este nodo, para guardarlo como respaldo o para usarlo cuando se añadan nodos nuevos a su red. También puede generar un grupo de claves Serval nuevo, o subir uno desde su equipo."
+"Commotion is an evolving project that includes many parts. The documentation"
+" on our website has been created by the Commotion community to aid users and"
+" developers. It is often updated and we encourage you to get involved by "
+"contributing documentation. Listed below are links to the most relevant "
+"documentation to get started:"
+msgstr "Commotion es un proyecto en evolución que incluye muchas partes. La documentación en nuestro sitio web ha sido creada por la comunidad de Commotion para ayudar a usuarios y desarrolladores. Es actualizada a menudo, y le animamos a que se involucre ampliando la documentación. Debajo hay una lista de enlaces a la documentación más relevante, para comenzar:"
 
-msgid "Download a Serval Keyring"
-msgstr "Descargar un grupo de claves Serval"
+msgid "Frequently Asked Questions"
+msgstr "Preguntas frecuentes (FAQ)"
 
-msgid "Download your current Serval keyring"
-msgstr "Descarga su grupo de claves Serval actual"
+msgid "Documentation"
+msgstr "Documentación"
 
-msgid "Upload a Serval Keyring"
-msgstr "Subir un grupo de claves Serval"
-
-msgid "Click on the field below to upload a keyring."
-msgstr "Haga clic en el siguiente campo para subir un grupo de claves."
-
-msgid "Upload a Keyring"
-msgstr "Subir un grupo de claves"
-
-msgid "Upload a Serval key file file from your own computer"
-msgstr "Sube un fichero de grupo de claves Serval desde su propio equipo"
-
-msgid "Create a new Serval Keyring"
-msgstr "Crear un grupo de claves Serval nuevo"
+msgid "Commotion Construction Kit"
+msgstr "Kit de construcción de Commotion"
 
 msgid ""
-"Click on the button below to create a new keyring. This will DELETE the "
-"existing keyring on the device. We highly suggest you download any existing "
-"network keyrings you have before creating a new keyring."
-msgstr "Haga clic en el siguiente botón para crear un grupo de claves nuevo. Esto BORRARÁ el grupo de claves existente en el dispositivo. Le recomendamos que descarge los grupos de claves de cualquier red existente que tenga antes de crear un grupo de claves nuevo"
+"a set of modular guides with tips on community organizing, site preparation,"
+" software installation and more."
+msgstr "un conjunto de guías modulares con consejos sobre organización comunitaria, preparación de un sitio web, instalación de software, y más."
 
-msgid "New Keyring"
-msgstr "Nuevo grupo de claves"
+msgid "Contact the Commotion Wireless team"
+msgstr "Contactar con el equipo de Commotion Wireless"
 
-msgid "Create a new keyring on this device, replacing the existing keyring."
-msgstr "Crea un grupo de claves nuevo en este dispositivo, reemplazando al grupo de claves existente."
+msgid "Report a Bug"
+msgstr "Informar de un fallo"
 
-msgid "Create New Keyring"
-msgstr "Crear un nuevo grupo de claves"
+msgid ""
+"You can also connect with the Commotion community by subscribing to one or "
+"more of our listservs:"
+msgstr "También puede contactar con la comunidad de Commotion suscribiéndose a una o más de nuestras listas de correo listserv:"
 
+msgid "only official announcements with minimal discussion."
+msgstr "sólo para anuncios oficiales con mínima discusión."
+
+msgid "for those who want to use Commotion without getting too technical."
+msgstr "para aquellos que quieren usar Commotion sin que resulte demasiado técnico."
+
+msgid "for those who want to discuss improvements the Commotion software."
+msgstr "para aquellos que quieren discutir mejoras en el software Commotion."
+
+msgid ""
+"You can also join us using your chat program on IRC in the #commotion "
+"channel on the irc.freenode.net server."
+msgstr "También puede unirse a nosotros usando su programa de chat en el IRC, en el canal #commotion del servidor irc.freenode.net"
+
+msgid "Learn more about using IRC"
+msgstr "Aprenda más sobre el uso del IRC"
+
+#: working/source/luci-commotion/luasrc/view/commotion/welcome.htm
+msgid "Setup Wizard"
+msgstr "Asistente de configuración"
+
+#: working/source/luci-commotion/files/usr/share/commotion/patches/wifi.lua.patch
+msgid "auto"
+msgstr "automático"
+
+#: working/source/luci-commotion/luasrc/controller/commotion/client_config.lua
+#: working/source/luci-commotion/luasrc/view/commotion/revert.htm
+msgid ""
+"Reverting changes... Please be patient, this may take a few moments. Once "
+"the settings are reset click 'Start Over' to return to the beginning of the "
+"Setup Wizard."
+msgstr "Revirtiendo cambios... Por favor tenga paciencia, esto puede llevar unos momentos. Una vez que las configuraciones sean restablecidas, haga clic en \"Volver a empezar\" para regresar al principio del Asistente de Instalación."
+
+msgid "There are no pending changes to revert!"
+msgstr "¡No hay cambios pendientes que revertir!"
+
+#: working/source/luci-commotion/luasrc/model/cbi/commotion/confirm_config.lua
+msgid "Basic Configuration"
+msgstr "Configuración básica"
+
+#: working/source/luci-commotion-apps/lua/luci/view/commotion/apps_view.htm
+msgid ""
+"Publicly announced applications running on this network are listed below."
+msgstr "Las aplicaciones anunciadas públicamente en esta red están listadas debajo."
+
+msgid "Here you can view applications accessible from this node"
+msgstr "Aquí puede ver las aplicaciones accesibles desde este nodo"
+
+msgid "Add Application"
+msgstr "Añadir aplicación"
+
+#: working/source/luci-commotion-splash/luasrc/controller/commotion-splash/splash.lua
+msgid "Captive Portal"
+msgstr "Portal cautivo"
+
+#: working/source/luci-commotion/luasrc/view/commotion/error_olsr.htm
+msgid "OLSR Daemon"
+msgstr "Demonio OLSR"
+
+msgid "Unable to connect to the OLSR daemon!"
+msgstr "¡No se pudo conectar con el demonio OLSR!"
+
+msgid ""
+"Make sure that OLSRd is running, the 'txtinfo' plugin is loaded, configured "
+"on port 2006 and accepts connections from '127.0.0.1'."
+msgstr "Asegúrese de que OLSRd está ejecutándose, que el complemento (plugin) 'txtinfo' está cargado, que está configurado en el puerto 2006, y que acepta conexiones desde '127.0.0.1'."
