@@ -2,6 +2,8 @@ commotion-luci-i18n
 =============================================
 Localization of Commotion-specific components of Commotion-OpenWRT
 
+Individual language packs are available as optional build settings in Commotion-Router (https://github.com/opentechinstitute/commotion-router).
+
 ===ROADMAP===================================
 
 Developer Release 2 (DR2): 
