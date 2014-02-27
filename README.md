@@ -18,7 +18,7 @@ Release 1:
 
 The LuCI Translation Portal (http://i18n.luci.subsignal.org/pootle/) provides ongoing support for internationalization of menus and text strings in OpenWRT.
 
-The Commotion OpenWRT UI modifies and extends the default OpenWRT theme, and also adds custom components. This repositry maintains Commotion supported language packages.  
+The Commotion-Router UI modifies and extends the default OpenWRT theme, and also adds custom components. This repositry maintains Commotion supported language packages.  
 
 Translation of Commotion OpenWRT is managed on Transifex: 
 https://www.transifex.com/projects/p/commotion-user-interface/
