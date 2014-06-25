@@ -1,3 +1,5 @@
+[![alt tag](http://img.shields.io/badge/maintainer-hawkinswnaf-blue.svg)](https://github.com/hawkinswnaf)
+
 commotion-luci-i18n
 =============================================
 Localization of Commotion-specific components of Commotion-OpenWRT
