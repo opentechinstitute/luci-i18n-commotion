@@ -113,7 +113,7 @@ msgid ""
 " device by non-administrative users when it is active. Please make sure that"
 " you only restart the quickstart when you have time to finish the entire "
 "process."
-msgstr "Veuillez cliquer sur le lien ci-dessus si vous souhaitez relancer la configuration de QuickStart. Attention : Le processus QuickStart permet la modification de cet appareil par les utilisateurs non-adminstratifs lorsque l'appareil est actif. Assurez-vous que vous avez assez de temps pour terminer tout le processus avant que vous relanciez la configuration. "
+msgstr "Veuillez cliquer sur le lien ci-dessus si vous souhaitez relancer la configuration de QuickStart. Attention : Le processus QuickStart permet la modification de cet appareil par les utilisateurs non-administratifs lorsque l'appareil est actif. Assurez-vous que vous avez assez de temps pour terminer tout le processus avant de relancer la configuration. "
 
 msgid "Click on the field below to upload a file."
 msgstr "Cliquez sur le champ ci-dessous pour uploader un fichier."
@@ -128,7 +128,7 @@ msgid ""
 msgstr "Félicitations ! Vous disposez d'un nœud Commotion et vous êtes prêt à rejoindre le réseau ou en démarrer un nouveau. Cet assistant vous guidera à travers l'installation. Ce processus devrait prendre environ 10 minutes."
 
 msgid "You can still change settings after setup is complete."
-msgstr "Vous pouvez toujours modifier les paramètres après l'installation est terminée."
+msgstr "Vous pouvez toujours modifier les paramètres après que l'installation sera terminée."
 
 #: commotion-bug-info luasrc/controller/debugger.lua
 msgid "Commotion Debugging Helper"
@@ -199,7 +199,7 @@ msgid ""
 "nodogsplash.conf. A URL which encodes a unique token and the URL of the "
 "user's original web request. The directory in nodogsplash's web hierarchy "
 "where images to be displayed in the splash page must be located."
-msgstr "Vous pouvez entrer votre propre texte qui est affiché aux clients ici. Il est possible d'utiliser les marqueurs suivants : La valeur de GatewayName tel que défini dans nodogsplash.conf. Une URL qui encode un jeton unique et l'URL de demande web originale de l'utilisateur. Le répertoire dans la hiérarchie web de nodogsplash où les images à afficher sur le splash screen doivent être situées."
+msgstr "Vous pouvez entrer votre propre texte qui est affiché aux clients ici. Il est possible d'utiliser les marqueurs suivants : La valeur de GatewayName telle que définie dans nodogsplash.conf. Une URL qui encode un jeton unique et l'URL de demande web originale de l'utilisateur. Le répertoire dans la hiérarchie web de nodogsplash où les images à afficher sur le splash screen doivent être situées."
 
 #: controller/commotion/splash/splash.lua
 msgid "splash: invalid parameters"
@@ -259,7 +259,7 @@ msgstr "aide"
 msgid ""
 "If this is checked, clients will be redirected to your homepage, instead of "
 "to their original request."
-msgstr "Si cochée, les clients seront conduits vers votre page d'accueil au lieu de leur leur requête originale."
+msgstr "Si cochée, les clients seront conduits vers votre page d'accueil au lieu de leur requête originale."
 
 msgid "Homepage"
 msgstr "Page d'accueil"
@@ -276,7 +276,7 @@ msgid ""
 "If this is checked, clients will be immediately directed to their original "
 "request or your homepage (if set above), instead of being served a splash "
 "page."
-msgstr "Si cochée, les clients seront immédiatement conduits vers leur requête originale ou votre page d'accueil (si définie ci-dessus), au lieu de se voir servi un splash screen."
+msgstr "Si cochée, les clients seront immédiatement conduits vers leur requête originale ou votre page d'accueil (si définie ci-dessus), au lieu de voir s'afficher un splash screen."
 
 msgid "Interfaces"
 msgstr "Interfaces"
@@ -344,7 +344,7 @@ msgid "Please"
 msgstr "Merci"
 
 msgid "avoid large downloads and excessive filesharing."
-msgstr "d'éviter les gros téléchargements et le partage excessif des fichiers."
+msgstr "éviter les gros téléchargements et le partage excessif des fichiers."
 
 msgid "no illegal activities."
 msgstr "pas d'activités illégales."
@@ -398,7 +398,7 @@ msgid "OpenStreetMap"
 msgstr "OpenStreetMap"
 
 msgid "Map by"
-msgstr "Schématiser selon"
+msgstr "Cartographie par"
 
 msgid "License CC-BY-SA"
 msgstr "License CC-BY-SA"
@@ -445,7 +445,7 @@ msgid "Secure Access Point"
 msgstr "Point d'accès sécurisé"
 
 msgid "Mesh Backhaul"
-msgstr "Réseau d'accès maillée (mesh backhaul)"
+msgstr "Réseau d'accès maillé (mesh backhaul)"
 
 msgid "Device Designation (BSSID)"
 msgstr "Désignation de l'appareil (BSSID)"
