@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: Commotion User Interface\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-08-01 02:43+0500\n"
-"PO-Revision-Date: 2014-01-09 20:22+0000\n"
+"PO-Revision-Date: 2015-04-07T17:27:50\n"
 "Last-Translator: critzo <critzo@opentechinstitute.org>\n"
 "Language-Team: critzo <critzo@opentechinstitute.org>\n"
 "MIME-Version: 1.0\n"
@@ -13,856 +13,2238 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: en\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-
-#: working/source/luci-commotion-splash/luasrc/view/commotion-splash/splashtext.htm
-msgid "Welcome!"
-msgstr "Welcome!"
-
-msgid "You are now connected to a"
-msgstr "You are now connected to a"
-
-msgid "community wireless network."
-msgstr "community wireless network."
-
-msgid "Access to the Internet"
-msgstr "Access to the Internet"
-
-msgid ""
-"may be provided by people donating connectivity to the network. Everyone on "
-"the network has to share, so please be aware and behave yourself "
-"accordingly:"
-msgstr "may be provided by people donating connectivity to the network. Everyone on the network has to share, so please be aware and behave yourself accordingly:"
-
-msgid "Please"
-msgstr "Please"
-
-msgid "avoid large downloads and excessive filesharing."
-msgstr "avoid large downloads and excessive filesharing."
-
-msgid "no illegal activities."
-msgstr "no illegal activities."
-
-msgid "If you like the network, please consider contributing!"
-msgstr "If you like the network, please consider contributing!"
-
-#: working/source/luci-commotion-splash/luasrc/model/cbi/commotion-splash/splashtext.lua
-msgid "Edit Splash text"
-msgstr "Edit Splash text"
-
-#: working/source/commotion-debug-helper/luasrc/controller/debugger.lua
-msgid "Commotion Debugging Helper"
-msgstr "Commotion Debugging Helper"
-
-#: working/source/luci-theme-commotion/files/luasrc/view/cbi/full_valueheader.htm
-msgid "Go to relevant configuration page"
-msgstr "Go to relevant configuration page"
-
-#: working/source/luci-commotion/luasrc/model/cbi/commotion/client_wp.lua
-msgid "Welcome Page"
-msgstr "Welcome Page"
-
-#: working/source/luci-commotion-apps/lua/luci/model/cbi/commotion/app_settings.lua
-msgid "Application Settings"
-msgstr "Application Settings"
-
-#: working/source/serval-dna/luasrc/controller/commotion-dash/bigboard-conf.lua
-msgid "BigBoard Configuration"
-msgstr "BigBoard Configuration"
-
-#: working/source/luci-theme-commotion/files/templates/footer.htm
-msgid "Administration"
-msgstr "Administration"
-
-msgid "About"
-msgstr "About"
-
-msgid "Help"
-msgstr "Help"
-
-msgid "License"
-msgstr "License"
-
-#: working/source/luci-commotion/luasrc/model/cbi/commotion/basic_ns.lua
-msgid "Node Settings"
-msgstr "Node Settings"
-
-#: working/source/commotion-debug-helper/luasrc/view/debugger.htm
-msgid ""
-"The information you are about to download contains private information about"
-" this device and the network it is connected to. Only give this information "
-"to people you trust. Do you understand?"
-msgstr "The information you are about to download contains private information about this device and the network it is connected to. Only give this information to people you trust. Do you understand?"
-
-msgid "Commotion Bug Info"
-msgstr "Commotion Bug Info"
-
-msgid "Name"
-msgstr "Name"
-
-msgid "Contact Info"
-msgstr "Contact Info"
-
-msgid "What were you doing on the device when the error occurred?"
-msgstr "What were you doing on the device when the error occurred?"
-
-msgid "Please describe the behavior you expected"
-msgstr "Please describe the behavior you expected"
-
-msgid "Please describe the behavior you experienced that you believe is wrong"
-msgstr "Please describe the behavior you experienced that you believe is wrong"
-
-msgid "Debugging Info"
-msgstr "Debugging Info"
-
-msgid "Mesh Network Information"
-msgstr "Mesh Network Information"
-
-msgid "Router Status"
-msgstr "Router Status"
-
-msgid "Router Traffic Routing Rules"
-msgstr "Router Traffic Routing Rules"
-
-msgid "All Info"
-msgstr "All Info"
-
-msgid "Create Bug Info File"
-msgstr "Create Bug Info File"
-
-#: working/source/luci-commotion/luasrc/view/cbi/commotion/delegator.htm
-msgid "Save"
-msgstr "Save"
-
-msgid "« Back"
-msgstr "« Back"
-
-msgid "Reset"
-msgstr "Reset"
-
-msgid "Finish"
-msgstr "Finish"
-
-msgid "Next »"
-msgstr "Next »"
-
-#: working/source/luci-commotion/luasrc/view/commotion/apply_xhr.htm
-msgid "Applying changes"
-msgstr "Applying changes"
-
-msgid "Configuration applied."
-msgstr "Configuration applied."
-
-msgid "Loading"
-msgstr "Loading"
-
-msgid ""
-"Applying changes... Please be patient, this may take a few moments. Once the"
-" settings are complete you will be returned to the Administrative login."
-msgstr "Applying changes... Please be patient, this may take a few moments. Once the settings are complete you will be returned to the Administrative login."
-
-#: working/source/luci-commotion-apps/lua/luci/view/commotion/apps_form.htm
-msgid "Add an Application"
-msgstr "Add an Application"
-
-msgid "Edit"
-msgstr "Edit"
-
-msgid "Application Name"
-msgstr "Application Name"
-
-msgid "This is how your application will be displayed"
-msgstr "This is how your application will be displayed"
-
-msgid "Description"
-msgstr "Description"
-
-msgid ""
-"The description should include a one paragraph summary of the application "
-"and any other relevant information"
-msgstr "The description should include a one paragraph summary of the application and any other relevant information"
-
-msgid ""
-"For non web-apps, this should point to an information page telling the user "
-"how to connect to the application"
-msgstr "For non web-apps, this should point to an information page telling the user how to connect to the application"
-
-msgid "IP Address or URL of Service"
-msgstr "IP Address or URL of Service"
-
-msgid "An IP address or URL where the application can be reached"
-msgstr "An IP address or URL where the application can be reached"
-
-msgid "Type of Application"
-msgstr "Type of Application"
-
-msgid "Choose any relevant categories that describe your application"
-msgstr "Choose any relevant categories that describe your application"
-
-msgid "Application Icon"
-msgstr "Application Icon"
-
-msgid ""
-"This should be a URL of an image file that will be displayed next to the "
-"listing of your application"
-msgstr "This should be a URL of an image file that will be displayed next to the listing of your application"
-
-msgid "Please enable javascript to select one of these icons"
-msgstr "Please enable javascript to select one of these icons"
-
-msgid "Approved"
-msgstr "Approved"
-
-msgid "approved"
-msgstr "approved"
-
+#: working/source/luci-commotion/luasrc/view/admin_status/splash.htm
+msgid "unknown"
+msgstr "unknown"
+msgid "No clients connected"
+msgstr "No clients connected"
+msgid "whitelisted"
+msgstr "whitelisted"
+msgid "splashed"
+msgstr "splashed"
+msgid "temporarily blocked"
+msgstr "temporarily blocked"
 msgid "blacklisted"
 msgstr "blacklisted"
+msgid "Save"
+msgstr "Save"
+msgid "Client-Splash"
+msgstr "Client-Splash"
+msgid "Active Clients"
+msgstr "Active Clients"
+msgid "Hostname"
+msgstr "Hostname"
+msgid "IP Address"
+msgstr "IP Address"
+msgid "MAC Address"
+msgstr "MAC Address"
+msgid "Time remaining"
+msgstr "Time remaining"
+msgid "Traffic in/out"
+msgstr "Traffic in/out"
+msgid "Policy"
+msgstr "Policy"
 
-msgid ""
-"Approved applications are shown to users, while blacklisted applications are"
-" not. All applications are approved automatically"
-msgstr "Approved applications are shown to users, while blacklisted applications are not. All applications are approved automatically"
 
-msgid "Advanced Options"
-msgstr "Advanced Options"
-
-msgid "Displays a custom icon based on the application's Serval fingerprint"
-msgstr "Displays a custom icon based on the application's Serval fingerprint"
-
-msgid "Use custom"
-msgstr "Use custom"
-
-msgid ""
-"The port of the application or a web page describing how to connect to the "
-"application"
-msgstr "The port of the application or a web page describing how to connect to the application"
-
-msgid "Port of Service (Optional)"
-msgstr "Port of Service (Optional)"
-
-msgid "If no port is given, it will default to port 80"
-msgstr "If no port is given, it will default to port 80"
-
-msgid ""
-"If the number of hops is greater than zero, the application will be visible "
-"from other Commotion nodes in the network. Otherwise, it will only be seen "
-"on this node"
-msgstr "If the number of hops is greater than zero, the application will be visible from other Commotion nodes in the network. Otherwise, it will only be seen on this node"
-
-msgid "Number of hops away this service should be seen (Optional)"
-msgstr "Number of hops away this service should be seen (Optional)"
-
-msgid ""
-"How many nodes away your application will be seen. Defaults to 5 hops away"
-msgstr "How many nodes away your application will be seen. Defaults to 5 hops away"
-
-msgid ""
-"If this is checked, the application will not be removed from the "
-"applications list after the default expiration period"
-msgstr "If this is checked, the application will not be removed from the applications list after the default expiration period"
-
-msgid "Is this application permanent?"
-msgstr "Is this application permanent?"
-
-msgid "If checked, application will not expire"
-msgstr "If checked, application will not expire"
-
-#: working/source/luci-commotion/luasrc/view/commotion/meshprofile.htm
-msgid "Welcome to Commotion"
-msgstr "Welcome to Commotion"
-
-msgid ""
-"This router has not yet been set up. Use the Setup Wizard for step-by-step "
-"configuration, upload a configuration file if you have one from a previously"
-" configured router, or choose Advanced for manual GUI or CLI configuration."
-msgstr "This router has not yet been set up. Use the Setup Wizard for step-by-step configuration, upload a configuration file if you have one from a previously configured router, or choose Advanced for manual GUI or CLI configuration."
-
-#: working/source/luci-commotion/luasrc/model/network/proto_commotion.lua
-msgid "Commotion Interface"
-msgstr "Commotion Interface"
-
-#: working/source/luci-commotion/luasrc/controller/commotion/basic_config.lua
-msgid "Commotion"
-msgstr "Commotion"
-
-#: working/source/luci-commotion/luasrc/controller/commotion/status_config.lua
+#: working/source/luci/applications/luci-diag-devinfo/luasrc/model/cbi/luci_diag/smap_devinfo_config.lua
+msgid "SIP Device Scanning Configuration"
+msgstr "SIP Device Scanning Configuration"
+#: working/source/luci/applications/luci-freifunk-policyrouting/luasrc/controller/freifunk/policy-routing.lua
+msgid "Policy Routing"
+msgstr "Policy Routing"
+#: working/source/luci/modules/admin-full/luasrc/view/admin_status/index.htm
+msgid "Type"
+msgstr "Type"
+msgid "Address"
+msgstr "Address"
+msgid "Netmask"
+msgstr "Netmask"
+msgid "Gateway"
+msgstr "Gateway"
+msgid "DNS"
+msgstr "DNS"
+msgid "Expires"
+msgstr "Expires"
+msgid "Connected"
+msgstr "Connected"
+msgid "Not connected"
+msgstr "Not connected"
 msgid "Status"
 msgstr "Status"
-
-#: working/source/luci-theme-commotion/files/templates/adv_menu.htm
-msgid "Basic Menu"
-msgstr "Basic Menu"
-
-#: working/source/luci-commotion/luasrc/view/cbi/commotion/addMesh.htm
-msgid "Mesh Network"
-msgstr "Mesh Network"
-
-msgid ""
-"Click here to add a new mesh network interface. Once created you will be "
-"able to come back to this page to configure it"
-msgstr "Click here to add a new mesh network interface. Once created you will be able to come back to this page to configure it"
-
+msgid "Line State"
+msgstr "Line State"
+msgid "Line Speed"
+msgstr "Line Speed"
+msgid "Line Attenuation"
+msgstr "Line Attenuation"
+msgid "Noise Margin"
+msgstr "Noise Margin"
+msgid "expired"
+msgstr "expired"
+msgid "There are no active leases."
+msgstr "There are no active leases."
+msgid "Signal"
+msgstr "Signal"
+msgid "Noise"
+msgstr "Noise"
+msgid "SSID"
+msgstr "SSID"
+msgid "Mode"
+msgstr "Mode"
+msgid "Channel"
+msgstr "Channel"
+msgid "GHz"
+msgstr "GHz"
+msgid "Bitrate"
+msgstr "Bitrate"
+msgid "Mbit/s"
+msgstr "Mbit/s"
+msgid "BSSID"
+msgstr "BSSID"
+msgid "Encryption"
+msgstr "Encryption"
+msgid "Wireless is disabled or not associated"
+msgstr "Wireless is disabled or not associated"
+msgid "No information available"
+msgstr "No information available"
+msgid "dBm"
+msgstr "dBm"
+msgid "MHz"
+msgstr "MHz"
+msgid "kB"
+msgstr "kB"
+msgid "System"
+msgstr "System"
+msgid "Model"
+msgstr "Model"
+msgid "Firmware Version"
+msgstr "Firmware Version"
+msgid "Kernel Version"
+msgstr "Kernel Version"
+msgid "Local Time"
+msgstr "Local Time"
+msgid "Uptime"
+msgstr "Uptime"
+msgid "Load Average"
+msgstr "Load Average"
+msgid "Memory"
+msgstr "Memory"
+msgid "Total Available"
+msgstr "Total Available"
+msgid "Free"
+msgstr "Free"
+msgid "Cached"
+msgstr "Cached"
+msgid "Buffered"
+msgstr "Buffered"
+msgid "Swap"
+msgstr "Swap"
+msgid "Network"
+msgstr "Network"
+msgid "IPv4 WAN Status"
+msgstr "IPv4 WAN Status"
+msgid "Collecting data..."
+msgstr "Collecting data..."
+msgid "IPv6 WAN Status"
+msgstr "IPv6 WAN Status"
+msgid "Active Connections"
+msgstr "Active Connections"
+msgid "DHCP Leases"
+msgstr "DHCP Leases"
+msgid "IPv4-Address"
+msgstr "IPv4-Address"
+msgid "MAC-Address"
+msgstr "MAC-Address"
+msgid "Leasetime remaining"
+msgstr "Leasetime remaining"
+msgid "DHCPv6 Leases"
+msgstr "DHCPv6 Leases"
+msgid "IPv6-Address"
+msgstr "IPv6-Address"
+msgid "DUID"
+msgstr "DUID"
+msgid "ADSL"
+msgstr "ADSL"
+msgid "ADSL Status"
+msgstr "ADSL Status"
+msgid "Wireless"
+msgstr "Wireless"
+msgid "Associated Stations"
+msgstr "Associated Stations"
+msgid "RX Rate"
+msgstr "RX Rate"
+msgid "TX Rate"
+msgstr "TX Rate"
+#: working/source/luci/applications/luci-olsr/luasrc/view/status-olsr/hna.htm
+msgid "Active host net announcements"
+msgstr "Active host net announcements"
+msgid "Overview of currently active OLSR host net announcements"
+msgstr "Overview of currently active OLSR host net announcements"
+msgid "Announced network"
+msgstr "Announced network"
+msgid "OLSR gateway"
+msgstr "OLSR gateway"
+msgid "Validity Time"
+msgstr "Validity Time"
+#: working/source/luci/modules/admin-full/luasrc/view/admin_status/syslog.htm
+msgid "System Log"
+msgstr "System Log"
+#: working/source/luci/modules/admin-full/luasrc/model/cbi/admin_system/fstab/mount.lua
+msgid "Mount Points - Mount Entry"
+msgstr "Mount Points - Mount Entry"
+#: working/source/luci/modules/base/luasrc/view/cbi/tblsection.htm
+msgid "Go to relevant configuration page"
+msgstr "Go to relevant configuration page"
+msgid "Sort"
+msgstr "Sort"
+msgid "Move up"
+msgstr "Move up"
+msgid "Move down"
+msgstr "Move down"
+msgid "Edit"
+msgstr "Edit"
+msgid "Delete"
+msgstr "Delete"
+msgid "This section contains no values yet"
+msgstr "This section contains no values yet"
 msgid "Add"
 msgstr "Add"
-
 msgid "Invalid"
 msgstr "Invalid"
-
-#: working/source/commotion-dashboard-helper/luasrc/controller/commotion-dash/bigboard-conf.lua
-#: working/source/luci-theme-commotion/files/templates/basic_menu.htm
-msgid "Advanced"
-msgstr "Advanced"
-
-#: working/source/luci-commotion/luasrc/view/commotion/viz.htm
-msgid "You need to allow javascript in your browser to show this page."
-msgstr "You need to allow javascript in your browser to show this page."
-
-#: working/source/luci-commotion/luasrc/view/commotion/conn_clients.htm
-msgid "Connected Clients!"
-msgstr "Connected Clients!"
-
-msgid ""
-"You are not using a welcome page (splash page/captive portal.) Without a "
-"splash page we can only show a clients ip-address and the status of their "
-"connection."
-msgstr "You are not using a welcome page (splash page/captive portal.) Without a splash page we can only show a clients ip-address and the status of their connection."
-
-msgid ""
-"No connected clients were found at this time. If a Welcome Page has been "
-"enabled, clients must click through it before being displayed here."
-msgstr "No connected clients were found at this time. If a Welcome Page has been enabled, clients must click through it before being displayed here."
-
-#: working/source/luci-commotion-splash/luasrc/view/commotion-splash/splash.htm
-msgid "Local Applications"
-msgstr "Local Applications"
-
-msgid "Internet"
-msgstr "Internet"
-
-#: working/source/luci-commotion/htdocs/luci-static/resources/OSMLatLon.htm
-msgid "OpenStreetMap"
-msgstr "OpenStreetMap"
-
-msgid "Map by"
-msgstr "Map by"
-
-msgid "License CC-BY-SA"
-msgstr "License CC-BY-SA"
-
-msgid "Latitude:"
-msgstr "Latitude:"
-
-msgid "Longitude:"
-msgstr "Longitude:"
-
-#: working/source/luci-commotion/luasrc/model/cbi/commotion/basic_ani.lua
-msgid "Internet Gateway"
-msgstr "Internet Gateway"
-
+#: working/source/luci/applications/luci-statistics/luasrc/model/cbi/luci_statistics/iptables.lua
+msgid "Iptables Plugin Configuration"
+msgstr "Iptables Plugin Configuration"
+#: working/source/luci/modules/base/luasrc/view/cbi/full_valuefooter.htm
+msgid "help"
+msgstr "help"
+#: working/source/luci/applications/luci-freifunk-widgets/luasrc/model/cbi/freifunk/widgets/heightwidth.lua
+msgid "Width"
+msgstr "Width"
+#: working/source/luci/applications/luci-firewall/luasrc/model/cbi/firewall/custom.lua
+msgid "Firewall - Custom Rules"
+msgstr "Firewall - Custom Rules"
+#: working/source/luci-commotion/luasrc/view/commotion/apps_form.htm
+msgid "Add an Application"
+msgstr "Add an Application"
+msgid "Application Name"
+msgstr "Application Name"
+msgid "This is how your application will be displayed"
+msgstr "This is how your application will be displayed"
+msgid "Description"
+msgstr "Description"
+msgid "The description should include a one paragraph summary of the application and any other relevant information"
+msgstr "The description should include a one paragraph summary of the application and any other relevant information"
+msgid "For non web-apps, this should point to an information page telling the user how to connect to the application"
+msgstr "For non web-apps, this should point to an information page telling the user how to connect to the application"
+msgid "IP Address or URL of Service"
+msgstr "IP Address or URL of Service"
+msgid "An IP address or URL where the application can be reached"
+msgstr "An IP address or URL where the application can be reached"
+msgid "Type of Application"
+msgstr "Type of Application"
+msgid "Choose any relevant categories that describe your application"
+msgstr "Choose any relevant categories that describe your application"
+msgid "Application Icon"
+msgstr "Application Icon"
+msgid "This should be a URL of an image file that will be displayed next to the listing of your application"
+msgstr "This should be a URL of an image file that will be displayed next to the listing of your application"
+msgid "Please enable javascript to select one of these icons"
+msgstr "Please enable javascript to select one of these icons"
+msgid "Approved"
+msgstr "Approved"
+msgid "Blacklisted"
+msgstr "Blacklisted"
+msgid "Approved applications are shown to users, while blacklisted applications are not."
+msgstr "Approved applications are shown to users, while blacklisted applications are not."
+msgid "Advanced Options"
+msgstr "Advanced Options"
+msgid "If the number of hops is greater than zero, the application will be visible from other Commotion nodes in the network. Otherwise, it will only be seen on this node"
+msgstr "If the number of hops is greater than zero, the application will be visible from other Commotion nodes in the network. Otherwise, it will only be seen on this node"
+msgid "Number of hops away this service should be seen (Optional)"
+msgstr "Number of hops away this service should be seen (Optional)"
+msgid "How many nodes away your application will be seen. Must be an integer between 0 and 255"
+msgstr "How many nodes away your application will be seen. Must be an integer between 0 and 255"
+msgid "If this is checked, the application will not be removed from the applications list after the default expiration period"
+msgstr "If this is checked, the application will not be removed from the applications list after the default expiration period"
+msgid "Is this application permanent?"
+msgstr "Is this application permanent?"
+msgid "If checked, application will not expire"
+msgstr "If checked, application will not expire"
+#: working/source/luci/applications/luci-tinyproxy/luasrc/model/cbi/tinyproxy.lua
+msgid "Tinyproxy"
+msgstr "Tinyproxy"
+#: working/source/luci/applications/luci-diag-devinfo/luasrc/view/diag/smapsection.htm
+#: working/source/luci/modules/base/luasrc/view/cbi/network_netlist.htm
+msgid "(no interfaces attached)"
+msgstr "(no interfaces attached)"
+msgid "create:"
+msgstr "create:"
+msgid "unspecified -or- create:"
+msgstr "unspecified -or- create:"
+msgid "unspecified"
+msgstr "unspecified"
+#: working/source/luci/applications/luci-freifunk-widgets/luasrc/model/cbi/freifunk/widgets/rssfeed.lua
+msgid "URL"
+msgstr "URL"
+#: working/source/luci/applications/luci-ntpc/luasrc/controller/ntpc.lua
+msgid "Time Synchronisation"
+msgstr "Time Synchronisation"
+#: working/source/luci/applications/luci-wol/luasrc/model/cbi/wol.lua
+msgid "Wake on LAN"
+msgstr "Wake on LAN"
+#: working/source/luci/modules/base/luasrc/view/cbi/simpleform.htm
+msgid "Back to Overview"
+msgstr "Back to Overview"
+msgid "Skip"
+msgstr "Skip"
+msgid "Submit"
+msgstr "Submit"
+msgid "Reset"
+msgstr "Reset"
+msgid "Cancel"
+msgstr "Cancel"
+#: working/source/luci/applications/luci-olsr/luasrc/view/status-olsr/legend.htm
+msgid "Legend"
+msgstr "Legend"
+msgid "Success rate of packages received from the neighbour"
+msgstr "Success rate of packages received from the neighbour"
+msgid "Success rate of packages sent to the neighbour"
+msgstr "Success rate of packages sent to the neighbour"
+msgid "Expected retransmission count"
+msgstr "Expected retransmission count"
+msgid "Green"
+msgstr "Green"
+msgid "Very good (ETX < 2)"
+msgstr "Very good (ETX < 2)"
+msgid "Yellow"
+msgstr "Yellow"
+msgid "Good (2 < ETX < 4)"
+msgstr "Good (2 < ETX < 4)"
+msgid "Orange"
+msgstr "Orange"
+msgid "Still usable (4 < ETX < 10)"
+msgstr "Still usable (4 < ETX < 10)"
+msgid "Red"
+msgstr "Red"
+msgid "Bad (ETX > 10)"
+msgstr "Bad (ETX > 10)"
+msgid "Signal Noise Ratio in dB"
+msgstr "Signal Noise Ratio in dB"
+msgid "Very good (SNR > 30)"
+msgstr "Very good (SNR > 30)"
+msgid "Good (30 > SNR > 20)"
+msgstr "Good (30 > SNR > 20)"
+msgid "Still usable (20 > SNR > 5)"
+msgstr "Still usable (20 > SNR > 5)"
+msgid "Bad (SNR < 5)"
+msgstr "Bad (SNR < 5)"
+#: working/source/luci/applications/luci-watchcat/luasrc/controller/watchcat.lua
+msgid "Watchcat"
+msgstr "Watchcat"
+#: working/source/luci/protocols/hso/luasrc/model/cbi/admin_network/proto_hso.lua
+msgid "Control interface"
+msgstr "Control interface"
+#: working/source/luci/modules/base/luasrc/view/cbi/full_valueheader.htm
+#: working/source/luci/protocols/ipv6/luasrc/model/network/proto_dhcpv6.lua
+msgid "DHCPv6 client"
+msgstr "DHCPv6 client"
+#: working/source/luci/modules/admin-full/luasrc/controller/admin/index.lua
+msgid "Administration"
+msgstr "Administration"
+#: working/source/luci/applications/luci-firewall/luasrc/controller/firewall.lua
+msgid "Firewall"
+msgstr "Firewall"
+#: working/source/luci/modules/base/luasrc/view/cbi/upload.htm
+msgid "Uploaded File"
+msgstr "Uploaded File"
+msgid "Replace entry"
+msgstr "Replace entry"
+#: working/source/luci/applications/luci-voice-diag/luasrc/view/luci_voice/diag_index.htm
+msgid "Diagnostics"
+msgstr "Diagnostics"
+msgid "Under this menu are options that allow you to configure and perform tests on the voice operations of your system. These are known as diagnostics."
+msgstr "Under this menu are options that allow you to configure and perform tests on the voice operations of your system. These are known as diagnostics."
+msgid "The diagnostics available on your device depend on the modules that you have installed."
+msgstr "The diagnostics available on your device depend on the modules that you have installed."
+#: working/source/luci/modules/admin-mini/luasrc/model/cbi/mini/luci.lua
+msgid "Web <abbr title="User Interface">UI</abbr>"
+msgstr "Web <abbr title="User Interface">UI</abbr>"
+#: working/source/luci/protocols/ipv6/luasrc/model/cbi/admin_network/proto_6in4.lua
+msgid "Local IPv4 address"
+msgstr "Local IPv4 address"
+#: working/source/luci/modules/admin-mini/luasrc/view/mini/index.htm
+msgid "Hello!"
+msgstr "Hello!"
+msgid "This is the administration area of <abbr title="Lua Configuration Interface">LuCI</abbr>."
+msgstr "This is the administration area of <abbr title="Lua Configuration Interface">LuCI</abbr>."
+msgid "<abbr title="Lua Configuration Interface">LuCI</abbr> is a free, flexible, and user friendly graphical interface for configuring OpenWrt."
+msgstr "<abbr title="Lua Configuration Interface">LuCI</abbr> is a free, flexible, and user friendly graphical interface for configuring OpenWrt."
+msgid "On the following pages you can adjust all important settings of this device."
+msgstr "On the following pages you can adjust all important settings of this device."
+msgid "As we always want to improve this interface we are looking forward to your feedback and suggestions."
+msgstr "As we always want to improve this interface we are looking forward to your feedback and suggestions."
+msgid "And now have fun with your OpenWrt device!"
+msgstr "And now have fun with your OpenWrt device!"
+msgid "The <abbr title="Lua Configuration Interface">LuCI</abbr> Team"
+msgstr "The <abbr title="Lua Configuration Interface">LuCI</abbr> Team"
+#: working/source/luci/applications/luci-olsr/luasrc/model/cbi/olsr/olsrdiface.lua
+msgid "OLSR Daemon - Interface"
+msgstr "OLSR Daemon - Interface"
+#: working/source/luci/applications/luci-diag-devinfo/luasrc/model/cbi/luci_diag/smap_devinfo.lua
+msgid "SIP Device Information"
+msgstr "SIP Device Information"
+#: working/source/luci/modules/admin-full/luasrc/view/admin_system/packages.htm
+msgid "Software"
+msgstr "Software"
+msgid "Actions"
+msgstr "Actions"
+msgid "Configuration"
+msgstr "Configuration"
+msgid "Displaying only packages containing"
+msgstr "Displaying only packages containing"
+msgid "Package lists are older than 24 hours"
+msgstr "Package lists are older than 24 hours"
+msgid "No package lists available"
+msgstr "No package lists available"
+msgid "Update lists"
+msgstr "Update lists"
+msgid "Free space"
+msgstr "Free space"
+msgid "Download and install package"
+msgstr "Download and install package"
+msgid "OK"
+msgstr "OK"
+msgid "Filter"
+msgstr "Filter"
+msgid "Find package"
+msgstr "Find package"
+msgid "Installed packages"
+msgstr "Installed packages"
+msgid "Available packages"
+msgstr "Available packages"
+msgid "Package name"
+msgstr "Package name"
+msgid "Version"
+msgstr "Version"
+msgid "Remove"
+msgstr "Remove"
+msgid "none"
+msgstr "none"
+msgid "Install"
+msgstr "Install"
+#: working/source/luci-commotion/luasrc/view/commotion/debug.htm
+msgid "The information you are about to download contains private information about this device and the network it is connected to. Only give this information to people you trust. Do you understand?"
+msgstr "The information you are about to download contains private information about this device and the network it is connected to. Only give this information to people you trust. Do you understand?"
+msgid "Commotion Bug Info"
+msgstr "Commotion Bug Info"
+msgid "Name"
+msgstr "Name"
+msgid "Contact Info"
+msgstr "Contact Info"
+msgid "What were you doing on the device when the error occurred?"
+msgstr "What were you doing on the device when the error occurred?"
+msgid "Please describe the behavior you expected"
+msgstr "Please describe the behavior you expected"
+msgid "Please describe the behavior you experienced that you believe is wrong"
+msgstr "Please describe the behavior you experienced that you believe is wrong"
+msgid "Debugging Info"
+msgstr "Debugging Info"
+msgid "Mesh Network Information"
+msgstr "Mesh Network Information"
+msgid "Router Status"
+msgstr "Router Status"
+msgid "Router Traffic Routing Rules"
+msgstr "Router Traffic Routing Rules"
+msgid "All Info"
+msgstr "All Info"
+msgid "Create Bug Info File"
+msgstr "Create Bug Info File"
+#: working/source/luci/applications/luci-p910nd/luasrc/model/cbi/p910nd.lua
+msgid "p910nd - Printer server"
+msgstr "p910nd - Printer server"
+#: working/source/luci/modules/freifunk/luasrc/view/freifunk/adminindex.htm
+msgid "Diversity is enabled for device"
+msgstr "Diversity is enabled for device"
+msgid "Freifunk Overview"
+msgstr "Freifunk Overview"
+msgid "These pages will assist you in setting up your router for Freifunk or similar wireless community networks."
+msgstr "These pages will assist you in setting up your router for Freifunk or similar wireless community networks."
+msgid "Basic settings are incomplete. Please go to"
+msgstr "Basic settings are incomplete. Please go to"
+msgid "Basic settings"
+msgstr "Basic settings"
+msgid "and fill out all required fields."
+msgstr "and fill out all required fields."
+msgid "Contact information is incomplete. Please go to"
+msgstr "Contact information is incomplete. Please go to"
+msgid "Contact"
+msgstr "Contact"
+#: working/source/luci/modules/freifunk/luasrc/model/cbi/freifunk/profile_expert.lua
+msgid "Community profile"
+msgstr "Community profile"
+#: working/source/luci/applications/luci-wshaper/luasrc/model/cbi/wshaper.lua
+msgid "Wondershaper"
+msgstr "Wondershaper"
+#: working/source/luci/modules/freifunk/luasrc/controller/freifunk/remote_update.lua
+msgid "Freifunk Remote Update"
+msgstr "Freifunk Remote Update"
+#: working/source/luci-commotion/luasrc/view/commotion-splash/splash_settings.htm
+msgid "Welcome Page"
+msgstr "Welcome Page"
+msgid "Users can be redirected to a 'welcome page' when they first connect to this node."
+msgstr "Users can be redirected to a 'welcome page' when they first connect to this node."
+msgid "General"
+msgstr "General"
+msgid "Time until welcome page is shown again"
+msgstr "Time until welcome page is shown again"
+msgid "Users that have seen the Welcome Page are allowed to use the network for this amount of time."
+msgstr "Users that have seen the Welcome Page are allowed to use the network for this amount of time."
+msgid "Redirect to Homepage?"
+msgstr "Redirect to Homepage?"
+msgid "If this is checked, clients will be redirected to your homepage, instead of to their original request."
+msgstr "If this is checked, clients will be redirected to your homepage, instead of to their original request."
+msgid "Homepage"
+msgstr "Homepage"
+msgid "After authentication, clients will be redirected to this URL instead of to their original request."
+msgstr "After authentication, clients will be redirected to this URL instead of to their original request."
+msgid "Immediately Authenticate?"
+msgstr "Immediately Authenticate?"
+msgid "If this is checked, clients will be immediately directed to their original request or your homepage (if set above), instead of being shown the Welcome Page."
+msgstr "If this is checked, clients will be immediately directed to their original request or your homepage (if set above), instead of being shown the Welcome Page."
+msgid "Interfaces"
+msgstr "Interfaces"
+msgid "Interfaces that are used for the Welcome Page."
+msgstr "Interfaces that are used for the Welcome Page."
+msgid "For which network connection should this welcome page be active?"
+msgstr "For which network connection should this welcome page be active?"
+msgid "Whitelist"
+msgstr "Whitelist"
+msgid "MAC addresses of whitelisted clients. These do not need to be shown the Welcome Page and are not bandwidth limited."
+msgstr "MAC addresses of whitelisted clients. These do not need to be shown the Welcome Page and are not bandwidth limited."
+msgid "Banned"
+msgstr "Banned"
+msgid "MAC addresses in this list are blocked."
+msgstr "MAC addresses in this list are blocked."
+#: working/source/luci/modules/admin-full/luasrc/view/admin_network/wifi_status.htm
+msgid "Tx-Power"
+msgstr "Tx-Power"
+msgid "Country"
+msgstr "Country"
+msgid "None"
+msgstr "None"
+msgid "Not associated"
+msgstr "Not associated"
 #: working/source/luci-commotion/luasrc/view/commotion/apply.htm
 msgid "Applying Changes"
 msgstr "Applying Changes"
-
 msgid "The following changes have been committed"
 msgstr "The following changes have been committed"
-
 msgid "There are no pending changes to apply!"
 msgstr "There are no pending changes to apply!"
-
-#: working/source/luci-commotion/luasrc/view/commotion/status.htm
-msgid "Providing Gateway"
-msgstr "Providing Gateway"
-
-msgid "Client Connections"
-msgstr "Client Connections"
-
-msgid "Nearby Mesh Devices"
-msgstr "Nearby Mesh Devices"
-
-msgid "Mesh Visualizer"
-msgstr "Mesh Visualizer"
-
-msgid "Connected Clients"
-msgstr "Connected Clients"
-
-msgid "Debug Report"
-msgstr "Debug Report"
-
-#: working/source/luci-commotion-apps/lua/luci/view/commotion/apps_settings.htm
-msgid ""
-"Here you can change settings used on this node when creating or updating "
-"applications"
-msgstr "Here you can change settings used on this node when creating or updating applications"
-
-msgid ""
-"Applications that are created on this node can be categorized and listed "
-"according to the categories here"
-msgstr "Applications that are created on this node can be categorized and listed according to the categories here"
-
-msgid "Application categories"
-msgstr "Application categories"
-
-msgid ""
-"Applications that are not marked as 'permanent' will be automatically be "
-"removed from the application list after this amount of time"
-msgstr "Applications that are not marked as 'permanent' will be automatically be removed from the application list after this amount of time"
-
-msgid "Expiration period (seconds)"
-msgstr "Expiration period (seconds)"
-
-msgid "For example, 24 hours = 86400 seconds"
-msgstr "For example, 24 hours = 86400 seconds"
-
-msgid ""
-"By default, all applications expire after a time period specified by you. If"
-" this option is checked, applications will have the option to not expire"
-msgstr "By default, all applications expire after a time period specified by you. If this option is checked, applications will have the option to not expire"
-
-msgid "Allow local applications to not expire"
-msgstr "Allow local applications to not expire"
-
-msgid ""
-"If this is disabled, users will only be able to see local applications on "
-"the network that you manually approve"
-msgstr "If this is disabled, users will only be able to see local applications on the network that you manually approve"
-
-msgid "Automatically approve all applications seen by this node"
-msgstr "Automatically approve all applications seen by this node"
-
-msgid ""
-"By default, applications that don't appear responsive will be removed from "
-"the application list. If you have poor or intermittent connectivity, you "
-"should disable this option to skip checking application responsiveness"
-msgstr "By default, applications that don't appear responsive will be removed from the application list. If you have poor or intermittent connectivity, you should disable this option to skip checking application responsiveness"
-
-msgid "Periodically check connectivity of applications"
-msgstr "Periodically check connectivity of applications"
-
-#: working/source/luci-theme-commotion/files/templates/unsaved_changes.htm
-msgid "Unsaved Changes"
-msgstr "Unsaved Changes"
-
-msgid "Auto Refresh"
-msgstr "Auto Refresh"
-
-msgid "on"
-msgstr "on"
-
-msgid "off"
-msgstr "off"
-
-#: working/source/luci-commotion/luasrc/view/commotion/about.htm
-msgid "About Commotion"
-msgstr "About Commotion"
-
-msgid ""
-"Commotion is an open-source communication tool that uses mobile phones, "
-"computers, and other wireless devices to create decentralized mesh networks."
-msgstr "Commotion is an open-source communication tool that uses mobile phones, computers, and other wireless devices to create decentralized mesh networks."
-
-msgid ""
-"Wireless mesh networks allow devices to connect directly to each other "
-"without going through a centralized point."
-msgstr "Wireless mesh networks allow devices to connect directly to each other without going through a centralized point."
-
-msgid "Commotion is intended to be a:"
-msgstr "Commotion is intended to be a:"
-
-msgid ""
-"simple, easy-to-use communications tool that anyone can set up and use "
-"without technical expertise"
-msgstr "simple, easy-to-use communications tool that anyone can set up and use without technical expertise"
-
-msgid ""
-"platform for building community wireless networks and hosting local "
-"applications"
-msgstr "platform for building community wireless networks and hosting local applications"
-
-msgid ""
-"tool for creating infrastructure that is resilient against surveillance and "
-"disruption"
-msgstr "tool for creating infrastructure that is resilient against surveillance and disruption"
-
-msgid ""
-"flexible, open-source software platform that programmers around the globe "
-"can continually adapt and build upon"
-msgstr "flexible, open-source software platform that programmers around the globe can continually adapt and build upon"
-
-#: working/source/luci-commotion/luasrc/model/cbi/commotion/security_smk.lua
-msgid "Shared Mesh Keychain"
-msgstr "Shared Mesh Keychain"
-
-#: working/source/luci-commotion/luasrc/view/commotion/serval_keyring.htm
-msgid ""
-"To ensure that only authorized devices can route traffic on your Commotion "
-"mesh network, one Shared Mesh Keychain file can be generated and shared by "
-"all devices.."
-msgstr "To ensure that only authorized devices can route traffic on your Commotion mesh network, one Shared Mesh Keychain file can be generated and shared by all devices.."
-
-msgid "Download Shared Mesh Keychain"
-msgstr "Download Shared Mesh Keychain"
-
-msgid "Download your current Shared Mesh Keychain"
-msgstr "Download your current Shared Mesh Keychain"
-
-msgid "Download your current Serval keyring"
-msgstr "Download your current Serval keyring"
-
-msgid "Download"
-msgstr "Download"
-
-msgid "Upload Shared Mesh Keychain"
-msgstr "Upload Shared Mesh Keychain"
-
-msgid "Upload Shared Mesh Keychain."
-msgstr "Upload Shared Mesh Keychain."
-
-msgid ""
-"If a Shared Mesh Keychain file was provided to you by a network "
-"administrator or another community member, select and upload it here to join"
-" this device to an existing mesh network."
-msgstr "If a Shared Mesh Keychain file was provided to you by a network administrator or another community member, select and upload it here to join this device to an existing mesh network."
-
-msgid "Upload"
-msgstr "Upload"
-
-msgid "Create a new Shared Mesh Keychain"
-msgstr "Create a new Shared Mesh Keychain"
-
-msgid ""
-"Create a new Shared Mesh Keychain file. This will DELETE the existing Shared"
-" Mesh Keychain on this device. Use this option if you are creating a brand "
-"new Commotion mesh network, or if you are changing the Shared Mesh Keyhchain"
-" on an existing network. In either case, create a backup of the existing "
-"Shared Mesh Keychain first."
-msgstr "Create a new Shared Mesh Keychain file. This will DELETE the existing Shared Mesh Keychain on this device. Use this option if you are creating a brand new Commotion mesh network, or if you are changing the Shared Mesh Keyhchain on an existing network. In either case, create a backup of the existing Shared Mesh Keychain first."
-
-msgid "New Shared Mesh Keychain"
-msgstr "New Shared Mesh Keychain"
-
-msgid "Create New Shared Mesh Keychain"
-msgstr "Create New Shared Mesh Keychain"
-
-#: working/source/luci-commotion-splash/luasrc/view/commotion-splash/splash_settings.htm
-msgid ""
-"Users can be redirected to a 'welcome page' when they first connect to this "
-"node."
-msgstr "Users can be redirected to a 'welcome page' when they first connect to this node."
-
-msgid "General"
-msgstr "General"
-
-msgid "Time until welcome page is shown again"
-msgstr "Time until welcome page is shown again"
-
-msgid ""
-"Users that have seen the Welcome Page are allowed to use the network for "
-"this amount of time."
-msgstr "Users that have seen the Welcome Page are allowed to use the network for this amount of time."
-
-msgid "Redirect to Homepage?"
-msgstr "Redirect to Homepage?"
-
-msgid "help"
-msgstr "help"
-
-msgid ""
-"If this is checked, clients will be redirected to your homepage, instead of "
-"to their original request."
-msgstr "If this is checked, clients will be redirected to your homepage, instead of to their original request."
-
-msgid "Homepage"
-msgstr "Homepage"
-
-msgid ""
-"After authentication, clients will be redirected to this URL instead of to "
-"their original request."
-msgstr "After authentication, clients will be redirected to this URL instead of to their original request."
-
-msgid "Immediately Authenticate?"
-msgstr "Immediately Authenticate?"
-
-msgid ""
-"If this is checked, clients will be immediately directed to their original "
-"request or your homepage (if set above), instead of being shown the Welcome "
-"Page."
-msgstr "If this is checked, clients will be immediately directed to their original request or your homepage (if set above), instead of being shown the Welcome Page."
-
-msgid "Interfaces"
-msgstr "Interfaces"
-
-msgid "Interfaces that are used for the Welcome Page."
-msgstr "Interfaces that are used for the Welcome Page."
-
-msgid "Network"
-msgstr "Network"
-
-msgid "For which network connection should this welcome page be active?"
-msgstr "For which network connection should this welcome page be active?"
-
-msgid "Whitelist"
-msgstr "Whitelist"
-
-msgid ""
-"MAC addresses of whitelisted clients. These do not need to be shown the "
-"Welcome Page and are not bandwidth limited."
-msgstr "MAC addresses of whitelisted clients. These do not need to be shown the Welcome Page and are not bandwidth limited."
-
-msgid "MAC Address"
-msgstr "MAC Address"
-
-msgid "Banned"
-msgstr "Banned"
-
-msgid "MAC addresses in this list are blocked."
-msgstr "MAC addresses in this list are blocked."
-
-msgid "Allowed hosts/subnets"
-msgstr "Allowed hosts/subnets"
-
-msgid ""
-"Hosts and Networks that are listed here are excluded from splashing, i.e. "
-"they are always allowed."
-msgstr "Hosts and Networks that are listed here are excluded from splashing, i.e. they are always allowed."
-
-msgid "IP Address"
-msgstr "IP Address"
-
-msgid "CIDR notation optional (e.g. 192.168.1.0/24)"
-msgstr "CIDR notation optional (e.g. 192.168.1.0/24)"
-
-msgid "Submit"
-msgstr "Submit"
-
-#: working/source/luci-commotion/luasrc/view/commotion/nearby_md.htm
-msgid "OLSR Links"
-msgstr "OLSR Links"
-
-msgid "Overview of currently established OLSR connections (device-to-device)"
-msgstr "Overview of currently established OLSR connections (device-to-device)"
-
-msgid "Hostname"
-msgstr "Hostname"
-
-msgid "ETX Value"
-msgstr "ETX Value"
-
-msgid "Legend"
-msgstr "Legend"
-
-msgid ""
-"Expected retransmission count - the expected number of retransmission "
-"attempts that are required for a packet to travel to and from a destination."
-msgstr "Expected retransmission count - the expected number of retransmission attempts that are required for a packet to travel to and from a destination."
-
-msgid "Green"
-msgstr "Green"
-
-msgid "Very good (ETX < 2)"
-msgstr "Very good (ETX < 2)"
-
-msgid "Yellow"
-msgstr "Yellow"
-
-msgid "Good (2 < ETX < 4)"
-msgstr "Good (2 < ETX < 4)"
-
-msgid "Orange"
-msgstr "Orange"
-
-msgid "Still usable (4 < ETX < 10)"
-msgstr "Still usable (4 < ETX < 10)"
-
-msgid "Red"
-msgstr "Red"
-
-msgid "Bad (ETX > 10)"
-msgstr "Bad (ETX > 10)"
-
-#: working/source/luci-commotion/luasrc/view/commotion/confirm.htm
-msgid "Confirm Configuration"
-msgstr "Confirm Configuration"
-
-msgid "There are no pending changes!"
-msgstr "There are no pending changes!"
-
-msgid "Make Changes"
-msgstr "Make Changes"
-
-msgid "Back"
-msgstr "Back"
-
-msgid "Save And Apply"
-msgstr "Save And Apply"
-
-msgid "Start Over"
-msgstr "Start Over"
-
-msgid "Revert"
-msgstr "Revert"
-
-#: working/source/luci-commotion/luasrc/controller/commotion/security_config.lua
-msgid "Security"
-msgstr "Security"
-
-#: working/source/luci-commotion-apps/lua/luci/controller/commotion/apps_controller.lua
+msgid "Finish"
+msgstr "Finish"
+#: working/source/luci-commotion/luasrc/controller/commotion/apps_controller.lua
 msgid "Applications"
 msgstr "Applications"
-
-#: working/source/luci-commotion/luasrc/model/cbi/commotion/basic_done.lua
-msgid "Basic Configuration Complete!"
-msgstr "Basic Configuration Complete!"
-
-#: working/source/luci-commotion/luasrc/view/cbi/commotion/addAP.htm
-msgid "Access Point"
-msgstr "Access Point"
-
-msgid ""
-"Click here to create a new access point. Once created you will be able to "
-"come back to this page to configure it."
-msgstr "Click here to create a new access point. Once created you will be able to come back to this page to configure it."
-
-#: working/source/luci-commotion/luasrc/model/cbi/commotion/basic_mn.lua
-msgid "Network Settings"
-msgstr "Network Settings"
-
-#: working/source/luci-commotion/luasrc/view/commotion/license.htm
-msgid "Commotion License"
-msgstr "Commotion License"
-
-msgid "This program is free software: you can redistribute it and/or modif"
-msgstr "This program is free software: you can redistribute it and/or modif"
-
-msgid "This program is distributed in the hope that it will be useful"
-msgstr "This program is distributed in the hope that it will be useful"
-
-msgid ""
-"You should have received a copy of the GNU General Public License along with"
-" this program. If not, see http://www.gnu.org/licenses/."
-msgstr "You should have received a copy of the GNU General Public License along with this program. If not, see http://www.gnu.org/licenses/."
-
-msgid ""
-"The OpenWrt distribution upon which Commotion is built bundles a lot of "
-"third party applications and modules which are available under various other"
-" Open Source licenses or Public Domain. The sources for those packages can "
-"be found on the OpenWrt mirrot at: http://downloads.openwrt.org/sources/ . "
-"Please refer to these source packages to find out which license applies to "
-"them."
-msgstr "The OpenWrt distribution upon which Commotion is built bundles a lot of third party applications and modules which are available under various other Open Source licenses or Public Domain. The sources for those packages can be found on the OpenWrt mirrot at: http://downloads.openwrt.org/sources/ . Please refer to these source packages to find out which license applies to them."
-
-#: working/source/luci-commotion/luasrc/model/cbi/commotion/basic_wn.lua
-msgid "Wireless Network"
-msgstr "Wireless Network"
-
-#: working/source/luci-commotion/luasrc/view/commotion/debug.htm
-#: working/source/luci-commotion/luasrc/controller/commotion/info.lua
-msgid "Client Controls"
-msgstr "Client Controls"
-
+#: working/source/luci/modules/freifunk/luasrc/view/freifunk-map/frame.htm
+msgid "Map Error"
+msgstr "Map Error"
+msgid "The OLSRd service is not configured to capture position data from the network.<br /> Please make sure that the nameservice plugin is properly configured and that the <em>latlon_file</em> option is enabled."
+msgstr "The OLSRd service is not configured to capture position data from the network.<br /> Please make sure that the nameservice plugin is properly configured and that the <em>latlon_file</em> option is enabled."
+#: working/source/luci/protocols/ipv6/luasrc/model/network/proto_hnet.lua
+msgid "Automatic Homenet (HNCP)"
+msgstr "Automatic Homenet (HNCP)"
+#: working/source/luci-commotion/luasrc/model/cbi/commotion/basic_ani.lua
+msgid "Internet Gateway"
+msgstr "Internet Gateway"
+#: working/source/luci/modules/admin-mini/luasrc/controller/mini/system.lua
+#: working/source/luci/modules/admin-full/luasrc/view/admin_status/connections.htm
+msgid "(%d minute window, %d second interval)"
+msgstr "(%d minute window, %d second interval)"
+msgid "Pkts."
+msgstr "Pkts."
+msgid "Realtime Connections"
+msgstr "Realtime Connections"
+msgid "This page gives an overview over currently active network connections."
+msgstr "This page gives an overview over currently active network connections."
+msgid "UDP:"
+msgstr "UDP:"
+msgid "Average:"
+msgstr "Average:"
+msgid "Peak:"
+msgstr "Peak:"
+msgid "TCP:"
+msgstr "TCP:"
+msgid "Other:"
+msgstr "Other:"
+msgid "Protocol"
+msgstr "Protocol"
+msgid "Source"
+msgstr "Source"
+msgid "Destination"
+msgstr "Destination"
+msgid "Transfer"
+msgstr "Transfer"
+#: working/source/luci/applications/luci-statistics/luasrc/model/cbi/luci_statistics/ping.lua
+msgid "Ping Plugin Configuration"
+msgstr "Ping Plugin Configuration"
+#: working/source/luci/modules/base/luasrc/view/error500.htm
+msgid "Internal Server Error"
+msgstr "Internal Server Error"
+msgid "Sorry, the server encountered an unexpected error."
+msgstr "Sorry, the server encountered an unexpected error."
+#: working/source/luci/applications/luci-commands/luasrc/model/cbi/commands.lua
+msgid "Custom Commands"
+msgstr "Custom Commands"
+#: working/source/luci/applications/luci-pbx/luasrc/model/cbi/pbx-advanced.lua
+msgid "Advanced Settings"
+msgstr "Advanced Settings"
+#: working/source/luci/modules/base/luasrc/view/cbi/delegator.htm
+msgid "Next »"
+msgstr "Next »"
+msgid "« Back"
+msgstr "« Back"
+#: working/source/luci/modules/admin-mini/luasrc/model/cbi/mini/system.lua
+#: working/source/luci/applications/luci-p2pblock/luasrc/model/cbi/luci_fw/p2pblock.lua
+msgid "P2P-Block"
+msgstr "P2P-Block"
+#: working/source/luci/modules/base/luasrc/view/cbi/filebrowser.htm
+msgid "Directory"
+msgstr "Directory"
+msgid "File"
+msgstr "File"
+#: working/source/luci/modules/base/luasrc/model/network.lua
+msgid "Unmanaged"
+msgstr "Unmanaged"
+#: working/source/luci-commotion/luasrc/view/commotion/viz.htm
+msgid "You need to allow javascript in your browser to show this page."
+msgstr "You need to allow javascript in your browser to show this page."
+#: working/source/luci/applications/luci-diag-devinfo/luasrc/model/cbi/luci_diag/smap_devinfo_config_mini.lua
+msgid "Phone Scanning Configuration"
+msgstr "Phone Scanning Configuration"
+#: working/source/luci/modules/admin-full/luasrc/view/admin_uci/revert.htm
+msgid "Revert"
+msgstr "Revert"
+msgid "The following changes have been reverted"
+msgstr "The following changes have been reverted"
+msgid "There are no pending changes to revert!"
+msgstr "There are no pending changes to revert!"
+msgid "Back"
+msgstr "Back"
+#: working/source/luci/modules/admin-full/luasrc/model/cbi/admin_network/iface_add.lua
+msgid "Create Interface"
+msgstr "Create Interface"
+#: working/source/luci/modules/admin-full/luasrc/view/admin_system/flashops.htm
+msgid "Flash operations"
+msgstr "Flash operations"
+msgid "There was an error running the upgrade scripts packaged with the new firmware image. It is recommended that you upgrade without saving settings."
+msgstr "There was an error running the upgrade scripts packaged with the new firmware image. It is recommended that you upgrade without saving settings."
+msgid "Backup / Restore"
+msgstr "Backup / Restore"
+msgid "Click "Generate archive" to download a tar archive of the current configuration files. To reset the firmware to its initial state, click "Perform reset" (only possible with squashfs images)."
+msgstr "Click "Generate archive" to download a tar archive of the current configuration files. To reset the firmware to its initial state, click "Perform reset" (only possible with squashfs images)."
+msgid "Download backup"
+msgstr "Download backup"
+msgid "Generate archive"
+msgstr "Generate archive"
+msgid "Reset to defaults"
+msgstr "Reset to defaults"
+msgid "Really reset all changes?"
+msgstr "Really reset all changes?"
+msgid "Perform reset"
+msgstr "Perform reset"
+msgid "To restore configuration files, you can upload a previously generated backup archive here."
+msgstr "To restore configuration files, you can upload a previously generated backup archive here."
+msgid "Restore backup"
+msgstr "Restore backup"
+msgid "Upload archive..."
+msgstr "Upload archive..."
+msgid "Flash new firmware image"
+msgstr "Flash new firmware image"
+msgid "Upload a sysupgrade-compatible image here to replace the running firmware. Check "Keep settings" to retain the current configuration (requires an OpenWrt compatible firmware image)."
+msgstr "Upload a sysupgrade-compatible image here to replace the running firmware. Check "Keep settings" to retain the current configuration (requires an OpenWrt compatible firmware image)."
+msgid "Keep settings"
+msgstr "Keep settings"
+msgid "Image"
+msgstr "Image"
+msgid "Flash image..."
+msgstr "Flash image..."
+msgid "The uploaded image file does not contain a supported format. Make sure that you choose the generic image format for your platform."
+msgstr "The uploaded image file does not contain a supported format. Make sure that you choose the generic image format for your platform."
+msgid "Sorry, there is no sysupgrade support present; a new firmware image must be flashed manually. Please refer to the OpenWrt wiki for device specific install instructions."
+msgstr "Sorry, there is no sysupgrade support present; a new firmware image must be flashed manually. Please refer to the OpenWrt wiki for device specific install instructions."
+#: working/source/luci/applications/luci-freifunk-widgets/luasrc/model/cbi/freifunk/widgets/search.lua
+msgid "Search Engine"
+msgstr "Search Engine"
+#: working/source/luci/applications/luci-statistics/luasrc/model/cbi/luci_statistics/network.lua
+msgid "Network Plugin Configuration"
+msgstr "Network Plugin Configuration"
+#: working/source/luci/protocols/ipv6/luasrc/model/cbi/admin_network/proto_hnet.lua
+msgid "Category"
+msgstr "Category"
+#: working/source/luci/applications/luci-freifunk-diagnostics/luasrc/controller/freifunk/diag.lua
+#: working/source/luci/applications/luci-diag-devinfo/luasrc/model/cbi/luci_diag/netdiscover_devinfo_mini.lua
+msgid "Network Device Scan"
+msgstr "Network Device Scan"
+#: working/source/luci/applications/luci-statistics/luasrc/model/cbi/luci_statistics/unixsock.lua
+msgid "Unixsock Plugin Configuration"
+msgstr "Unixsock Plugin Configuration"
+#: working/source/luci/applications/luci-samba/luasrc/controller/samba.lua
+msgid "Network Shares"
+msgstr "Network Shares"
+#: working/source/luci/modules/admin-mini/luasrc/model/cbi/mini/network.lua
+#: working/source/luci/applications/luci-splash/luasrc/view/splash/splash.htm
+msgid "Your bandwidth is limited to"
+msgstr "Your bandwidth is limited to"
+msgid "Welcome"
+msgstr "Welcome"
+msgid "You are now connected to the free wireless mesh network"
+msgstr "You are now connected to the free wireless mesh network"
+msgid "Please note that we are not an internet service provider but an experimental community network."
+msgstr "Please note that we are not an internet service provider but an experimental community network."
+msgid "Access to the internet might be possible nevertheless, because some activists of this project share their private internet connections. These few connections are shared between all users. That means available bandwidth is limited and because of this we ask you not to do any of the following:"
+msgstr "Access to the internet might be possible nevertheless, because some activists of this project share their private internet connections. These few connections are shared between all users. That means available bandwidth is limited and because of this we ask you not to do any of the following:"
+msgid "use filesharing applications on this network"
+msgstr "use filesharing applications on this network"
+msgid "waste bandwidth with unneccesary downloads or streams"
+msgstr "waste bandwidth with unneccesary downloads or streams"
+msgid "perform any kind of illegal activities"
+msgstr "perform any kind of illegal activities"
+msgid "If you use this network on a regular basis we ask for your support:"
+msgstr "If you use this network on a regular basis we ask for your support:"
+msgid "Become an active member of this community and help by operating your own node"
+msgstr "Become an active member of this community and help by operating your own node"
+msgid "Donate some money to help us keep this project alive."
+msgstr "Donate some money to help us keep this project alive."
+msgid "If you operate your own wifi equipment use channels different from ours."
+msgstr "If you operate your own wifi equipment use channels different from ours."
+msgid "Usage Agreement"
+msgstr "Usage Agreement"
+msgid "The open and free wireless network of volunteers ("Operators") provides the necessary equipment and Internet connections ("Infrastructure") at their own expense."
+msgstr "The open and free wireless network of volunteers ("Operators") provides the necessary equipment and Internet connections ("Infrastructure") at their own expense."
+msgid "These Terms of Use govern the use of the network by its participants' computer, PDA, or similar device ("Devices") within the network."
+msgstr "These Terms of Use govern the use of the network by its participants' computer, PDA, or similar device ("Devices") within the network."
+msgid "Access to the network is not guaranteed. It can be interrupted at any time without notice for any reason, for certain devices, and/or may be blocked for certain users."
+msgstr "Access to the network is not guaranteed. It can be interrupted at any time without notice for any reason, for certain devices, and/or may be blocked for certain users."
+msgid "Legally Prohibited Activities"
+msgstr "Legally Prohibited Activities"
+msgid "The participant agrees to not perform any action and refrain from acts which may violate the law or infringe upon the rights of third parties."
+msgstr "The participant agrees to not perform any action and refrain from acts which may violate the law or infringe upon the rights of third parties."
+msgid "Legally Prohibited content"
+msgstr "Legally Prohibited content"
+msgid "The participant agrees to not transfer content over the network which violates the law."
+msgstr "The participant agrees to not transfer content over the network which violates the law."
+msgid "Fair Use Policy"
+msgstr "Fair Use Policy"
+msgid "The participant agrees to not use the network in any way which will harm the infrastructure, the network itself, its operators or other participants."
+msgstr "The participant agrees to not use the network in any way which will harm the infrastructure, the network itself, its operators or other participants."
+msgid "Safety"
+msgstr "Safety"
+msgid "The network, like the Internet, is unencrypted and open. Each participant is responsible for the safety of their own connections and devices."
+msgstr "The network, like the Internet, is unencrypted and open. Each participant is responsible for the safety of their own connections and devices."
+msgid "The operator claims no liability for loss of data, unauthorized access/damage to devices, or financial losses that participants may suffer from the use of the network."
+msgstr "The operator claims no liability for loss of data, unauthorized access/damage to devices, or financial losses that participants may suffer from the use of the network."
+#: working/source/luci/applications/luci-splash/luasrc/controller/splash/splash.lua
+#: working/source/luci/applications/luci-statistics/luasrc/model/cbi/luci_statistics/memory.lua
+msgid "Memory Plugin Configuration"
+msgstr "Memory Plugin Configuration"
 #: working/source/luci-commotion/luasrc/model/cbi/commotion/security_pass.lua
 msgid "Passwords"
 msgstr "Passwords"
-
-#: working/source/luci-commotion/luasrc/view/commotion/help.htm
-msgid "Help with Commotion"
-msgstr "Help with Commotion"
-
-msgid ""
-"Commotion is an evolving project that includes many parts. The documentation"
-" on our website has been created by the Commotion community to aid users and"
-" developers. It is often updated and we encourage you to get involved by "
-"contributing documentation. Listed below are links to the most relevant "
-"documentation to get started:"
-msgstr "Commotion is an evolving project that includes many parts. The documentation on our website has been created by the Commotion community to aid users and developers. It is often updated and we encourage you to get involved by contributing documentation. Listed below are links to the most relevant documentation to get started:"
-
-msgid "Frequently Asked Questions"
-msgstr "Frequently Asked Questions"
-
-msgid "Documentation"
-msgstr "Documentation"
-
-msgid "Commotion Construction Kit"
-msgstr "Commotion Construction Kit"
-
-msgid ""
-"a set of modular guides with tips on community organizing, site preparation,"
-" software installation and more."
-msgstr "a set of modular guides with tips on community organizing, site preparation, software installation and more."
-
-msgid "Contact the Commotion Wireless team"
-msgstr "Contact the Commotion Wireless team"
-
-msgid "Report a Bug"
-msgstr "Report a Bug"
-
-msgid ""
-"You can also connect with the Commotion community by subscribing to one or "
-"more of our listservs:"
-msgstr "You can also connect with the Commotion community by subscribing to one or more of our listservs:"
-
-msgid "only official announcements with minimal discussion."
-msgstr "only official announcements with minimal discussion."
-
-msgid "for those who want to use Commotion without getting too technical."
-msgstr "for those who want to use Commotion without getting too technical."
-
-msgid "for those who want to discuss improvements the Commotion software."
-msgstr "for those who want to discuss improvements the Commotion software."
-
-msgid ""
-"You can also join us using your chat program on IRC in the #commotion "
-"channel on the irc.freenode.net server."
-msgstr "You can also join us using your chat program on IRC in the #commotion channel on the irc.freenode.net server."
-
-msgid "Learn more about using IRC"
-msgstr "Learn more about using IRC"
-
-#: working/source/luci-commotion/luasrc/view/commotion/welcome.htm
-msgid "Setup Wizard"
-msgstr "Setup Wizard"
-
-#: working/source/luci-commotion/files/usr/share/commotion/patches/wifi.lua.patch
-msgid "auto"
-msgstr "auto"
-
-#: working/source/luci-commotion/luasrc/controller/commotion/client_config.lua
-#: working/source/luci-commotion/luasrc/view/commotion/revert.htm
-msgid ""
-"Reverting changes... Please be patient, this may take a few moments. Once "
-"the settings are reset click 'Start Over' to return to the beginning of the "
-"Setup Wizard."
-msgstr "Reverting changes... Please be patient, this may take a few moments. Once the settings are reset click 'Start Over' to return to the beginning of the Setup Wizard."
-
-msgid "There are no pending changes to revert!"
-msgstr "There are no pending changes to revert!"
-
-#: working/source/luci-commotion/luasrc/model/cbi/commotion/confirm_config.lua
-msgid "Basic Configuration"
-msgstr "Basic Configuration"
-
-#: working/source/luci-commotion-apps/lua/luci/view/commotion/apps_view.htm
-msgid ""
-"Publicly announced applications running on this network are listed below."
-msgstr "Publicly announced applications running on this network are listed below."
-
-msgid "Here you can view applications accessible from this node"
-msgstr "Here you can view applications accessible from this node"
-
-msgid "Add Application"
-msgstr "Add Application"
-
-#: working/source/luci-commotion-splash/luasrc/controller/commotion-splash/splash.lua
+#: working/source/luci/applications/luci-freifunk-widgets/luasrc/view/freifunk/widgets/html/main.htm
+msgid "Could not load the custom text from"
+msgstr "Could not load the custom text from"
+#: working/source/luci/modules/admin-mini/luasrc/model/cbi/mini/dhcp.lua
+msgid "enable"
+msgstr "enable"
+#: working/source/luci-commotion/luasrc/view/commotion/apply_xhr.htm
+msgid "Applying changes"
+msgstr "Applying changes"
+msgid "Configuration applied."
+msgstr "Configuration applied."
+msgid "Loading"
+msgstr "Loading"
+msgid "Applying changes... Please be patient, this may take a few moments. Once the settings are complete you will be returned to the Administrative login."
+msgstr "Applying changes... Please be patient, this may take a few moments. Once the settings are complete you will be returned to the Administrative login."
+#: working/source/luci/applications/luci-pbx/luasrc/model/cbi/pbx.lua
+msgid "PBX Main Page"
+msgstr "PBX Main Page"
+#: working/source/luci/protocols/relay/luasrc/model/network/proto_relay.lua
+msgid "Relay bridge"
+msgstr "Relay bridge"
+#: working/source/luci/modules/failsafe/luasrc/view/failsafe/upgrade.htm
+msgid "(%s available)"
+msgstr "(%s available)"
+msgid "Flash Firmware"
+msgstr "Flash Firmware"
+msgid "Verify"
+msgstr "Verify"
+msgid "The flash image was uploaded. Below is the checksum and file size listed, compare them with the original file to ensure data integrity.<br /> Click "Proceed" below to start the flash procedure."
+msgstr "The flash image was uploaded. Below is the checksum and file size listed, compare them with the original file to ensure data integrity.<br /> Click "Proceed" below to start the flash procedure."
+msgid "It appears that you are trying to flash an image that does not fit into the flash memory, please verify the image file!"
+msgstr "It appears that you are trying to flash an image that does not fit into the flash memory, please verify the image file!"
+msgid "Checksum"
+msgstr "Checksum"
+msgid "Size"
+msgstr "Size"
+msgid "Proceed"
+msgstr "Proceed"
+#: working/source/luci/applications/luci-diag-core/luasrc/view/diag/network_config_index.htm
+msgid "With this menu you can configure network diagnostics, such as network device scans and ping tests."
+msgstr "With this menu you can configure network diagnostics, such as network device scans and ping tests."
+msgid "The diagnostics available under this menu depend on what modules you have installed on your device."
+msgstr "The diagnostics available under this menu depend on what modules you have installed on your device."
+#: working/source/luci-commotion/luasrc/controller/commotion-splash/splash.lua
 msgid "Captive Portal"
 msgstr "Captive Portal"
-
+#: working/source/luci-commotion/luasrc/view/commotion-splash/splashtext.htm
+msgid "Welcome!"
+msgstr "Welcome!"
+msgid "You are now connected to a"
+msgstr "You are now connected to a"
+msgid "community wireless network."
+msgstr "community wireless network."
+msgid "Access to the Internet"
+msgstr "Access to the Internet"
+msgid "may be provided by people donating connectivity to the network. Everyone on the network has to share, so please be aware and behave yourself accordingly:"
+msgstr "may be provided by people donating connectivity to the network. Everyone on the network has to share, so please be aware and behave yourself accordingly:"
+msgid "Please"
+msgstr "Please"
+msgid "avoid large downloads and excessive filesharing."
+msgstr "avoid large downloads and excessive filesharing."
+msgid "no illegal activities."
+msgstr "no illegal activities."
+msgid "If you like the network, please consider contributing!"
+msgstr "If you like the network, please consider contributing!"
+#: working/source/luci-commotion/luasrc/view/commotion-splash/blocked.htm
+msgid "Blocked"
+msgstr "Blocked"
+msgid "Your access to this network has been blocked, most likely because you did something that our rules explicitly forbid."
+msgstr "Your access to this network has been blocked, most likely because you did something that our rules explicitly forbid."
+msgid "To ask for the reason why you have been blocked or ask for access again, please contact your network administrator."
+msgstr "To ask for the reason why you have been blocked or ask for access again, please contact your network administrator."
+#: working/source/luci/applications/luci-voice-core/luasrc/controller/luci_voice.lua
+msgid "Voice"
+msgstr "Voice"
+#: working/source/luci/applications/luci-splash/luasrc/model/cbi/splash/splash.lua
+#: working/source/luci-commotion/htdocs/luci-static/resources/OSMLatLon.htm
+msgid "OpenStreetMap"
+msgstr "OpenStreetMap"
+msgid "Map by"
+msgstr "Map by"
+msgid "License CC-BY-SA"
+msgstr "License CC-BY-SA"
+msgid "Latitude:"
+msgstr "Latitude:"
+msgid "Longitude:"
+msgstr "Longitude:"
+#: working/source/luci/applications/luci-freifunk-widgets/luasrc/view/freifunk/widgets/iframe/main.htm
+msgid "No url set."
+msgstr "No url set."
+msgid "Sorry, your browser doesn't support the object tag and cannot display this page:"
+msgstr "Sorry, your browser doesn't support the object tag and cannot display this page:"
+#: working/source/luci/applications/luci-multiwan/luasrc/view/multiwan_status.htm
+msgid "Unknown"
+msgstr "Unknown"
+msgid "KO"
+msgstr "KO"
+msgid "Recovering"
+msgstr "Recovering"
+msgid "Failing"
+msgstr "Failing"
+msgid "Multi-WAN Status"
+msgstr "Multi-WAN Status"
+#: working/source/luci/modules/admin-full/luasrc/view/admin_network/wifi_join.htm
+msgid "<abbr title='Pairwise: %s / Group: %s'>%s - %s</abbr>"
+msgstr "<abbr title='Pairwise: %s / Group: %s'>%s - %s</abbr>"
+msgid "Join Network: Wireless Scan"
+msgstr "Join Network: Wireless Scan"
+msgid "dB"
+msgstr "dB"
+msgid "Quality"
+msgstr "Quality"
+msgid "Join Network"
+msgstr "Join Network"
+msgid "Back to overview"
+msgstr "Back to overview"
+msgid "Repeat scan"
+msgstr "Repeat scan"
+#: working/source/luci/applications/luci-olsr/luasrc/view/status-olsr/overview.htm
+msgid "Could not get any data. Make sure the jsoninfo plugin is installed and allows connections from localhost."
+msgstr "Could not get any data. Make sure the jsoninfo plugin is installed and allows connections from localhost."
+msgid "Overview"
+msgstr "Overview"
+msgid "Neighbors"
+msgstr "Neighbors"
+msgid "Nodes"
+msgstr "Nodes"
+msgid "HNA"
+msgstr "HNA"
+msgid "Links total"
+msgstr "Links total"
+msgid "Links per node (average)"
+msgstr "Links per node (average)"
+msgid "Download Config"
+msgstr "Download Config"
+#: working/source/luci/protocols/ppp/luasrc/model/cbi/admin_network/proto_ppp.lua
+msgid "Modem device"
+msgstr "Modem device"
+#: working/source/luci-commotion/luasrc/controller/commotion/security_config.lua
+msgid "Security"
+msgstr "Security"
+#: working/source/luci/applications/luci-openvpn/luasrc/model/cbi/openvpn-basic.lua
+msgid "Set output verbosity"
+msgstr "Set output verbosity"
+#: working/source/luci/protocols/ppp/luasrc/model/network/proto_ppp.lua
+msgid "PPP"
+msgstr "PPP"
+#: working/source/luci-commotion/luasrc/view/cbi/full_valueheader.htm
+#: working/source/luci/modules/admin-full/luasrc/model/cbi/admin_network/wifi.lua
+msgid "The <em>Device Configuration</em> section covers physical settings of the radio hardware such as channel, transmit power or antenna selection which are shared among all defined wireless networks (if the radio hardware is multi-SSID capable). Per network settings like encryption or operation mode are grouped in the <em>Interface Configuration</em>."
+msgstr "The <em>Device Configuration</em> section covers physical settings of the radio hardware such as channel, transmit power or antenna selection which are shared among all defined wireless networks (if the radio hardware is multi-SSID capable). Per network settings like encryption or operation mode are grouped in the <em>Interface Configuration</em>."
+#: working/source/luci/applications/luci-statistics/luasrc/model/cbi/luci_statistics/conntrack.lua
+msgid "Conntrack Plugin Configuration"
+msgstr "Conntrack Plugin Configuration"
+#: working/source/luci/modules/freifunk/luasrc/model/cbi/freifunk/basics.lua
+msgid "Community"
+msgstr "Community"
+#: working/source/luci/applications/luci-qos/luasrc/model/cbi/qos/qos.lua
+msgid "Quality of Service"
+msgstr "Quality of Service"
+#: working/source/luci-commotion/luasrc/controller/commotion-dash/bigboard-conf.lua
+msgid "BigBoard Configuration"
+msgstr "BigBoard Configuration"
+#: working/source/luci/modules/admin-full/luasrc/view/admin_network/lease_status.htm
+msgid "Active DHCP Leases"
+msgstr "Active DHCP Leases"
+msgid "Active DHCPv6 Leases"
+msgstr "Active DHCPv6 Leases"
+#: working/source/luci/applications/luci-vnstat/luasrc/controller/vnstat.lua
+msgid "VnStat Traffic Monitor"
+msgstr "VnStat Traffic Monitor"
+#: working/source/luci/applications/luci-diag-devinfo/luasrc/model/cbi/luci_diag/smap_devinfo_mini.lua
+msgid "Phone Information"
+msgstr "Phone Information"
+#: working/source/luci/modules/admin-full/luasrc/view/admin_network/iface_overview.htm
+msgid "Part of zone %q"
+msgstr "Part of zone %q"
+msgid "Really shutdown interface "%s" ?\\nYou might lose access to this device if you are connected via this interface."
+msgstr "Really shutdown interface "%s" ?\\nYou might lose access to this device if you are connected via this interface."
+msgid "Interface is reconnecting..."
+msgstr "Interface is reconnecting..."
+msgid "Interface is shutting down..."
+msgstr "Interface is shutting down..."
+msgid "Waiting for changes to be applied..."
+msgstr "Waiting for changes to be applied..."
+msgid "Interface reconnected"
+msgstr "Interface reconnected"
+msgid "Interface shut down"
+msgstr "Interface shut down"
+msgid "RX"
+msgstr "RX"
+msgid "TX"
+msgstr "TX"
+msgid "IPv4"
+msgstr "IPv4"
+msgid "IPv6"
+msgstr "IPv6"
+msgid "Unsupported protocol type."
+msgstr "Unsupported protocol type."
+msgid "Install protocol extensions..."
+msgstr "Install protocol extensions..."
+msgid "Network without interfaces."
+msgstr "Network without interfaces."
+msgid "Assign interfaces..."
+msgstr "Assign interfaces..."
+msgid "Interface not present or not connected yet."
+msgstr "Interface not present or not connected yet."
+msgid "Reconnecting interface"
+msgstr "Reconnecting interface"
+msgid "Interface Overview"
+msgstr "Interface Overview"
+msgid "Reconnect this interface"
+msgstr "Reconnect this interface"
+msgid "Connect"
+msgstr "Connect"
+msgid "Shutdown this interface"
+msgstr "Shutdown this interface"
+msgid "Stop"
+msgstr "Stop"
+msgid "Edit this interface"
+msgstr "Edit this interface"
+msgid "Really delete this interface? The deletion cannot be undone!\\nYou might lose access to this device if you are connected via this interface."
+msgstr "Really delete this interface? The deletion cannot be undone!\\nYou might lose access to this device if you are connected via this interface."
+msgid "Delete this interface"
+msgstr "Delete this interface"
+msgid "Add new interface..."
+msgstr "Add new interface..."
+#: working/source/luci-commotion/luasrc/model/cbi/commotion/security_smk.lua
+msgid "Shared Mesh Keychain"
+msgstr "Shared Mesh Keychain"
+#: working/source/luci/protocols/ipv6/luasrc/model/cbi/admin_network/proto_dhcpv6.lua
+msgid "Request IPv6-address"
+msgstr "Request IPv6-address"
+#: working/source/luci/applications/luci-wshaper/luasrc/controller/wshaper.lua
+#: working/source/luci/themes/openwrt/luasrc/view/themes/openwrt.org/header.htm
+msgid "Skip to navigation"
+msgstr "Skip to navigation"
+msgid "Skip to content"
+msgstr "Skip to content"
+msgid "Navigation"
+msgstr "Navigation"
+msgid "Load"
+msgstr "Load"
+msgid "Auto Refresh"
+msgstr "Auto Refresh"
+msgid "on"
+msgstr "on"
+msgid "off"
+msgstr "off"
+msgid "Unsaved Changes"
+msgstr "Unsaved Changes"
+msgid "Changes"
+msgstr "Changes"
+msgid "Java Script required!"
+msgstr "Java Script required!"
+msgid "You must enable Java Script in your browser or LuCI will not work properly."
+msgstr "You must enable Java Script in your browser or LuCI will not work properly."
+msgid "No password set!"
+msgstr "No password set!"
+msgid "There is no password set on this router. Please configure a root password to protect the web interface and enable SSH."
+msgstr "There is no password set on this router. Please configure a root password to protect the web interface and enable SSH."
+msgid "Go to password configuration..."
+msgstr "Go to password configuration..."
+#: working/source/luci/applications/luci-olsr/luasrc/view/status-olsr/topology.htm
+msgid "Active OLSR nodes"
+msgstr "Active OLSR nodes"
+msgid "Overview of currently known OLSR nodes"
+msgstr "Overview of currently known OLSR nodes"
+msgid "OLSR node"
+msgstr "OLSR node"
+msgid "Last hop"
+msgstr "Last hop"
+msgid "LQ"
+msgstr "LQ"
+msgid "NLQ"
+msgstr "NLQ"
+msgid "ETX"
+msgstr "ETX"
+#: working/source/luci/applications/luci-olsr/luasrc/model/cbi/olsr/olsrdhna6.lua
+msgid "OLSR - HNA6-Announcements"
+msgstr "OLSR - HNA6-Announcements"
+#: working/source/luci/applications/luci-olsr/luasrc/view/status-olsr/common_js.htm
+msgid "Hide IPv4"
+msgstr "Hide IPv4"
+msgid "Hide IPv6"
+msgstr "Hide IPv6"
+msgid "Show IPv4"
+msgstr "Show IPv4"
+msgid "Show IPv6"
+msgstr "Show IPv6"
+#: working/source/luci/applications/luci-firewall/luasrc/model/cbi/firewall/rules.lua
+msgid "Firewall - Traffic Rules"
+msgstr "Firewall - Traffic Rules"
+#: working/source/luci/applications/luci-statistics/luasrc/view/admin_statistics/index.htm
+msgid "Statistics"
+msgstr "Statistics"
+msgid "The statistics package is based on <a href="http://collectd.org/index.shtml">Collectd</a> and uses <a href="http://oss.oetiker.ch/rrdtool/">RRD Tool</a> to render diagram images from collected data."
+msgstr "The statistics package is based on <a href="http://collectd.org/index.shtml">Collectd</a> and uses <a href="http://oss.oetiker.ch/rrdtool/">RRD Tool</a> to render diagram images from collected data."
+#: working/source/luci-commotion/luasrc/view/cbi/commotion/addAP.htm
+msgid "Access Point"
+msgstr "Access Point"
+msgid "Click here to create a new access point. Once created you will be able to come back to this page to configure it."
+msgstr "Click here to create a new access point. Once created you will be able to come back to this page to configure it."
+#: working/source/luci/applications/luci-polipo/luasrc/controller/polipo.lua
+msgid "Polipo"
+msgstr "Polipo"
+#: working/source/luci/modules/base/luasrc/view/cbi/ucisection.htm
+msgid "One or more fields contain invalid values!"
+msgstr "One or more fields contain invalid values!"
+msgid "One or more required fields have no value!"
+msgstr "One or more required fields have no value!"
+msgid "-- custom --"
+msgstr "-- custom --"
+msgid "-- Additional Field --"
+msgstr "-- Additional Field --"
+#: working/source/luci/modules/failsafe/luasrc/controller/failsafe/failsafe.lua
+msgid "Fail-safe"
+msgstr "Fail-safe"
+#: working/source/luci/applications/luci-statistics/luasrc/model/cbi/luci_statistics/collectd.lua
+msgid "Collectd Settings"
+msgstr "Collectd Settings"
+#: working/source/luci/modules/admin-full/luasrc/model/cbi/admin_system/system.lua
+#: working/source/luci/modules/failsafe/luasrc/view/failsafe/flashops.htm
+msgid "Upload a sysupgrade-compatible image."
+msgstr "Upload a sysupgrade-compatible image."
+#: working/source/luci/applications/luci-diag-core/luasrc/view/diag/index.htm
+msgid "The entries in the menu allow you to perform diagnostic tests on your system to aid in troubleshooting."
+msgstr "The entries in the menu allow you to perform diagnostic tests on your system to aid in troubleshooting."
+#: working/source/luci-commotion/luasrc/model/network/proto_commotion.lua
+msgid "Commotion Interface"
+msgstr "Commotion Interface"
+#: working/source/luci/protocols/ipv6/luasrc/model/network/proto_4x6.lua
+msgid "Dual-Stack Lite (RFC6333)"
+msgstr "Dual-Stack Lite (RFC6333)"
+#: working/source/luci/modules/base/luasrc/view/cbi/header.htm
+msgid "Some fields are invalid, cannot save values!"
+msgstr "Some fields are invalid, cannot save values!"
+#: working/source/luci-commotion/luasrc/controller/commotion/basic_config.lua
+msgid "Commotion"
+msgstr "Commotion"
+#: working/source/luci/modules/admin-full/luasrc/view/admin_status/iptables.htm
+msgid "Firewall Status"
+msgstr "Firewall Status"
+msgid "IPv4 Firewall"
+msgstr "IPv4 Firewall"
+msgid "IPv6 Firewall"
+msgstr "IPv6 Firewall"
+msgid "Reset Counters"
+msgstr "Reset Counters"
+msgid "Restart Firewall"
+msgstr "Restart Firewall"
+msgid "Table"
+msgstr "Table"
+msgid "Chain"
+msgstr "Chain"
+msgid "Packets"
+msgstr "Packets"
+msgid "Traffic"
+msgstr "Traffic"
+msgid "References"
+msgstr "References"
+msgid "Rule #"
+msgstr "Rule #"
+msgid "Target"
+msgstr "Target"
+msgid "Prot."
+msgstr "Prot."
+msgid "Flags"
+msgstr "Flags"
+msgid "In"
+msgstr "In"
+msgid "Out"
+msgstr "Out"
+msgid "Options"
+msgstr "Options"
+msgid "No rules in this chain"
+msgstr "No rules in this chain"
+msgid "No chains in this table"
+msgstr "No chains in this table"
+#: working/source/luci/applications/luci-ahcp/luasrc/controller/ahcp.lua
+msgid "AHCP Server"
+msgstr "AHCP Server"
+#: working/source/luci/modules/admin-full/luasrc/view/admin_system/reboot.htm
+msgid "Reboot"
+msgstr "Reboot"
+msgid "Reboots the operating system of your device"
+msgstr "Reboots the operating system of your device"
+msgid "Warning: There are unsaved changes that will be lost while rebooting!"
+msgstr "Warning: There are unsaved changes that will be lost while rebooting!"
+msgid "Perform reboot"
+msgstr "Perform reboot"
+msgid "Please wait: Device rebooting..."
+msgstr "Please wait: Device rebooting..."
+#: working/source/luci/applications/luci-transmission/luasrc/controller/transmission.lua
+msgid "Transmission"
+msgstr "Transmission"
+#: working/source/luci/modules/base/luasrc/view/cbi/nullsection.htm
+#: working/source/luci/applications/luci-minidlna/luasrc/controller/minidlna.lua
+msgid "miniDLNA"
+msgstr "miniDLNA"
+#: working/source/luci/applications/luci-ahcp/luasrc/view/ahcp_status.htm
+msgid "The AHCP Service is not running."
+msgstr "The AHCP Service is not running."
+msgid "The AHCP Service is running with ID %s."
+msgstr "The AHCP Service is running with ID %s."
+msgid "Active AHCP Leases"
+msgstr "Active AHCP Leases"
+msgid "Age"
+msgstr "Age"
+#: working/source/luci/applications/luci-pbx/luasrc/model/cbi/pbx-google.lua
+msgid "Google Accounts"
+msgstr "Google Accounts"
+#: working/source/luci/applications/luci-diag-devinfo/luasrc/controller/luci_diag/devinfo_common.lua
+msgid "No SIP devices"
+msgstr "No SIP devices"
+#: working/source/luci/applications/luci-splash/luasrc/view/splash/blocked.htm
+msgid "To ask for the reason why you have been blocked or ask for access again you can try to contact the owner of this access point:"
+msgstr "To ask for the reason why you have been blocked or ask for access again you can try to contact the owner of this access point:"
+#: working/source/luci/applications/luci-polipo/luasrc/model/cbi/polipo.lua
+#: working/source/luci/modules/base/luasrc/view/cbi/value.htm
+msgid "Reveal/hide password"
+msgstr "Reveal/hide password"
+msgid "-- Please choose --"
+msgstr "-- Please choose --"
+#: working/source/luci/applications/luci-diag-devinfo/luasrc/model/cbi/luci_diag/netdiscover_devinfo_config.lua
+msgid "Network Device Scanning Configuration"
+msgstr "Network Device Scanning Configuration"
+#: working/source/luci/applications/luci-hd-idle/luasrc/controller/hd_idle.lua
+msgid "hd-idle"
+msgstr "hd-idle"
+#: working/source/luci/applications/luci-commands/luasrc/view/commands.htm
+msgid "Waiting for command to complete..."
+msgstr "Waiting for command to complete..."
+msgid "Binary data not displayed, download instead."
+msgstr "Binary data not displayed, download instead."
+msgid "Code:"
+msgstr "Code:"
+msgid "Command successful"
+msgstr "Command successful"
+msgid "Command failed"
+msgstr "Command failed"
+msgid "Failed to execute command!"
+msgstr "Failed to execute command!"
+msgid "Access command with"
+msgstr "Access command with"
+msgid "Command:"
+msgstr "Command:"
+msgid "Arguments:"
+msgstr "Arguments:"
+msgid "Run"
+msgstr "Run"
+msgid "Download"
+msgstr "Download"
+msgid "Link"
+msgstr "Link"
+#: working/source/luci/modules/admin-full/luasrc/controller/admin/system.lua
+#: working/source/luci/applications/luci-diag-core/luasrc/controller/luci_diag.lua
+msgid "Configure Diagnostics"
+msgstr "Configure Diagnostics"
+#: working/source/luci/modules/admin-full/luasrc/model/cbi/admin_system/leds.lua
+msgid "<abbr title="Light Emitting Diode">LED</abbr> Configuration"
+msgstr "<abbr title="Light Emitting Diode">LED</abbr> Configuration"
+#: working/source/luci/applications/luci-firewall/luasrc/model/cbi/firewall/zones.lua
+msgid "Firewall - Zone Settings"
+msgstr "Firewall - Zone Settings"
+#: working/source/luci/applications/luci-olsr-viz/luasrc/view/olsr-viz/olsr-viz.htm
+#: working/source/luci/applications/luci-freifunk-widgets/luasrc/controller/freifunk/widgets.lua
+msgid "Widgets"
+msgstr "Widgets"
+#: working/source/luci-commotion/luasrc/controller/commotion/debugger.lua
+msgid "Commotion Debugging Helper"
+msgstr "Commotion Debugging Helper"
+#: working/source/luci/themes/freifunk-bno/luasrc/view/themes/freifunk-bno/header.htm
+msgid "Path"
+msgstr "Path"
+#: working/source/luci-commotion/luasrc/controller/commotion/status_config.lua
+#: working/source/luci/modules/admin-full/luasrc/model/cbi/admin_network/network.lua
+#: working/source/luci/applications/luci-statistics/luasrc/model/cbi/luci_statistics/exec.lua
+msgid "Exec Plugin Configuration"
+msgstr "Exec Plugin Configuration"
+#: working/source/luci/modules/base/luasrc/view/cbi/firewall_zoneforwards.htm
+msgid "(empty)"
+msgstr "(empty)"
+#: working/source/luci-commotion/luasrc/view/commotion/meshprofile.htm
+msgid "Welcome to Commotion"
+msgstr "Welcome to Commotion"
+msgid "This router has not yet been set up. Use the Setup Wizard for step-by-step configuration, upload a configuration file if you have one from a previously configured router, or choose Advanced for manual GUI or CLI configuration."
+msgstr "This router has not yet been set up. Use the Setup Wizard for step-by-step configuration, upload a configuration file if you have one from a previously configured router, or choose Advanced for manual GUI or CLI configuration."
+msgid "About"
+msgstr "About"
+msgid "Help"
+msgstr "Help"
+#: working/source/luci/applications/luci-vnstat/luasrc/view/vnstat.htm
+msgid "VnStat Graphs"
+msgstr "VnStat Graphs"
+msgid "Summary display"
+msgstr "Summary display"
+msgid "Top 10 display"
+msgstr "Top 10 display"
+msgid "Hourly traffic"
+msgstr "Hourly traffic"
+msgid "Daily traffic"
+msgstr "Daily traffic"
+msgid "Monthly traffic"
+msgstr "Monthly traffic"
+msgid "Update »"
+msgstr "Update »"
+msgid "No database has been set up yet. Go to the VnStat configuration and enable monitoring for one or more interfaces."
+msgstr "No database has been set up yet. Go to the VnStat configuration and enable monitoring for one or more interfaces."
+#: working/source/luci/modules/admin-full/luasrc/view/admin_status/load.htm
+msgid "Realtime Load"
+msgstr "Realtime Load"
+msgid "1 Minute Load:"
+msgstr "1 Minute Load:"
+msgid "5 Minute Load:"
+msgstr "5 Minute Load:"
+msgid "15 Minute Load:"
+msgstr "15 Minute Load:"
+#: working/source/luci/applications/luci-commands/luasrc/controller/commands.lua
+#: working/source/luci/modules/admin-full/luasrc/controller/admin/status.lua
+#: working/source/luci-commotion/luasrc/view/cbi/commotion/addMesh.htm
+msgid "Mesh Network"
+msgstr "Mesh Network"
+msgid "Click here to add a new mesh network interface. Once created you will be able to come back to this page to configure it"
+msgstr "Click here to add a new mesh network interface. Once created you will be able to come back to this page to configure it"
+#: working/source/luci-commotion/luasrc/view/cbi/commotion/delegator.htm
+#: working/source/luci/applications/luci-splash/luasrc/view/admin_status/splash.htm
+#: working/source/luci-commotion/luasrc/view/commotion/serval_keyring.htm
+msgid "To ensure that only authorized devices can route traffic on your Commotion mesh network, one Shared Mesh Keychain file can be generated and shared by all devices.."
+msgstr "To ensure that only authorized devices can route traffic on your Commotion mesh network, one Shared Mesh Keychain file can be generated and shared by all devices.."
+msgid "Download Shared Mesh Keychain"
+msgstr "Download Shared Mesh Keychain"
+msgid "Download your current Shared Mesh Keychain"
+msgstr "Download your current Shared Mesh Keychain"
+msgid "Download your current Serval keyring"
+msgstr "Download your current Serval keyring"
+msgid "Upload Shared Mesh Keychain"
+msgstr "Upload Shared Mesh Keychain"
+msgid "Upload Shared Mesh Keychain."
+msgstr "Upload Shared Mesh Keychain."
+msgid "If a Shared Mesh Keychain file was provided to you by a network administrator or another community member, select and upload it here to join this device to an existing mesh network."
+msgstr "If a Shared Mesh Keychain file was provided to you by a network administrator or another community member, select and upload it here to join this device to an existing mesh network."
+msgid "Upload"
+msgstr "Upload"
+msgid "Create a new Shared Mesh Keychain"
+msgstr "Create a new Shared Mesh Keychain"
+msgid "Create a new Shared Mesh Keychain file. This will DELETE the existing Shared Mesh Keychain on this device. Use this option if you are creating a brand new Commotion mesh network, or if you are changing the Shared Mesh Keyhchain on an existing network. In either case, create a backup of the existing Shared Mesh Keychain first."
+msgstr "Create a new Shared Mesh Keychain file. This will DELETE the existing Shared Mesh Keychain on this device. Use this option if you are creating a brand new Commotion mesh network, or if you are changing the Shared Mesh Keyhchain on an existing network. In either case, create a backup of the existing Shared Mesh Keychain first."
+msgid "New Shared Mesh Keychain"
+msgstr "New Shared Mesh Keychain"
+msgid "Create New Shared Mesh Keychain"
+msgstr "Create New Shared Mesh Keychain"
+#: working/source/luci/protocols/ipv6/luasrc/model/cbi/admin_network/proto_dslite.lua
+msgid "DS-Lite AFTR address"
+msgstr "DS-Lite AFTR address"
+#: working/source/luci/applications/luci-ushare/luasrc/controller/ushare.lua
+msgid "uShare"
+msgstr "uShare"
+#: working/source/luci/modules/admin-full/luasrc/view/admin_uci/changelog.htm
+msgid "Legend:"
+msgstr "Legend:"
+msgid "Section added"
+msgstr "Section added"
+msgid "Section removed"
+msgstr "Section removed"
+msgid "Option changed"
+msgstr "Option changed"
+msgid "Option removed"
+msgstr "Option removed"
+#: working/source/luci/modules/freifunk/luasrc/view/freifunk/remote_update.htm
+msgid "Check for new firmware versions and perform automatic updates."
+msgstr "Check for new firmware versions and perform automatic updates."
+msgid "Update available!"
+msgstr "Update available!"
+msgid "The installed firmware is the most recent version."
+msgstr "The installed firmware is the most recent version."
+msgid "Start Upgrade"
+msgstr "Start Upgrade"
+msgid "Update Settings"
+msgstr "Update Settings"
+msgid "Keep configuration"
+msgstr "Keep configuration"
+msgid "Verify downloaded images"
+msgstr "Verify downloaded images"
+msgid "Confirm Upgrade"
+msgstr "Confirm Upgrade"
+#: working/source/luci/protocols/hso/luasrc/model/network/proto_hso.lua
+msgid "HSO"
+msgstr "HSO"
+#: working/source/commotion-feed/packages/luci/patches/050-wifi_lua.patch
+msgid "auto"
+msgstr "auto"
+#: working/source/luci/modules/admin-full/luasrc/view/admin_system/applyreboot.htm
+msgid "Rebooting..."
+msgstr "Rebooting..."
+msgid "Changes applied."
+msgstr "Changes applied."
+#: working/source/luci/modules/admin-full/luasrc/view/admin_network/diagnostics.htm
+msgid "Bad address specified!"
+msgstr "Bad address specified!"
+msgid "Network Utilities"
+msgstr "Network Utilities"
+msgid "Ping"
+msgstr "Ping"
+msgid "Traceroute"
+msgstr "Traceroute"
+msgid "Install iputils-traceroute6 for IPv6 traceroute"
+msgstr "Install iputils-traceroute6 for IPv6 traceroute"
+msgid "Nslookup"
+msgstr "Nslookup"
+#: working/source/luci/applications/luci-mmc-over-gpio/luasrc/controller/mmc_over_gpio.lua
+msgid "MMC/SD driver configuration"
+msgstr "MMC/SD driver configuration"
+#: working/source/luci-commotion/luasrc/view/themes/commotion/unsaved_changes.htm
+#: working/source/luci/applications/luci-radvd/luasrc/model/cbi/radvd/prefix.lua
+msgid "Radvd - Prefix"
+msgstr "Radvd - Prefix"
+#: working/source/luci/protocols/relay/luasrc/model/cbi/admin_network/proto_relay.lua
+#: working/source/luci/applications/luci-wol/luasrc/controller/wol.lua
+#: working/source/luci/modules/admin-full/luasrc/view/admin_status/bandwidth.htm
+msgid "kB/s"
+msgstr "kB/s"
+msgid "MB/s"
+msgstr "MB/s"
+msgid "kbit/s"
+msgstr "kbit/s"
+msgid "Realtime Traffic"
+msgstr "Realtime Traffic"
+msgid "Inbound:"
+msgstr "Inbound:"
+msgid "Outbound:"
+msgstr "Outbound:"
+#: working/source/luci/modules/admin-full/luasrc/model/cbi/admin_network/routes.lua
+msgid "Routes"
+msgstr "Routes"
+#: working/source/luci-commotion/luasrc/view/themes/commotion/basic_menu.htm
+msgid "Advanced"
+msgstr "Advanced"
+#: working/source/luci/modules/admin-full/luasrc/model/cbi/admin_network/ifaces.lua
+#: working/source/luci/modules/admin-full/luasrc/model/cbi/admin_system/admin.lua
+msgid "Router Password"
+msgstr "Router Password"
+#: working/source/luci/modules/base/luasrc/model/cbi/admin_network/proto_dhcp.lua
+msgid "Hostname to send when requesting DHCP"
+msgstr "Hostname to send when requesting DHCP"
+#: working/source/luci-commotion/luasrc/view/commotion/license.htm
+msgid "Commotion License"
+msgstr "Commotion License"
+msgid "This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version."
+msgstr "This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version."
+msgid "This program is distributed in the hope that it will be useful,  but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details."
+msgstr "This program is distributed in the hope that it will be useful,  but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details."
+msgid "You should have received a copy of the GNU General Public License along with this program. If not, see http://www.gnu.org/licenses/."
+msgstr "You should have received a copy of the GNU General Public License along with this program. If not, see http://www.gnu.org/licenses/."
+msgid "The OpenWrt distribution upon which Commotion is built bundles a lot of third party applications and modules which are available under various other Open Source licenses or Public Domain. The sources for those packages can be found on the OpenWrt mirrot at: http://downloads.openwrt.org/sources/ . Please refer to these source packages to find out which license applies to them."
+msgstr "The OpenWrt distribution upon which Commotion is built bundles a lot of third party applications and modules which are available under various other Open Source licenses or Public Domain. The sources for those packages can be found on the OpenWrt mirrot at: http://downloads.openwrt.org/sources/ . Please refer to these source packages to find out which license applies to them."
+#: working/source/luci/applications/luci-qos/luasrc/controller/qos.lua
+msgid "QoS"
+msgstr "QoS"
+#: working/source/luci/modules/freifunk/luasrc/model/cbi/freifunk/user_index.lua
+msgid "Edit index page"
+msgstr "Edit index page"
+#: working/source/luci/modules/admin-full/luasrc/model/cbi/admin_system/buttons.lua
+msgid "Buttons"
+msgstr "Buttons"
+#: working/source/luci/modules/base/luasrc/view/cbi/nsection.htm
+#: working/source/luci/applications/luci-splash/luasrc/model/cbi/splash/splashtext.lua
+msgid "Edit the complete splash text"
+msgstr "Edit the complete splash text"
+#: working/source/luci/applications/luci-tinyproxy/luasrc/view/tinyproxy_status.htm
+msgid "Failed to retrieve statistics from url:"
+msgstr "Failed to retrieve statistics from url:"
+msgid "Tinyproxy Status"
+msgstr "Tinyproxy Status"
+#: working/source/luci/modules/admin-full/luasrc/model/cbi/admin_status/processes.lua
+msgid "Processes"
+msgstr "Processes"
+#: working/source/luci/applications/luci-olsr/luasrc/controller/olsr.lua
+msgid "OLSR"
+msgstr "OLSR"
+#: working/source/luci/modules/admin-full/luasrc/view/admin_uci/apply.htm
+msgid "Apply"
+msgstr "Apply"
+#: working/source/luci/modules/admin-full/luasrc/controller/admin/uci.lua
+#: working/source/luci/modules/base/luasrc/view/cbi/tsection.htm
+#: working/source/luci/protocols/ipv6/luasrc/model/cbi/admin_network/proto_6rd.lua
+#: working/source/luci/applications/luci-mmc-over-gpio/luasrc/model/cbi/mmc_over_gpio.lua
+#: working/source/luci/applications/luci-pbx/luasrc/model/cbi/pbx-calls.lua
+msgid "Call Routing"
+msgstr "Call Routing"
+#: working/source/luci/modules/base/luasrc/view/cbi/footer.htm
+msgid "Save & Apply"
+msgstr "Save & Apply"
+#: working/source/luci/modules/freifunk/luasrc/model/cbi/freifunk/profile.lua
+msgid "Community settings"
+msgstr "Community settings"
+#: working/source/luci/applications/luci-statistics/luasrc/model/cbi/luci_statistics/csv.lua
+msgid "CSV Plugin Configuration"
+msgstr "CSV Plugin Configuration"
+#: working/source/luci/modules/admin-full/luasrc/view/admin_network/wifi_overview.htm
+msgid "Broadcom 802.11%s Wireless Controller"
+msgstr "Broadcom 802.11%s Wireless Controller"
+msgid "Package libiwinfo required!"
+msgstr "Package libiwinfo required!"
+msgid "The <em>libiwinfo-lua</em> package is not installed. You must install this component for working wireless configuration!"
+msgstr "The <em>libiwinfo-lua</em> package is not installed. You must install this component for working wireless configuration!"
+msgid "Really shut down network?\\nYou might lose access to this device if you are connected via this interface."
+msgstr "Really shut down network?\\nYou might lose access to this device if you are connected via this interface."
+msgid "Wireless is restarting..."
+msgstr "Wireless is restarting..."
+msgid "Wireless restarted"
+msgstr "Wireless restarted"
+msgid "Wireless shut down"
+msgstr "Wireless shut down"
+msgid "Disable"
+msgstr "Disable"
+msgid "Shutdown this network"
+msgstr "Shutdown this network"
+msgid "Enable"
+msgstr "Enable"
+msgid "Activate this network"
+msgstr "Activate this network"
+msgid "Wireless Overview"
+msgstr "Wireless Overview"
+msgid "Find and join network"
+msgstr "Find and join network"
+msgid "Scan"
+msgstr "Scan"
+msgid "Provide new network"
+msgstr "Provide new network"
+msgid "Delete this network"
+msgstr "Delete this network"
+msgid "Edit this network"
+msgstr "Edit this network"
+msgid "Really delete this wireless network? The deletion cannot be undone!\\nYou might lose access to this device if you are connected via this network."
+msgstr "Really delete this wireless network? The deletion cannot be undone!\\nYou might lose access to this device if you are connected via this network."
+msgid "No network configured on this device"
+msgstr "No network configured on this device"
+#: working/source/luci/applications/luci-coovachilli/luasrc/controller/coovachilli.lua
+msgid "CoovaChilli"
+msgstr "CoovaChilli"
+#: working/source/luci/applications/luci-firewall/luasrc/view/firewall/cbi_addforward.htm
+msgid "New port forward"
+msgstr "New port forward"
+msgid "External zone"
+msgstr "External zone"
+msgid "External port"
+msgstr "External port"
+msgid "Internal zone"
+msgstr "Internal zone"
+msgid "Internal IP address"
+msgstr "Internal IP address"
+msgid "Internal port"
+msgstr "Internal port"
+msgid "Other..."
+msgstr "Other..."
+#: working/source/luci/modules/admin-full/luasrc/model/cbi/admin_network/proto_ahcp.lua
+msgid "Multicast address"
+msgstr "Multicast address"
+#: working/source/luci/applications/luci-olsr/luasrc/model/cbi/olsr/olsrdhna.lua
+msgid "OLSR - HNA-Announcements"
+msgstr "OLSR - HNA-Announcements"
+#: working/source/luci/modules/admin-mini/luasrc/model/cbi/mini/wifi.lua
+msgid "Wifi"
+msgstr "Wifi"
+#: working/source/luci/modules/freifunk/luasrc/controller/freifunk/freifunk.lua
+msgid "Freifunk"
+msgstr "Freifunk"
+#: working/source/luci/applications/luci-multiwan/luasrc/controller/multiwan.lua
+msgid "Multi-WAN"
+msgstr "Multi-WAN"
+#: working/source/luci/applications/luci-watchcat/luasrc/model/cbi/watchcat/watchcat.lua
+#: working/source/luci/applications/luci-openvpn/luasrc/view/openvpn/pageswitch.htm
+msgid "Service"
+msgstr "Service"
+msgid "Switch to advanced configuration »"
+msgstr "Switch to advanced configuration »"
+msgid "« Switch to basic configuration"
+msgstr "« Switch to basic configuration"
+msgid "Configuration category"
+msgstr "Configuration category"
+#: working/source/luci/applications/luci-diag-devinfo/luasrc/controller/luci_diag/luci_diag_devinfo.lua
+msgid "Phones"
+msgstr "Phones"
+#: working/source/luci/applications/luci-radvd/luasrc/controller/radvd.lua
+msgid "Radvd"
+msgstr "Radvd"
+#: working/source/luci-commotion/luasrc/model/cbi/commotion/basic_ns.lua
+msgid "Node Settings"
+msgstr "Node Settings"
+#: working/source/luci/modules/admin-full/luasrc/model/cbi/admin_system/fstab.lua
+msgid "Mount Points"
+msgstr "Mount Points"
+#: working/source/luci/applications/luci-tinyproxy/luasrc/controller/tinyproxy.lua
+#: working/source/luci/applications/luci-olsr/luasrc/controller/olsr4.lua
+msgid "HNA Announcements"
+msgstr "HNA Announcements"
+#: working/source/luci/modules/failsafe/luasrc/view/failsafe/applyreboot.htm
+#: working/source/luci/applications/luci-pbx/luasrc/model/cbi/pbx-voip.lua
+msgid "SIP Accounts"
+msgstr "SIP Accounts"
+#: working/source/luci/applications/luci-meshwizard/luasrc/controller/meshwizard.lua
+msgid "Mesh Wizard"
+msgstr "Mesh Wizard"
+#: working/source/luci/applications/luci-firewall/luasrc/model/cbi/firewall/rule-details.lua
+#: working/source/luci/applications/luci-upnp/luasrc/controller/upnp.lua
+msgid "UPNP"
+msgstr "UPNP"
+#: working/source/luci/modules/base/luasrc/view/sysauth.htm
+msgid "Authorization Required"
+msgstr "Authorization Required"
+msgid "Please enter your username and password."
+msgstr "Please enter your username and password."
+msgid "Invalid username and/or password! Please try again."
+msgstr "Invalid username and/or password! Please try again."
+msgid "Username"
+msgstr "Username"
+msgid "Password"
+msgstr "Password"
+msgid "Login"
+msgstr "Login"
+#: working/source/luci/applications/luci-statistics/luasrc/model/cbi/luci_statistics/processes.lua
+msgid "Processes Plugin Configuration"
+msgstr "Processes Plugin Configuration"
+#: working/source/luci/applications/luci-meshwizard/luasrc/model/cbi/freifunk/meshwizard.lua
+msgid "Wizard"
+msgstr "Wizard"
+#: working/source/luci/applications/luci-freifunk-widgets/luasrc/model/cbi/freifunk/widgets/iframe.lua
+#: working/source/luci/modules/freifunk/luasrc/view/freifunk/contact.htm
+msgid "Operator"
+msgstr "Operator"
+msgid "Nickname"
+msgstr "Nickname"
+msgid "Realname"
+msgstr "Realname"
+msgid "E-Mail"
+msgstr "E-Mail"
+msgid "Phone"
+msgstr "Phone"
+msgid "Location"
+msgstr "Location"
+msgid "Coordinates"
+msgstr "Coordinates"
+msgid "Show on map"
+msgstr "Show on map"
+msgid "Notice"
+msgstr "Notice"
+#: working/source/luci/applications/luci-olsr/luasrc/model/cbi/olsr/olsrdiface6.lua
+#: working/source/luci/applications/luci-ntpc/luasrc/model/cbi/ntpc/ntpcmini.lua
+#: working/source/luci/modules/admin-full/luasrc/view/admin_network/iface_status.htm
+#: working/source/luci-commotion/files/usr/share/commotion/patches/wifi.lua.patch
+#: working/source/luci-commotion/luasrc/model/cbi/commotion/app_settings.lua
+msgid "Application Settings"
+msgstr "Application Settings"
+#: working/source/luci/applications/luci-statistics/luasrc/model/cbi/luci_statistics/netlink.lua
+msgid "Netlink Plugin Configuration"
+msgstr "Netlink Plugin Configuration"
+#: working/source/luci/applications/luci-olsr/luasrc/model/cbi/olsr/olsrddisplay.lua
+msgid "OLSR - Display Options"
+msgstr "OLSR - Display Options"
+#: working/source/luci/modules/admin-full/luasrc/view/admin_network/switch_status.htm
+msgid "Port status:"
+msgstr "Port status:"
+msgid "baseT"
+msgstr "baseT"
+msgid "full-duplex"
+msgstr "full-duplex"
+msgid "half-duplex"
+msgstr "half-duplex"
+msgid "no link"
+msgstr "no link"
+#: working/source/luci/protocols/ppp/luasrc/model/cbi/admin_network/proto_l2tp.lua
+msgid "L2TP Server"
+msgstr "L2TP Server"
+#: working/source/luci/modules/freifunk/luasrc/view/freifunk/public_status.htm
+msgid "used"
+msgstr "used"
+msgid "Processor"
+msgstr "Processor"
+msgid "The <em>libiwinfo</em> package is not installed. You must install this component for working wireless configuration!"
+msgstr "The <em>libiwinfo</em> package is not installed. You must install this component for working wireless configuration!"
+msgid "Power"
+msgstr "Power"
+msgid "Interface"
+msgstr "Interface"
+msgid "Default routes"
+msgstr "Default routes"
+msgid "No default routes known."
+msgstr "No default routes known."
+msgid "Metric"
+msgstr "Metric"
+#: working/source/luci/protocols/ipv6/luasrc/model/cbi/admin_network/proto_6to4.lua
+#: working/source/luci/modules/base/luasrc/view/cbi/apply_xhr.htm
+#: working/source/luci/protocols/3g/luasrc/model/cbi/admin_network/proto_3g.lua
+#: working/source/luci/applications/luci-olsr-services/luasrc/view/freifunk-services/services.htm
+msgid "No services can be shown, because olsrd is not running or the olsrd-nameservice Plugin is not loaded."
+msgstr "No services can be shown, because olsrd is not running or the olsrd-nameservice Plugin is not loaded."
+msgid "Services"
+msgstr "Services"
+msgid "Internal services"
+msgstr "Internal services"
+msgid "Url"
+msgstr "Url"
 #: working/source/luci-commotion/luasrc/view/commotion/error_olsr.htm
 msgid "OLSR Daemon"
 msgstr "OLSR Daemon"
-
 msgid "Unable to connect to the OLSR daemon!"
 msgstr "Unable to connect to the OLSR daemon!"
-
-msgid ""
-"Make sure that OLSRd is running, the 'txtinfo' plugin is loaded, configured "
-"on port 2006 and accepts connections from '127.0.0.1'."
+msgid "Make sure that OLSRd is running, the 'txtinfo' plugin is loaded, configured on port 2006 and accepts connections from '127.0.0.1'."
 msgstr "Make sure that OLSRd is running, the 'txtinfo' plugin is loaded, configured on port 2006 and accepts connections from '127.0.0.1'."
+#: working/source/luci/applications/luci-diag-devinfo/luasrc/model/cbi/luci_diag/mactodevinfo.lua
+msgid "MAC Device Info Overrides"
+msgstr "MAC Device Info Overrides"
+#: working/source/luci/modules/admin-full/luasrc/view/admin_uci/changes.htm
+msgid "There are no pending changes!"
+msgstr "There are no pending changes!"
+#: working/source/luci/applications/luci-ltqtapi/luasrc/model/cbi/luci_ltqtapi/contact.lua
+msgid "VoIP"
+msgstr "VoIP"
+#: working/source/luci/applications/luci-pbx-voicemail/luasrc/model/cbi/pbx-voicemail.lua
+msgid "Voicemail Setup"
+msgstr "Voicemail Setup"
+#: working/source/luci/applications/luci-upnp/luasrc/view/upnp_status.htm
+msgid "Delete Redirect"
+msgstr "Delete Redirect"
+msgid "There are no active redirects."
+msgstr "There are no active redirects."
+msgid "Active UPnP Redirects"
+msgstr "Active UPnP Redirects"
+msgid "External Port"
+msgstr "External Port"
+msgid "Client Address"
+msgstr "Client Address"
+msgid "Client Port"
+msgstr "Client Port"
+#: working/source/luci/applications/luci-olsr/luasrc/view/status-olsr/error_olsr.htm
+msgid "Make sure that OLSRd is running, the "jsoninfo" plugin is loaded, configured on port 9090 and accepts connections from "127.0.0.1"."
+msgstr "Make sure that OLSRd is running, the "jsoninfo" plugin is loaded, configured on port 9090 and accepts connections from "127.0.0.1"."
+#: working/source/luci/applications/luci-statistics/luasrc/controller/luci_statistics/luci_statistics.lua
+msgid "Output plugins"
+msgstr "Output plugins"
+#: working/source/luci/applications/luci-statistics/luasrc/model/cbi/luci_statistics/cpu.lua
+msgid "CPU Plugin Configuration"
+msgstr "CPU Plugin Configuration"
+#: working/source/luci/applications/luci-openvpn/luasrc/controller/openvpn.lua
+msgid "OpenVPN"
+msgstr "OpenVPN"
+#: working/source/luci-commotion/luasrc/view/themes/commotion/adv_menu.htm
+msgid "Basic Menu"
+msgstr "Basic Menu"
+#: working/source/luci/modules/admin-full/luasrc/controller/admin/network.lua
+#: working/source/luci/modules/admin-full/luasrc/model/cbi/admin_system/startup.lua
+msgid "Initscripts"
+msgstr "Initscripts"
+#: working/source/luci/applications/luci-openvpn/luasrc/view/openvpn/cbi-select-input-add.htm
+#: working/source/luci/applications/luci-firewall/luasrc/view/firewall/cbi_addrule.htm
+msgid "Open ports on router"
+msgstr "Open ports on router"
+msgid "New input rule"
+msgstr "New input rule"
+msgid "New forward rule"
+msgstr "New forward rule"
+msgid "Source zone"
+msgstr "Source zone"
+msgid "Destination zone"
+msgstr "Destination zone"
+msgid "Add and edit..."
+msgstr "Add and edit..."
+#: working/source/luci-commotion/luasrc/view/commotion/welcome.htm
+msgid "Setup Wizard"
+msgstr "Setup Wizard"
+#: working/source/luci/applications/luci-ltqtapi/luasrc/controller/ltqtapi.lua
+#: working/source/luci/applications/luci-statistics/luasrc/model/cbi/luci_statistics/iwinfo.lua
+msgid "Wireless iwinfo Plugin Configuration"
+msgstr "Wireless iwinfo Plugin Configuration"
+#: working/source/luci/applications/luci-minidlna/luasrc/model/cbi/minidlna.lua
+#: working/source/luci/applications/luci-transmission/luasrc/model/cbi/transmission.lua
+msgid "Open Web Interface"
+msgstr "Open Web Interface"
+#: working/source/luci/modules/admin-full/luasrc/view/admin_status/wireless.htm
+msgid "Realtime Wireless"
+msgstr "Realtime Wireless"
+msgid "Signal:"
+msgstr "Signal:"
+msgid "Noise:"
+msgstr "Noise:"
+msgid "Phy Rate:"
+msgstr "Phy Rate:"
+#: working/source/luci/applications/luci-diag-devinfo/luasrc/controller/luci_diag/netdiscover_common.lua
+#: working/source/luci/applications/luci-hd-idle/luasrc/model/cbi/hd_idle.lua
+msgid "hd-idle is a utility program for spinning-down external disks after a period of idle time."
+msgstr "hd-idle is a utility program for spinning-down external disks after a period of idle time."
+#: working/source/luci/applications/luci-openvpn/luasrc/model/cbi/openvpn-advanced.lua
+#: working/source/luci/applications/luci-statistics/luasrc/view/public_statistics/graph.htm
+msgid "Display Host »"
+msgstr "Display Host »"
+msgid "Display timespan »"
+msgstr "Display timespan »"
+#: working/source/luci/modules/admin-full/luasrc/model/cbi/admin_system/backupfiles.lua
+msgid "Backup file list"
+msgstr "Backup file list"
+#: working/source/luci/applications/luci-firewall/luasrc/model/cbi/firewall/forwards.lua
+msgid "Firewall - Port Forwards"
+msgstr "Firewall - Port Forwards"
+#: working/source/luci-commotion/luasrc/view/commotion-splash/splash.htm
+msgid "Local Applications"
+msgstr "Local Applications"
+msgid "Internet"
+msgstr "Internet"
+#: working/source/luci/applications/luci-radvd/luasrc/model/cbi/radvd.lua
+#: working/source/luci/applications/luci-statistics/luasrc/model/cbi/luci_statistics/interface.lua
+msgid "Interface Plugin Configuration"
+msgstr "Interface Plugin Configuration"
+#: working/source/luci/modules/admin-full/luasrc/model/cbi/admin_system/ipkg.lua
+msgid "OPKG-Configuration"
+msgstr "OPKG-Configuration"
+#: working/source/luci/applications/luci-freifunk-diagnostics/luasrc/view/freifunk/diagnostics.htm
+#: working/source/luci/modules/base/luasrc/view/error404.htm
+msgid "Not Found"
+msgstr "Not Found"
+msgid "Sorry, the object you requested was not found."
+msgstr "Sorry, the object you requested was not found."
+msgid "Unable to dispatch"
+msgstr "Unable to dispatch"
+#: working/source/luci/modules/admin-full/luasrc/view/admin_status/routes.htm
+msgid "The following rules are currently active on this system."
+msgstr "The following rules are currently active on this system."
+msgid "<abbr title="Internet Protocol Version 4">IPv4</abbr>-Address"
+msgstr "<abbr title="Internet Protocol Version 4">IPv4</abbr>-Address"
+msgid "<abbr title="Media Access Control">MAC</abbr>-Address"
+msgstr "<abbr title="Media Access Control">MAC</abbr>-Address"
+msgid "Active <abbr title="Internet Protocol Version 4">IPv4</abbr>-Routes"
+msgstr "Active <abbr title="Internet Protocol Version 4">IPv4</abbr>-Routes"
+msgid "<abbr title="Internet Protocol Version 4">IPv4</abbr>-Gateway"
+msgstr "<abbr title="Internet Protocol Version 4">IPv4</abbr>-Gateway"
+msgid "Active <abbr title="Internet Protocol Version 6">IPv6</abbr>-Routes"
+msgstr "Active <abbr title="Internet Protocol Version 6">IPv6</abbr>-Routes"
+msgid "<abbr title="Internet Protocol Version 6">IPv6</abbr>-Gateway"
+msgstr "<abbr title="Internet Protocol Version 6">IPv6</abbr>-Gateway"
+#: working/source/luci/applications/luci-ahcp/luasrc/model/cbi/ahcp.lua
+#: working/source/luci/applications/luci-olsr-viz/luasrc/controller/olsr-viz.lua
+msgid "OLSR-Viz"
+msgstr "OLSR-Viz"
+#: working/source/luci/modules/admin-mini/luasrc/view/mini/reboot.htm
+#: working/source/luci/applications/luci-olsr/luasrc/view/status-olsr/routes.htm
+msgid "Known OLSR routes"
+msgstr "Known OLSR routes"
+msgid "Overview of currently known routes to other OLSR nodes"
+msgstr "Overview of currently known routes to other OLSR nodes"
+#: working/source/luci/modules/base/luasrc/view/cbi/network_netinfo.htm
+#: working/source/luci/applications/luci-radvd/luasrc/model/cbi/radvd/rdnss.lua
+msgid "Radvd - RDNSS"
+msgstr "Radvd - RDNSS"
+#: working/source/luci/modules/admin-mini/luasrc/view/mini/backup.htm
+msgid "Here you can backup and restore your configuration and - if possible - reset this device to the default settings."
+msgstr "Here you can backup and restore your configuration and - if possible - reset this device to the default settings."
+msgid "Create backup"
+msgstr "Create backup"
+msgid "Proceed reverting all settings and resetting to firmware defaults?"
+msgstr "Proceed reverting all settings and resetting to firmware defaults?"
+msgid "Reset this device to defaults"
+msgstr "Reset this device to defaults"
+msgid "Backup Archive"
+msgstr "Backup Archive"
+#: working/source/luci/applications/luci-freifunk-widgets/luasrc/view/freifunk/widgets/rssfeed/main.htm
+msgid "RSS"
+msgstr "RSS"
+msgid "No url found in config"
+msgstr "No url found in config"
+msgid "Could not get rss data from"
+msgstr "Could not get rss data from"
+#: working/source/luci-commotion/luasrc/controller/commotion/info.lua
+msgid "Client Controls"
+msgstr "Client Controls"
+#: working/source/luci/applications/luci-samba/luasrc/model/cbi/samba.lua
+#: working/source/luci/applications/luci-polipo/luasrc/view/polipo_status.htm
+msgid "Polipo Status"
+msgstr "Polipo Status"
+#: working/source/luci-commotion/luasrc/model/cbi/commotion/basic_done.lua
+msgid "Basic Configuration Complete!"
+msgstr "Basic Configuration Complete!"
+#: working/source/luci-commotion/luasrc/model/cbi/commotion/basic_mn.lua
+msgid "Network Settings"
+msgstr "Network Settings"
+#: working/source/luci/applications/luci-ddns/luasrc/controller/ddns.lua
+msgid "Dynamic DNS"
+msgstr "Dynamic DNS"
+#: working/source/luci/modules/failsafe/luasrc/view/failsafe/reboot.htm
+#: working/source/luci/applications/luci-voice-diag/luasrc/controller/luci_voice/luci_voice_diag.lua
+#: working/source/luci/modules/admin-full/luasrc/model/cbi/admin_network/hosts.lua
+msgid "Hostnames"
+msgstr "Hostnames"
+#: working/source/luci/modules/admin-full/luasrc/view/admin_system/upgrade.htm
+msgid "Because this node is currently running a custom-built image, all upgrade scripts in the new image bundle will be run, regardless of version compatibility. This should not cause any problems."
+msgstr "Because this node is currently running a custom-built image, all upgrade scripts in the new image bundle will be run, regardless of version compatibility. This should not cause any problems."
+msgid "An image signing key is not available on the node, so the authenticity of the new image cannot be ensured."
+msgstr "An image signing key is not available on the node, so the authenticity of the new image cannot be ensured."
+msgid "This image was not signed by the Commotion development team's signing key or has an invalid signature. If you did not custom build this image from source, you should abort this upgrade."
+msgstr "This image was not signed by the Commotion development team's signing key or has an invalid signature. If you did not custom build this image from source, you should abort this upgrade."
+msgid "This image was not cryptographically signed. If you downloaded this image from the Commotion Wireless website (https://commotionwireless.net), you should abort this upgrade."
+msgstr "This image was not cryptographically signed. If you downloaded this image from the Commotion Wireless website (https://commotionwireless.net), you should abort this upgrade."
+msgid "Configuration files will be kept."
+msgstr "Configuration files will be kept."
+msgid "Note: Configuration files will be erased."
+msgstr "Note: Configuration files will be erased."
+#: working/source/luci-commotion/luasrc/view/themes/commotion/footer.htm
+msgid "License"
+msgstr "License"
+#: working/source/luci/applications/luci-statistics/luasrc/model/cbi/luci_statistics/irq.lua
+msgid "IRQ Plugin Configuration"
+msgstr "IRQ Plugin Configuration"
+#: working/source/luci-commotion/luasrc/view/commotion/apps_settings.htm
+msgid "Here you can change settings used on this node when creating or updating applications"
+msgstr "Here you can change settings used on this node when creating or updating applications"
+msgid "Applications that are created on this node can be categorized and listed according to the categories here"
+msgstr "Applications that are created on this node can be categorized and listed according to the categories here"
+msgid "Application categories"
+msgstr "Application categories"
+msgid "Applications that are not marked as 'permanent' will be automatically be removed from the application list after this amount of time"
+msgstr "Applications that are not marked as 'permanent' will be automatically be removed from the application list after this amount of time"
+msgid "Expiration period (seconds)"
+msgstr "Expiration period (seconds)"
+msgid "For example, 24 hours = 86400 seconds"
+msgstr "For example, 24 hours = 86400 seconds"
+msgid "By default, all applications expire after a time period specified by you. If this option is checked, applications will have the option to not expire"
+msgstr "By default, all applications expire after a time period specified by you. If this option is checked, applications will have the option to not expire"
+msgid "Allow local applications to not expire"
+msgstr "Allow local applications to not expire"
+msgid "If this is disabled, users will only be able to see local applications on the network that you manually approve"
+msgstr "If this is disabled, users will only be able to see local applications on the network that you manually approve"
+msgid "Automatically approve all applications seen by this node"
+msgstr "Automatically approve all applications seen by this node"
+#: working/source/luci/applications/luci-p2pblock/luasrc/controller/ff_p2pblock.lua
+#: working/source/luci/applications/luci-diag-devinfo/luasrc/model/cbi/luci_diag/netdiscover_devinfo_config_mini.lua
+#: working/source/luci/applications/luci-olsr/luasrc/view/status-olsr/interfaces.htm
+msgid "yes"
+msgstr "yes"
+msgid "Overview of interfaces where OLSR is running"
+msgstr "Overview of interfaces where OLSR is running"
+msgid "State"
+msgstr "State"
+msgid "MTU"
+msgstr "MTU"
+msgid "WLAN"
+msgstr "WLAN"
+msgid "Source address"
+msgstr "Source address"
+msgid "Broadcast address"
+msgstr "Broadcast address"
+#: working/source/luci-commotion/luasrc/model/cbi/commotion-splash/splash_settings.lua
+#: working/source/luci/applications/luci-statistics/luasrc/model/cbi/luci_statistics/load.lua
+msgid "Load Plugin Configuration"
+msgstr "Load Plugin Configuration"
+#: working/source/luci/applications/luci-olsr/luasrc/model/cbi/olsr/olsrdplugins6.lua
+msgid "OLSR - Plugins"
+msgstr "OLSR - Plugins"
+#: working/source/luci/applications/luci-ushare/luasrc/model/cbi/ushare.lua
+#: working/source/luci/applications/luci-freifunk-policyrouting/luasrc/model/cbi/freifunk/policyrouting.lua
+#: working/source/luci/applications/luci-statistics/luasrc/model/cbi/luci_statistics/df.lua
+msgid "DF Plugin Configuration"
+msgstr "DF Plugin Configuration"
+#: working/source/luci/applications/luci-freifunk-widgets/luasrc/model/cbi/freifunk/widgets/widget.lua
+msgid "Widget"
+msgstr "Widget"
+#: working/source/luci/modules/admin-full/luasrc/view/admin_system/clock_status.htm
+msgid "Synchronizing..."
+msgstr "Synchronizing..."
+msgid "Sync with browser"
+msgstr "Sync with browser"
+#: working/source/luci/applications/luci-olsr-services/luasrc/controller/services.lua
+#: working/source/luci/applications/luci-splash/luasrc/view/splash_splash/splash.htm
+msgid "Decline"
+msgstr "Decline"
+msgid "Accept"
+msgstr "Accept"
+#: working/source/luci/modules/admin-full/luasrc/view/admin_status/dmesg.htm
+msgid "Kernel Log"
+msgstr "Kernel Log"
+#: working/source/luci/applications/luci-ntpc/luasrc/model/cbi/ntpc/ntpc.lua
+#: working/source/luci/applications/luci-firewall/luasrc/tools/firewall.lua
+msgid "%s%s with %s"
+msgstr "%s%s with %s"
+#: working/source/luci-commotion/luasrc/model/cbi/commotion/client_wp.lua
+#: working/source/luci/applications/luci-firewall/luasrc/model/cbi/firewall/forward-details.lua
+#: working/source/luci/applications/luci-pbx/luasrc/model/cbi/pbx-users.lua
+msgid "User Accounts"
+msgstr "User Accounts"
+#: working/source/luci/modules/base/luasrc/view/cbi/network_ifacelist.htm
+msgid "Custom Interface"
+msgstr "Custom Interface"
+#: working/source/luci/applications/luci-ddns/luasrc/model/cbi/ddns/ddns.lua
+#: working/source/luci/themes/freifunk-generic/luasrc/view/themes/freifunk-generic/header.htm
+msgid "Your Internet Explorer is too old to display this page correctly. Please upgrade it to at least version 7 or use another browser like Firefox, Opera or Safari."
+msgstr "Your Internet Explorer is too old to display this page correctly. Please upgrade it to at least version 7 or use another browser like Firefox, Opera or Safari."
+msgid "skiplink1 Skip to navigation"
+msgstr "skiplink1 Skip to navigation"
+msgid "skiplink2 Skip to content"
+msgstr "skiplink2 Skip to content"
+msgid "navigation Navigation"
+msgstr "navigation Navigation"
+#: working/source/luci/protocols/ppp/luasrc/model/cbi/admin_network/proto_pppoa.lua
+msgid "PPPoA Encapsulation"
+msgstr "PPPoA Encapsulation"
+#: working/source/luci/applications/luci-olsr/luasrc/view/status-olsr/mid.htm
+msgid "Active MID announcements"
+msgstr "Active MID announcements"
+msgid "Overview of known multiple interface announcements"
+msgstr "Overview of known multiple interface announcements"
+msgid "Secondary OLSR interfaces"
+msgstr "Secondary OLSR interfaces"
+#: working/source/luci/applications/luci-firewall/luasrc/model/cbi/firewall/zone-details.lua
+#: working/source/luci/applications/luci-statistics/luasrc/model/cbi/luci_statistics/uptime.lua
+msgid "Uptime Plugin Configuration"
+msgstr "Uptime Plugin Configuration"
+#: working/source/luci/applications/luci-olsr/luasrc/model/cbi/olsr/olsrdplugins.lua
+#: working/source/luci/applications/luci-ltqtapi/luasrc/model/cbi/luci_ltqtapi/account.lua
+#: working/source/luci-commotion/luasrc/view/commotion/about.htm
+msgid "About Commotion"
+msgstr "About Commotion"
+msgid "Commotion is an open-source communication tool that uses mobile phones, computers, and other wireless devices to create decentralized mesh networks."
+msgstr "Commotion is an open-source communication tool that uses mobile phones, computers, and other wireless devices to create decentralized mesh networks."
+msgid "Wireless mesh networks allow devices to connect directly to each other without going through a centralized point."
+msgstr "Wireless mesh networks allow devices to connect directly to each other without going through a centralized point."
+msgid "Commotion is intended to be a:"
+msgstr "Commotion is intended to be a:"
+msgid "simple, easy-to-use communications tool that anyone can set up and use without technical expertise"
+msgstr "simple, easy-to-use communications tool that anyone can set up and use without technical expertise"
+msgid "platform for building community wireless networks and hosting local applications"
+msgstr "platform for building community wireless networks and hosting local applications"
+msgid "tool for creating infrastructure that is resilient against surveillance and disruption"
+msgstr "tool for creating infrastructure that is resilient against surveillance and disruption"
+msgid "flexible, open-source software platform that programmers around the globe can continually adapt and build upon"
+msgstr "flexible, open-source software platform that programmers around the globe can continually adapt and build upon"
+#: working/source/luci/applications/luci-statistics/luasrc/model/cbi/luci_statistics/disk.lua
+msgid "Disk Plugin Configuration"
+msgstr "Disk Plugin Configuration"
+#: working/source/luci/modules/admin-mini/luasrc/view/mini/upgrade.htm
+msgid "Upload an OpenWrt image file to reflash the device."
+msgstr "Upload an OpenWrt image file to reflash the device."
+msgid "Firmware image"
+msgstr "Firmware image"
+msgid "Keep configuration files"
+msgstr "Keep configuration files"
+msgid "Upload image"
+msgstr "Upload image"
+msgid "Sorry. OpenWrt does not support a system upgrade on this platform.<br /> You need to manually flash your device."
+msgstr "Sorry. OpenWrt does not support a system upgrade on this platform.<br /> You need to manually flash your device."
+msgid "The system is flashing now.<br /> DO NOT POWER OFF THE DEVICE!<br /> Wait a few minutes before you try to reconnect. It might be necessary to renew the address of your computer to reach the device again, depending on your settings."
+msgstr "The system is flashing now.<br /> DO NOT POWER OFF THE DEVICE!<br /> Wait a few minutes before you try to reconnect. It might be necessary to renew the address of your computer to reach the device again, depending on your settings."
+#: working/source/luci/modules/admin-full/luasrc/view/admin_system/ipkg.htm
+#: working/source/luci/modules/freifunk/luasrc/model/cbi/freifunk/contact.lua
+#: working/source/luci/modules/admin-full/luasrc/model/cbi/admin_network/wifi_add.lua
+msgid "Join Network: Settings"
+msgstr "Join Network: Settings"
+#: working/source/luci/applications/luci-diag-devinfo/luasrc/model/cbi/luci_diag/netdiscover_devinfo.lua
+#: working/source/luci-commotion/luasrc/view/commotion/nearby_md.htm
+msgid "OLSR Links"
+msgstr "OLSR Links"
+msgid "Overview of currently established OLSR connections (device-to-device)"
+msgstr "Overview of currently established OLSR connections (device-to-device)"
+msgid "ETX Value"
+msgstr "ETX Value"
+msgid "ETX shows the average link quality. Lower indicate better connectivity over time."
+msgstr "ETX shows the average link quality. Lower indicate better connectivity over time."
+msgid "Expected retransmission count - the expected number of retransmission attempts that are required for a packet to travel to and from a destination."
+msgstr "Expected retransmission count - the expected number of retransmission attempts that are required for a packet to travel to and from a destination."
+#: working/source/luci/applications/luci-statistics/luasrc/model/cbi/luci_statistics/dns.lua
+msgid "DNS Plugin Configuration"
+msgstr "DNS Plugin Configuration"
+#: working/source/luci/applications/luci-multiwan/luasrc/model/cbi/multiwan/multiwanmini.lua
+#: working/source/luci/applications/luci-olsr/luasrc/controller/olsr6.lua
+msgid "HNA6 Announcements"
+msgstr "HNA6 Announcements"
+#: working/source/luci-commotion/luasrc/view/commotion/conn_clients.htm
+msgid "Connected Clients"
+msgstr "Connected Clients"
+msgid "You are not using a welcome page (splash page/captive portal.) Without a splash page we can only show a clients ip-address and the status of their connection."
+msgstr "You are not using a welcome page (splash page/captive portal.) Without a splash page we can only show a clients ip-address and the status of their connection."
+msgid "No connected clients were found at this time. If a Welcome Page has been enabled, clients must click through it before being displayed here."
+msgstr "No connected clients were found at this time. If a Welcome Page has been enabled, clients must click through it before being displayed here."
+#: working/source/luci/modules/base/luasrc/view/cbi/dynlist.htm
+#: working/source/luci/applications/luci-radvd/luasrc/model/cbi/radvd/interface.lua
+msgid "Radvd - Interface %q"
+msgstr "Radvd - Interface %q"
+#: working/source/luci/applications/luci-olsr/luasrc/view/status-olsr/neighbors.htm
+msgid "OLSR connections"
+msgstr "OLSR connections"
+msgid "Overview of currently established OLSR connections"
+msgstr "Overview of currently established OLSR connections"
+msgid "Neighbour IP"
+msgstr "Neighbour IP"
+msgid "Local interface IP"
+msgstr "Local interface IP"
+#: working/source/luci/modules/base/luasrc/view/cbi/firewall_zonelist.htm
+msgid "Device"
+msgstr "Device"
+msgid "input"
+msgstr "input"
+msgid "Any zone"
+msgstr "Any zone"
+msgid "forward"
+msgstr "forward"
+#: working/source/luci/applications/luci-statistics/luasrc/model/cbi/luci_statistics/nut.lua
+msgid "UPS Plugin Configuration"
+msgstr "UPS Plugin Configuration"
+#: working/source/luci-commotion/luasrc/controller/commotion/client_config.lua
+#: working/source/luci/applications/luci-statistics/luasrc/model/cbi/luci_statistics/olsrd.lua
+msgid "OLSRd Plugin Configuration"
+msgstr "OLSRd Plugin Configuration"
+#: working/source/luci/modules/admin-mini/luasrc/controller/mini/network.lua
+#: working/source/luci/applications/luci-olsr/luasrc/model/cbi/olsr/olsrd.lua
+#: working/source/luci/applications/luci-upnp/luasrc/model/cbi/upnp/upnp.lua
+msgid "Universal Plug & Play"
+msgstr "Universal Plug & Play"
+#: working/source/luci-commotion/luasrc/view/commotion/revert.htm
+msgid "Reverting changes... Please be patient, this may take a few moments. Once the settings are reset click "Start Over" to return to the beginning of the Setup Wizard."
+msgstr "Reverting changes... Please be patient, this may take a few moments. Once the settings are reset click "Start Over" to return to the beginning of the Setup Wizard."
+msgid "Start Over"
+msgstr "Start Over"
+#: working/source/luci-commotion/luasrc/view/commotion/help.htm
+msgid "Help with Commotion"
+msgstr "Help with Commotion"
+msgid "Commotion is an evolving project that includes many parts. The documentation on our website has been created by the Commotion community to aid users and developers. It is often updated and we encourage you to get involved by contributing documentation. Listed below are links to the most relevant documentation to get started:"
+msgstr "Commotion is an evolving project that includes many parts. The documentation on our website has been created by the Commotion community to aid users and developers. It is often updated and we encourage you to get involved by contributing documentation. Listed below are links to the most relevant documentation to get started:"
+msgid "Frequently Asked Questions"
+msgstr "Frequently Asked Questions"
+msgid "Documentation"
+msgstr "Documentation"
+msgid "Commotion Construction Kit"
+msgstr "Commotion Construction Kit"
+msgid "a set of modular guides with tips on community organizing, site preparation, software installation and more."
+msgstr "a set of modular guides with tips on community organizing, site preparation, software installation and more."
+msgid "Contact the Commotion Wireless team"
+msgstr "Contact the Commotion Wireless team"
+msgid "Report a Bug"
+msgstr "Report a Bug"
+msgid "You can also connect with the Commotion community by subscribing to one or more of our listservs:"
+msgstr "You can also connect with the Commotion community by subscribing to one or more of our listservs:"
+msgid "only official announcements with minimal discussion."
+msgstr "only official announcements with minimal discussion."
+msgid "for those who want to use Commotion without getting too technical."
+msgstr "for those who want to use Commotion without getting too technical."
+msgid "for those who want to discuss improvements the Commotion software."
+msgstr "for those who want to discuss improvements the Commotion software."
+msgid "You can also join us using your chat program on IRC in the #commotion channel on the irc.freenode.net server."
+msgstr "You can also join us using your chat program on IRC in the #commotion channel on the irc.freenode.net server."
+msgid "Learn more about using IRC"
+msgstr "Learn more about using IRC"
+#: working/source/luci/modules/admin-full/luasrc/model/cbi/admin_system/crontab.lua
+msgid "Scheduled Tasks"
+msgstr "Scheduled Tasks"
+#: working/source/luci/modules/admin-full/luasrc/model/cbi/admin_network/vlan.lua
+msgid "Switch"
+msgstr "Switch"
+#: working/source/luci/modules/admin-mini/luasrc/view/mini/applyreboot.htm
+#: working/source/luci/modules/admin-mini/luasrc/controller/mini/index.lua
+msgid "Essentials"
+msgstr "Essentials"
+#: working/source/luci/modules/admin-mini/luasrc/model/cbi/mini/passwd.lua
+msgid "Admin Password"
+msgstr "Admin Password"
+#: working/source/luci/applications/luci-ltqtapi/luasrc/view/telephony_status.htm
+msgid "Current Telephony State"
+msgstr "Current Telephony State"
+msgid "Uplink"
+msgstr "Uplink"
+msgid "Port1"
+msgstr "Port1"
+msgid "Port2"
+msgstr "Port2"
+#: working/source/luci-commotion/luasrc/view/commotion/debugger.htm
+msgid "Name (optional)"
+msgstr "Name (optional)"
+msgid "Contact Info (optional)"
+msgstr "Contact Info (optional)"
+#: working/source/luci/applications/luci-openvpn/luasrc/model/cbi/openvpn.lua
+#: working/source/luci/applications/luci-minidlna/luasrc/view/minidlna_status.htm
+msgid "The miniDLNA service is active, serving %d audio, %d video and %d image files."
+msgstr "The miniDLNA service is active, serving %d audio, %d video and %d image files."
+msgid "The miniDLNA service is not running."
+msgstr "The miniDLNA service is not running."
+msgid "miniDLNA Status"
+msgstr "miniDLNA Status"
+#: working/source/luci/modules/freifunk/luasrc/view/freifunk/profile_error.htm
+msgid "Error"
+msgstr "Error"
+msgid "You need to select a profile before you can edit it. To select a profile go to"
+msgstr "You need to select a profile before you can edit it. To select a profile go to"
+#: working/source/luci-commotion/luasrc/view/commotion/confirm.htm
+msgid "Confirm Configuration"
+msgstr "Confirm Configuration"
+msgid "Make Changes"
+msgstr "Make Changes"
+msgid "Save And Apply"
+msgstr "Save And Apply"
+#: working/source/luci/applications/luci-olsr/luasrc/model/cbi/olsr/olsrd6.lua
+#: working/source/luci-commotion/luasrc/model/cbi/commotion/basic_wn.lua
+msgid "Wireless Network"
+msgstr "Wireless Network"
+#: working/source/luci-commotion/luasrc/view/commotion/status.htm
+msgid "Providing Gateway"
+msgstr "Providing Gateway"
+msgid "Client Connections"
+msgstr "Client Connections"
+msgid "Nearby Mesh Devices"
+msgstr "Nearby Mesh Devices"
+msgid "Mesh Visualizer"
+msgstr "Mesh Visualizer"
+msgid "Debug Report"
+msgstr "Debug Report"
+#: working/source/luci/applications/luci-firewall/luasrc/view/firewall/cbi_addsnat.htm
+msgid "New source NAT"
+msgstr "New source NAT"
+msgid "To source IP"
+msgstr "To source IP"
+msgid "To source port"
+msgstr "To source port"
+msgid "New SNAT rule"
+msgstr "New SNAT rule"
+msgid "Do not rewrite"
+msgstr "Do not rewrite"
+#: working/source/luci/modules/admin-full/luasrc/model/cbi/admin_system/fstab/swap.lua
+msgid "Mount Points - Swap Entry"
+msgstr "Mount Points - Swap Entry"
+#: working/source/luci/applications/luci-statistics/luasrc/model/cbi/luci_statistics/tcpconns.lua
+msgid "TCPConns Plugin Configuration"
+msgstr "TCPConns Plugin Configuration"
+#: working/source/luci/applications/luci-olsr/luasrc/view/status-olsr/smartgw.htm
+msgid "SmartGW announcements"
+msgstr "SmartGW announcements"
+msgid "Overview of smart gateways in this network"
+msgstr "Overview of smart gateways in this network"
+msgid "Hops"
+msgstr "Hops"
+msgid "Downlink"
+msgstr "Downlink"
+msgid "Prefix"
+msgstr "Prefix"
+msgid "SmartGateway is not configured on this system."
+msgstr "SmartGateway is not configured on this system."
+#: working/source/luci-commotion/luasrc/model/cbi/commotion/confirm_config.lua
+msgid "Basic Configuration"
+msgstr "Basic Configuration"
+#: working/source/luci/applications/luci-vnstat/luasrc/model/cbi/vnstat.lua
+msgid "VnStat"
+msgstr "VnStat"
+#: working/source/luci/modules/admin-full/luasrc/view/admin_system/backupfiles.htm
+#: working/source/luci/modules/freifunk/luasrc/view/freifunk/index.htm
+msgid "Hello and welcome in the network of"
+msgstr "Hello and welcome in the network of"
+#: working/source/luci/applications/luci-freifunk-widgets/luasrc/model/cbi/freifunk/widgets/widgets_overview.lua
+#: working/source/luci/applications/luci-radvd/luasrc/model/cbi/radvd/route.lua
+msgid "Radvd - Route"
+msgstr "Radvd - Route"
+#: working/source/luci/applications/luci-diag-devinfo/luasrc/controller/luci_diag/smap_common.lua
+#: working/source/luci/applications/luci-p910nd/luasrc/controller/p910nd.lua
+#: working/source/luci-commotion/luasrc/view/commotion/apps_view.htm
+msgid "Publicly announced applications running on this network are listed below."
+msgstr "Publicly announced applications running on this network are listed below."
+msgid "Here you can view applications accessible from this node."
+msgstr "Here you can view applications accessible from this node."
+msgid "Application added successfully!"
+msgstr "Application added successfully!"
+msgid "The node administrator may need to approve the application before it shows up on this list."
+msgstr "The node administrator may need to approve the application before it shows up on this list."
+msgid "Add Application"
+msgstr "Add Application"
+msgid "Approve"
+msgstr "Approve"
+msgid "Ban"
+msgstr "Ban"
+#: working/source/luci/protocols/ppp/luasrc/model/cbi/admin_network/proto_pptp.lua
+msgid "VPN Server"
+msgstr "VPN Server"
+#: working/source/luci/themes/bootstrap/luasrc/view/themes/bootstrap/header.htm
+#: working/source/luci/protocols/ipv6/luasrc/model/network/proto_6x4.lua
+msgid "IPv6-in-IPv4 (RFC4213)"
+msgstr "IPv6-in-IPv4 (RFC4213)"
+#: working/source/luci/applications/luci-radvd/luasrc/model/cbi/radvd/dnssl.lua
+msgid "Radvd - DNSSL"
+msgstr "Radvd - DNSSL"
+#: working/source/luci/protocols/ppp/luasrc/model/cbi/admin_network/proto_pppoe.lua
+msgid "PAP/CHAP username"
+msgstr "PAP/CHAP username"
+#: working/source/luci/modules/base/luasrc/model/cbi/admin_network/proto_static.lua
+msgid "IPv4 address"
+msgstr "IPv4 address"
+#: working/source/luci/applications/luci-statistics/luasrc/model/cbi/luci_statistics/rrdtool.lua
+msgid "RRDTool Plugin Configuration"
+msgstr "RRDTool Plugin Configuration"
+#: working/source/luci/applications/luci-statistics/luasrc/model/cbi/luci_statistics/email.lua
+msgid "E-Mail Plugin Configuration"
+msgstr "E-Mail Plugin Configuration"
+#: working/source/luci/applications/luci-multiwan/luasrc/model/cbi/multiwan/multiwan.lua
+#: working/source/luci/modules/admin-full/luasrc/model/cbi/admin_network/dhcp.lua
+msgid "DHCP and DNS"
+msgstr "DHCP and DNS"
